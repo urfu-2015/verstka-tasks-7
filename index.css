@@ -1,1 +1,251 @@
+html 
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body
+{
+    background-color: #e6e6e6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type="radio"]
+{
+    display: none;
+}
+.container
+{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+.header
+{
+    text-align: center;
+    font-size: 20px;
+}
+.main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.brPh
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+/*Меню пород*/
+.breeds
+{
+    font-size: 25px;
+    background-color: #cccccc;
+    width: 22%;
+    align-self: stretch;
+}
+.breeds > label
+{
+    display: block;
+    padding: 20px 20px;
+    border-bottom: 1px solid #000;
+}
+.breeds > .all
+{
+    border-bottom: 0;
+}
+/*Колонка с фотками*/
+.photos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+}
+.line
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 2%;
+}
+.line:first-child
+{
+    margin-top: 0;
+}
+.vertical
+{
+    width: 32%;
+}
+.horizontal
+{
+    width: 66%;
+}
+img,
+.last
+{
+    width: 100%;
+}
+.photo
+{
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+/*По наведению на фотку котика, выводить плашку с именем и возрастом котика*/
+.photo:hover > .description
+{
+    display: block;
+}
+.description
+{
+    background-color: rgba(0, 0, 0, .3);
+    padding: 20px;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    display: none;
+}
+/*Возможность выбрать породу в меню и отфильтровать котиков только этой породы*/
+#abis:checked ~ .container > .main > .brPh > .photos > .line > *
+{
+    opacity: .4;
+}
+#abis:checked ~ .container > .main > .brPh > .photos > .line > .abis
+{
+    opacity: 1;
+}
+#brit:checked ~ .container > .main > .brPh > .photos > .line > *
+{
+    opacity: .4;
+}
+#brit:checked ~ .container > .main > .brPh > .photos > .line > .brit
+{
+    opacity: 1;
+}
+#russ:checked ~ .container > .main > .brPh > .photos > .line > *
+{
+    opacity: .4;
+}
+#russ:checked ~ .container > .main > .brPh > .photos > .line > .russ
+{
+    opacity: 1;
+}
+#siam:checked ~ .container > .main > .brPh > .photos > .line > *
+{
+    opacity: .4;
+}
+#siam:checked ~ .container > .main > .brPh > .photos > .line > .siam
+{
+    opacity: 1;
+}
+/*Рейтинг*/
+.raiting
+{
+    background-color: #cccccc;
+    width: 19%;
+    align-self: flex-start;
+}
+.raiting > p
+{    
+    text-transform: uppercase;
+    color: #f00;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+.raiting > label
+{
+    font-size: 20px;
+    margin-left: 30%;;
+}
+.raiting > input
+{
+    float: right;
+    clear: both;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.raitContainer
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.raitContainer > div
+{
+    margin: 5px;
+}
+.raitContainer > div > div:first-child
+{
+    font-size: 25px;
+    padding: 0 20px;
+}
+.rait
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.nine,
+.ten
+{
+    width: 150px;
+    height: 25px;
+    background: linear-gradient(to right, #3cd91d, #fff);
+    border: 1px solid #3cd91d;
+}
+.eight
+{
+    width: 120px;
+    height: 25px;
+    background: linear-gradient(to right, #ffcc00, #fff);
+    border: 1px solid #ffcc00;
+}
+.four
+{
+    width: 60px;
+    height: 25px;
+    background: linear-gradient(to right, #f00, #fff);
+    border: 1px solid #f00;
+}
+#descending:checked ~ div > .abisRait
+{
+    order: 1;
+}
+#descending:checked ~ div > .britRait
+{
+    order: 2;
+}
+#descending:checked ~ div > .siamRait
+{
+    order: 3;
+}
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    margin-top: 50px;
+    align-content: center;
+    padding: 0 40px;
+    font-size: 20px;
+}
+.address
+{
+    color: #1d55d9;
+}
 
