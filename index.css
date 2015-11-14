@@ -57,6 +57,10 @@ input[type="radio"]
     padding: 20px 20px;
     border-bottom: 1px solid #000;
 }
+.breeds > label:hover
+{
+    background-color: #b3b3b3;
+}
 .breeds > .all
 {
     border-bottom: 0;
