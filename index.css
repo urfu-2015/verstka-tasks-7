@@ -65,6 +65,10 @@ input[type="radio"]
 {
     border-bottom: 0;
 }
+.breeds > .all:hover
+{
+    background-color: #cccccc;
+}
 /*Колонка с фотками*/
 .photos
 {
