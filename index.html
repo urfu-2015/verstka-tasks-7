@@ -4,8 +4,88 @@
         <meta charset="utf-8">
         <title>Бабуленькины котятки</title>
         <link rel="stylesheet" href="index.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic"
+            rel="stylesheet"
+            type="text/css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <input id="europian" type="checkbox" name="breed" value="europian">
+        <input id="british" type="checkbox" name="breed" value="british">
+        <input id="scotish" type="checkbox" name="breed" value="scotish">
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <main>
+            <aside class="left">
+                <label for="british" class="breed">Британская</label>
+                <label for="europian" class="breed">Европейская</label>
+                <label for="scotish" class="breed">Шотландская</label>
+            </aside>
+            <div class="cats">
+                <div data-title="Гоша, 3 года" class="little europian cat">
+                    <img src="http://bit.ly/1OKi0Ko">
+                    <div></div>
+                </div>
+                <div data-title="Вася, 2 года" data-title="Гоша, 3 года" class="big europian cat">
+                    <img src="http://bit.ly/1NwlkTh">
+                    <div></div>
+                </div>
+                <div data-title="Глаша, 4 года" class="little europian cat">
+                    <img src="http://bit.ly/1O8rPyo">
+                    <div></div>
+                </div>
+                <div data-title="Барсик, 4 месяца" class="little british cat">
+                    <img src="http://bit.ly/1kwiKGo">
+                    <div></div>
+                </div>
+                <div data-title="Сильвестр, 3 года" class="little british cat">
+                    <img src="http://bit.ly/1NwloCx">
+                    <div></div>
+                </div>
+                <div data-title="Людовик, 4 года" class="big europian cat 1">
+                    <img src="http://bit.ly/1NwlkTh">
+                    <div></div>
+                </div>
+                <div data-title="Жизель, 3 года" class="little europian cat">
+                    <img src="http://bit.ly/1O8rPyo">
+                    <div></div>
+                </div>
+                <div data-title="Артемий, 5 месяцев" class="large scotish cat">
+                    <img src="http://bit.ly/1QClRbP">
+                    <div></div>
+                </div>
+            </div>
+            <aside class="right">
+                <h3>Рейтинг</h3>
+                <input id="descending" name="descending" type="checkbox">
+                <label for="descending">по убыванию</label><br>
+                <div class="rating">
+                    <div class="britishCat six">
+                        <div>Британская</div>
+                        <div id="breed1" class="ratingGradient"></div>
+                        <div class="numberRating">6</div>
+                    </div>
+                    <div class="europianCat nine">
+                        <div for="breed2">Европейская</div>
+                        <div id="breed2" class="ratingGradient"></div>
+                        <div class="numberRating">9</div>
+                    </div>
+                    <div class="scotishCat four">
+                        <div for="breed3">Шотландская</div>
+                        <div id="breed3" class="ratingGradient"></div>
+                        <div class="numberRating">4</div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <div>
+                &copy; ООО Бабуленькины котятки, 2015
+            </div>
+            <address>
+                Наш адрес: улица Котовая, д.5
+            </address>
+        </footer>
     </body>
 </html>
