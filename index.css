@@ -10,7 +10,6 @@ header
 {
     text-align: center;
     min-height: 80px;
-
 }
 
 main
@@ -53,7 +52,6 @@ main
     align-self: flex-start;
     margin: 3px;
     padding: 0 5px 5px;
-
 }
 
 .left-column div
@@ -80,15 +78,19 @@ main
     width: 100%;
 }
 
-.two-column-one,
-.three-column
+.two-column-one
 {
-    width: 32.3%;
+    width: 32%;
 }
 
 .two-column-two
 {
-    width: 66%;
+    width: 65.6%;
+}
+
+.three-column
+{
+    width: 32.3%;
 }
 
 img
