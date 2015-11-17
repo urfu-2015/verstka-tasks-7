@@ -6,6 +6,91 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <label for="breed-none" class="wrapper">
+            <header>
+                <h1>Бабулькины котята</h1>
+            </header>
+            <input type="radio" name="breed" id="abyssinian" class="radio-breed hidden">
+            <input type="radio" name="breed" id="siamese" class="radio-breed hidden">
+            <input type="radio" name="breed" id="russian-blue" class="radio-breed hidden">
+            <input type="radio" name="breed" id="british" class="radio-breed hidden">
+            <input type="radio" name="breed" id="breed-none" class="radio-breed hidden"checked>
+            <nav>
+                <label for="abyssinian" breed="abyssinian">Абиссинская</label>
+                <label for="british" breed="british">Британская</label>
+                <label for="russian-blue" breed="russian-blue">Русская голубая</label>
+                <label for="siamese" breed="siamese">Сиамская</label>
+            </nav>
+            <article>
+                <section class="image-item small-image" breed="abyssinian">
+                    <img src="image/s2s.jpg" alt="Блумакс, 4 года">
+                    <p>Блумакс, 4 года</p>
+                </section>
+                <section class="image-item middle-image" breed="siamese">
+                    <img src="image/s1m.jpg" alt="Брэдфорд, 1 год">
+                    <p>Брэдфорд, 1 год</p>
+                </section>
+                <section class="image-item big-image" breed="british">
+                    <img src="image/s4b.jpg" alt="Диксон, 2 года">
+                    <p>Диксон, 2 года</p>
+                </section>
+                <section class="image-item small-image" breed="russian-blue">
+                    <img src="image/s5s.jpg" alt="Смоки, 4 года">
+                    <p>Смоки, 4 года</p>
+                </section>
+                <section class="image-item small-image" breed="abyssinian">
+                    <img src="image/s7s.jpg" alt="Элвис, 7 года<">
+                    <p>Элвис, 7 года</p>
+                </section>
+                <section class="image-item small-image" breed="russian-blue">
+                    <img src="image/s2s.jpg" alt="Вася, просто Вася">
+                    <p>Вася, просто Вася</p>
+                </section>
+                <section class="image-item middle-image" breed="siamese">
+                    <img src="image/s6m.jpg" alt="Феликс... железный">
+                    <p>Феликс... железный</p>
+                </section>
+                <section class="image-item small-image" breed="british">
+                    <img src="image/s5s.jpg" alt="Сидни">
+                    <p>Сидни</p>
+                </section>
+            </article>
+            <aside>
+                <h3>РЕЙТИНГ</h3>
+                <input type="checkbox" id="less" class="change-checkbox hidden">
+                <label for="less" class="change-rating">
+                    <p>по убыванию</p>
+                    <div class="fake-checkbox"></div>
+                </label>
+                <div rating="9" class="rating-breed">
+                    <p>Абиссинская</p>
+                    <div class="view-rating"></div>
+                    <p class="count-rating">9</p>
+                </div>
+                <div rating="8" class="rating-breed">
+                    <p>Британская</p>
+                    <div class="view-rating"></div>
+                    <p class="count-rating">8</p>
+                </div>
+                <div rating="10" class="rating-breed">
+                    <p>Русская голубая</p>
+                    <div class="view-rating"></div>
+                    <p class="count-rating">10</p>
+                </div>
+                <div rating="4" class="rating-breed">
+                    <p>Сиамская</p>
+                    <div class="view-rating"></div>
+                    <p class="count-rating">4</p>
+                </div>
+            </aside>
+            <footer>
+                <p>
+                    &copy OOO Бабулькины котятки, 2015
+                </p>
+                <address>
+                    Наш адрес: улица Котовая, д. 5
+                </address>
+            </footer>
+        </label>
     </body>
 </html>
