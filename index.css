@@ -21,12 +21,12 @@ main
     min-height: 100vh;
 }
 
-.typeSwitcher
+.type_switcher
 {
     display: none;
 }
 
-.typeSelectors
+.type_selectors
 {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ main
     background-color: #a9a9a9;
 }
 
-.selectorLabel
+.selector_label
 {
     display: block;
     font-size: 20px;
@@ -44,20 +44,45 @@ main
     text-align: center;
 }
 
-.selectorLabel:hover
+.selector_label:hover
 {
-    background-color: #d9d9d9;
+    background-color: #cacaca;
 }
 
-#allTypes:checked ~ .cats > .cat
+#all_types:checked ~ .type_selectors > #all_types_label
+{
+    background-color: #f9f9f9;
+}
+
+#siamese:checked ~ .type_selectors #siamese_label
+{
+    background-color: #f9f9f9;
+}
+
+#russian_blue:checked ~ .type_selectors #russian_blue_label
+{
+    background-color: #f9f9f9;
+}
+
+#british:checked ~ .type_selectors #british_label
+{
+    background-color: #f9f9f9;
+}
+
+#abyssinian:checked ~ .type_selectors #abyssinian_label
+{
+    background-color: #f9f9f9;
+}
+
+#all_types:checked ~ .cats > .cat
 {
     display: flex;
 }
 
-#allTypes:not(:checked) ~ #abyssinian:not(:checked) ~ .cats > .abyssinian,
-#allTypes:not(:checked) ~ #british:not(:checked) ~ .cats > .british,
-#allTypes:not(:checked) ~ #russian_blue:not(:checked) ~ .cats > .russian_blue,
-#allTypes:not(:checked) ~ #siamese:not(:checked) ~ .cats > .siamese
+#all_types:not(:checked) ~ #abyssinian:not(:checked) ~ .cats > .abyssinian,
+#all_types:not(:checked) ~ #british:not(:checked) ~ .cats > .british,
+#all_types:not(:checked) ~ #russian_blue:not(:checked) ~ .cats > .russian_blue,
+#all_types:not(:checked) ~ #siamese:not(:checked) ~ .cats > .siamese
 {
     opacity: .2;
 }
@@ -92,11 +117,11 @@ main
     display: none;
 }
 
-#allTypes:not(:checked) ~ #abyssinian:checked ~ .cats > .abyssinian:hover .description,
-#allTypes:not(:checked) ~ #british:checked ~ .cats > .british:hover .description,
-#allTypes:not(:checked) ~ #russian_blue:checked ~ .cats > .russian_blue:hover .description,
-#allTypes:not(:checked) ~ #siamese:checked ~ .cats > .siamese:hover .description,
-#allTypes:checked ~ .cats > .cat:hover .description
+#all_types:not(:checked) ~ #abyssinian:checked ~ .cats > .abyssinian:hover .description,
+#all_types:not(:checked) ~ #british:checked ~ .cats > .british:hover .description,
+#all_types:not(:checked) ~ #russian_blue:checked ~ .cats > .russian_blue:hover .description,
+#all_types:not(:checked) ~ #siamese:checked ~ .cats > .siamese:hover .description,
+#all_types:checked ~ .cats > .cat:hover .description
 {
     display: inline-flex;
     margin-top: 20px;
@@ -173,14 +198,14 @@ main
     color: #f00;
 }
 
-#rating-order-label
+#rating_order_label
 {
     display: flex;
     justify-content: center;
     font-size: 18px;
 }
 
-#rating-order-label:hover
+#rating_order_label:hover
 {
     cursor: pointer;
     color: #0004bf;
@@ -191,7 +216,7 @@ main
     display: none;
 }
 
-#rating-order:checked ~ #rating-order-label
+#rating-order:checked ~ #rating_order_label
 {
     color: #c50400;
 }
