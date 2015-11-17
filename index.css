@@ -54,12 +54,12 @@ main
     display: flex;
 }
 
-#abyssinian:checked ~ .cats > .abyssinian,
-#british:checked ~ .cats > .british,
-#russian_blue:checked ~ .cats > .russian_blue,
-#siamese:checked ~ .cats > .siamese
+#allTypes:not(:checked) ~ #abyssinian:not(:checked) ~ .cats > .abyssinian,
+#allTypes:not(:checked) ~ #british:not(:checked) ~ .cats > .british,
+#allTypes:not(:checked) ~ #russian_blue:not(:checked) ~ .cats > .russian_blue,
+#allTypes:not(:checked) ~ #siamese:not(:checked) ~ .cats > .siamese
 {
-    display: flex;
+    opacity: .2;
 }
 
 .cats
@@ -71,7 +71,7 @@ main
 
 .cat
 {
-    display: none;
+    display: flex;
     margin: 10px;
     max-width: 30%;
     max-height: 250px;
@@ -92,7 +92,11 @@ main
     display: none;
 }
 
-.cat:hover .description
+#allTypes:not(:checked) ~ #abyssinian:checked ~ .cats > .abyssinian:hover .description,
+#allTypes:not(:checked) ~ #british:checked ~ .cats > .british:hover .description,
+#allTypes:not(:checked) ~ #russian_blue:checked ~ .cats > .russian_blue:hover .description,
+#allTypes:not(:checked) ~ #siamese:checked ~ .cats > .siamese:hover .description,
+#allTypes:checked ~ .cats > .cat:hover .description
 {
     display: inline-flex;
     margin-top: 20px;
@@ -101,7 +105,7 @@ main
     color: #009700;
     font-size: 18px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, .8);
     padding: 10px;
 }
 
