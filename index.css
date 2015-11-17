@@ -259,7 +259,7 @@ input[value='scotish']:checked ~ main div.cats div:not(.scotish),
 input[value='british']:checked ~ main div.cats div:not(.british),
 input[value='europian']:checked ~ main div.cats div:not(.europian)
 {
-    opacity: .5;
+    opacity: .4;
 }
 
 input[value='scotish']:checked ~ main div.cats div.scotish,
