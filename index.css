@@ -68,7 +68,6 @@ h1
     width: 65%;
 }
 
-
 article
 
 {
@@ -124,7 +123,7 @@ img
     padding: 10px;
 }
 
-input[class^="breed"]
+input[class^='breed']
 {
     display: none;
 }
@@ -162,11 +161,11 @@ navigation
     width: 31%;
 }
 
-input[class="breedAll"]:checked ~ [class^="cat"],
-input[class="breed1"]:checked ~ [class^="cat ab"],
-input[class="breed2"]:checked ~ [class^="cat br"],
-input[class="breed3"]:checked ~ [class^="cat rg"],
-input[class="breed4"]:checked ~ [class^="cat si"]
+input[class='breedAll']:checked ~ [class^='cat'],
+input[class='breed1']:checked ~ [class^='cat ab'],
+input[class='breed2']:checked ~ [class^='cat br'],
+input[class='breed3']:checked ~ [class^='cat rg'],
+input[class='breed4']:checked ~ [class^='cat si']
 {
     opacity: 1;
 }
@@ -206,25 +205,19 @@ span
 
 .rating div div
 {
-    height: 20%;    
+    height: 20%;
     border: 1px solid #000;
 }
 
 .rating4
 {
     width: 30%;
-    background: #ff0000;
-    background: -moz-linear-gradient(left,  #ff0000 0, #fff 100%);
-    background: -webkit-linear-gradient(left,  #ff0000 0, #fff 100%);
-    background: linear-gradient(to right,  #ff0000 0, #fff 100%);
+    background: linear-gradient(to right,  #f00 0, #fff 100%);
 }
 
 .rating7
 {
     width: 50%;
-    background: #faff00;
-    background: -moz-linear-gradient(left,  #faff00 0, #fff 100%);
-    background: -webkit-linear-gradient(left,  #faff00 0, #fff 100%);
     background: linear-gradient(to right,  #faff00 0, #fff 100%);
 }
 
@@ -232,9 +225,6 @@ span
 .rating8
 {
     width: 70%;
-    background: #00990a;
-    background: -moz-linear-gradient(left,  #00990a 0, #fff 100%);
-    background: -webkit-linear-gradient(left,  #00990a 0, #fff 100%);
     background: linear-gradient(to right,  #00990a 0, #fff 100%);
 }
 
@@ -243,17 +233,17 @@ span
     width: 80%;
 }
 
-input.desc-order:checked ~ [class="one-rating 8"]
+input.desc-order:checked ~ [class='one-rating 8']
 {
     order:1;
 }
 
-input.desc-order:checked ~ [class="one-rating 7"]
+input.desc-order:checked ~ [class='one-rating 7']
 {
     order:2;
 }
 
-input.desc-order:checked ~ [class="one-rating 4"]
+input.desc-order:checked ~ [class='one-rating 4']
 {
     order:3;
 }
