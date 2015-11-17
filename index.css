@@ -188,17 +188,17 @@ article
     display: none;
 }
 
-#abyssinian:checked ~ article section:not([breed="abyssinian"]) p,
-#british:checked ~ article section:not([breed="british"]) p,
-#russian-blue:checked ~ article section:not([breed="russian-blue"]) p,
-#siamese:checked ~ article section:not([breed="siamese"]) p
+#abyssinian:checked ~ article section:not([breed='abyssinian']) p,
+#british:checked ~ article section:not([breed='british']) p,
+#russian-blue:checked ~ article section:not([breed='russian-blue']) p,
+#siamese:checked ~ article section:not([breed='siamese']) p
 {
     visibility: hidden;
 }
-#abyssinian:checked ~ nav label[breed="abyssinian"],
-#british:checked ~ nav label[breed="british"],
-#russian-blue:checked ~ nav label[breed="russian-blue"],
-#siamese:checked ~ nav label[breed="siamese"]
+#abyssinian:checked ~ nav label[breed='abyssinian'],
+#british:checked ~ nav label[breed='british'],
+#russian-blue:checked ~ nav label[breed='russian-blue'],
+#siamese:checked ~ nav label[breed='siamese']
 {
     background-color: #333;
     color: #eee;
@@ -207,101 +207,101 @@ article
 {
     background-position: 0 0;
 }
-.rating-breed[rating="10"] .view-rating
+.rating-breed[rating='10'] .view-rating
 {
-    background: linear-gradient(to right, #00ff00, #fff);
+    background: linear-gradient(to right, #0f0, #fff);
     width: calc(100% - 50px);
 }
-.rating-breed[rating="9"] .view-rating
+.rating-breed[rating='9'] .view-rating
 {
-    background: linear-gradient(to right, #00ff00, #fff);
+    background: linear-gradient(to right, #0f0, #fff);
     width: calc(92% - 50px);
 }
-.rating-breed[rating="8"] .view-rating
+.rating-breed[rating='8'] .view-rating
 {
     background: linear-gradient(to right, #ffd700, #fff);
     width: calc(84% - 50px);
 }
-.rating-breed[rating="7"] .view-rating
+.rating-breed[rating='7'] .view-rating
 {
     background: linear-gradient(to right, #ffd700, #fff);
     width: calc(76% - 50px);
 }
-.rating-breed[rating="6"] .view-rating
+.rating-breed[rating='6'] .view-rating
 {
     background: linear-gradient(to right, #ffd700, #fff);
     width: calc(68% - 50px);
 }
-.rating-breed[rating="5"] .view-rating
+.rating-breed[rating='5'] .view-rating
 {
     background: linear-gradient(to right, #ffd700, #fff);
     width: calc(60% - 50px);
 }
-.rating-breed[rating="4"] .view-rating
+.rating-breed[rating='4'] .view-rating
 {
-    background: linear-gradient(to right, #ee0000, #fff);
+    background: linear-gradient(to right, #e00, #fff);
     width: calc(52% - 50px);
 }
-.rating-breed[rating="3"] .view-rating
+.rating-breed[rating='3'] .view-rating
 {
-    background: linear-gradient(to right, #ee0000, #fff);
+    background: linear-gradient(to right, #e00, #fff);
     width: calc(44% - 50px);
 }
-.rating-breed[rating="2"] .view-rating
+.rating-breed[rating='2'] .view-rating
 {
-    background: linear-gradient(to right, #ee0000, #fff);
+    background: linear-gradient(to right, #e00, #fff);
     width: calc(36% - 50px);
 }
-.rating-breed[rating="1"] .view-rating
+.rating-breed[rating='1'] .view-rating
 {
-    background: linear-gradient(to right, #ee0000, #fff);
+    background: linear-gradient(to right, #e00, #fff);
     width: calc(28% - 50px);
 }
 
-#abyssinian:checked ~ article section:not([breed="abyssinian"]),
-#british:checked ~ article section:not([breed="british"]),
-#russian-blue:checked ~ article section:not([breed="russian-blue"]),
-#siamese:checked ~ article section:not([breed="siamese"])
+#abyssinian:checked ~ article section:not([breed='abyssinian']),
+#british:checked ~ article section:not([breed='british']),
+#russian-blue:checked ~ article section:not([breed='russian-blue']),
+#siamese:checked ~ article section:not([breed='siamese'])
 {
     opacity: .5;
 }
-#less:checked ~ div[rating="10"]
+#less:checked ~ div[rating='10']
 {
     order: 10;
 }
-#less:checked ~ div[rating="9"]
+#less:checked ~ div[rating='9']
 {
     order: 11;
 }
-#less:checked ~ div[rating="8"]
+#less:checked ~ div[rating='8']
 {
     order: 12;
 }
-#less:checked ~ div[rating="7"]
+#less:checked ~ div[rating='7']
 {
     order: 13;
 }
-#less:checked ~ div[rating="6"]
+#less:checked ~ div[rating='6']
 {
     order: 14;
 }
-#less:checked ~ div[rating="5"]
+#less:checked ~ div[rating='5']
 {
     order: 15;
 }
-#less:checked ~ div[rating="4"]
+#less:checked ~ div[rating='4']
 {
     order: 16;
 }
-#less:checked ~ div[rating="3"]
+#less:checked ~ div[rating='3']
 {
     order: 17;
 }
-#less:checked ~ div[rating="2"]
+#less:checked ~ div[rating='2']
 {
     order: 18;
 }
-#less:checked ~ div[rating="1"]
+#less:checked ~ div[rating='1']
 {
     order: 19;
 }
