@@ -1,1 +1,180 @@
+body
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
+input[name='kinds']
+{
+    display: none;
+}
+
+#dog:checked ~ section .cat,
+#ufo:checked ~ section .cat,
+#hamster:checked ~ section .cat,
+#cat:checked ~ section .dog,
+#ufo:checked ~ section .dog,
+#hamster:checked ~ section .dog,
+#cat:checked ~ section .ufo,
+#dog:checked ~ section .ufo,
+#hamster:checked ~ section .ufo,
+#cat:checked ~ section .hamster,
+#dog:checked ~ section .hamster,
+#ufo:checked ~ section .hamster
+{
+    opacity: .5;
+}
+
+nav
+{
+    align-self: stretch;
+}
+
+aside
+{
+    padding: auto;
+}
+
+aside,
+nav
+{
+    flex-grow: 1;
+    background-color: #ccc;
+}
+
+ul
+{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li
+{
+    padding: 5%;
+    border-bottom: 1px solid #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+nav ul li:hover
+{
+    background-color: #777;
+    color: #ccc;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+section
+{
+    padding: 5px;
+    justify-content: space-between;
+    flex-basis: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+article
+{
+    position: relative;
+}
+
+.big
+{
+    flex-basis: 100%;
+}
+
+.normal
+{
+    flex-basis: 66%;
+}
+
+.small
+{
+    flex-basis: 33%;
+}
+
+img
+{
+    width: 100%;
+}
+
+.rating
+{
+    width: 90%;
+    height: 20px;
+    background-color: #6789ab;
+    text-align: center;
+    color: #fff;
+}
+
+.description
+{
+    display: none;
+}
+
+img:hover + .description
+{
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: .5;
+    color: #fff;
+    bottom: 5px;
+    z-index: 1;
+}
+
+div.perfect
+{
+    background: linear-gradient(to top, #078600, #0acf00);
+}
+
+div.good
+{
+    background: linear-gradient(to top, #fffd00, #a6a500);
+}
+
+div.bad
+{
+    background: linear-gradient(to top, #ff9f00, #a66800);
+}
+
+div.worst
+{
+    background: linear-gradient(to top, #ff0d00, #a60800);
+}
+
+#by_rating:checked ~ ul li.perfect
+{
+    order: 1;
+}
+
+#by_rating:checked ~ ul li.good
+{
+    order: 2;
+}
+
+#by_rating:checked ~ ul li.bad
+{
+    order: 3;
+}
+
+#by_rating:checked ~ ul li.worst
+{
+    order: 4;
+}
+
+header,
+footer
+{
+    text-align: center;
+    width: 100%;
+}

@@ -5,7 +5,95 @@
         <title>Бабуленькины котятки</title>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
-        <!-- Здесь применять гибкую магию -->
-    </body>
-</html>
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <main>
+            <input id="dog" type="radio" name="kinds">
+            <input id="ufo" type="radio" name="kinds">
+            <input id="cat" type="radio" name="kinds">
+            <input id="hamster" type="radio" name="kinds">
+            <nav>
+                <ul>
+                    <li class="dog"><label for="dog">Замаскированные собаки</label></li>
+                    <li class="ufo"><label for="ufo">Инопланетяне</label></li>
+                    <li class="cat"><label for="cat">Коты</label></li>
+                    <li class="hamster"><label for="hamster">Объевшиеся хомяки</label></li>
+                </ul>
+            </nav>
+            <section>
+                <article class="small cat">
+                    <img src="Images/cat1.jpg">
+                    <div class="description">
+                        Антоха, 30 лет
+                    </div>
+                </article>
+                <article class="normal ufo">
+                    <img src="Images/cat2.jpg">
+                    <div class="description">
+                        Димитрис, 4 года
+                    </div>
+                </article>
+                <article class="small cat">
+                    <img src="Images/cat3.jpg">
+                    <div class="description">
+                        Гильберт, 390 лет
+                    </div>
+                </article>
+                <article class="small hamster">
+                    <img src="Images/cat4.jpg">
+                    <div class="description">
+                        Тор, 5903 асгардских года
+                    </div>
+                </article>
+                <article class="small dog">
+                    <img src="Images/cat5.jpg">
+                    <div class="description">
+                        Макс, 6 лет
+                    </div>
+                </article>
+                <article class="normal dog">
+                    <img src="Images/cat6.jpg">
+                    <div class="description">
+                        Детонатор, 3 года условно
+                    </div>
+                </article>
+                <article class="small hamster">
+                    <img src="Images/cat7.jpg">
+                    <div class="description">
+                        Сбербанк, с 1841 года
+                    </div>
+                </article>
+                <article class="big ufo">
+                    <img src="Images/cat8.jpg">
+                    <div class="description">
+                        Доктор, 13-я версия
+                    </div>
+                </article>
+            </section>
+            <aside>
+                <input type="checkbox" name="order_by" id="by_rating">
+                <label for="by_rating">По убыванию</label>
+                <ul>
+                    <li class="bad">
+                        Замаскированные собаки
+                        <div class="rating bad">2</div>
+                    </li>
+                    <li class="perfect">
+                        Инопланетяне
+                        <div class="rating perfect">10</div>
+                    </li>
+                    <li class="worst">
+                        Коты
+                        <div class="rating worst">0</div>
+                    </li>
+                    <li class="good">
+                        Объевшиеся хомяки
+                        <div class="rating good">7</div>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            &copy; Vladimir Smirnov, 2015. All right reserved.
+        </
