@@ -6,6 +6,155 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <input type="radio" id="breedAll" name="breed" checked>
+        <input type="radio" id="breed-abyssinian" name="breed">
+        <input type="radio" id="breed-british" name="breed">
+        <input type="radio" id="breed-russian-blue" name="breed">
+        <input type="radio" id="breed-siamese" name="breed">
+        
+        <main>
+            <label class="breed-menu" for="breedAll">
+                <label class="breed-button" for="breed-abyssinian">
+                    Абиссинская    
+                </label>
+                <label class="breed-button" for="breed-british">
+                    Британская    
+                </label>
+                <label class="breed-button" for="breed-russian-blue">
+                    Русская голубая    
+                </label>
+                <label class="breed-button" for="breed-siamese">
+                    Cиамская    
+                </label>
+            </label>
+            <article class="container">
+                <section data-breed="abyssinian">
+                    <div>
+                        <img src="images/1.jpg" alt="Люся, 4 года">
+                    </div>
+                    <span>Люся, 4 года</span>
+                </section>
+                <section data-breed="siamese">
+                    <div>
+                        <img src="images/2.jpg" alt="Марк, 2 года">
+                    </div>
+                    <span>Марк, 2 года</span>
+                </section>
+                <section data-breed="british">
+                    <div>
+                        <img src="images/3.jpeg" alt="Атлант, 3 года">
+                    </div>
+                    <span>Атлант, 3 года</span>
+                </section>
+                <section data-breed="russian-blue">
+                    <div>
+                        <img src="images/4.jpeg" alt="Ася, 4 года">
+                    </div>
+                    <span>Ася, 4 года</span>
+                </section>
+                <section data-breed="abyssinian">
+                    <div>
+                        <img src="images/5.jpg" alt="Азраэль, 1 год">
+                    </div>
+                    <span>Азраэль, 1 год</span>
+                </section>
+                <section data-breed="russian-blue">
+                    <div>
+                        <img src="images/6.jpg" alt="Аид, 1 год">
+                    </div>
+                    <span>Аид, 1 год</span>
+                </section>
+                <section data-breed="siamese">
+                    <div>
+                        <img src="images/7.jpg" alt="Амиго, 3 года">
+                    </div>
+                    <span>Амиго, 3 года</span>
+                </section>
+                <section data-breed="abyssinian">
+                    <div>
+                        <img src="images/8.jpg" alt="Аю, 1 год">
+                    </div>
+                    <span>Аю, 1 год</span>
+                </section>
+                <section data-breed="british">
+                    <div>
+                        <img src="images/9.jpg" alt="Афоня, 3 года">
+                    </div>
+                    <span>Афоня, 3 года</span>
+                </section>
+                <section data-breed="siamese">
+                    <div>
+                        <img src="images/10.jpg" alt="Ася, 2 года">
+                    </div>
+                    <span>Ася, 2 года</span>
+                </section>
+                <section data-breed="british">
+                    <div>
+                        <img src="images/11.jpg" alt="Абсент, 4 года">
+                    </div>
+                    <span>Абсент, 4 года</span>
+                </section>
+                <section data-breed="russian-blue">
+                    <div>
+                        <img src="images/12.jpg" alt="Алис, 2 года">
+                    </div>
+                    <span>Алис, 2 года</span>
+                </section>
+                <section data-breed="abyssinian">
+                    <div>
+                        <img src="images/13.jpg" alt="Апельсин, 1 год">
+                    </div>
+                    <span>Апельсин, 1 год</span>
+                </section>
+                <section data-breed="siamese">
+                    <div>
+                        <img src="images/14.jpg" alt="Абрикосик, 2 года">
+                    </div>
+                    <span>Абрикосик, 2 года</span>
+                </section>
+                <section data-breed="russian-blue">
+                    <div>
+                        <img src="images/15.jpg" alt="Арсений, 2 года">
+                    </div>
+                    <span>Арсений, 2 года</span>
+                </section>
+                <section data-breed="british">
+                    <div>
+                        <img src="images/16.jpg" alt="Алмаз, 3 года">
+                    </div>
+                    <span>Алмаз, 3 года</span>
+                </section>
+            </article>
+            <aside>
+                <h2>Рейтинг</h2>
+                <input type="checkbox" id="sorted" name="sorted">
+                <div class="sorted">
+                    <label class="rating-lable" for="sorted">по убыванию<span></span></label>
+                </div>
+                <div class="raitings">
+                    <div data-rating="10">
+                        <span>Абиссинская</span>
+                        <div class="rating10">10</div>
+                    </div>
+                    <div data-rating="7">
+                        <span>Британская</span>
+                        <div class="rating7">7</div>
+                    </div>
+                    <div data-rating="4">
+                        <span>Русская голубая</span>
+                        <div class="rating4">4</div>
+                    </div>
+                    <div data-rating="8">
+                        <span>Сиамская</span>
+                        <div class="rating8">8</div>
+                    </div>
+                </div>
+            </aside>
+        
+            <footer>
+                <span>&copy; ООО Бабуленькины котятки, 2015</span>
+                <address>Наш адрес: улица Котовая, д. 5</address>
+            </footer>
+        </main>
     </body>
 </html>
