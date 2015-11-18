@@ -1,1 +1,207 @@
+/** {border: 1px solid black;}*/
+main
+{
+    display: flex;
+    justify-content: space-between;
+}
+header
+{
+    height: 40px;
+    width: 100%;
+    background-color: antiquewhite;
+    /*position: fixed;*/
+    left: 0;
+    top:0;
+}
+
+footer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px ridge #fff;
+    align-items: center;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 50px;
+}
+
+.right
+{
+    /*background-color: blue;*/
+}
+
+.left{
+}
+
+section article img
+{
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 200%;
+    object-fit: cover;
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+section article
+{
+    height: 400px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    display: flex;
+    margin: 1.5%;
+
+}
+
+section article:nth-child(8n+1),
+section article:nth-child(8n+3),
+section article:nth-child(8n+4),
+section article:nth-child(8n+5),
+section article:nth-child(8n+7)
+{
+    width: 30%;
+}
+
+section article:nth-child(8n+2),
+section article:nth-child(8n+6)
+{
+    width: 63.5%;
+}
+
+section article:nth-child(8n)
+{
+    width: 100%;
+}
+
+
+.breed, .sort
+{
+    display: none;
+}
+
+.breed#siam-breed:checked ~ section article:not(.siam),
+.breed#abys-breed:checked ~ section article:not(.abys),
+.breed#brit-breed:checked ~ section article:not(.brit),
+.breed#russ-breed:checked ~ section article:not(.russ)
+{
+    opacity: .3;
+}
+
+.name
+{
+    display: none;
+}
+/*.name*/
+/*{*/
+    /*display: none;*/
+    /*position: relative;*/
+    /*left: 0;*/
+    /*padding: 10px;*/
+    /*width: 200px;*/
+/*}*/
+
+/*section article:hover > .name*/
+/*{*/
+
+/*}*/
+
+.menubox.left
+{
+    display: flex;
+    flex-flow: column;
+    width: 20%;
+}
+
+.menubox.left .block
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.firstline
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*.menubox.left */
+/*{*/
+    /*display: flex;*/
+
+    /*background-color: aquamarine;*/
+    /*margin-top: 5px;*/
+
+/*}*/
+
+.rating
+{
+    height: 15px;
+    border: 1px solid #3c3f41;
+}
+
+
+.abys .rating
+{
+    background: linear-gradient(to right, green 0%, white 100%);
+    width: 90%;
+}
+
+.russ .rating
+{
+    background: linear-gradient(to right, green 0%, white 100%);
+    width: 100%;
+}
+
+.brit .rating
+{
+    background: linear-gradient(to right, orange 0%, white 100%);
+    width: 80%;
+}
+
+.siam .rating
+{
+    background: linear-gradient(to right, red 0%, white 100%);
+    width: 40%;
+
+}
+
+.sort:checked ~ .russ
+{
+    display: flex;
+    order: 1;
+}
+.sort:checked ~ .abys
+{
+    display: flex;
+    order: 2;
+}
+.sort:checked ~ .brit
+{
+    display: flex;
+    order: 3;
+}
+
+.sort:checked ~ .siam
+{
+    display: flex;
+    order: 4;
+}
+
 
