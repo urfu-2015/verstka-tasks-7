@@ -28,6 +28,10 @@ html
 {
     float: right;
 }
+body
+{
+    background-color: rgba(128, 128, 128, 0.15);
+}
 .title
 {
     text-align: center;
@@ -44,7 +48,7 @@ html
 .menu
 {
     flex-basis: 15%;
-    background: rgba(125, 120, 120, 0.20);
+    background: rgba(125, 120, 120, .20);
     font-size: 25px;
 }
 .wrapper
@@ -58,7 +62,7 @@ html
 .menu
 .type:hover
 {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, .45);
     color: #fff;
 }
 hr
@@ -74,7 +78,7 @@ hr
 #orange:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-3,
 #orange:checked ~ .photo-cards > .wrapper-photo-cards > .line-three-card-2
 {
-    opacity: 0.5;
+    opacity: .5;
 }
 .wrapper
 #grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-one-card-1,
@@ -83,14 +87,14 @@ hr
 #grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-3,
 #grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-three-card-1
 {
-    opacity: 0.5;
+    opacity: .5;
 }
 .wrapper
 #strange:checked ~ .photo-cards > .wrapper-photo-cards > .line-one-card-2,
 #strange:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-2,
 #strange:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-3
 {
-    opacity: 0.5;
+    opacity: .5;
 }
 .wrapper
 .photo-cards
@@ -117,7 +121,7 @@ hr
     width: 130px;
     margin: 0;
     padding: 5px 10px;
-    background: rgba(112, 112, 112, 0.70);
+    background: rgba(112, 112, 112, .70);
     color: #fff;
 }
 .wrapper-photo-cards
@@ -260,7 +264,7 @@ hr
 {
     flex-basis: 20%;
     align-self: flex-start;
-    background: rgba(125, 120, 120, 0.20);
+    background: rgba(125, 120, 120, .20);
 }
 .wrapper
 .rating
