@@ -4,8 +4,101 @@
         <meta charset="utf-8">
         <title>Бабуленькины котятки</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <header>
+            Бабуленькины котятки
+        </header>
+        <input class="hidden" type="checkbox" id="ranking">
+        <input class="hidden" type="checkbox" name="cats" id="abis">
+        <input class="hidden" type="checkbox" name="cats" id="brit">
+        <input class="hidden" type="checkbox" name="cats" id="rus">
+        <input class="hidden" type="checkbox" name="cats" id="siam">
+        <div class="wrapper">
+            <div class="left">
+                <label for="abis" class="catLabel">Абиссинская</label>
+                <label for="brit" class="catLabel">Британская</label>
+                <label for="rus" class="catLabel">Русская</label>
+                <label for="siam" class="catLabel">Сиамская</label>
+            </div>
+            <main>
+                <figure class="cat abis brit rus siam">
+                    <img src="https://clck.ru/9cCFD" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+                <figure class="cat abis">
+                    <img src="https://clck.ru/9cCHd" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+                <figure class="cat rus">
+                    <img src="https://clck.ru/9cBUz" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+                <figure class="cat siam">
+                    <img src="https://clck.ru/9cCKu" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+                <figure class="cat brit">
+                    <img src="https://clck.ru/9cBUn" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+                <figure class="cat abis">
+                    <img src="https://clck.ru/9cBUA" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+                <figure class="cat brit">
+                    <img src="https://clck.ru/9cBUn" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+                <figure class="cat abis">
+                    <img src="https://clck.ru/9cBV3" alt="">
+                    <figcaption>Гоша, 4 года</figcaption>
+                </figure>
+            </main>
+            <div class="right">
+                <span class="rankStr">
+                    Рейтинг
+                </span>
+                <label for="ranking">по убыванию <span class="fa fa-square-o"></span></label>
+                <div class="rankAbis">
+                    <span>Абиссинская</span>
+                    <div class="sum">
+                        <div class="barAbis bar"></div>
+                        <span class="num">9</span>
+                    </div>
+                </div>
+                <div class="rankBrit">
+                    <span>Британская</span> 
+                    <div class="sum">
+                        <div class="barBrit bar"></div>
+                        <span class="num">10</span>
+                    </div>       
+                </div>
+                <div class="rankRus">
+                    <span>Русская голубая</span>
+                    <div class="sum">
+                        <div class="barRus bar"></div>
+                        <span class="num">8</span>
+                    </div>  
+                </div>
+                <div class="rankSiam">
+                    <span>Сиамская</span>
+                    <div class="sum">
+                        <div class="barSiam bar"></div>
+                        <span class="num">4</span>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="copyleft">
+                <span class="fa fa-copyright"></span> OOO Бабуленькины котятки, 2015
+            </div>
+            <div class="adress">
+                Наш адрес: улица Котовая д.5
+            </div>
+        </footer>
     </body>
 </html>
