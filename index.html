@@ -6,6 +6,119 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+    <header>
+        <h1>Бабуленькины котятки</h1>
+    </header>
+    <main>
+        <input class="select-cat" type="checkbox" name="cats" id="cat-1">
+        <input class="select-cat" type="checkbox" name="cats" id="cat-2">
+        <input class="select-cat" type="checkbox" name="cats" id="cat-3">
+        <input class="select-cat" type="checkbox" name="cats" id="cat-4">
+        <div class="left-column">
+            <label class="button" for="cat-1">Абиссинская</label>
+            <label class="button" for="cat-2">Британская</label>
+            <label class="button" for="cat-3">Русская голубая</label>
+            <label class="button" for="cat-4">Сиамская</label>
+        </div>
+        <div class="middle-column">
+            <div class="container">
+                <div class="photo size-2-1 cat-1">
+                    <img src="http://www.zooclub.ru/attach/15000/15026.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Боря, 7 лет
+                    </div>
+                </div>
+                <div class="photo size-2-2 cat-2">
+                    <img src="http://www.zooclub.ru/attach/126.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Вася, 5 лет
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="photo size-3-1 cat-1">
+                    <img src="http://www.zooclub.ru/attach/980.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Эдуард, 1 год
+                    </div>
+                </div>
+                <div class="photo size-3-1 cat-3">
+                    <img src="http://www.zooclub.ru/attach/15000/15828.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Альберт, 9 лет
+                    </div>
+                </div>
+                <div class="photo size-3-1 cat-3">
+                    <img src="http://www.zooclub.ru/attach/15000/15829.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Вова, 7 лет
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="photo size-2-2 cat-4">
+                    <img src="http://www.zooclub.ru/attach/5912.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Вася, 5 лет
+                    </div>
+                </div>
+                <div class="photo size-2-1 cat-4">
+                    <img src="http://zooclub.ru/attach/15000/15957.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Пушок, 3 года
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="photo size-1-1 cat-1">
+                    <img src="http://www.zooclub.ru/attach/2128.jpg" alt="Картинка с котом">
+                    <div class="description">
+                        Снежок, 4 года
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>рейтинг</h2>
+            <label for="cat-rating">по убыванию</label>
+            <input type="checkbox" name="cat-rating" id="cat-rating">
+            <div class="rating rating-9">
+                <div class="cat-type">Абиссинская</div>
+                <div class="rating-line">
+                    <div class="line"></div>
+                    <span class="value">9</span>
+                </div>
+            </div>
+            <div class="rating rating-8">
+                <div class="cat-type">Британская</div>
+                <div class="rating-line">
+                    <div class="line"></div>
+                    <span class="value">8</span>
+                </div>
+            </div>
+            <div class="rating rating-10">
+                <div class="cat-type">Русская голубая</div>
+                <div class="rating-line">
+                    <div class="line"></div>
+                    <span class="value">10</span>
+                </div>
+            </div>
+            <div class="rating rating-4">
+                <div class="cat-type">Сиамская</div>
+                <div class="rating-line">
+                    <div class="line"></div>
+                    <span class="value">4</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="organization">
+            &copy;ООО Бабуленькины котятки, 2015
+        </div>
+        <div class="address">
+            Наш адрес:&nbsp;<address>улица Котовая, д.5</address>
+        </div>
+    </footer>
     </body>
 </html>
