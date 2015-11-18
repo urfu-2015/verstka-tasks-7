@@ -1,4 +1,6 @@
-html, body {
+html,
+body
+{
     margin: 0;
     padding: 0;
 }
@@ -231,12 +233,15 @@ footer
     border-top: 1px solid #000;
 }
 
-footer p
+footer p,
+footer span
 {
     padding: 10px;
+    margin-top: 15px;
 }
 
-footer p:last-child
+footer span
 {
     color: #166571;
+    display: flex;
 }
