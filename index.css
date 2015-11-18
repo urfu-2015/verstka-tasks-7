@@ -1,1 +1,183 @@
-
+body{
+	width: 1300px;
+	margin: 0 auto;
+	background: #ddd;
+	font-size: 20px;
+}
+.hidden{
+	display: none;
+}
+header{
+	width: 100%;
+	font-size: 40px;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+}
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.left,
+.right{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 190px;
+	background: #ccc;
+	align-self: stretch;
+}
+.catLabel{
+	padding: 20px;
+	border-bottom: solid 1px #fff;
+}
+.right{
+	align-self: flex-start;
+	padding: 10px;
+}
+.rankStr{
+	color: #f00;
+	order: 1;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.right > label{
+	order: 2;
+	align-self: flex-end;
+	padding: 10px;
+}
+.rankAbis{
+	order: 6;
+}
+.rankBrit{
+	order: 4;
+}
+.rankRus{
+	order: 5;
+}
+.rankSiam{
+	order: 3;
+}
+.sum{
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+.bar{
+	order: -1;
+	height: 20px;
+}
+.barAbis{
+	width: 135px;
+	background: linear-gradient(to right, #0f0, #fff);
+}
+.barBrit{
+	width: 150px;
+	background: linear-gradient(to right, #0f0, #fff);
+}
+.barRus{
+	width: 120px;
+	background: linear-gradient(to right, #ff0, #fff);
+}
+.barSiam{
+	width: 60px;
+	background: linear-gradient(to right, #f00, #fff);
+}
+input[id="ranking"]:checked ~ .wrapper > .right > .rankAbis{
+	order: 4;
+}
+input[id="ranking"]:checked ~ .wrapper > .right > .rankBrit{
+	order: 3;
+}
+input[id="ranking"]:checked ~ .wrapper > .right > .rankRus{
+	order: 5;
+}
+input[id="ranking"]:checked ~ .wrapper > .right > .rankSiam{
+	order: 6;
+}
+input[id="ranking"]:checked ~ .wrapper > .right > label > .fa-square-o:before{
+	content:"\f046" !important;
+}
+input[id="abis"]:checked ~ .wrapper > main > :not(.abis){
+	opacity: .5;
+}
+input[id="rus"]:checked ~ .wrapper > main > :not(.rus){
+	opacity: .5;
+}
+input[id="siam"]:checked ~ .wrapper > main > :not(.siam){
+	opacity: .5;
+}
+input[id="brit"]:checked ~ .wrapper > main > :not(.brit){
+	opacity: .5;
+}
+input[id="brit"]:checked ~ .wrapper > .left > label[for="brit"]:after{
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f00c";
+}
+input[id="rus"]:checked ~ .wrapper > .left > label[for="rus"]:after{
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f00c";
+}
+input[id="abis"]:checked ~ .wrapper > .left > label[for="abis"]:after{
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f00c";
+}
+input[id="siam"]:checked ~ .wrapper > .left > label[for="siam"]:after{
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f00c";
+}
+main{
+	width: 900px;
+	margin: -15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+.cat{
+	padding: 0;
+	margin: 15px 0;
+	margin-bottom: 15px;
+	height: 250px;
+	text-align: center;
+	background: white;
+	overflow: hidden;
+}
+.cat:nth-child(8n+1),
+.cat:nth-child(8n+7),
+.cat:nth-child(8n+3),
+.cat:nth-child(8n+4),
+.cat:nth-child(8n+5){
+	flex-basis: 290px;
+}
+.cat:nth-child(8n+2),
+.cat:nth-child(8n+6){
+	flex-basis: 595px;
+}
+.cat:nth-child(8n){
+	flex-basis: 999px;
+}
+.cat > img{
+	padding: 0 auto;
+	height: 100%;
+}
+.cat:hover figcaption{
+	display: line;
+	position: absolute;
+	margin-top: -80px;
+	padding: 10px;
+	font-size: 20px;
+	background: rgba(50,50,50,.5);
+	color: #fff;
+}
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding: 30px;
+	margin-top: 20px;
+	border-top: solid 1px #000;
+}
+.adress{
+	color: #00f;
+}
