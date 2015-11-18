@@ -83,10 +83,7 @@ main
     opacity: .3;
 }
 
-#cat-1:not(:checked) + 
-#cat-2:not(:checked) +
-#cat-3:not(:checked) +
-#cat-4:not(:checked) ~ .middle-column > .container > .photo,
+#cat-1:not(:checked) + #cat-2:not(:checked) + #cat-3:not(:checked) + #cat-4:not(:checked) ~ .middle-column > .container > .photo,
 #cat-1:checked ~ .middle-column > .container > .cat-1,
 #cat-2:checked ~ .middle-column > .container > .cat-2,
 #cat-3:checked ~ .middle-column > .container > .cat-3,
