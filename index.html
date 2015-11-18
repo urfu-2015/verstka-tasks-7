@@ -5,7 +5,88 @@
         <title>Бабуленькины котятки</title>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body class="wrapper">
         <!-- Здесь применять гибкую магию -->
+        <header>
+            <h1>Бабуленькины котятки и прочее</h1>
+        </header>
+        <main>
+            <div class="navigate">
+                <!-- <input type="radio" name="species" class="all invisible" checked> -->
+                <input type="radio" name="species" class="abyss invisible" id="abyss">
+                <input type="radio" name="species" class="british invisible" id="british">
+                <input type="radio" name="species" class="russian invisible" id="russian">
+                <input type="radio" name="species" class="siamese invisible" id="siamese">
+                <input type="radio" name="species" class="wild invisible" id="wild">
+<!--                 <div>
+                    <label for="all">Все кошки</label>
+                </div> -->
+                <div>
+                    <label for="abyss" class="abyss">Абиссинская</label>
+                </div>
+                <div>
+                    <label for="british" class="british">Британская</label>
+                </div>
+                <div>
+                     <label for="russian" class="russian">Русская голубая</label>
+                </div>
+                <div>
+                    <label for="siamese" class="siamese">Сиамская</label>
+                </div>
+                <div>
+                    <label for="wild" class="wild">Дворовая</label>
+                </div>
+            </div>            
+            <section>
+                <div class="row1">
+                    <div data-title="Первый ряд, первая колонка" class="catImage firstCol siamese" id="catId1">
+                        <img src="img/cat1.jpg">
+                    </div>
+                    <div data-title="Первый ряд, вторая колонка" class="catImage secondCol abyss" id="catId2">
+                        <img src="img/cat2.jpg">
+                    </div>
+                </div>
+                <div class="row2">
+                    <div data-title="Второй ряд, первая колонка" class="catImage firstCol british" id="catId3">
+                        <img src="img/cat3.jpg">
+                    </div>
+                    <div data-title="Второй ряд, вторая колонка" class="catImage secondCol russian" id="catId4">
+                        <img src="img/cat4.jpg">
+                    </div>
+                    <div data-title="Второй ряд, третья колонка" class="catImage thirdCol siamese" id="catId5">
+                        <img src="img/cat5.jpg">
+                    </div>
+                </div>
+                <div class="row3">
+                    <div data-title="Третий ряд, первая колонка" class="catImage firstCol" id="catId6">
+                        <img src="img/cat6.jpg">
+                    </div>
+                    <div data-title="Третий ряд, вторая колонка" class="catImage secondCol breitish" id="catId7">
+                        <img src="img/cat7.jpg">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row4">
+                    <div data-title="Четвертый ряд, первая колонка" class="catImage firstCol abyss" id="catId8">
+                        <img src="img/cat8.jpg">
+                    </div>
+                </div>
+                <div class="row1">
+                    <div data-title="Первый ряд, первая колонка" class="catImage firstCol russian" id="catId9">
+                        <img src="img/cat9.jpg">
+                    </div>
+                    <div data-title="Первый ряд, вторая колонка" class="catImage secondCol wild" id="catId10">
+                        <img src="img/cat10.jpg">
+                    </div>
+                </div>
+            </section>
+            <div class="rating">
+                <img src="img/rating.jpg">
+            </div>
+        </main>
+        <footer>
+            <p class="copyRight">&copy; ООО Бабуленькины котятки, 2015</p>
+            <p class="addr">Наш адрес: Улица Котовая, д.5</p>
+        </footer>
     </body>
 </html>
