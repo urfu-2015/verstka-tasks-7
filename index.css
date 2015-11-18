@@ -233,15 +233,12 @@ footer
     border-top: 1px solid #000;
 }
 
-footer p,
-footer span
+footer p
 {
     padding: 10px;
-    margin-top: 15px;
 }
 
-footer span
+footer p:last-child
 {
     color: #166571;
-    display: flex;
 }
