@@ -7,5 +7,94 @@
     </head>
     <body>
         <!-- Здесь применять гибкую магию -->
+        <input type="radio" name="menu" id="abis">
+        <input type="radio" name="menu" id="brit">
+        <input type="radio" name="menu" id="russ">
+        <input type="radio" name="menu" id="siam">
+        <div class="grid">
+            <header>
+                <h1 class="site-header">Бабуленькины котятки</h1>
+            </header>
+
+            <div class="menu">
+                <ul>
+                    <li><label for="abis">Абиссинская</label></li>
+                    <li><label for="brit">Британская</label></li>
+                    <li><label for="russ">Русская голубая</label></li>
+                    <li><label for="siam">Сиамская</label></li>
+                </ul>
+            </div>
+
+            <div class="first-block photo abis">
+                <p class="description">Кот1</p>
+            </div>
+            <div class="second-block photo brit">
+                <p class="description">Кот2</p>
+            </div>
+
+            <div class="third-block photo brit">
+                <p class="description">Кот3</p>
+            </div>
+            <div class="fourth-block photo abis">
+                <p class="description">Кот4</p>
+            </div>
+            <div class="fifth-block photo siam">
+                <p class="description">Кот5</p>
+            </div>
+
+            <div class="sixth-block photo russ">
+                <p class="description">Кот6</p>
+            </div>
+            <div class="seventh-block photo siam">
+                <p class="description">Кот7</p>
+            </div>
+
+            <div class="eighth-block photo russ">
+                <p class="description">Кот8</p>
+            </div>
+
+            <div class="rating">
+                <h3 class="rating-header">Рейтинг</h3>
+
+                <input type="checkbox" name="sort" id="sort">
+                <label for="sort">По убыванию</label>
+
+                <div class="abisRating">
+                    <p>Абиссинская</p>
+                    <div class="high-rating rating-line"></div>
+                    <span class="right-align">9</span>
+                </div>
+                <div class="britRating">
+                    <p class="name">Британская</p>
+                    <div class="medium-rating rating-line"></div>
+                    <span class="right-align">8</span>
+                </div>
+                <div class="russRating">
+                    <p>Русская голубая</p>
+                    <div class="high-rating rating-line"></div>
+                    <span class="right-align">10</span>
+                </div>
+                <div class="abisRating hidden">
+                    <p>Абиссинская</p>
+                    <div class="high-rating rating-line"></div>
+                    <span class="right-align">9</span>
+                </div>
+                <div class="britRating hidden">
+                    <p class="name">Британская</p>
+                    <div class="medium-rating rating-line"></div>
+                    <span class="right-align">8</span>
+                </div>
+                <div class="siamRating">
+                    <p>Сиамская</p>
+                    <div class="low-rating rating-line"></div>
+                    <span class="right-align">4</span>
+                </div>
+            </div>
+
+            <div class="footer">
+                <span class="left-align">&copy; OOO Бабуленькины котятки, 2015</span>
+                <span class="right-align">Наш адрес: улица Котовая, д.5</span>
+            </div>
+        </div>
     </body>
 </html>
