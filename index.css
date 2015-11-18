@@ -12,7 +12,7 @@ body
     position: relative;
 }
 
-header
+body > header
 {
     font-size: 2em;
     font-weight: bold;
@@ -183,4 +183,119 @@ input[name=siam]:checked ~ .left-menu #siam-option
 #siam-select:checked ~ .main-content .siam
 {
     opacity: .4;
+}
+
+.right-menu header
+{
+    text-align: left;
+    color: red;
+    font-size: 1.4em;
+}
+
+.score-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc-sign
+{
+    text-align: right;
+}
+
+.name
+{
+    font-size: 1.4em;
+    flex-basis: 97%;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.progress
+{
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar
+{
+    height: 99%;
+    box-sizing: border-box;
+}
+
+#abyssinian-progressbar
+{
+    background: linear-gradient(to right, green, white);
+    border: 1px solid green;
+    width: 88%;
+}
+
+#british-progressbar
+{
+    background: linear-gradient(to right, yellow, white);
+    border: 1px solid yellow;
+    width: 60%;
+}
+
+#russianblue-progressbar
+{
+    background: linear-gradient(to right, green, white);
+    border: 1px solid green;
+    width: 93%;
+}
+
+#siam-progressbar
+{
+    background: linear-gradient(to right, red, white);
+    border: 1px solid red;
+    width: 34%;
+}
+
+.number
+{
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.desc-sign,
+.progress
+{
+    flex-basis: 63%;
+}
+
+#desc-checkbox,
+.number
+{
+    flex-basis: 33%;
+}
+
+#desc-checkbox:checked ~ #russianblue-name,
+#desc-checkbox:checked ~ #russianblue-progress,
+#desc-checkbox:checked ~ #russianblue-number
+{
+    order: 1;
+}
+
+#desc-checkbox:checked ~ #abyssinian-name,
+#desc-checkbox:checked ~ #abyssinian-progress,
+#desc-checkbox:checked ~ #abyssinian-number
+{
+    order: 2;
+}
+
+#desc-checkbox:checked ~ #british-name,
+#desc-checkbox:checked ~ #british-progress,
+#desc-checkbox:checked ~ #british-number
+{
+    order: 3;
+}
+
+#desc-checkbox:checked ~ #siam-name,
+#desc-checkbox:checked ~ #siam-progress,
+#desc-checkbox:checked ~ #siam-number
+{
+    order: 4;
 }
