@@ -1,1 +1,332 @@
+html
+{
+    margin: 0;
+}
 
+body
+{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    padding-bottom: 20px;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+}
+
+.catBreed
+{
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+    font-size: 20px;
+}
+
+.catBreed:hover
+{
+    background-color: #bbb;
+}
+
+#breed1:checked ~ main nav .breed1,
+#breed2:checked ~ main nav .breed2,
+#breed3:checked ~ main nav .breed3,
+#breed4:checked ~ main nav .breed4,
+#breed5:checked ~ main nav .breed5
+{
+    background: #555;
+    color: #fff;
+}
+
+.imagesContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 960px;
+    max-width: 960px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.catImage
+{
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: .5;
+    pointer-events: none;
+}
+
+#breed1:not(:checked) + #breed2:not(:checked) + #breed3:not(:checked)
+    + #breed4:not(:checked) + #breed5:not(:checked) ~ main .imagesContainer .catImage,
+#breed1:checked ~ main .imagesContainer .breed1,
+#breed2:checked ~ main .imagesContainer .breed2,
+#breed3:checked ~ main .imagesContainer .breed3,
+#breed4:checked ~ main .imagesContainer .breed4,
+#breed5:checked ~ main .imagesContainer .breed5
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.catImage img
+{
+    height: 400px;
+    min-width: 100%;
+}
+
+.catInfo
+{
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    max-width: 80%;
+    padding: 10px;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+}
+
+.catImage:hover .catInfo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesContainer .catImage:nth-child(8n+1),
+.imagesContainer .catImage:nth-child(8n+3)
+{
+    flex-basis: 30.66%;
+}
+
+.imagesContainer .catImage:nth-child(8n+4),
+.imagesContainer .catImage:nth-child(8n+5),
+.imagesContainer .catImage:nth-child(8n+7)
+{
+    flex-basis: 28.67%;
+}
+
+.imagesContainer .catImage:nth-child(8n+2)
+{
+    flex-basis: 61.32%;
+}
+
+.imagesContainer .catImage:nth-child(8n+6)
+{
+    flex-basis: 63.34%;
+}
+
+.imagesContainer .catImage:nth-child(8n)
+{
+    flex-basis: 96%;
+}
+
+.imagesContainer .catImage:nth-child(8n+2),
+.imagesContainer .catImage:nth-child(8n+5),
+.imagesContainer .catImage:nth-child(8n+7),
+.imagesContainer .catImage:nth-child(8n)
+{
+    margin-right: 0;
+}
+
+.imagesContainer .catImage:last-child
+{
+    margin-bottom: 0;
+}
+
+.ratingContainer
+{
+    display: flex;
+    align-self: flex-start;
+    background-color: #ddd;
+    padding: 10px;
+    flex-direction: column;
+    min-width: 200px;
+    align-items: stretch;
+}
+
+h2
+{
+    color: #b00;
+}
+
+.filter
+{
+    align-self: flex-end;
+}
+
+.breedName
+{
+    font-size: 20px;
+}
+
+.breedRating
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratingValue
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ratingLineContainer
+{
+    width: 150px;
+    height: 24px;
+}
+
+.ratingLine {
+    height: 24px;
+    border: 1px solid #aaa;
+}
+
+.ratingLine[value="1"]
+{
+    width: 10%;
+}
+
+.ratingLine[value="2"]
+{
+    width: 20%;
+}
+
+.ratingLine[value="3"]
+{
+    width: 30%;
+}
+
+.ratingLine[value="4"]
+{
+    width: 40%;
+}
+
+.ratingLine[value="5"]
+{
+    width: 50%;
+}
+
+.ratingLine[value="6"]
+{
+    width: 60%;
+}
+
+.ratingLine[value="7"]
+{
+    width: 70%;
+}
+
+.ratingLine[value="8"]
+{
+    width: 80%;
+}
+
+.ratingLine[value="9"]
+{
+    width: 90%;
+}
+
+.ratingLine[value="10"]
+{
+    width: 100%;
+}
+
+.ratingLine[value="1"],
+.ratingLine[value="2"],
+.ratingLine[value="3"]
+{
+    background: linear-gradient(to right, #f00, #fff);
+}
+
+.ratingLine[value="4"],
+.ratingLine[value="5"],
+.ratingLine[value="6"],
+.ratingLine[value="7"]
+{
+    background: linear-gradient(to right, #ff0, #fff);
+}
+
+.ratingLine[value="8"],
+.ratingLine[value="9"],
+.ratingLine[value="10"]
+{
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+#filter
+{
+    align-self: flex-end;
+}
+
+#filter:checked ~ .breed1
+{
+    order: 1;
+}
+
+#filter:checked ~ .breed2
+{
+    order: 5;
+}
+
+#filter:checked ~ .breed3
+{
+    order: 2;
+}
+
+#filter:checked ~ .breed4
+{
+    order: 4;
+}
+
+#filter:checked ~ .breed5
+{
+    order: 3;
+}
+
+footer
+{
+    border-top: 1px solid #aaa;
+    background-color: #eee;
+    display: flex;
+    padding: 20px;
+    font-size: 24px;
+    justify-content: space-between;
+}
+
+address
+{
+    color: #00c;
+    font-style: normal;
+}

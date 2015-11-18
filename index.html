@@ -6,6 +6,210 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <input id="breed1" class="hidden" type="checkbox">
+        <input id="breed2" class="hidden" type="checkbox">
+        <input id="breed3" class="hidden" type="checkbox">
+        <input id="breed4" class="hidden" type="checkbox">
+        <input id="breed5" class="hidden" type="checkbox">
+        <header>
+            <h1>
+                Бабуленькины котятки
+            </h1>
+        </header>
+        <main>
+            <nav>
+                <label for="breed1" class="catBreed breed1">Мейн Кун</label>
+                <label for="breed2" class="catBreed breed2">Персидская</label>
+                <label for="breed3" class="catBreed breed3">Русская голубая</label>
+                <label for="breed4" class="catBreed breed4">Сиамская</label>
+                <label for="breed5" class="catBreed breed5">Экзотическая короткошерстная</label>
+            </nav>
+            <section class="imagesContainer">
+                <div class="catImage breed1">
+                    <img
+                    src="imgs/мк1.jpg"
+                    alt="фото котика мейнкун">
+                    <div class="catInfo">
+                        Вероника, 2 года
+                    </div>
+                </div>
+                <div class="catImage breed4">
+                    <img
+                    src="imgs/сиам3.jpg"
+                    alt="фото сиамского котика">
+                    <div class="catInfo">
+                        Даша, 4 года
+                    </div>
+                </div>
+                <div class="catImage breed2">
+                    <img
+                    src="imgs/перс2.jpg"
+                    alt="фото персидского котика">
+                    <div class="catInfo">
+                        Тирион, 3 года
+                    </div>
+                </div>
+                <div class="catImage breed3">
+                    <img
+                    src="imgs/рус3.jpg"
+                    alt="фото русской голубой кошки">
+                    <div class="catInfo">
+                        Муся, 2 года
+                    </div>
+                </div>
+                <div class="catImage breed5">
+                    <img
+                    src="imgs/экз1.jpg"
+                    alt="фото экзотического короткошерстного котика">
+                    <div class="catInfo">
+                        Кузя, 1 год
+                    </div>
+                </div>
+                <div class="catImage breed5">
+                    <img
+                    src="imgs/экз2.jpg"
+                    alt="фото экзотического короткошерстного котика">
+                    <div class="catInfo">
+                        Зевс, 4 года
+                    </div>
+                </div>
+                <div class="catImage breed3">
+                    <img
+                    src="imgs/рус1.jpg"
+                    alt="фото русской голубой кошки">
+                    <div class="catInfo">
+                        Аврора, 5 лет
+                    </div>
+                </div>
+                <div class="catImage breed4">
+                    <img
+                    src="imgs/сиам4.jpg"
+                    alt="фото сиамской кошки">
+                    <div class="catInfo">
+                        Агата, 1 год
+                    </div>
+                </div>
+                <div class="catImage breed1">
+                    <img
+                    src="imgs/мк2.jpg"
+                    alt="фото котика мейн кун">
+                    <div class="catInfo">
+                        Рысь, 3 года
+                    </div>
+                </div>
+                <div class="catImage breed5">
+                    <img
+                    src="imgs/экз3.jpg"
+                    alt="фото экзотической короткошерстной кошки">
+                    <div class="catInfo">
+                        Томас, 6 лет
+                    </div>
+                </div>
+                <div class="catImage breed2">
+                    <img
+                    src="imgs/перс1.jpg"
+                    alt="фото персидского котика">
+                    <div class="catInfo">
+                        Дуня, 2 года
+                    </div>
+                </div>
+                <div class="catImage breed4">
+                    <img
+                    src="imgs/сиам1.jpg"
+                    alt="фото сиамского котика">
+                    <div class="catInfo">
+                        Милка, 3 года
+                    </div>
+                </div>
+                <div class="catImage breed3">
+                    <img
+                    src="imgs/рус2.jpg"
+                    alt="фото русской голубой кошки">
+                    <div class="catInfo">
+                        Боня, 2 года
+                    </div>
+                </div>
+                <div class="catImage breed1">
+                    <img
+                    src="imgs/мк3.jpg"
+                    alt="фото кошки мейн кун">
+                    <div class="catInfo">
+                        Лео, 6 лет
+                    </div>
+                </div>
+                <div class="catImage breed4">
+                    <img
+                    src="imgs/сиам2.jpg"
+                    alt="фото сиамской кошки">
+                    <div class="catInfo">
+                        Дымка, 3 года
+                    </div>
+                </div>
+                <div class="catImage breed2">
+                    <img
+                    src="imgs/перс3.jpg"
+                    alt="фото персидского котика">
+                    <div class="catInfo">
+                        Цезарь, 1 год
+                    </div>
+                </div>
+            </section>
+            <section class="ratingContainer">
+                <h2>
+                    РЕЙТИНГ
+                </h2>
+                <label for="filter">по убыванию</label>
+                <input id="filter" name="filter" type="checkbox">
+                <div class="breedRaitngContainer breed1">
+                    <p class="breedName">Мейн Кун</p>
+                    <div class="breedRating">
+                        <div class="ratingLineContainer">
+                            <div class="ratingLine" value="10"></div>
+                        </div>
+                        <div class="ratingValue">10</div>
+                    </div>
+                </div>
+                <div class="breedRaitngContainer breed2">
+                    <p class="breedName">Персидская</p>
+                    <div class="breedRating">
+                        <div class="ratingLineContainer">
+                            <div class="ratingLine" value="3"></div>
+                        </div>
+                        <div class="ratingValue">3</div>
+                    </div>
+                </div>
+                <div class="breedRaitngContainer breed3">
+                    <p class="breedName">Русская голубая</p>
+                    <div class="breedRating">
+                        <div class="ratingLineContainer">
+                            <div class="ratingLine" value="8"></div>
+                        </div>
+                        <div class="ratingValue">8</div>
+                    </div>
+                </div>
+                <div class="breedRaitngContainer breed4">
+                    <p class="breedName">Сиамская</p>
+                    <div class="breedRating">
+                        <div class="ratingLineContainer">
+                            <div class="ratingLine" value="4"></div>
+                        </div>
+                        <div class="ratingValue">4</div>
+                    </div>
+                </div>
+                <div class="breedRaitngContainer breed5">
+                    <p class="breedName">Экзотическая короткошерстная</p>
+                    <div class="breedRating">
+                        <div class="ratingLineContainer">
+                            <div class="ratingLine" value="6"></div>
+                        </div>
+                        <div class="ratingValue">6</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="company">&copy; ООО Бабуленькины котятки, 2015</div>
+            <address>Наш адрес: улица Котовая, д.5</address>
+        </footer>
     </body>
 </html>
