@@ -1,13 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    height: 100%;
+}
+
 body
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*align-items: stretch;*/
-    align-content: center;
+    align-items: stretch;
     justify-content: center;
     font: 16px Arial, sans-serif;
     background-color: #f1ebe0;
+    min-height: 100%;
 }
 
 h1
@@ -31,7 +41,6 @@ aside
 aside.filter
 {
     flex-direction: column;
-    justify-content: flex-start;
     text-align: center;
 }
 
@@ -170,7 +179,6 @@ div.rating
 div.rating-container .rating-block:first-child .rating
 {
     width: 80px;
-    /*border: 3px solid red;*/
 }
 
 div.rating-container .rating-block:nth-child(2) .rating
@@ -228,7 +236,7 @@ footer p
     padding: 10px;
 }
 
-/*footer p:last-child*/
-/*{*/
-    /*align-self: flex-end;*/
-/*}*/
+footer p:last-child
+{
+    color: #166571;
+}
