@@ -1,1 +1,65 @@
+.types
+{
+    float: left;
+    background-color: #d9d9d9;
+}
+
+.rating
+{
+    float: right;
+}
+
+.dot
+{
+    display: none;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.types
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.type
+{
+    font-size: 20px;
+    height: 30px;
+    padding: 20px;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 0px 1px #777, 0px 2px 1px #000;
+}
+
+.type:hover
+{
+    background-color: #5A5A5A;
+    color: white;
+}
+
+h1
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+body
+{
+    background-color: #ebebeb;
+}
+
+.pics
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-basis: 80%;
+}
 
