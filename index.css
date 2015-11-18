@@ -69,10 +69,10 @@ main
     background-color: rgba(50, 50, 50, .5);
 }
 
-#cat-1:checked ~ .left-column > .button[for="cat-1"],
-#cat-2:checked ~ .left-column > .button[for="cat-2"],
-#cat-3:checked ~ .left-column > .button[for="cat-3"],
-#cat-4:checked ~ .left-column > .button[for="cat-4"]
+#cat-1:checked ~ .left-column > .button[for='cat-1'],
+#cat-2:checked ~ .left-column > .button[for='cat-2'],
+#cat-3:checked ~ .left-column > .button[for='cat-3'],
+#cat-4:checked ~ .left-column > .button[for='cat-4']
 {
     color: #fff;
     background-color: rgba(50, 50, 50, .5);
@@ -83,7 +83,7 @@ main
     opacity: .3;
 }
 
-#cat-1:not(:checked) +
+#cat-1:not(:checked) + 
 #cat-2:not(:checked) +
 #cat-3:not(:checked) +
 #cat-4:not(:checked) ~ .middle-column > .container > .photo,
