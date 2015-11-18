@@ -271,8 +271,8 @@ img,
 {
     width: 120px;
     height: 25px;
-    background: linear-gradient(to right, #ffcc00, #fff);
-    border: 1px solid #ffcc00;
+    background: linear-gradient(to right, #fc0, #fff);
+    border: 1px solid #fc0;
 }
 
 .four
@@ -318,9 +318,7 @@ img,
 .descLabel:hover
 {
     background-color: #afdafc;
-}
-*/
-/*Модульная вёрстка. Пока что оставлю это здесь*/
+}*/
 
 body
 {
@@ -353,7 +351,7 @@ input
 {
     grid-column: 2 / 3;
     grid-row: 2 / 13;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 .breeds > label
@@ -376,7 +374,7 @@ input
 
 .breeds > .all:hover
 {
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 img
@@ -456,35 +454,35 @@ img
 {
     grid-column: 10 / 11;
     grid-row: 2 / 3;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 .abisR
 {
     grid-column: 10 / 11;
     grid-row: 3 / 4;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 .britR
 {
     grid-column: 10 / 11;
     grid-row: 4 / 5;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 .russR
 {
     grid-column: 10 / 11;
     grid-row: 5 / 6;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 .siamR
 {
     grid-column: 10 / 11;
     grid-row: 6 / 7;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 .photo
@@ -568,8 +566,8 @@ img
 {
     width: 120px;
     height: 25px;
-    background: linear-gradient(to right, #ffcc00, #fff);
-    border: 1px solid #ffcc00;
+    background: linear-gradient(to right, #fc0, #fff);
+    border: 1px solid #fc0;
 }
 
 .four
