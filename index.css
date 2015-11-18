@@ -1,1 +1,182 @@
+main
+{
+    display: flex;
+    width: 100%;
+}
 
+header
+{
+    text-align: center;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left div
+{
+    padding: 15px;
+    font: 18px sans-serif;
+    border-bottom: 1px solid #000;
+}
+
+header ~ input
+{
+    display: none;
+}
+
+.center
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center > div
+{
+    height: 200px;
+    flex-basis: 33%;
+    padding: 1px;
+}
+
+.center .bigger
+{
+    flex-grow: 2;
+    flex-basis: 66%;
+}
+
+.center .three
+{
+    /*flex-grow: 3;*/
+    flex-basis: 100%;
+}
+
+.center .middle
+{
+    /*flex-grow: 3;*/
+    flex-basis: 45%;
+}
+
+aside
+{
+    background-color: #c0c0c0;
+}
+
+body
+{
+    background-color: #d0d0d0;
+}
+
+img
+{
+    height: 100%;
+    z-index: 1;
+}
+
+.head
+{
+    color: #f00;
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+address
+{
+    color: #1531ba;
+}
+
+.right
+{
+    width: 30%;
+    padding-left: 1%;
+}
+
+.left
+{
+    width: 35%;
+}
+
+.rating
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.rating div
+{
+    margin: 5px 0;
+}
+
+.brit,
+.blue,
+.abys,
+.siam
+{
+    height: 20px;
+}
+
+.brit
+{
+    display: inline-block;
+    width: 64%;
+    background: linear-gradient(to right, #f7fa2d, #fff);
+}
+
+.blue
+{
+    display: inline-block;
+    width: 80%;
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+.abys
+{
+    display: inline-block;
+    width: 72%;
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+.siam
+{
+    display: inline-block;
+    width: 32%;
+    background: linear-gradient(to right, #f00, #fff);
+}
+
+.three
+{
+    flex-grow:3;
+}
+
+.num
+{
+    display: inline-block;
+    float: right;
+    padding-right: 5%;
+}
+
+#sorting:checked ~ .rating .block1
+{
+    order: 1;
+}
+
+#sorting:checked ~ .rating .block2
+{
+    order: 2;
+}
+
+#sorting:checked ~ .rating .block4
+{
+    order: 3;
+}
+
+#ab:checked ~ main .center div div:not(.abyssinian),
+#si:checked ~ main .center div div:not(.siamese),
+#go:checked ~ main .center div div:not(.lightblue),
+#br:checked ~ main .center div div:not(.british)
+{
+    opacity: .6;
+}
