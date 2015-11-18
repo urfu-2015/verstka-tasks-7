@@ -37,28 +37,28 @@ nav label:hover
     cursor: pointer;
 }
 
-#abyssinian:checked  ~ nav > .abyssinian,
-#british:checked  ~ nav > .british,
-#russian:checked  ~ nav > .russian,
-#siamese:checked  ~ nav > .siamese
+#abyssinian:checked ~ nav > .abyssinian,
+#british:checked ~ nav > .british,
+#russian:checked ~ nav > .russian,
+#siamese:checked ~ nav > .siamese
 {
     background: grey;
 }
 
-#abyssinian:checked  ~ section img,
-#british:checked  ~ section img,
-#russian:checked  ~ section img,
-#siamese:checked  ~ section img
+#abyssinian:checked ~ section img,
+#british:checked ~ section img,
+#russian:checked ~ section img,
+#siamese:checked ~ section img
 {
-    opacity: 0.4;
+    opacity: .4;
 }
 
-#abyssinian:checked  ~ section > .abyssinian img,
-#british:checked  ~ section > .british img,
-#russian:checked  ~ section > .russian img,
-#siamese:checked  ~ section > .siamese img
+#abyssinian:checked ~ section > .abyssinian img,
+#british:checked ~ section > .british img,
+#russian:checked ~ section > .russian img,
+#siamese:checked ~ section > .siamese img
 {
-    opacity: 1.0;
+    opacity: 1;
 }
 
 section
