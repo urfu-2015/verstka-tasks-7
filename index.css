@@ -1,1 +1,222 @@
+body
+{
+    background-color: #e8e8e8;
+    position: relative;
+    min-height: 100%;
+}
 
+html
+{
+    height: 100%;
+}
+
+footer
+{
+    width: 100%;
+    border-top: 1px solid black;
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1
+{
+    text-align: center;
+}
+
+div,
+article,
+footer
+{
+    display: flex;
+}
+
+.nav,
+.statistic
+{
+    flex-direction: column;
+    flex-basis: 20%;
+    background-color: #d8d8d8;
+}
+
+.nav div
+{
+    border-bottom: 1px solid #000;
+}
+
+.statistic
+{
+    align-self: flex-start;
+    padding: 8px;
+}
+
+.container
+{
+    flex-basis: 60%;
+    flex-direction: column;
+}
+
+.row
+{
+    flex-direction: row;
+}
+
+.column-1,
+.column-2,
+.column-3
+{
+    margin: 0 1% 2% 1%;
+    position: relative;
+    flex-direction: column;
+}
+
+.column-1
+{
+    flex-basis: 32.33%;
+}
+
+.column-2
+{
+    flex-basis: 67%;
+}
+
+.column-3
+{
+    flex-basis: 100%;
+}
+
+img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+}
+
+.name
+{
+    position: absolute;
+    padding: 5px;
+    margin: 10px 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    z-index: 5;
+}
+
+.column-1:hover .name,
+.column-2:hover .name,
+.column-3:hover .name
+{
+    opacity: 1;
+}
+
+.reit-low
+{
+    width: 35%;
+    height: 20px;
+    background: linear-gradient(90deg, #f30, #fff);
+}
+
+.reit-high1
+{
+    width: 70%;
+    height: 20px;
+    background: linear-gradient(90deg, #00ff13, #fff);
+}
+
+.reit-high2
+{
+    width: 65%;
+    height: 20px;
+    background: linear-gradient(90deg, #00ff13, #fff);
+}
+
+.column-3 > div
+{
+    justify-content: space-between;
+}
+
+.reit-average
+{
+    width: 50%;
+    height: 20px;
+    background: linear-gradient(90deg, #fffd02, #fff);
+}
+
+footer p
+{
+    margin: 0;
+    padding: 0;
+}
+
+#sort:checked ~ .name-1
+{
+    order: 4;
+}
+
+#sort:checked ~ .name-2
+{
+    order: 2;
+}
+
+#sort:checked ~ .name-3
+{
+    order: 3;
+}
+
+#sort:checked ~ .name-4
+{
+    order: 1;
+}
+
+.breed-input
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+}
+
+.l-breed
+{
+    position: relative;
+    float: right;
+    /*display: block;*/
+    width: 100%;
+    height: 40px;
+    padding: 8px 0 0 8px;
+}
+
+#abis:checked ~ .container .column-1:not(.abissin),
+#abis:checked ~ .container .column-2:not(.abissin),
+#abis:checked ~ .container .column-3:not(.abissin)
+{
+    opacity: .3;
+}
+
+#brit:checked ~ .container .column-1:not(.brit),
+#brit:checked ~ .container .column-2:not(.brit),
+#brit:checked ~ .container .column-3:not(.brit)
+{
+    opacity: .3;
+}
+
+#siam:checked ~ .container .column-1:not(.siam),
+#siam:checked ~ .container .column-2:not(.siam),
+#siam:checked ~ .container .column-3:not(.siam)
+{
+    opacity: .3;
+}
+
+#rus:checked ~ .container .column-1:not(.rus),
+#rus:checked ~ .container .column-2:not(.rus),
+#rus:checked ~ .container .column-3:not(.rus)
+{
+    opacity: .3;
+}
