@@ -70,12 +70,14 @@ body
 
 .photos .row .col-1
 {
-	flex-basis: 33%;
+	width: 1px;
+	flex-grow: 1;
 }
 
 .photos .row .col-2
 {
-	flex-basis: 67%;
+	width: 1px;
+	flex-grow: 2;
 }
 
 .photos .row .col-3
@@ -163,9 +165,4 @@ body
 	background: linear-gradient(to right, #e90c07, #fff);
 	border: 1px solid #e90c07;
 	width: 28%;
-}
-
-input:checked ~ .rate-8
-{
-	order: 0;
 }
