@@ -6,6 +6,96 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <div class="page-wrapper">
+            <h1 class="title">Бабуленькины котятки</h1>
+            <section class="wrapper">
+                <div class="menu">
+                    <p class="type"><label for="orange">Рыжие</label></p>
+                    <hr>
+                    <p class="type"><label for="grey">Серые</label></p>
+                    <hr>
+                    <p class="type"><label for="strange">Странные</label>
+                    <hr>
+                </div>
+                <input class="hide" type="checkbox" id="orange">
+                <input class="hide" type="checkbox" id="grey">
+                <input class="hide" type="checkbox" id="strange">
+                <div class="photo-cards">
+                    <section class="wrapper-photo-cards">
+                        <div class="line-one-card-1">
+                            <img class="card" src="./img/cat_with_head.jpg" alt="cat">
+                            <p class="desc desc-1">Гоша, 4 года</p>
+                        </div>
+                        <div class="line-one-card-2">
+                            <img class="card" src="./img/orange_cat.jpg" alt="cat">
+                            <p class="desc desc-2">Артём, 3 месяца</p>
+                        </div>
+                        <div class="line-two-card-1">
+                            <img class="card" src="./img/pidr_cat.jpg" alt="cat">
+                            <p class="desc desc-1">Пётр, 2 года</p>
+                        </div>
+                        <div class="line-two-card-2">
+                            <img class="card" src="./img/hands_up_cat.jpeg" alt="cat">
+                            <p class="desc desc-2">Барсик, 2 месяца</p>
+                        </div>
+                        <div class="line-two-card-3">
+                            <img class="card" src="./img/britain_cat.jpeg" alt="cat">
+                            <p class="desc desc-3">Арсен, 8 месяца</p>
+                        </div>
+                        <div class="line-three-card-1">
+                            <img class="card" src="./img/cat_with_cuple.jpeg" alt="cat">
+                            <p class="desc desc-1">Маркиз, 10 лет</p>
+                        </div>
+                        <div class="line-three-card-2">
+                            <img class="card" src="./img/stalin_cat.jpeg" alt="cat">
+                            <p class="desc desc-2">Сталин, 12 лет</p>
+                        </div>
+                        <div class="line-four-card-1">
+                            <img class="card" src="./img/cute_cat.jpeg" alt="cat">
+                            <p class="desc desc-1">Милаш, 12 лет</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="rating">
+                    <section class="rating-content">
+                        <h2 class="rating-title">РЕЙТИНГ</h2>
+                        <input class="sort-checkbox" type="checkbox" id="sort-on">
+                        <h3 class="sort-title">По убыванию</h3>
+                        <div class="ratings">
+                            <div class="rating-table">
+                                <div class="one-rating one">
+                                    Странные
+                                    <div class="bar">
+                                        <div class="rating-bar-strange"></div>
+                                        <div class="score">4</div>
+                                    </div>
+                                </div>
+                                <div class="one-rating two">
+                                    Рыжие
+                                    <div class="bar">
+                                        <div class="rating-bar-orange"></div>
+                                        <div class="score">8</div>
+                                    </div>
+                                </div>
+                                <div class="one-rating three">
+                                    Серые
+                                    <div class="bar">
+                                        <div class="rating-bar-grey"></div>
+                                        <div class="score">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="page-buffer"></div>
+        </div>
+        <br>
+        <hr>
+        <div class="page-footer">
+            <p class="left">© Бабуленькины котятки, 2015</p>
+            <p class="right">Наш адрес: улица Котовая, д.5</p>
+        </div>
     </body>
 </html>
