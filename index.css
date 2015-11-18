@@ -1,1 +1,220 @@
 
+header
+{
+    display: flex;
+    justify-content: center;
+}
+
+header > h1
+{
+    font-size: 4em;
+}
+
+body
+{
+    background: #ebebeb;
+}
+
+body > input
+{
+    display: none;
+}
+
+main.showcase
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section.breed
+{
+    margin: 0 20px;
+    background: #d9d9d9;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section.breed > label
+{
+    font-size: 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid;
+}
+
+section.breed > label:hover
+{
+    background: #959595;
+}
+
+section.cats
+{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-content: stretch;
+    flex-direction: row;
+}
+
+img
+{
+    opacity: .5;
+    width: 100%;
+}
+
+.cat
+{
+    margin: 5px;
+    height: 300px;
+}
+
+.small
+{
+    flex-basis: 30%;
+}
+
+.medium
+{
+    flex-basis: 60%;
+}
+
+.large
+{
+    flex-basis: 90%;
+}
+
+section.rating
+{
+    padding: 10px;
+    flex-basis: 20%;
+    align-self: flex-start;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background: #d9d9d9;
+}
+
+section.rating > p:first-child
+{
+    color: #db0606;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+section.rating
+{
+    display: flex;
+}
+
+section.rating > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-content: stretch;
+    flex-direction: column;
+}
+
+section.rating > div > p
+{
+    flex-basis: 100%;
+}
+
+.rating-line
+{
+    display: block;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.label
+{
+    padding: 0;
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+
+input[name='sort']:checked ~ .rat > div.ten
+{
+    order: 1;
+}
+
+input[name='sort']:checked ~ .rat > div.nine
+{
+    order: 2;
+}
+
+input[name='sort']:checked ~ .rat > div.seven
+{
+    order: 3;
+}
+
+input[name='sort']:checked ~ .rat > div.four
+{
+    order: 4;
+}
+
+input:nth-of-type(1):checked ~ main .cat > img,
+input:nth-of-type(2):checked ~ main .serval > img,
+input:nth-of-type(3):checked ~ main .scottishfold > img,
+input:nth-of-type(4):checked ~ main .scottishstraight > img,
+input:nth-of-type(5):checked ~ main .mainecoon > img
+{
+    opacity: 1;
+}
+
+input:nth-of-type(1):checked ~ main .breed label:nth-of-type(1),
+input:nth-of-type(2):checked ~ main .breed label:nth-of-type(2),
+input:nth-of-type(3):checked ~ main .breed label:nth-of-type(3),
+input:nth-of-type(4):checked ~ main .breed label:nth-of-type(4),
+input:nth-of-type(5):checked ~ main .breed label:nth-of-type(5)
+{
+    background: #696969;
+}
+
+.green
+{
+    width: 90%;
+    background: linear-gradient(to right, #02e86e, #fff);
+}
+
+.yellow
+{
+    width: 60%;
+    background: linear-gradient(to right, #fff602, #fff);
+}
+
+.red
+{
+    width: 30%;
+    background: linear-gradient(to right, #e80a04, #fff);
+}
+
+footer
+{
+    display: flex;
+    flex-basis: 100%;
+    height: 50px;
+    border-top: 1px solid;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cat > img:hover + .features
+{
+    display: block;
+}
+
+.features
+{
+    display: none;
+    z-index: 10;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 20px;
+    margin: -60px 10px;
+    padding: 10px;
+    position: relative;
+}
