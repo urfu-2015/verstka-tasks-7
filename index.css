@@ -1,1 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster:&subset=latin,cyrillic');
+body
+{
+    background: #e4d8d8;
+}
 
+.wrapper
+{
+    display: flex;
+}
+
+header
+{
+    text-align: center;
+    font-family: Lobster;
+    font-size: 40px;
+}
+
+div
+{
+    margin: 10px;
+}
+
+.imageOfCat
+{
+    height: 200px;
+}
+
+em,
+.kindOfCat,
+span
+{
+
+    font-size: 20px;
+}
+
+.kindOfCat,
+.imagesOfCats,
+.rating
+{
+    background: #d2c7c7;
+}
+
+.rating
+{
+    align-self: flex-start;
+}
+
+.headerOfRating
+{
+    color: #13acf9;
+}
+
+.markForAbyssinian
+{
+    height: 20px;
+    width: 50px;
+}
+
+.markForBritish
+{
+    height: 20px;
+    width: 70px;
+}
+
+.markForSiamese
+{
+    height: 20px;
+    width: 40px;
+}
+
+.mark
+{
+    float: right;
+    font-size: 25px;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+    color: blue;
+}
+
+.radioOfRating:checked ~ .abyssinian
+{
+    order: 1;
+}
+
+.radioOfRating:checked ~ .siamese
+{
+    order: 2;
+}
+
+.checkForAbyssinian:checked ~ .imgAbyssinian
+{
+    opasity: .5;
+}
+
+.checkForSiamese:checked ~ .imgSiamese
+{
+    opasity: .5;
+}
+
+.checkForBritish:checked ~ .imgBritish
+{
+    opasity: .5;
+}
