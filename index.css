@@ -1,1 +1,154 @@
+body
+{
+    background-color: rgba(234, 234, 234, 0.71);
+}
+
+header
+{
+    display: flex;
+}
+
+.sub-header
+{
+    margin: 0 auto;
+}
+
+main
+{
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+
+nav
+{
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+nav > div
+{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px ridge #fff;
+}
+
+aside
+{
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.rating
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: baseline;
+}
+
+aside > .rating > span:first-child
+{
+    width: 100%;
+}
+
+aside > .rating > span
+{
+    padding-right: 5px;
+}
+
+.grad
+{
+    height: 10px;
+}
+
+.grad-nine
+{
+    background: linear-gradient(to left, #fff, #a6ff36);
+    border: 1px solid #a6ff36;
+    width: 60%;
+}
+
+.grad-eight
+{
+    background: linear-gradient(to left, #fff, #fff20f);
+    border: 1px solid #fff20f;
+    width: 50%;
+}
+
+.cats
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.cat
+{
+    height: 250px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.cat:hover > .cat-info
+{
+    position: relative;
+    top: -50%;
+    left: 5%;
+    width: 80%;
+    height: 30%;
+    background: rgba(58, 58, 58, .7);
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+img
+{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    margin: 10px;
+}
+
+.one-third-cat
+{
+    flex-grow: 1;
+}
+
+.two-third-cat
+{
+    flex-grow: 2;
+}
+
+.three-third-cat
+{
+    flex-grow: 3;
+}
+
+footer
+{
+    margin-top: 5%;
+    vertical-align: bottom;
+    height: 50px;
+    border-top: 1px solid #000;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 
