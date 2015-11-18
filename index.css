@@ -30,7 +30,7 @@ main
 {
     display: flex;
     flex-direction: column;
-    flex-basis: 20%;
+    flex-basis: 15%;
     background-color: #a9a9a9;
 }
 
@@ -49,34 +49,13 @@ main
     background-color: #cacaca;
 }
 
-#all_types:checked ~ .type_selectors > #all_types_label
+#all_types:checked ~ .type_selectors > #all_types_label,
+#abyssinian:checked ~ .type_selectors > #abyssinian_label,
+#british:checked ~ .type_selectors > #british_label,
+#russian_blue:checked ~ .type_selectors > #russian_blue_label,
+#siamese:checked ~ .type_selectors > #siamese_label
 {
     background-color: #f9f9f9;
-}
-
-#siamese:checked ~ .type_selectors #siamese_label
-{
-    background-color: #f9f9f9;
-}
-
-#russian_blue:checked ~ .type_selectors #russian_blue_label
-{
-    background-color: #f9f9f9;
-}
-
-#british:checked ~ .type_selectors #british_label
-{
-    background-color: #f9f9f9;
-}
-
-#abyssinian:checked ~ .type_selectors #abyssinian_label
-{
-    background-color: #f9f9f9;
-}
-
-#all_types:checked ~ .cats > .cat
-{
-    display: flex;
 }
 
 #all_types:not(:checked) ~ #abyssinian:not(:checked) ~ .cats > .abyssinian,
@@ -90,26 +69,33 @@ main
 .cats
 {
     display: flex;
-    flex-basis: 60%;
+    flex-basis: 65%;
     flex-wrap: wrap;
 }
 
 .cat
 {
     display: flex;
-    margin: 10px;
-    max-width: 30%;
-    max-height: 250px;
+    margin: 0 1% 1%;
+    height: 287px;
     border-collapse: collapse;
     overflow: hidden;
 }
 
-.cat img
+.cats .cat:nth-child(n)
 {
     display: flex;
-    align-self: flex-end;
-    height: 100%;
-    width: 100%;
+    max-width: 29%;
+}
+
+.cats .cat:nth-child(n+8)
+{
+    max-width: 91.2%;
+}
+
+.cats .cat:nth-child(4n + 2)
+{
+    max-width: 60.1%;
 }
 
 .description
