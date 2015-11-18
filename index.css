@@ -1,4 +1,4 @@
-html 
+/*html 
 {
     min-height: 100%;
     display: flex;
@@ -15,7 +15,7 @@ body
     font-family: 'Open Sans', sans-serif;
 }
 
-input[type="radio"]
+input
 {
     display: none;
 }
@@ -197,7 +197,7 @@ img,
     padding: 10px;
 }
 
-.raiting > label
+/*.raiting > label
 {
     font-size: 20px;
     margin-left: 30%;
@@ -209,6 +209,24 @@ img,
     clear: both;
     margin-right: 25px;
     margin-top: 10px;
+}*/
+
+.labels
+{
+    text-align: right;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.descLabel
+{
+    border-radius: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 5px;
 }
 
 .raitContainer
@@ -265,17 +283,17 @@ img,
     border: 1px solid #f00;
 }
 
-#descending:checked ~ div > .abisRait
+#desc:checked ~ .container > .main > .raiting > div > .abisRait
 {
     order: 1;
 }
 
-#descending:checked ~ div > .britRait
+#desc:checked ~ .container > .main > .raiting > div > .britRait
 {
     order: 2;
 }
 
-#descending:checked ~ div > .siamRait
+#desc:checked ~ .container > .main > .raiting > div > .siamRait
 {
     order: 3;
 }
@@ -296,8 +314,14 @@ img,
     color: #1d55d9;
 }
 
+#desc:checked ~ .container > .main > .raiting > .labels > .descLabel,
+.descLabel:hover
+{
+    background-color: #afdafc;
+}
+*/
 /*Модульная вёрстка. Пока что оставлю это здесь*/
-/*
+
 body
 {
     width: 100%;
@@ -638,4 +662,3 @@ p
 {
     background-color: #afdafc;
 }
-*/
