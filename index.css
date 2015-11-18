@@ -1,1 +1,172 @@
+body
+{
+    background: #c0c0c0;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #000 1px;
+}
+
+h2
+{
+    text-transform: uppercase;
+    color: red;
+}
+
+section
+{
+    margin: 10px;
+}
+
+header
+{
+    text-align: center;
+}
+
+.breed-cats
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #b0b0b0;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-basis: 15%;
+}
+
+img
+{
+    height: 300px;
+    width: 900px;
+}
+
+.small-img
+{
+    width: 300px;
+}
+
+.mid-img
+{
+    width: 600px;
+}
+
+.one-breed
+{
+    text-align: center;
+    border-bottom: 1px solid #383838;
+    font-size: 25px;
+    padding: 12px;
+}
+
+.information-about-cat
+{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    text-align: center;
+    background: rgb(32,32,32, 4);
+    opacity: .7;
+    font-size: 30px;
+    display: none;
+}
+
+img:hover ~ .information-about-cat
+{
+    display: block;
+}
+.img-cats
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    align-items: center;
+}
+
+.gradient
+{
+    height: 20px;
+    width: 150px;
+}
+
+.gradient-6
+{
+    width: 60%;
+}
+
+.gradient-4
+{
+    width: 40%;
+}
+
+.gradient-9
+{
+    width: 70%;
+}
+
+.sort-cat
+{
+    text-align: right;
+}
+
+[id='sort']:checked ~ .rate-ten
+{
+    order: 1;
+}
+
+[id='sort']:checked ~ .rate-seven
+{
+    order: 2;
+}
+
+[id='sort']:checked ~ .rate-six
+{
+    order: 3;
+}
+
+[id='sort']:checked ~ .rate-four
+{
+    order: 4;
+}
+
+.raiting
+{
+    background: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.rus,
+.british,
+.siamsk,
+.abis
+{
+    opacity: 1;
+    position: relative;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[type='radio']
+{
+    display: none;
+}
+
+[id='rus96']:checked ~ .img-cats > :not(.rus),
+[id='abissyn']:checked ~ .img-cats > :not(.abis),
+[id='british']:checked ~ .img-cats > :not(.british),
+[id='siamsk']:checked ~ .img-cats > :not(.siamsk)
+{
+    opacity: .3;
+}
 
