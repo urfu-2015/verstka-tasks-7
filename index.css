@@ -1,1 +1,62 @@
+main
+{
+    display: flex;
+    flex-direction: row;
+}
 
+header
+{
+    text-align: center;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.gallery
+{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.gallery div
+{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.rating
+{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px; 
+}
+
+img
+{
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.img2, .img6
+{
+    width: 400px !important;
+}
+
+.img8
+{
+    width: 600px !important;
+}
