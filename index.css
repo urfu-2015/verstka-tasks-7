@@ -79,8 +79,8 @@ section article:nth-child(8n)
     width: 100%;
 }
 
-
-.breed, .sort
+.breed,
+.sort
 {
     display: none;
 }
