@@ -7,5 +7,107 @@
     </head>
     <body>
         <!-- Здесь применять гибкую магию -->
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <input type="radio" name="breed" id="all" checked="checked">
+        <input type="radio" name="breed" id="serval">
+        <input type="radio" name="breed" id="scottishfold">
+        <input type="radio" name="breed" id="scottishstraight">
+        <input type="radio" name="breed" id="mainecoon">
+        <main class="showcase">
+            <section class="breed">
+                <label for="all">Все</label>
+                <label for="serval">Сервал</label>
+                <label for="scottishfold">Скотишь фолд</label>
+                <label for="scottishstraight">Скотишь страйт</label>
+                <label for="mainecoon">Мейн кун</label>
+            </section>
+            <section class="cats">
+                <article class="cat small mainecoon">
+                    <img src="img/1.jpg" alt="Ричард Джордж">
+                    <p class="features">
+                        Ричард Джордж, 5 лет
+                    </p>
+                </article>
+                <article class="cat medium serval">
+                    <img src="img/2.jpg" alt="Рыся">
+                    <p class="features">
+                        Рыся, 1 год
+                    </p>
+                </article>
+                <article class="cat small scottishstraight">
+                    <img src="img/3.jpg" alt="Снежка">
+                    <p class="features">
+                        Снежка, 2 года
+                    </p>
+                </article>
+                <article class="cat small serval">
+                    <img src="img/4.jpg" alt="Косма">
+                    <p class="features">
+                        Косма, 2 года
+                    </p>
+                </article>
+                <article class="cat small scottishstraight">
+                    <img src="img/5.jpg" alt="Делли">
+                    <p class="features">
+                        Делли, 3 года
+                    </p>
+                </article>
+                <article class="cat medium mainecoon">
+                    <img src="img/6.jpg" alt="Ленди">
+                    <p class="features">
+                        Ленди, 3 года
+                    </p>
+                </article>
+                <article class="cat small scottishstraight">
+                    <img src="img/7.jpg" alt="Тайна">
+                    <p class="features">
+                        Тайна, 2 года
+                    </p>
+                </article>
+                <article class="cat large scottishfold">
+                    <img src="img/8.jpg" alt="Мерси">
+                    <p class="features">
+                        Мерси, 2 года
+                    </p>
+                </article>
+            </section>
+            <section class="rating">
+                <p>Рейтинг</p>
+                <label for="sort">по убыванию</label>
+                <input type="checkbox" class="sort-method" name="sort" value="по убыванию">
+                <div class="rat">
+                    <div class="nine">
+                        <p class="label">Сервал</p>
+                        <div class="rating-line green"></div>
+                        9
+                    </div>
+                    <div class="ten">
+                        <p class="label">Скотишь фолд</p>
+                        <div class="rating-line green"></div>
+                        10
+                    </div>
+                    <div class="four">
+                        <p class="label">Мейн кун</p>
+                        <div class="rating-line red"></div>
+                        4
+                    </div>
+                    <div class="seven">
+                        <p class="label">Скотишь страйт</p>
+                        <div class="rating-line yellow"></div>
+                        7
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy; ООО Бабуленькины котятки, 2015
+            </p>
+            <address>
+                Наш адрес: улица Котовая, д.5
+            </address>
+        </footer>
     </body>
 </html>
