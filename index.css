@@ -1,4 +1,4 @@
-.invisible {
+.invisible{
     display: none;
 }
 .wrapper {
@@ -16,7 +16,7 @@ label {
     height: 100%;
 }
 
-.navigate div {
+.navigate div{
     line-height: 2em;
     display: flex;
     background: #dbdbdb;
@@ -34,9 +34,19 @@ label {
     border: 1px solid green;
 }
 
-.navigate label:hover {
+.navigate label:hover{
     background: #727272;
     color: #fff;
+}
+
+.abyss:checked .catImage div.abyss,
+.british:checked ~ section .catImage .british,
+.russian:checked ~ section .catImage .russian,
+.siamese:checked ~ section .catImage .siamese,
+.wild:checked ~ section div div .catImage .wild
+{
+    box-shadow: 0 0 10px 10px rgba(10, 10, 10, .5);
+    opacity: 0.5;
 }
 
 section {
