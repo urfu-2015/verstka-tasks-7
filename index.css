@@ -101,61 +101,61 @@ header
     width: 60px;
     background: linear-gradient(to right, #f00, #fff);
 }
-input[id="ranking"]:checked ~ .wrapper > .right > .rankAbis
+input[id='ranking']:checked ~ .wrapper > .right > .rankAbis
 {
     order: 4;
 }
-input[id="ranking"]:checked ~ .wrapper > .right > .rankBrit
+input[id='ranking']:checked ~ .wrapper > .right > .rankBrit
 {
     order: 3;
 }
-input[id="ranking"]:checked ~ .wrapper > .right > .rankRus
+input[id='ranking']:checked ~ .wrapper > .right > .rankRus
 {
     order: 5;
 }
-input[id="ranking"]:checked ~ .wrapper > .right > .rankSiam
+input[id='ranking']:checked ~ .wrapper > .right > .rankSiam
 {
     order: 6;
 }
-input[id="ranking"]:checked ~ .wrapper > .right > label > .fa-square-o:before
+input[id='ranking']:checked ~ .wrapper > .right > label > .fa-square-o:before
 {
-    content:"\f046" !important;
+    content:'\f046' !important;
 }
-input[id="abis"]:checked ~ .wrapper > main > :not(.abis)
+input[id='abis']:checked ~ .wrapper > main > :not(.abis)
 {
     opacity: .5;
 }
-input[id="rus"]:checked ~ .wrapper > main > :not(.rus)
+input[id='rus']:checked ~ .wrapper > main > :not(.rus)
 {
     opacity: .5;
 }
-input[id="siam"]:checked ~ .wrapper > main > :not(.siam)
+input[id='siam']:checked ~ .wrapper > main > :not(.siam)
 {
     opacity: .5;
 }
-input[id="brit"]:checked ~ .wrapper > main > :not(.brit)
+input[id='brit']:checked ~ .wrapper > main > :not(.brit)
 {
     opacity: .5;
 }
-input[id="brit"]:checked ~ .wrapper > .left > label[for="brit"]:after
+input[id='brit']:checked ~ .wrapper > .left > label[for='brit']:after
 {
     font: normal normal normal 14px/1 FontAwesome;
-    content: "\f00c";
+    content: '\f00c';
 }
-input[id="rus"]:checked ~ .wrapper > .left > label[for="rus"]:after
+input[id='rus']:checked ~ .wrapper > .left > label[for='rus']:after
 {
     font: normal normal normal 14px/1 FontAwesome;
-    content: "\f00c";
+    content: '\f00c';
 }
-input[id="abis"]:checked ~ .wrapper > .left > label[for="abis"]:after
+input[id='abis']:checked ~ .wrapper > .left > label[for='abis']:after
 {
     font: normal normal normal 14px/1 FontAwesome;
-    content: "\f00c";
+    content: '\f00c';
 }
-input[id="siam"]:checked ~ .wrapper > .left > label[for="siam"]:after
+input[id='siam']:checked ~ .wrapper > .left > label[for='siam']:after
 {
     font: normal normal normal 14px/1 FontAwesome;
-    content: "\f00c";
+    content: '\f00c';
 }
 main
 {
