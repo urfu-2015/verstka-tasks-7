@@ -14,7 +14,7 @@ body
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
-    user-select: none; 
+    user-select: none;
     box-sizing: border-box;
 }
 
@@ -131,18 +131,14 @@ aside
     width: 15vw;
     overflow: hidden;
     background-color: #c0c0c0;
-    background: -webkit-linear-gradient(left, #a0a0a0, #d9d9d9);
-    background: -o-linear-gradient(left, #a0a0a0, #d9d9d9);
-    background: linear-gradient(to right, #a0a0a0, #d9d9d9);
+    background-image: linear-gradient(to right, #a0a0a0, #d9d9d9);
 }
 
 aside
 {
     padding: 8px;
     align-self: flex-start;
-    background: -webkit-linear-gradient(right, #a0a0a0, #d9d9d9);
-    background: -o-linear-gradient(right, #a0a0a0, #d9d9d9);
-    background: linear-gradient(to left, #a0a0a0, #d9d9d9);
+    background-image: linear-gradient(to left, #a0a0a0, #d9d9d9);
 }
 
 .breed-button
@@ -164,18 +160,14 @@ input#breedAll ~ main > .breed-menu > .breed-button:active,
 {
     color: #202020;
     background-color: #909090;
-    background: -webkit-linear-gradient(left, #707070, #d9d9d9);
-    background: -o-linear-gradient(left, #707070, #d9d9d9);
-    background: linear-gradient(to right, #707070, #d9d9d9);
+    background-image: linear-gradient(to right, #707070, #d9d9d9);
 }
 
 #breedAll ~ main > .breed-menu > .breed-button:hover
 {
     color: black;
     background-color: #707070;
-    background: -webkit-linear-gradient(left, #505050, #d9d9d9);
-    background: -o-linear-gradient(left, #505050, #d9d9d9);
-    background: linear-gradient(to right, #505050, #d9d9d9);
+    background-image: linear-gradient(to right, #505050, #d9d9d9);
 }
 
 aside > h2
@@ -188,7 +180,6 @@ aside > h2
     float: right;
 }
 
-
 input[type=checkbox]
 {
     display: none;
@@ -198,68 +189,69 @@ input[type=checkbox] ~ .sorted > label > span
 {
     width: 19px;
     height: 19px;
-    cursor:pointer;
-    display: inline-block;
-    vertical-align:middle;
+    cursor: pointer;
     margin: 0 0 0 4px;
-    background:url(images/check_radio_sheet.png) left top no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(images/check_radio_sheet.png) left top no-repeat;
 }
 
-input[type=checkbox]:checked ~ .sorted > label > span {
-    background:url(images/check_radio_sheet.png) -19px top no-repeat;
+input[type=checkbox]:checked ~ .sorted > label > span
+{
+    background: url(images/check_radio_sheet.png) -19px top no-repeat;
 }
 
-#sorted:checked ~ .raitings > [data-rating="10"]
+#sorted:checked ~ .raitings > [data-rating='10']
 {
     order: 1;
 }
 
-#sorted:checked ~ .raitings > [data-rating="9"]
+#sorted:checked ~ .raitings > [data-rating='9']
 {
     order: 2;
 }
 
-#sorted:checked ~ .raitings > [data-rating="8"]
+#sorted:checked ~ .raitings > [data-rating='8']
 {
     order: 3;
 }
 
-#sorted:checked ~ .raitings > [data-rating="7"]
+#sorted:checked ~ .raitings > [data-rating='7']
 {
     order: 4;
 }
 
-#sorted:checked ~ .raitings > [data-rating="6"]
+#sorted:checked ~ .raitings > [data-rating='6']
 {
     order: 5;
 }
 
-#sorted:checked ~ .raitings > [data-rating="5"]
+#sorted:checked ~ .raitings > [data-rating='5']
 {
     order: 6;
 }
 
-#sorted:checked ~ .raitings > [data-rating="4"]
+#sorted:checked ~ .raitings > [data-rating='4']
 {
     order: 7;
 }
 
-#sorted:checked ~ .raitings > [data-rating="3"]
+#sorted:checked ~ .raitings > [data-rating='3']
 {
     order: 8;
 }
 
-#sorted:checked ~ .raitings > [data-rating="2"]
+#sorted:checked ~ .raitings > [data-rating='2']
 {
     order: 9;
 }
 
-#sorted:checked ~ .raitings > [data-rating="1"]
+#sorted:checked ~ .raitings > [data-rating='1']
 {
     order: 10;
 }
 
-#sorted:checked ~ .raitings > [data-rating="0"]
+#sorted:checked ~ .raitings > [data-rating='0']
 {
     order: 11;
 }
@@ -293,65 +285,47 @@ input[type=checkbox]:checked ~ .sorted > label > span {
 
 .rating1
 {
-    background: -webkit-linear-gradient(left, red 0%, red 10%, transparent 10%, transparent);
-    background: -o-linear-gradient(left, red 0%, red 10%, transparent 10%, transparent);
-    background: linear-gradient(to right, red 0%, red 10%, transparent 10%, transparent);
+    background-image: linear-gradient(to right, red 0%, red 10%, transparent 10%, transparent);
 }
 
 .rating2
 {
-    background: -webkit-linear-gradient(left, red 0%, red 20%, transparent 20%, transparent);
-    background: -o-linear-gradient(left, red 0%, red 20%, transparent 20%, transparent);
-    background: linear-gradient(to right, red 0%, red 20%, transparent 20%, transparent);
+    background-image: linear-gradient(to right, red 0%, red 20%, transparent 20%, transparent);
 }
 
 .rating3
 {
-    background: -webkit-linear-gradient(left, red 0%, red 30%, transparent 30%, transparent);
-    background: -o-linear-gradient(left, red 0%, red 30%, transparent 30%, transparent);
-    background: linear-gradient(to right, red 0%, red 30%, transparent 30%, transparent);
+    background-image: linear-gradient(to right, red 0%, red 30%, transparent 30%, transparent);
 }
 
 .rating4
 {
-    background: -webkit-linear-gradient(left, red 0%, red 40%, transparent 40%, transparent);
-    background: -o-linear-gradient(left, red 0%, red 40%, transparent 40%, transparent);
-    background: linear-gradient(to right, red 0%, red 40%, transparent 40%, transparent);
+    background-image: linear-gradient(to right, red 0%, red 40%, transparent 40%, transparent);
 }
 
 .rating5
 {
-    background: -webkit-linear-gradient(left, red 0%, red 50%, transparent 50%, transparent);
-    background: -o-linear-gradient(left, red 0%, red 50%, transparent 50%, transparent);
-    background: linear-gradient(to right, red 0%, red 50%, transparent 50%, transparent);
+    background-image: linear-gradient(to right, red 0%, red 50%, transparent 50%, transparent);
 }
 
 .rating6
 {
-    background: -webkit-linear-gradient(left, yellow 0%, yellow 60%, transparent 60%, transparent);
-    background: -o-linear-gradient(left, yellow 0%, yellow 60%, transparent 60%, transparent);
-    background: linear-gradient(to right, yellow 0%, yellow 60%, transparent 60%, transparent);
+    background-image: linear-gradient(to right, yellow 0%, yellow 60%, transparent 60%, transparent);
 }
 
 .rating7
 {
-    background: -webkit-linear-gradient(left, yellow 0%, yellow 70%, transparent 70%, transparent);
-    background: -o-linear-gradient(left, yellow 0%, yellow 70%, transparent 70%, transparent);
-    background: linear-gradient(to right, yellow 0%, yellow 70%, transparent 70%, transparent);
+    background-image: linear-gradient(to right, yellow 0%, yellow 70%, transparent 70%, transparent);
 }
 
 .rating8
 {
-    background: -webkit-linear-gradient(left, yellow 0%, yellow 80%, transparent 80%, transparent);
-    background: -o-linear-gradient(left, yellow 0%, yellow 80%, transparent 80%, transparent);
-    background: linear-gradient(to right, yellow 0%, yellow 80%, transparent 80%, transparent);
+    background-image: linear-gradient(to right, yellow 0%, yellow 80%, transparent 80%, transparent);
 }
 
 .rating9
 {
-    background: -webkit-linear-gradient(left, lime 0%, lime 90%, transparent 90%, transparent);
-    background: -o-linear-gradient(left, lime 0%, lime 90%, transparent 90%, transparent);
-    background: linear-gradient(to right, lime 0%, lime 90%, transparent 90%, transparent);
+    background-image: linear-gradient(to right, lime 0%, lime 90%, transparent 90%, transparent);
 }
 
 .rating10
@@ -370,9 +344,7 @@ footer
     border-width: 1px 0 0 0;
     justify-content: space-between;
     background-color: #c0c0c0;
-    background: -webkit-linear-gradient(bottom, #a0a0a0, #d9d9d9);
-    background: -o-linear-gradient(bottom, #a0a0a0, #d9d9d9);
-    background: linear-gradient(to top, #a0a0a0, #d9d9d9);
+    background-image: linear-gradient(to top, #a0a0a0, #d9d9d9);
 }
 
 address
