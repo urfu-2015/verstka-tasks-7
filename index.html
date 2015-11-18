@@ -6,6 +6,106 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <main>
+            <input type="radio" name="cats" id="Абиссинская">
+            <input type="radio" name="cats" id="Британская">
+            <input type="radio" name="cats" id="Русская">
+            <input type="radio" name="cats" id="Сиамская">
+            <aside>
+                <label for="Абиссинская">Абиссинская</label>
+                <label for="Британская">Британская</label>
+                <label for="Русская">Русская голубая</label>
+                <label for="Сиамская">Сиамская</label>
+                <label></label>
+            </aside>
+            <div class="photos">
+                <div class="Абиссинская">
+                    <img src="1.jpg" alt="1">
+                    <div class="description">Гоша, 4 года</div>
+                </div>
+                <div class="Британская">
+                    <img src="2.jpg" alt="1">
+                    <div class="description">Гриша, 3 года</div>
+                </div>
+                <div class="Абиссинская">
+                    <img src="3.jpg" alt="1">
+                    <div class="description">Жора, 2 года</div>
+                </div>
+                <div class="Русская">
+                    <img src="4.jpg" alt="1">
+                    <div class="description">Кеша, 7 лет</div>
+                </div>
+                <div class="Русская">
+                    <img src="5.jpg" alt="1">
+                    <div class="description">Клёпа, 3 года</div>
+                </div>
+                <div class="Сиамская">
+                    <img src="6.jpg" alt="1">
+                    <div class="description">Матрос, 6 лет</div>
+                </div>
+                <div class="Британская">
+                    <img src="7.jpg" alt="1">
+                    <div class="description">Шаля, 3 года</div>
+                </div>
+                <div class="Абиссинская">
+                    <img src="8.jpg" alt="1">
+                    <div class="description">Зайка, 7 мес.</div>
+                </div>
+            </div>
+            <div class="ratio">
+                <h2>РЕЙТИНГ</h2>
+                <label for="direction">по убыванию</label>
+                <input type="checkbox" id="direction">
+                <div class="types">
+                    <div class="Абиссинская" data-rating="9">
+                        <span class="name">Абиссинская</span>
+                        <div class="linerating">
+                            <div class="line">
+                                <div class="fillLine"></div>
+                            </div>
+                            <div class="rating">9</div>
+                        </div>
+                    </div>
+                    <div class="Британская" data-rating="8">
+                        <span class="name">Британская</span>
+                        <div class="linerating">
+                            <div class="line">
+                                <div class="fillLine"></div>
+                            </div>
+                            <div class="rating">8</div>
+                        </div>
+                    </div>
+                    <div class="Русская" data-rating="10">
+                        <span class="name">Русская голубая</span>
+                        <div class="linerating">
+                            <div class="line">
+                                <div class="fillLine"></div>
+                            </div>
+                            <div class="rating">10</div>
+                        </div>
+                    </div>
+                    <div class="Сиамская" data-rating="4">
+                        <span class="name">Сиамская</span>
+                        <div class="linerating">
+                            <div class="line">
+                                <div class="fillLine"></div>
+                            </div>
+                            <div class="rating">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="copyright">
+                &copy; ООО Бабуленькины котятки, 2015
+            </div>
+            <address>
+                Наш адресс: улица Котовая, д.5
+            </address>
+        </footer>
     </body>
 </html>

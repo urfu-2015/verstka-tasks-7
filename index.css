@@ -1,1 +1,297 @@
+body
+{
+    background: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    border-top: solid 1px #000;
+    height: 30px;
+    padding-top: 10px;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1
+{
+    font-size: 45px;
+}
+
+header
+{
+    display: flex;
+    width: 99%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > input
+{
+    display: none;
+}
+
+main aside
+{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+main aside label
+{
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+main aside label:not(:first-of-type)
+{
+    border-top: solid 1px #000;
+}
+
+main aside label:not(:last-of-type)
+{
+    border-bottom: solid 1px #fff;
+}
+
+main aside label:not(:last-of-type):hover
+{
+    background: #aaa;
+}
+
+main input[id='Абиссинская']:checked ~ aside label[for='Абиссинская'],
+main input[id='Британская']:checked ~ aside label[for='Британская'],
+main input[id='Русская']:checked ~ aside label[for='Русская'],
+main input[id='Сиамская']:checked ~ aside label[for='Сиамская']
+{
+    background: #999;
+}
+
+main .ratio
+{
+    align-self: flex-start;
+    background-color: #d9d9d9;
+    flex-basis: 15%;
+}
+
+main .ratio h2
+{
+    text-align: left;
+    color: #f00;
+    font-size: 30px;
+    margin-top: 0;
+    font-weight: lighter;
+}
+
+main .ratio label
+{
+    text-align: right;
+    font-size: larger;
+    margin-left: 100px;
+}
+
+main .ratio .types div
+{
+    margin-bottom: 10px;
+}
+
+main .ratio .types div .line
+{
+    width: 200px;
+}
+
+main .ratio .types
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .ratio .types div .linerating
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 10px;
+    height: 20px;
+}
+
+main .ratio .types div .linerating .rating
+{
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+main .ratio input:checked ~ .types .Абиссинская
+{
+    order: 1;
+}
+
+main .ratio input:checked ~ .types .Британская
+{
+    order: 2;
+}
+
+main .ratio input:checked ~ .types .Сиамская
+{
+    order: 3;
+}
+
+main .ratio .types .Абиссинская .linerating .line .fillLine
+{
+    width: 90%;
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+main .ratio .types .Британская .linerating .line .fillLine
+{
+    width: 80%;
+    background: linear-gradient(to right, #ff0, #fff);
+}
+
+main .ratio .types .Русская .linerating .line .fillLine
+{
+    width: 100%;
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+main .ratio .types .Сиамская .linerating .line .fillLine
+{
+    width: 40%;
+    background: linear-gradient(to right, #f00, #fff);
+
+}
+
+main .ratio .types > div .linerating .line .fillLine
+{
+    border: solid 1px #000;
+    height: 20px;
+}
+
+main .ratio .types > div .name
+{
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+main .photos
+{
+    flex-basis: 80%;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+main .photos > div:nth-child(8n-7)
+{
+    flex-basis: 58%;
+    margin-right: 2%;
+}
+
+main .photos > div:nth-child(8n-6)
+{
+    flex-basis: 40%;
+}
+
+main .photos > div:nth-child(8n-5)
+{
+    flex-basis: 32%;
+    margin-right: 2%;
+}
+
+main .photos > div:nth-child(8n-4)
+{
+    flex-basis: 32%;
+    margin-right: 2%;
+}
+
+main .photos > div:nth-child(8n-3)
+{
+    flex-basis: 31%;
+}
+
+main .photos > div:nth-child(8n-2)
+{
+    flex-basis: 60%;
+}
+
+main .photos > div:nth-child(8n-1)
+{
+    flex-basis: 38%;
+    margin-left: 2%;
+}
+
+main .photos > div:nth-child(8n)
+{
+    flex-basis: 100%;
+}
+
+main .photos > div
+{
+    margin-bottom: 10px;
+}
+
+main .photos > div:nth-child(8n) img
+{
+    height: 325px;
+}
+
+main .photos img
+{
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+main .photos .description
+{
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0,0,0,.5);
+    margin-top: -100px;
+}
+
+main .photos img:hover ~ .description
+{
+    display:block;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+main > input[id='Русская']:checked ~ .photos div:not([class='Русская']) img,
+main > input[id='Абиссинская']:checked ~ .photos div:not([class='Абиссинская']) img,
+main > input[id='Британская']:checked ~ .photos div:not([class='Британская']) img,
+main > input[id='Сиамская']:checked ~ .photos div:not([class='Сиамская']) img
+{
+    opacity: .5;
+}
+
+main > input[id='Русская']:checked ~ .photos div:not([class='Русская']) div,
+main > input[id='Абиссинская']:checked ~ .photos div:not([class='Абиссинская']) div,
+main > input[id='Британская']:checked ~ .photos div:not([class='Британская']) div,
+main > input[id='Сиамская']:checked ~ .photos div:not([class='Сиамская']) div
+{
+    display: none;
+}
