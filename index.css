@@ -278,50 +278,50 @@ input#sort:checked ~ label > img.on
     background: linear-gradient(90deg, green, white);
     border: 1px solid green;
 }
-input[type="checkbox"]:checked ~ div.one
+input[type='checkbox']:checked ~ div.one
 {
     order: 10;
 }
-input[type="checkbox"]:checked ~ div.two
+input[type='checkbox']:checked ~ div.two
 {
     order: 9;
 }
 
-input[type="checkbox"]:checked ~ div.three
+input[type='checkbox']:checked ~ div.three
 {
     order: 8;
 }
-input[type="checkbox"]:checked ~ div.four
+input[type='checkbox']:checked ~ div.four
 {
     order: 7;
 }
 
-input[type="checkbox"]:checked ~ div.five
+input[type='checkbox']:checked ~ div.five
 {
     order: 6;
 }
 
-input[type="checkbox"]:checked ~ div.six
+input[type='checkbox']:checked ~ div.six
 {
     order: 5;
 }
 
-input[type="checkbox"]:checked ~ div.seven
+input[type='checkbox']:checked ~ div.seven
 {
     order: 4;
 }
 
-input[type="checkbox"]:checked ~ div.eight
+input[type='checkbox']:checked ~ div.eight
 {
     order: 3;
 }
 
-input[type="checkbox"]:checked ~ div.nine
+input[type='checkbox']:checked ~ div.nine
 {
     order: 2;
 }
 
-input[type="checkbox"]:checked ~ div.ten
+input[type='checkbox']:checked ~ div.ten
 {
     order: 1;
 }
