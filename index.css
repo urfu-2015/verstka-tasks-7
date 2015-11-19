@@ -213,74 +213,74 @@ h2
     border: 1px solid #aaa;
 }
 
-.ratingLine[value='1']
+.breedRatingContainer[value='1'] .ratingLine
 {
     width: 10%;
 }
 
-.ratingLine[value='2']
+.breedRatingContainer[value='2'] .ratingLine
 {
     width: 20%;
 }
 
-.ratingLine[value='3']
+.breedRatingContainer[value='3'] .ratingLine
 {
     width: 30%;
 }
 
-.ratingLine[value='4']
+.breedRatingContainer[value='4'] .ratingLine
 {
     width: 40%;
 }
 
-.ratingLine[value='5']
+.breedRatingContainer[value='5'] .ratingLine
 {
     width: 50%;
 }
 
-.ratingLine[value='6']
+.breedRatingContainer[value='6'] .ratingLine
 {
     width: 60%;
 }
 
-.ratingLine[value='7']
+.breedRatingContainer[value='7'] .ratingLine
 {
     width: 70%;
 }
 
-.ratingLine[value='8']
+.breedRatingContainer[value='8'] .ratingLine
 {
     width: 80%;
 }
 
-.ratingLine[value='9']
+.breedRatingContainer[value='9'] .ratingLine
 {
     width: 90%;
 }
 
-.ratingLine[value='10']
+.breedRatingContainer[value='10'] .ratingLine
 {
     width: 100%;
 }
 
-.ratingLine[value='1'],
-.ratingLine[value='2'],
-.ratingLine[value='3']
+.breedRatingContainer[value='1'] .ratingLine,
+.breedRatingContainer[value='2'] .ratingLine,
+.breedRatingContainer[value='3'] .ratingLine
 {
     background: linear-gradient(to right, #f00, #fff);
 }
 
-.ratingLine[value='4'],
-.ratingLine[value='5'],
-.ratingLine[value='6'],
-.ratingLine[value='7']
+.breedRatingContainer[value='4'] .ratingLine,
+.breedRatingContainer[value='5'] .ratingLine,
+.breedRatingContainer[value='6'] .ratingLine,
+.breedRatingContainer[value='7'] .ratingLine
 {
     background: linear-gradient(to right, #ff0, #fff);
 }
 
-.ratingLine[value='8'],
-.ratingLine[value='9'],
-.ratingLine[value='10']
+.breedRatingContainer[value='8'] .ratingLine,
+.breedRatingContainer[value='9'] .ratingLine,
+.breedRatingContainer[value='10'] .ratingLine
 {
     background: linear-gradient(to right, #0f0, #fff);
 }
@@ -290,29 +290,73 @@ h2
     align-self: flex-end;
 }
 
-#filter:checked ~ .breed1
-{
-    order: 1;
+.filter {
+    display: flex;
+    align-items: center;
 }
 
-#filter:checked ~ .breed2
+.checkbox
+{
+    margin-left: 5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('checkbox_no.png');
+}
+
+#filter:checked ~ .filter .checkbox
+{
+    background-image: url('checkbox_yes.png');
+}
+
+#filter:checked ~ .breedRatingContainer[value='1']
+{
+    order: 10;
+}
+
+#filter:checked ~ .breedRatingContainer[value='2']
+{
+    order: 9;
+}
+
+#filter:checked ~ .breedRatingContainer[value='3']
+{
+    order: 8;
+}
+
+#filter:checked ~ .breedRatingContainer[value='4']
+{
+    order: 7;
+}
+
+#filter:checked ~ .breedRatingContainer[value='5']
+{
+    order: 6;
+}
+
+#filter:checked ~ .breedRatingContainer[value='6']
 {
     order: 5;
 }
 
-#filter:checked ~ .breed3
-{
-    order: 2;
-}
-
-#filter:checked ~ .breed4
+#filter:checked ~ .breedRatingContainer[value='7']
 {
     order: 4;
 }
 
-#filter:checked ~ .breed5
+#filter:checked ~ .breedRatingContainer[value='8']
 {
     order: 3;
+}
+
+#filter:checked ~ .breedRatingContainer[value='9']
+{
+    order: 2;
+}
+
+#filter:checked ~ .breedRatingContainer[value='10']
+{
+    order: 1;
 }
 
 footer
