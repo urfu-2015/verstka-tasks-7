@@ -13,6 +13,9 @@
         <input type="radio" id="breed-siamese" name="breed">
         <main>
             <label class="breed-menu" for="breedAll">
+                <label class="breed-button" for="breedAll">
+                    Все    
+                </label>
                 <label class="breed-button" for="breed-abyssinian">
                     Абиссинская    
                 </label>
@@ -128,24 +131,32 @@
                 <h2>Рейтинг</h2>
                 <input type="checkbox" id="sorted" name="sorted">
                 <div class="sorted">
-                    <label class="rating-lable" for="sorted">по убыванию<span></span></label>
+                    <label class="rating-lable" for="sorted">сортировать по убыванию<span></span></label>
                 </div>
                 <div class="raitings">
                     <div data-rating="10">
                         <span>Абиссинская</span>
-                        <div class="rating10">10</div>
+                        <div  class="progress-bar" data-value="10">
+                            <span></span>
+                        </div>
                     </div>
                     <div data-rating="7">
                         <span>Британская</span>
-                        <div class="rating7">7</div>
+                        <div class="progress-bar" data-value="7">
+                            <span></span>
+                        </div>
                     </div>
                     <div data-rating="4">
                         <span>Русская голубая</span>
-                        <div class="rating4">4</div>
+                        <div class="progress-bar" data-value="4">
+                            <span></span>
+                        </div>
                     </div>
                     <div data-rating="8">
                         <span>Сиамская</span>
-                        <div class="rating8">8</div>
+                        <div class="progress-bar" data-value="8">
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </aside>

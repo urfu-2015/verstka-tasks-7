@@ -5,6 +5,7 @@ body
 {
     margin: 0;
     padding: 0;
+    font-size: .8vw;
     font-family: 'Crushed', cursive;
 }
 
@@ -57,10 +58,10 @@ input[type=radio]
     opacity: .7;
     width: 100%;
     color: white;
-    font-size: 24px;
+    display: none;
+    font-size: 2em;
     font-weight: 900;
     padding: 8px 12px;
-    display: inline-block;
     background-color: black;
 }
 
@@ -100,11 +101,6 @@ input[type=radio]
     vertical-align: middle;
 }
 
-.container > section > span
-{
-    display: none;
-}
-
 .container > section:nth-child(8n+1),
 .container > section:nth-child(8n+3),
 .container > section:nth-child(8n+4),
@@ -130,6 +126,7 @@ aside
 {
     width: 15vw;
     overflow: hidden;
+    font-size: 1.25em;
     background-color: #c0c0c0;
     background-image: linear-gradient(to right, #a0a0a0, #d9d9d9);
 }
@@ -137,6 +134,7 @@ aside
 aside
 {
     padding: 8px;
+    font-size: 1em;
     align-self: flex-start;
     background-image: linear-gradient(to left, #a0a0a0, #d9d9d9);
 }
@@ -144,7 +142,7 @@ aside
 .breed-button
 {
     width: 100%;
-    padding: 16px;
+    padding: 1vw;
     color: #303030;
     display: block;
     cursor: pointer;
@@ -153,13 +151,15 @@ aside
 }
 
 input#breedAll ~ main > .breed-menu > .breed-button:active,
-#breed-abyssinian:checked ~ main .breed-button:nth-child(1),
-#breed-british:checked ~ main .breed-button:nth-child(2),
-#breed-russian-blue:checked ~ main .breed-button:nth-child(3),
-#breed-siamese:checked ~ main .breed-button:nth-child(4)
+#breedAll:checked ~ main .breed-button:nth-child(1),
+#breed-abyssinian:checked ~ main .breed-button:nth-child(2),
+#breed-british:checked ~ main .breed-button:nth-child(3),
+#breed-russian-blue:checked ~ main .breed-button:nth-child(4),
+#breed-siamese:checked ~ main .breed-button:nth-child(5)
 {
     color: #202020;
     background-color: #909090;
+    text-shadow: 0 0 3px white;
     background-image: linear-gradient(to right, #707070, #d9d9d9);
 }
 
@@ -167,17 +167,26 @@ input#breedAll ~ main > .breed-menu > .breed-button:active,
 {
     color: black;
     background-color: #707070;
+    text-shadow: 0 0 3px white;
     background-image: linear-gradient(to right, #505050, #d9d9d9);
 }
 
 aside > h2
 {
-    margin: 4px 0 4px 32px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
 }
 
 .sorted
 {
-    float: right;
+    width: 100%;
+    margin: 6px 0;
+    padding: 6px 0;
+    text-align: right;
+    border: 1px solid #606060;
+    border-width: 1px 0;
 }
 
 input[type=checkbox]
@@ -187,18 +196,30 @@ input[type=checkbox]
 
 input[type=checkbox] ~ .sorted > label > span
 {
-    width: 19px;
-    height: 19px;
+    width: 1em;
+    height: 1em;
     cursor: pointer;
+    font-weight: 600;
     margin: 0 0 0 4px;
+    position: relative;
+    border-radius: .33em;
     display: inline-block;
     vertical-align: middle;
-    background: url(images/check_radio_sheet.png) left top no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 4px black;
 }
 
-input[type=checkbox]:checked ~ .sorted > label > span
+input[type=checkbox]:checked ~ .sorted > label > span:after
 {
-    background: url(images/check_radio_sheet.png) -19px top no-repeat;
+    right: 0;
+    bottom: 0;
+    color: #6cf;
+    content: '✔';
+    position: absolute;
+    text-shadow: 0 0 2px black,
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black;
 }
 
 #sorted:checked ~ .raitings > [data-rating='10']
@@ -270,74 +291,123 @@ input[type=checkbox]:checked ~ .sorted > label > span
 
 .raitings > div > span
 {
-    padding-left: 32px;
+    padding-left: 2vw;
 }
 
-.raitings > div > div
+.progress-bar
 {
     width: 100%;
+    height: 24px;
+    margin: 4px 0;
+    overflow: hidden;
     font-weight: 600;
     text-align: center;
-    display: inline-block;
-    border: 2px solid black;
-    text-shadow: 0 0 4px white;
+    border-radius: 6px;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 4px black;
 }
 
-.rating1
+.progress-bar > span
 {
-    background-image: linear-gradient(to right, red 0%, red 10%, transparent 10%, transparent);
+    top: 0;
+    left: 0;
+    margin: 2px;
+    display: block;
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
 }
 
-.rating2
+.progress-bar[data-value]:after
 {
-    background-image: linear-gradient(to right, red 0%, red 20%, transparent 20%, transparent);
+    top: 0;
+    left: 0;
+    margin: 2px;
+    line-height: 22px;
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    content: attr(data-value);
+    text-shadow: 0 0 2px white;
 }
 
-.rating3
+.progress-bar > span:before
 {
-    background-image: linear-gradient(to right, red 0%, red 30%, transparent 30%, transparent);
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
 }
 
-.rating4
+.progress-bar[data-value='1'] > span:before
 {
-    background-image: linear-gradient(to right, red 0%, red 40%, transparent 40%, transparent);
+    width: 10%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 1000%);
 }
 
-.rating5
+.progress-bar[data-value='2'] > span:before
 {
-    background-image: linear-gradient(to right, red 0%, red 50%, transparent 50%, transparent);
+    width: 20%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 500%);
 }
 
-.rating6
+.progress-bar[data-value='3'] > span:before
 {
-    background-image: linear-gradient(to right, yellow 0%, yellow 60%, transparent 60%, transparent);
+    width: 30%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 333.3%);
 }
 
-.rating7
+.progress-bar[data-value='4'] > span:before
 {
-    background-image: linear-gradient(to right, yellow 0%, yellow 70%, transparent 70%, transparent);
+    width: 40%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 250%);
 }
 
-.rating8
+.progress-bar[data-value='5'] > span:before
 {
-    background-image: linear-gradient(to right, yellow 0%, yellow 80%, transparent 80%, transparent);
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 200%);
 }
 
-.rating9
+.progress-bar[data-value='6'] > span:before
 {
-    background-image: linear-gradient(to right, lime 0%, lime 90%, transparent 90%, transparent);
+    width: 60%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 166.6%);
 }
 
-.rating10
+.progress-bar[data-value='7'] > span:before
 {
-    background-color: lime;
+    width: 70%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 142.9%);
+}
+
+.progress-bar[data-value='8'] > span:before
+{
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 125%);
+}
+
+.progress-bar[data-value='9'] > span:before
+{
+    width: 90%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 111.1%);
+}
+
+.progress-bar[data-value='10'] > span:before
+{
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, .8) 0, rgba(0, 255, 0, .8) 100%);
 }
 
 footer
 {
     width: 100%;
     display: flex;
-    padding: 8px 32px;
+    padding: 8px 2vw;
     align-items: center;
     vertical-align: middle;
     border: 1px solid #a0a0a0;
