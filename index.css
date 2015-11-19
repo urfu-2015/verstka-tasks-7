@@ -64,7 +64,6 @@ span
 {
     font-size: 23px;
     display: block;
-    /*margin-left: 10px;*/
 }
 
 section article:nth-child(8n+1),
@@ -112,7 +111,6 @@ section article:nth-child(8n)
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .name > span
@@ -156,7 +154,7 @@ section article:hover > .name
 
 h2
 {
-    color:red;
+    color: red;
     text-transform: uppercase;
     font-weight: lighter;
 }
