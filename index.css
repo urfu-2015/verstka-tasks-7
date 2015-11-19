@@ -83,9 +83,10 @@ hr
 .wrapper
 #grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-one-card-1,
 #grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-one-card-2,
+#grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-1,
 #grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-2,
-#grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-3,
-#grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-three-card-1
+#grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-three-card-1,
+#grey:checked ~ .photo-cards > .wrapper-photo-cards > .line-four-card-1
 {
     opacity: .5;
 }
