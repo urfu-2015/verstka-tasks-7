@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgba(234, 234, 234, 0.51);
+    background-color: rgba(234, 234, 234, .51);
 }
 
 main
@@ -17,7 +17,7 @@ header
     height: 100px;
     width: 100%;
     left: 0;
-    top:0;
+    top: 0;
 }
 
 h1
@@ -129,7 +129,7 @@ section article:hover > .name
     display: flex;
     flex-flow: column;
     width: 15%;
-    background-color: rgba(216, 216, 216, 0.51);
+    background-color: rgba(216, 216, 216, .51);
 }
 
 .menubox.left > label
@@ -216,9 +216,8 @@ h2
 .sort:focus + label:before
 {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, .5),
-    inset 0 2px 3px rgba(0, 0, 0, .2);
+        inset 0 2px 3px rgba(0, 0, 0, .2);
 }
-
 
 .menubox.right .block
 {
