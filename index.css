@@ -1,6 +1,7 @@
 html
 {
     height: 100%;
+    font-family: Arial;
 }
 body
 {
@@ -14,16 +15,20 @@ body
 {
     position: relative;
     min-height: 100%;
+    margin: 0 auto;
 }
 header
 {
     text-align: center;
+    padding: 35px;
+    font-size: 28px;
 }
 main
 {
     max-width: 100%;
     display: flex;
-    margin: auto;
+    justify-content: space-between;
+    margin: 0 auto;
     height: 100%;
 }
 .column
@@ -38,17 +43,21 @@ main
 aside
 {
     background-color: #dcdcdc;
-    flex-basis: 300px;
+    flex-basis: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .button
 {
     display: flex;
     background-color: #dcdcdc;
     padding: 20px;
-    width: 83%;
+    width: 93%;
+    margin: -10px;
     border-top: 1px solid slategray;
     border-bottom: 1px solid slategray;
 }
+input#all:checked ~ main > aside > label.all,
 input#abs:checked ~ main > aside > label.abs,
 input#siam:checked ~ main > aside > label.siam,
 input#rus:checked ~ main > aside > label.rus,
@@ -69,59 +78,40 @@ section
 {
     display: flex;
     margin-top: -10px;
-    width: 700px;
+    width: 900px;
     flex-wrap: wrap;
     align-items: stretch;
     min-height: 100%;
 }
-.card > span
+.card > div
 {
     display: none;
 }
 .card
 {
     background: white;
-    align-items: center;
-    justify-content: center;
-    /*justify-content: center;
-    align-items: flex-end;*/
-    /*align-self: stretch;*/
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: 1px;
-    /*align-items: flex-start;*/
-    overflow: hidden;
+    display: flex;
+    margin-bottom: 10px;
     position: relative;
-    /*height: 400px;*/
+    height: 400px;
 }
-/*.card1,
-.card3,
-.card4,
-.card5,
-.card7
+.card:hover > div
 {
-    width: 32%;
+    background-color: black;
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    opacity: .5;
+    padding: 10px;
+    color: white;
 }
-.card2,
-.card6
-{
-    width: 64%;
-}
-.card8
-{
-    width: 96%;
-    height: 100%;
-}
-/*.card
-{
-    width: 33%;
-}*/
 img
 {
     width: 100%;
-    height: auto;
-    /*height: 100%;*/
-    display: flex;
+    /*height: 400px;*/
+    object-fit: cover;
 }
 footer
 {
@@ -137,7 +127,11 @@ footer
 .all_length
 {
     /*width: 100%;*/
-    width: 100%;
+    width: 900px;
+    height: 100%;
+}
+.all_length > img
+{
     height: 100%;
 }
 .goriz
@@ -169,4 +163,165 @@ input#siam:checked ~ main > section > :not(.siamian)
 address
 {
     color: mediumblue;
+}
+input#sort
+{
+    display: none;
+}
+.rating
+{
+    display: flex;
+    flex-direction: column;
+}
+.rating > label
+{
+    align-self: flex-end;
+}
+.rating > label > img
+{
+    width: 16px;
+}
+img.on
+{
+    display: none;
+}
+input#sort:checked ~ label > img.off
+{
+    display: none;
+}
+input#sort:checked ~ label > img.on
+{
+    display: inline-flex;
+}
+.rating > h2
+{
+    text-transform: uppercase;
+    color: red;
+    font-weight: 100;
+}
+.rating > div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rating > div > div
+{
+    height: 30px;
+    background: aqua;
+}
+.rating > div > p
+{
+    width: 100%;
+    font-size: 20px;
+}
+.rating > div > .number
+{
+    border: 1px solid black;
+    font-size: 30px;
+}
+.rating > .one. > .lenta
+{
+    width: 6%;
+}
+.rating > .two > .lenta
+{
+    width: 12%;
+}
+.three > .three > .lenta
+{
+    width: 18%;
+}
+.rating > .four > .lenta
+{
+    width: 24%;
+}
+.rating > .five > .lenta
+{
+    width: 30%;
+}
+.rating > .six > .lenta
+{
+    width: 36%;
+}
+.rating > .seven > .lenta
+{
+    width: 42%;
+}
+.rating > .eight > .lenta
+{
+    width: 48%;
+}
+.rating > .nine > .lenta
+{
+    width: 54%;
+}
+.rating > .ten > .lenta
+{
+    width: 60%;
+}
+
+.red > .lenta
+{
+    background: linear-gradient(90deg, red, white);
+    border: 1px solid red;
+}
+.yellow > .lenta
+{
+    background: linear-gradient(90deg, yellow, white);
+    border: 1px solid yellow;
+}
+.green > .lenta
+{
+    background: linear-gradient(90deg, green, white);
+    border: 1px solid green;
+}
+input[type="checkbox"]:checked ~ div.one
+{
+    order: 10;
+}
+input[type="checkbox"]:checked ~ div.two
+{
+    order: 9;
+}
+
+input[type="checkbox"]:checked ~ div.three
+{
+    order: 8;
+}
+input[type="checkbox"]:checked ~ div.four
+{
+    order: 7;
+}
+
+input[type="checkbox"]:checked ~ div.five
+{
+    order: 6;
+}
+
+input[type="checkbox"]:checked ~ div.six
+{
+    order: 5;
+}
+
+input[type="checkbox"]:checked ~ div.seven
+{
+    order: 4;
+}
+
+input[type="checkbox"]:checked ~ div.eight
+{
+    order: 3;
+}
+
+input[type="checkbox"]:checked ~ div.nine
+{
+    order: 2;
+}
+
+input[type="checkbox"]:checked ~ div.ten
+{
+    order: 1;
 }
