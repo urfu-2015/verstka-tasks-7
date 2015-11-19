@@ -290,7 +290,8 @@ h2
     align-self: flex-end;
 }
 
-.filter {
+.filter
+{
     display: flex;
     align-items: center;
 }
