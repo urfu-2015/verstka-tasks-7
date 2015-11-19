@@ -6,24 +6,26 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header>cool header</header>
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
         <main>
             <input type="radio" class="breed" name="breed" id="all-breeds" checked>
             <input type="radio" class="breed" name="breed" id="abys-breed">
             <input type="radio" class="breed" name="breed" id="brit-breed">
             <input type="radio" class="breed" name="breed" id="russ-breed">
             <input type="radio" class="breed" name="breed" id="siam-breed">
-            <div class="menubox right">
-                <label class="menu right" for="all-breeds">Все породы</label>
-                <label class="menu right" for="abys-breed">Абиссинская</label>
-                <label class="menu right" for="brit-breed">Британская</label>
-                <label class="menu right" for="russ-breed">Русская голубая</label>
-                <label class="menu right" for="siam-breed">Сиамская</label>
+            <div class="menubox left">
+                <label class="menuitem" for="all-breeds"><span>Все породы</span></label>
+                <label class="menuitem" for="abys-breed"><span>Абиссинская</span></label>
+                <label class="menuitem" for="brit-breed"><span>Британская</span></label>
+                <label class="menuitem" for="russ-breed"><span>Русская голубая</span></label>
+                <label class="menuitem" for="siam-breed"><span>Сиамская</span></label>
             </div>
             <section>
                 <article class="siam">
                     <img src="http://goodimg.ru/img/kotiki-kartinki5.jpg">
-                    <span class="name">Максим I Великий</span>
+                    <span class="name">Валера I Великий</span>
                 </article>
                 <article class="brit">
                     <img src="http://www.softcat.ru/images/pedigree/_2.jpg">
@@ -56,9 +58,10 @@
                     <span class="name">Макинтош</span>
                 </article>
             </section>
-            <div class="menubox left">
+            <div class="menubox right">
+                <h2>Рейтинг</h2>
                 <input type="checkbox" class="sort" id="sort">
-                <label for="sort">Sort</label>
+                <label for="sort"><span>По убыванию</span></label>
                 <div class="abys block">
                     <div class="firstline"><span class="breedlist">Абиссинская</span><span>9</span></div>
                     <div class="rating"></div>
@@ -77,11 +80,11 @@
                     </div>
                     <div class="rating"></div>
                 </div>
-
             </div>
         </main>
         <footer>
-            awesome footer
+            <span>(c) ООО Бабуленькины котятки, 2015</span>
+            <span>Наш адрес: улица Котовая, д.5</span>
         </footer>
     </body>
 </html>

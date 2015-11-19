@@ -1,17 +1,28 @@
+body
+{
+    background-color: rgba(234, 234, 234, 0.51);
+}
 
 main
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 }
+
 header
 {
-    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
     width: 100%;
-    background-color: antiquewhite;
-    /*position: fixed;*/
     left: 0;
     top:0;
+}
+
+h1
+{
+    font-size: 40px;
 }
 
 footer
@@ -23,40 +34,37 @@ footer
     align-items: center;
 }
 
-.menu
-{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    height: 50px;
-}
-
-section article img
-{
-    min-width: 100%;
-    min-height: 100%;
-    max-height: 200%;
-    object-fit: cover;
-}
-
 section
 {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
+    width: 65%;
 }
 
 section article
 {
-    height: 400px;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: center;
     display: flex;
-    margin: 1.5%;
+    position: relative;
+    height: 400px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+section article img
+{
+    min-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+span
+{
+    font-size: 23px;
+    display: block;
+    /*margin-left: 10px;*/
 }
 
 section article:nth-child(8n+1),
@@ -65,13 +73,13 @@ section article:nth-child(8n+4),
 section article:nth-child(8n+5),
 section article:nth-child(8n+7)
 {
-    width: 30%;
+    width: 33%;
 }
 
 section article:nth-child(8n+2),
 section article:nth-child(8n+6)
 {
-    width: 63.5%;
+    width: 66%;
 }
 
 section article:nth-child(8n)
@@ -79,8 +87,7 @@ section article:nth-child(8n)
     width: 100%;
 }
 
-.breed,
-.sort
+.breed
 {
     display: none;
 }
@@ -95,21 +102,132 @@ section article:nth-child(8n)
 
 .name
 {
-    display: none;
+    position: absolute;
+    bottom: 25%;
+    left: 1px;
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.menubox.left
+.name > span
+{
+    padding-left: 10px;
+}
+
+section article:hover > .name
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menubox
 {
     display: flex;
     flex-flow: column;
-    width: 20%;
+    width: 15%;
+    background-color: rgba(216, 216, 216, 0.51);
 }
 
-.menubox.left .block
+.menubox.left > label
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px ridge #fff;
+    height: 80px;
+}
+
+.menubox.left > label > span
+{
+    margin-left: 10px;
+}
+
+.menubox.right
+{
+    height: 100%;
+    padding: 10px;
+}
+
+h2
+{
+    color:red;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.sort + label
+{
+    cursor: pointer;
+}
+
+.sort:not(checked)
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.sort:not(checked) + label
+{
+    position: relative;
+    padding: 0 60px 0 0;
+}
+
+.sort:not(checked) + label:before
+{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #cdd1da;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.sort:not(checked) + label:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 26px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: all .2s;
+}
+
+.sort:checked + label:before
+{
+    background: #63ff47;
+}
+
+.sort:checked + label:after
+{
+    right: 2px;
+}
+
+.sort:focus + label:before
+{
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, .5),
+    inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+
+.menubox.right .block
 {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    margin: 10px 0;
 }
 
 .firstline
