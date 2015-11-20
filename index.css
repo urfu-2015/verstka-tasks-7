@@ -54,15 +54,16 @@ body
 	font-size: 2em;
 }
 
-.menu div
+.menu .types
 {
+    display: block;
 	margin: 0;
 	padding: 30px 10px;
 	border-bottom: 1px solid #fff;
 	box-shadow: 0px 1px 1px #aaa;
 }
 
-.menu div:hover
+.menu .types:hover
 {
 	background: #777;
 }
