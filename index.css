@@ -1,6 +1,7 @@
 body
 {
     background-color: rgba(234, 234, 234, .51);
+    font-family: 'Arial', sans-serif;
 }
 
 main
@@ -47,7 +48,6 @@ section article
 {
     display: flex;
     position: relative;
-    height: 400px;
     flex-wrap: wrap;
     overflow: hidden;
     margin-bottom: 10px;
@@ -55,7 +55,7 @@ section article
 
 section article img
 {
-    min-height: 400px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
