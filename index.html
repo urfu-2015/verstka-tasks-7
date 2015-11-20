@@ -10,49 +10,94 @@
             <h1>Бабуленькины котятки</h1>
         </header>
         <main>
+            <input type="radio" name="chosen-img" id="none" checked>
+            <input type="radio" name="chosen-img" id="abyssin">
+            <input type="radio" name="chosen-img" id="british">
+            <input type="radio" name="chosen-img" id="russian">
+            <input type="radio" name="chosen-img" id="siamese">
             <div class="menu">
-                <label>Абиссинская</label>
-                <label>Британская</label>
-                <label>Русская голубая</label>
-                <label>Сиамская</label>
+                <label for="abyssin">Абиссинская</label>
+                <label for="none">Абиссинская</label>
+                <label for="british">Британская</label>
+                <label for="none">Британская</label>
+                <label for="russian">Русская голубая</label>
+                <label for="none">Русская голубая</label>
+                <label for="siamese">Сиамская</label>
+                <label for="none">Сиамская</label>
             </div>
             <div class="gallery">
-                <div class="img1">
-                    <img
-                        src="http://koshki7.ru/wp-content/uploads/2012/
+                <div class="abyssin">
+                    <img src="http://koshki7.ru/wp-content/uploads/2012/
 06/%D0%B0%D0%B1%D0%B8%D1%81%D1%81%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D0%BA%D0%BE%D1%88%D0%BA%D0%B03.jpg">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Гоша, 4 года</div>
                 </div>
-                <div class="img2">
+                <div class="abyssin">
                     <img src="http://mybritishcat.ru/wp-content/uploads/2013/02/Abissinskaya-koshka.jpg">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Рыжик, 3 года</div>
                 </div>
-                <div class="img3">
+                <div class="british">
                     <img src="http://mybritishcat.ru/wp-content/uploads/2011/12/Britanskaya-koshka2.jpg">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Пушок, 7 лет</div>
                 </div>
-                <div class="img4">
+                <div class="russian">
                     <img src="http://img4.wikia.nocookie.net/__cb20131123144757/catspedia/ru/images/a/
 a7/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D0%BB%D1%83%D0%B1%D0%B0%D1%8F.jpg">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Снежок, 5 лет</div>
                 </div>
-                <div class="img5">
+                <div class="russian">
                     <img src="http://zooshef.ru/files/images/articles/russkaja-golubaja-koshka.jpg">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Васька, 4 года</div>
                 </div>
-                <div class="img6">
-                    <img src="http://www.skinsfinx.ru/data/pictures/Image/images/siamesse/3.jpg">
+                <div class="siamese">
+                    <img src="https://www.proza.ru/pics/2011/09/15/988.jpg">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Пончик, 6 лет</div>
                 </div>
-                <div class="img7">
+                <div class="siamese">
                     <img src="http://миркошек.рф/upload/iblock/51e/siamese_cat.jpg">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Гермес, 2 года</div>
                 </div>
-                <div class="img8">
-                    <img src="https://sp.yimg.com/xj/
-th?id=OIP.M423be417b1cef7726b2ce54c9d4001bfo0&pid=15.1&P=0&w=300&h=300">
+                <div class="british">
+                    <img src="http://brianor.ru/images/pages/header/header_cat.png">
+                    <div class="desc-bg"></div>
+                    <div class="desc">Кекс и Бантик, 4 и 6 лет</div>
                 </div>
             </div>
-            <div class="rating">
-                <input type="checkbox">
-                <div class="rating1">Абиссинская</div>
-                <div class="rating2">Британская</div>
-                <div class="rating3">Русская голубая</div>
-                <div class="rating4">Сиамская</div>
+            <div class="raiting-block">
+                <h2>Рейтинг</h2>
+                <label for="sort">по убыванию</label>
+                <input type="checkbox" id="sort">
+                <div class="raiting first">
+                    Абиссинская
+                    <div class="line"></div>
+                    <div class="number">9</div>
+                </div>
+                <div class="raiting second">
+                    Британская
+                    <div class="line"></div>
+                    <div class="number">8</div>
+                </div>
+                <div class="raiting third">
+                    Русская голубая
+                    <div class="line"></div>
+                    <div class="number">10</div>
+                </div>
+                <div class="raiting fourth">
+                    Сиамская
+                    <div class="line"></div>
+                    <div class="number">4</div>
+                </div>
             </div>
         </main>
+        <footer>
+            ООО Бабуленькины котятки, 2015
+            <address>Наш адрес: улица Котовая, д.5</address>
+        </footer>
     </body>
 </html>
