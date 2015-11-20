@@ -273,8 +273,8 @@ label[for='none']
     order: 4;
 }
 
-@media all and (max-width: 640px) {
-
+@media all and (max-width: 640px)
+{
     main
     {
         -webkit-flex-flow: column;
