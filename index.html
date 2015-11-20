@@ -12,49 +12,83 @@
         </header>
         <div class="wrapper">
             <div class="menu">
-                <div>Абиссинская</div>
-                <div>Британская</div>
-                <div>Русская голубая</div>
-                <div>Сиамская</div>
+                <label for="abissian"><div>Абиссинская</div></label>
+                <label for="britain"><div>Британская</div></label>
+                <label for="russian"><div>Русская голубая</div></label>
+                <label for="salem"><div>Сэйлем</div></label>
             </div>
             <div class="photos">
+                <input id="abissian" type="checkbox" class="abissian">
+                <input id="britain" type="checkbox" class="britain">
+                <input id="russian" type="checkbox" class="russian">
+                <input id="salem" type="checkbox" class="salem">
                 <div class="row">
                     <div class="col-1">
-                        <img src="http://www.abysolaris.ru/pdir/gallery/6537_2.jpg" alt="kote">
+                        <img src="http://www.zooclub.ru/attach/15000/15826.jpg" alt="kote" class="russian">
+                        <div class="info">
+                            Усабель, 3 года
+                        </div>
                     </div>
                     <div class="col-2">
-                        <img src="https://farm4.staticflickr.com/3822/12833908543_bbc6bf0e6f_b.jpg" alt="kote">
+                        <img src="https://farm4.staticflickr.com/3822/12833908543_bbc6bf0e6f_b.jpg" alt="kote" class="abissian">
+                        <div class="info">
+                            Джоанн, 4 года
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1">
-                        <img src="http://poroda-mainecoon.ru/wp-content/uploads/2015/05/abiss_02.jpg" alt="kote">
+                        <img src="http://poroda-mainecoon.ru/wp-content/uploads/2015/05/abiss_02.jpg" alt="kote" class="abissian">
+                        <div class="info">
+                            Чип и Дейл, 1 год
+                        </div>
                     </div>
                     <div class="col-1">
-                        <img src="http://www.zoopicture.ru/assets/2010/08/469462866.jpg" alt="kote">
+                        <img src="http://rewalls.com/large/201008/1871.jpg" alt="kote" class="britain">
+                        <div class="info">
+                            Маркиз, 5 лет
+                        </div>
                     </div>
                     <div class="col-1">
-                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW4k74Y1t8uBYNOIC_goEZsx3edkNMI--K5vj1MqUF5vwEDR9O9Q" alt="kote">
+                        <img src="http://cs7003.vk.me/c7006/v7006029/ad83/kyg9piJOdxg.jpg" alt="kote" class="salem">
+                        <div class="info">
+                            Сэлем Сэберхэген, > 500 лет
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-2">
-                        <img src="http://www.rus-zona.net/wp-content/uploads/kat/abissinskay_koshka_1.jpg" alt="kote">
+                        <img src="http://www.zastavki.com/pictures/originals/2013/Animals___Cats_British_cat_bored_044326_.jpg" alt="kote" class="britain">
+                        <div class="info">
+                            Игорь, 2 года
+                        </div>
                     </div>
                     <div class="col-1">
-                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP0Ac0RL2hsI2X0_bpMI9p_FnjM97EWY8JSu9kYedMCiXJcLPXLA" alt="kote">
+                        <img src="http://rostovvet.ru/wp-content/uploads/2015/02/Russian-blue-cat.jpg" alt="kote" class="russian">
+                        <div class="info">
+                            Люси, 4 года
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-3">
-                        <img src="http://ru-pets.ru/img/m16/555/1407403516.jpg" alt="kote">
+                        <img src="http://ru-pets.ru/img/m16/555/1407403516.jpg" alt="kote"class="abissian">
+                        <div class="info">
+                            Васян, 2 года
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="rating">
                 <h1>Рейтинг</h1>
-                <input id="rating" type="checkbox" name="rating">
-                <label for="rating">По убыванию</label>
+                <input type="checkbox" id="dec" class="dec">
+                <div class="option">
+                    <label for="dec">
+                        По убыванию
+                        <img src="checked-checkbox.png" class="checked">
+                        <img src="empty-checkbox.svg" class="empty">
+                    </label>
+                </div>
                 <div class="rate rate-9">
                     <h2>Абиссинская</h2>
                     <div class="linear-gradient grad-9"></div> 9
@@ -72,6 +106,12 @@
                     <div class="linear-gradient grad-4"></div> 4
                 </div>
             </div>
+        </div>
+        <div class="page-buffer"></div>
+        <div class="page-footer">
+            <hr>
+            <p class="left">© Бабуленькины котятки, 2015</p>
+            <p class="right">Наш адрес: улица Котовая, д.5</p>
         </div>
     </body>
 </html>

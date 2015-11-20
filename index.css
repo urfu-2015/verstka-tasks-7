@@ -1,3 +1,10 @@
+html, body
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 body
 {
 	background: #ebebeb;
@@ -16,8 +23,20 @@ body
 
 .wrapper
 {
+	min-height: 100%;
+	margin-bottom: -50px;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+* html .wrapper
+{
+	height: 100%;
+}
+
+.page-buffer
+{
+	height: 50px;
 }
 
 .wrapper > div
@@ -32,16 +51,20 @@ body
 	flex-basis: 200px;
 	display: flex;
 	flex-direction: column;
-	align-item: flex-start;
 	font-size: 2em;
 }
 
-.menu > div
+.menu div
 {
 	margin: 0;
 	padding: 30px 10px;
 	border-bottom: 1px solid #fff;
 	box-shadow: 0px 1px 1px #aaa;
+}
+
+.menu div:hover
+{
+	background: #777;
 }
 
 .photos
@@ -55,6 +78,7 @@ body
 .row
 {
 	display: flex;
+	/*margin-bottom: 5px;*/
 }
 
 .photos .row div
@@ -64,31 +88,88 @@ body
 
 .photos .row img
 {
+	background: #aaa;
 	height: 300px;
 	width: 100%;
 }
 
 .photos .row .col-1
 {
+	position: relative;
+	box-sizing: border-box;
 	width: 1px;
 	flex-grow: 1;
 }
 
 .photos .row .col-2
 {
+	position: relative;
+	box-sizing: border-box;
 	width: 1px;
 	flex-grow: 2;
 }
 
 .photos .row .col-3
 {
+	position: relative;
 	flex-basis: 100%;
+}
+
+.info
+{
+	display: none;
+	position: absolute;
+	border-radius: 5px;
+	z-index: 2;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 10px 15px;
+	background: #888;
+	bottom: 40px;
+	left: -10px;
+}
+
+.photos .row .col-1:hover > .info
+{
+	display: block;
+}
+
+.photos .row .col-2:hover > .info
+{
+	display: block;
+}
+
+.photos .row .col-3:hover > .info
+{
+	display: block;
+}
+
+input.abissian:checked ~ .row img:not(.abissian)
+{
+	opacity: .3;
+}
+
+input.britain:checked ~ .row img:not(.britain)
+{
+	opacity: .5;
+}
+
+input.russian:checked ~ .row img:not(.russian)
+{
+	opacity: .5;
+}
+
+input.salem:checked ~ .row img:not(.salem)
+{
+	opacity: .5;
 }
 
 .rating
 {
 	text-align: right;
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 	background: #d9d9d9;
 	flex-basis: 200px;
 	flex-direction: column;
@@ -165,4 +246,84 @@ body
 	background: linear-gradient(to right, #e90c07, #fff);
 	border: 1px solid #e90c07;
 	width: 28%;
+}
+
+.option
+{
+	padding: 0 10px;
+}
+
+.option > label
+{
+	width: 100%;
+}
+
+.option > label > img {
+	width: 15px;
+	background: #fff;
+	height: 15px;
+}
+
+input
+{
+	display: none;
+}
+
+.option > label > .checked
+{
+	display: none;
+}
+
+input.dec:checked ~ .option > label > .empty
+{
+	display: none;
+}
+
+input.dec:checked ~ .option > label > .checked
+{
+	display: inherit;
+}
+
+input.dec:checked ~ .rate-10
+{
+	order: 1;
+}
+
+input.dec:checked ~ .rate-9
+{
+	order: 2;
+}
+
+input.dec:checked ~ .rate-8
+{
+	order: 3;
+}
+
+input.dec:checked ~ .rate-4
+{
+	order: 4;
+}
+
+.page-footer
+{
+	padding: 10px 20px;
+	font-size: 2em;
+}
+
+.page-footer p
+{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+	color: #2B40FF;
 }
