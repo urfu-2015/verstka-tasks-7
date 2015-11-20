@@ -2,6 +2,7 @@ body
 {
     background-color: rgba(234, 234, 234, .51);
     font-family: 'Arial', sans-serif;
+    min-width: 960px;
 }
 
 main
