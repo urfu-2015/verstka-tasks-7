@@ -312,7 +312,7 @@ input[type=checkbox]:checked ~ .sorted > label > span:after
     text-align: left;
     overflow: hidden;
     position: relative;
-    border-radius: 0.3vw;
+    border-radius: .3vw;
     width: calc(100% - .5vw);
     height: calc(100% - .5vw);
 }
