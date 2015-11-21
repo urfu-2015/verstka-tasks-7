@@ -9,6 +9,7 @@ header {
     text-align: center;
 }
 .left-text-all {
+    display: block;
     border-bottom: solid;
     padding-bottom: 15px;
     padding-left: 5px;
@@ -25,6 +26,7 @@ header {
 .cat-block-default {
     margin: 5px;
     height: 300px;
+    position: relative;
 }
 .cat-block1 {
     background:url(http://www.zooclub.ru/attach/10000/10990.jpg) no-repeat center;
@@ -105,31 +107,91 @@ header {
     opacity: 0.1;
 }
 .ten-gradient {
+    display: inline-block;
     width: 90%;
     border: 1px solid black;
     height: 20px;
     background: linear-gradient(to right, green, white);
 }
 .nine-gradient {
+    display: inline-block;
     width: 80%;
     border: 1px solid black;
     height: 20px;
     background: linear-gradient(to right, green, white);
 }
 .eight-gradient {
+    display: inline-block;
     width: 70%;
     border: 1px solid black;
     height: 20px;
     background: linear-gradient(to right, yellow, white);
 }
 .four-gradient {
+    display: inline-block;
     width: 30%;
     border: 1px solid black;
     height: 20px;
     background: linear-gradient(to right, red, white);
 }
 .right-text {
+    display: inline-block;
+    align-self: left;
     padding-bottom: 15px;
     padding-left: 5px;
     padding-top: 15px;
+}
+.cat-select
+{
+    display: none;
+}
+#abyssinian-name:checked ~ .mid-containter .cat-block1,
+#british-name:checked ~ .mid-containter .cat-block2,
+#russian-name:checked ~ .mid-containter .cat-block3,
+#siam-name:checked ~ .mid-containter .cat-block4
+{
+    opacity: .3;
+}
+.cat-description
+{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    background: rgba(0, 0, 0, .3);
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    display: none;
+}
+.cat-block-default:hover .cat-description
+{
+    display: block;
+}
+.ordered {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#rating:checked ~ #russian-label,
+#rating:checked ~ #russian-progress,
+{
+    order: 1;
+}
+
+#rating:checked ~ .center #abyssinian-label,
+#rating:checked ~ .center #abyssinian-progress,
+{
+    order: 2;
+}
+
+#rating:checked ~ .center #british-label,
+#rating:checked ~ .center #british-progress,
+{
+    order: 3;
+}
+
+#rating:checked ~ .center #siam-label,
+#rating:checked ~ .center #siam-progress,
+{
+    order: 4;
 }
