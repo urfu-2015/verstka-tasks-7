@@ -45,16 +45,6 @@ input
     background-color: #b3b3b3;
 }
 
-.breeds > .all
-{
-    border-bottom: 0;
-}
-
-.breeds > .all:hover
-{
-    background-color: #ccc;
-}
-
 img
 {
     width: 100%;
