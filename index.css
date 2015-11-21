@@ -2,7 +2,7 @@ body
 {
     background-color: rgba(234, 234, 234, .51);
     font-family: 'Arial', sans-serif;
-    min-width: 960px;
+    min-width: 1100px;
 }
 
 main
@@ -52,9 +52,6 @@ section article
     position: relative;
     flex-wrap: wrap;
     overflow: hidden;
-    /*padding: 5px;*/
-    /*margin: 0.5%;*/
-    /*margin: 10px 3% 0 0 ;*/
     margin: .5em;
 }
 
@@ -79,24 +76,17 @@ section article:nth-child(8n+5),
 section article:nth-child(8n+7)
 {
     width: 31%;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin: 1%;*/
 }
 
 section article:nth-child(8n+2),
 section article:nth-child(8n+6)
 {
     width: 64%;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin: 1%;*/
 }
 
 section article:nth-child(8n)
 {
     width: 99%;
-    /*margin: 1%;*/
 }
 
 .breed
@@ -109,15 +99,24 @@ section article:nth-child(8n)
 .breed#brit-breed:checked ~ section article:not(.brit),
 .breed#russ-breed:checked ~ section article:not(.russ)
 {
-    opacity: .3;
+    opacity: .4;
+}
+
+.breed#siam-breed:checked ~ menu .menuitem[for="siam-breed"],
+.breed#abys-breed:checked ~ menu .menuitem[for="abys-breed"],
+.breed#brit-breed:checked ~ menu .menuitem[for="brit-breed"],
+.breed#russ-breed:checked ~ menu .menuitem[for="russ-breed"]
+{
+    background-color: #5a5a5a;
+    color: white;
 }
 
 .name
 {
     position: absolute;
-    bottom: 25%;
-    left: 1px;
-    width: 200px;
+    bottom: 20%;
+    left: 0;
+    width: 180px;
     height: 80px;
     background-color: transparent;
     color: transparent;
@@ -125,17 +124,13 @@ section article:nth-child(8n)
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
-}
-
-.name > span
-{
-    padding-left: 10px;
+    text-align: center;
 }
 
 section article:hover > .name
 {
     color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .menubox
