@@ -1,6 +1,7 @@
 main
 {
     display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
@@ -11,6 +12,8 @@ header
 
 footer
 {
+    border-top: 1px solid #000;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
 }
@@ -22,40 +25,43 @@ footer
     border-bottom: 1px solid #000;
 }
 
-header ~ input
+main > input
 {
     display: none;
 }
 
 .center
 {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .center > div
 {
-    height: 200px;
-    flex-basis: 33%;
-    padding: 1px;
+    flex-basis: 31.3%;
+    overflow: hidden;
+    margin: 1%;
+    margin-bottom: 0;
+    height: 275px;
+    text-align: center;
+    position: relative;
 }
 
 .center .bigger
 {
-    flex-grow: 2;
-    flex-basis: 66%;
+    flex-basis: 64.6%;
 }
 
 .center .three
 {
-    /*flex-grow: 3;*/
-    flex-basis: 100%;
+    flex-basis: 98%;
+    height: 400px;
 }
 
 .center .middle
 {
-    /*flex-grow: 3;*/
-    flex-basis: 45%;
+    flex-basis: 48%;
 }
 
 aside
@@ -71,7 +77,14 @@ body
 img
 {
     height: 100%;
-    z-index: 1;
+    width: 110%;
+    margin-left: -5%;
+}
+
+.lightblue img
+{
+    margin-left: -30%;
+    width: 140%;
 }
 
 .head
@@ -88,13 +101,15 @@ address
 
 .right
 {
-    width: 30%;
+    align-self: flex-start;
+    width: 18%;
     padding-left: 1%;
+    margin-right: 1%;
 }
 
 .left
 {
-    width: 35%;
+    width: 20%;
 }
 
 .rating
@@ -103,6 +118,7 @@ address
     flex-direction: column;
     margin-top: 20px;
     font-size: 20px;
+    width: 100%;
 }
 
 .rating div
@@ -173,10 +189,56 @@ address
     order: 3;
 }
 
-#ab:checked ~ main .center div div:not(.abyssinian),
-#si:checked ~ main .center div div:not(.siamese),
-#go:checked ~ main .center div div:not(.lightblue),
-#br:checked ~ main .center div div:not(.british)
+#ab:checked ~ .center div:not(.abyssinian),
+#si:checked ~ .center div:not(.siamese),
+#go:checked ~ .center div:not(.lightblue),
+#br:checked ~ .center div:not(.british)
 {
     opacity: .6;
+}
+
+#ab:checked ~ .left .ab,
+#si:checked ~ .left .si,
+#go:checked ~ .left .go,
+#br:checked ~ .left .br
+{
+    background-color: #545454;
+}
+
+#ab:checked ~ .left .ab label,
+#si:checked ~ .left .si label,
+#go:checked ~ .left .go label,
+#br:checked ~ .left .br label
+{
+    color: white;
+}
+
+.shift
+{
+    float: right;
+    margin-right: 3%;
+}
+
+.shiftinp
+{
+    float: right;
+    margin-right: 2%;
+}
+
+img:hover + div
+{
+    display: block;
+}
+
+img + div
+{
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: .6;
+    z-index: 5;
+    display: none;
+    padding: 2%;
 }
