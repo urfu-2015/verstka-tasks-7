@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
         <title>Бабуленькины котятки</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <!-- Здесь применять гибкую магию -->
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <main>
+            <input type="checkbox" name="category" id="abyssinian" hidden>
+            <input type="checkbox" name="category" id="british" hidden>
+            <input type="checkbox" name="category" id="russian" hidden>
+            <input type="checkbox" name="category" id="siamese" hidden>
+            <nav>
+                <label class="abyssinian" for="abyssinian">Абиссинская</label>
+                <label class="british" for="british">Британская</label>
+                <label class="russian" for="russian">Русская голубая</label>
+                <label class="siamese" for="siamese">Сиамская</label>
+            </nav>
+            <section>
+                <div class="one-column british">
+                    <img src="http://www.zooclub.ru/attach/10000/10990.jpg" alt="british">
+                    <div class="text">Миша, 7 месяцев</div>
+                </div>
+                <div class="two-column british">
+                <img src="http://koshsps.ru/image/graycat.jpg" alt="british">
+                    <div class="text">Макс, 4 года</div>
+                </div>
+                <div class="one-column abyssinian">
+                    <img src="http://www.kittens.ru/best/aby/6.jpg" alt="abyssinian">
+                    <div class="text">Шаня, 1 год</div>
+                </div>
+                <div class="one-column siamese">
+                    <img src="http://w512.ru/cat/siamskaya-koshka12.jpg" alt="siamese">
+                    <div class="text">Мартин, 2 года</div>
+                </div>
+                <div class="one-column russian">
+                    <img src="http://vancats.ru/Koshki_Porodi/russkaya_golubaya_4.jpg" alt="russian">
+                    <div class="text">Пушок, 2 года</div>
+                </div>
+                <div class="two-column british">
+                    <img src="http://goo.gl/92CyLo" alt="british">
+                    <div class="text">Нафаня, 4 года</div>
+                </div>
+                <div class="one-column russian">
+                    <img src="http://kitty-grand.ru/files/1//577.png" alt="russian">
+                    <div class="text">Леся, 4 месяца</div>
+                </div>
+                <div class="three-column siamese">
+                    <img src="http://murkote.com/wp-content/uploads/2015/05/siamese-cat.jpg" alt="siamese">
+                    <div class="text">Лайма, 3 года</div>
+                </div>
+            </section>
+            <aside>
+                <h3>Рейтинг</h3>
+                <label for="sort">по убыванию</label>
+                <input type="checkbox" name="rating" id="sort">
+                <div class="rating-nine">
+                    Абиссинская
+                    <div class="rating">
+                        <div class="scale scale-nine"></div>9
+                    </div>
+                </div>
+                <div class="rating-eight">
+                    Британская
+                    <div class="rating">
+                        <div class="scale scale-eight"></div>8
+                    </div>
+                </div>
+                <div class="rating-ten">
+                    Русская голубая
+                    <div class="rating">
+                        <div class="scale scale-ten"></div>10
+                    </div>
+                </div>
+                <div class="rating-four">
+                    Сиамская
+                    <div class="rating">
+                        <div class="scale scale-four"></div>4
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <div>&copy; ООО Бабуленькины котятки, 2015</div>
+            <div class="adress">Наш адрес: улица Котовая, д.5</div>
+        </footer>
     </body>
 </html>
