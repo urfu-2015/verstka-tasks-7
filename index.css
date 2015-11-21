@@ -29,11 +29,17 @@ nav
     background-color: rgba(0, 0, 0, .16);
 }
 
-nav > div
+nav > label
 {
     padding: 10px;
     text-align: left;
     border-bottom: 1px ridge #fff;
+}
+
+nav > label:hover
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.54);
 }
 
 aside
@@ -52,6 +58,8 @@ aside
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 6px;
+    margin-left: 5px;
+    margin-right: 7px;
     align-items: baseline;
 }
 
@@ -70,6 +78,13 @@ aside > .rating > span
     height: 10px;
 }
 
+.grad-ten
+{
+    background: linear-gradient(to left, #fff, #a6ff36);
+    border: 1px solid #a6ff36;
+    width: 70%;
+}
+
 .grad-nine
 {
     background: linear-gradient(to left, #fff, #a6ff36);
@@ -82,6 +97,13 @@ aside > .rating > span
     background: linear-gradient(to left, #fff, #fff20f);
     border: 1px solid #fff20f;
     width: 50%;
+}
+
+.grad-four
+{
+    background: linear-gradient(to left, #fff, #ff521c);
+    border: 1px solid #ff521c;
+    width: 20%;
 }
 
 .cats
@@ -148,4 +170,26 @@ footer
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+/* Checkers */
+input[type=radio]
+{
+    display: none;
+}
+
+input[value='abissin']:checked ~ main > .cats article:not(.abissin),
+input[value='brit']:checked ~ main > .cats article:not(.brit),
+input[value='rus']:checked ~ main > .cats article:not(.rus),
+input[value='siam']:checked ~ main > .cats article:not(.siam)
+{
+    opacity: .5;
+}
+
+input[value='abissin']:checked ~ main > .cats article:not(.abissin) > .cat-info,
+input[value='brit']:checked ~ main > .cats article:not(.brit) > .cat-info,
+input[value='rus']:checked ~ main > .cats article:not(.rus) > .cat-info,
+input[value='siam']:checked ~ main > .cats article:not(.siam) > .cat-info
+{
+    display: none;
 }
