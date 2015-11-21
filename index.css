@@ -1,1 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
 
+html,
+body
+{
+    -webkit-font-smoothing: antialiased;
+    font: 18px 'Poiret One', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 900px;
+}
+
+/* header */
+
+.site-name
+{
+    padding: 20px;
+    text-align: center;
+    font: 48px 'Poiret One', Helvetica, Arial, sans-serif;
+}
+
+/* flex */
+
+.flex
+{
+    display: flex;
+    flex-flow: row;
+}
+
+header,
+footer
+{
+    display: block;
+}
+
+nav
+{
+    flex: 1 6 20%;
+    order: 1;
+    margin: 5px 5px 5px 25px;
+}
+
+aside
+{
+    align-self: flex-start;
+    flex: 1 6 20%;
+    order: 3;
+    margin: 5px 25px 5px 5px;
+    padding: 25px;
+}
+
+nav,
+aside
+{
+    background-color: #efeff2;
+    min-width: 185px;
+}
+
+/* grid */
+
+main
+{
+    flex: 3 0 60%;
+    order: 2;
+    display: grid;
+    grid-template-columns: calc(33.33% - (20px/3)) 10px
+        calc(33.33% - (20px/3)) 10px calc(33.33% - (20px/3));
+    grid-template-rows: 300px 10px 300px 10px 300px 10px 300px;
+    margin: 5px;
+}
+
+main > div
+{
+    overflow: hidden;
+}
+
+main > div > img
+{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.first-block
+{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.second-block
+{
+    grid-area: 1 / 3 / 2 / 6;
+}
+
+.third-block
+{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.fourth-block
+{
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.fifth-block
+{
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+.sixth-block
+{
+    grid-area: 5 / 1 / 6 / 4;
+}
+
+.seventh-block
+{
+    grid-area: 5 / 5 / 6 / 6;
+}
+
+.eighth-block
+{
+    grid-area: 7 / 1 / 8 / 6;
+}
+
+/* aside */
+
+.rating-header
+{
+    font: 20px 'Poiret One', Helvetica, Arial, sans-serif;
+}
+
+.rating
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.breedRating
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0;
+}
+
+.breed-name
+{
+    width: 100%;
+}
+
+.rating-line
+{
+    height: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .8));
+}
+
+.high-rating
+{
+    background-color: #80e5a6;
+    border: 1px solid #80e5a6;
+}
+
+.medium-rating
+{
+    background-color: #fd0;
+    border: 1px solid #fd0;
+}
+
+.low-rating
+{
+    background-color: #f00;
+    border: 1px solid #f00;
+}
+
+.ten-rating
+{
+    width: 80%;
+}
+
+.nine-rating
+{
+    width: 70%;
+}
+
+.eight-rating
+{
+    width: 60%;
+}
+
+.four-rating
+{
+    width: 20%;
+}
+
+#sort:checked ~ .rating .russRating
+{
+    order: 1;
+}
+
+#sort:checked ~ .rating .abisRating
+{
+    order: 2;
+}
+
+#sort:checked ~ .rating .britRating
+{
+    order: 3;
+}
+
+#sort:checked ~ .rating .siamRating
+{
+    order: 4;
+}
+
+/* nav */
+
+input[name='menu']
+{
+    display: none;
+}
+
+nav label
+{
+    display: block;
+    padding: 0 30px;
+    line-height: 65px;
+}
+
+nav label:hover
+{
+    cursor: pointer;
+    background: #dadae3;
+}
+
+#abis:checked ~ .flex nav label[for='abis'],
+#brit:checked ~ .flex nav label[for='brit'],
+#russ:checked ~ .flex nav label[for='russ'],
+#siam:checked ~ .flex nav label[for='siam']
+{
+    background: #c3c3d1;
+}
+
+/* main */
+
+.description
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 15px 50px 15px 15px;
+    background-color: rgba(255, 255, 255, .6);
+    color: #fff;
+}
+
+.photo:hover > .description
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+#abis:checked ~ .flex main > .photo:not(.abis),
+#brit:checked ~ .flex main > .photo:not(.brit),
+#russ:checked ~ .flex main > .photo:not(.russ),
+#siam:checked ~ .flex main > .photo:not(.siam)
+{
+    opacity: .3;
+}
+
+#abis:checked ~ .flex main > .photo:not(.abis):hover > .description,
+#brit:checked ~ .flex main > .photo:not(.brit):hover > .description,
+#russ:checked ~ .flex main > .photo:not(.russ):hover > .description,
+#siam:checked ~ .flex main > .photo:not(.siam):hover > .description
+{
+    display: none;
+}
+
+/* footer */
+
+footer
+{
+    margin-top: 80px;
+    background-color: #efeff2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer > span,
+footer > address
+{
+    font: 14px 'Poiret One', Helvetica, Arial, sans-serif;
+    padding: 15px 20px;
+}
