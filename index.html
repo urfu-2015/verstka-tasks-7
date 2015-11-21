@@ -10,18 +10,18 @@
         <header>
             <h1>Бабуленькины котятки</h1>
         </header>
-        <input type="radio" name="breed" id="all" checked="checked">
         <input type="radio" name="breed" id="serval">
         <input type="radio" name="breed" id="scottishfold">
         <input type="radio" name="breed" id="scottishstraight">
         <input type="radio" name="breed" id="mainecoon">
+        <input type="radio" name="breed" id="all" checked="checked">
         <main class="showcase">
             <section class="breed">
-                <label for="all">Все</label>
-                <label for="serval">Сервал</label>
-                <label for="scottishfold">Скотишь фолд</label>
-                <label for="scottishstraight">Скотишь страйт</label>
-                <label for="mainecoon">Мейн кун</label>
+                <label for="serval" class="label-serval">Сервал</label>
+                <label for="scottishfold" class="label-scottishfold">Скотишь фолд</label>
+                <label for="scottishstraight" class="label-scottishstraight">Скотишь страйт</label>
+                <label for="mainecoon" class="label-mainecoon">Мейн кун</label>
+                <label for="all" class="label-all"></label>
             </section>
             <section class="cats">
                 <article class="cat small mainecoon">
@@ -75,39 +75,38 @@
             </section>
             <section class="rating">
                 <p>Рейтинг</p>
-                <label for="sort">по убыванию</label>
-                <input type="checkbox" class="sort-method" name="sort" value="по убыванию">
-                <div class="rat">
-                    <div class="nine">
+                <div>
+                    <input type="checkbox" class="sort-method" name="sort" id="sort-des" value="по убыванию">
+                    <div class="sort">
+                        <p>по убыванию</p>
+                        <label for="sort-des"></label>
+                    </div>
+                    <div class="nine rating-item">
                         <p class="label">Сервал</p>
-                        <div class="rating-line green"></div>
-                        9
+                        <div class="rating-line rating-green"></div>
+                        <span>9</span>
                     </div>
-                    <div class="ten">
+                    <div class="ten rating-item">
                         <p class="label">Скотишь фолд</p>
-                        <div class="rating-line green"></div>
-                        10
+                        <div class="rating-line rating-green"></div>
+                        <span>10</span>
                     </div>
-                    <div class="four">
+                    <div class="four rating-item">
                         <p class="label">Мейн кун</p>
-                        <div class="rating-line red"></div>
-                        4
+                        <div class="rating-line rating-red"></div>
+                        <span>4</span>
                     </div>
-                    <div class="seven">
+                    <div class="seven rating-item">
                         <p class="label">Скотишь страйт</p>
-                        <div class="rating-line yellow"></div>
-                        7
+                        <div class="rating-line rating-yellow"></div>
+                        <span>7</span>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <p>
-                &copy; ООО Бабуленькины котятки, 2015
-            </p>
-            <address>
-                Наш адрес: улица Котовая, д.5
-            </address>
+            <p>&copy; ООО Бабуленькины котятки, 2015</p>
+            <address>Наш адрес: улица Котовая, д.5</address>
         </footer>
     </body>
 </html>
