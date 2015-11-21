@@ -11,77 +11,86 @@
         <input type="radio" name="menu" id="brit">
         <input type="radio" name="menu" id="russ">
         <input type="radio" name="menu" id="siam">
-        <div class="flex">
-            <header class="header">
-                <h1 class="site-name">Бабуленькины котятки</h1>
-            </header>
 
-            <nav class="nav">
+        <header>
+            <h1 class="site-name">Бабуленькины котятки</h1>
+        </header>
+
+        <div class="flex">
+            <main>
+                <div class="first-block photo abis">
+                    <p class="description">Кот1</p>
+                    <img src="images/cat1.jpg" alt="кот1">
+                </div>
+                <div class="second-block photo brit">
+                    <p class="description">Кот2</p>
+                    <img src="images/cat2.jpg" alt="кот2">
+                </div>
+                <div class="third-block photo brit">
+                    <p class="description">Кот3</p>
+                    <img src="images/cat3.jpg" alt="кот3">
+                </div>
+                <div class="fourth-block photo abis">
+                    <p class="description">Кот4</p>
+                    <img src="images/cat4.jpg" alt="кот4">
+                </div>
+                <div class="fifth-block photo siam">
+                    <p class="description">Кот5</p>
+                    <img src="images/cat5.jpg" alt="кот5">
+                </div>
+                <div class="sixth-block photo russ">
+                    <p class="description">Кот6</p>
+                    <img src="images/cat6.jpg" alt="кот6">
+                </div>
+                <div class="seventh-block photo siam">
+                    <p class="description">Кот7</p>
+                    <img src="images/cat7.jpg" alt="кот7">
+                </div>
+                <div class="eighth-block photo russ">
+                    <p class="description">Кот8</p>
+                    <img src="images/cat8.jpg" alt="кот8">
+                </div>
+            </main>
+
+            <nav>
                 <label for="abis">Абиссинская</label>
                 <label for="brit">Британская</label>
                 <label for="russ">Русская голубая</label>
                 <label for="siam">Сиамская</label>
             </nav>
 
-            <main class="grid">
-                <div class="first-block photo abis">
-                    <p class="description">Кот1</p>
-                </div>
-                <div class="second-block photo brit">
-                    <p class="description">Кот2</p>
-                </div>
-                <div class="third-block photo brit">
-                    <p class="description">Кот3</p>
-                </div>
-                <div class="fourth-block photo abis">
-                    <p class="description">Кот4</p>
-                </div>
-                <div class="fifth-block photo siam">
-                    <p class="description">Кот5</p>
-                </div>
-                <div class="sixth-block photo russ">
-                    <p class="description">Кот6</p>
-                </div>
-                <div class="seventh-block photo siam">
-                    <p class="description">Кот7</p>
-                </div>
-                <div class="eighth-block photo russ">
-                    <p class="description">Кот8</p>
-                </div>
-            </main>
-
-            <aside class="aside">
-                <h3 class="rating-header">Рейтинг</h3>
+            <aside>
+                <h2 class="rating-header">Рейтинг</h2>
                 <input type="checkbox" name="sort" id="sort">
                 <label for="sort">По убыванию</label>
                 <div class="rating">
-                    <div class="abisRating">
-                        <p class="breed">Абиссинская</p>
-                        <div class="high-rating rating-line"></div>
+                    <div class="abisRating breedRating">
+                        <p class="breed-name">Абиссинская</p>
+                        <div class="high-rating rating-line nine-rating"></div>
                         <span class="rating-value">9</span>
                     </div>
-                    <div class="britRating">
-                        <p class="breed">Британская</p>
-                        <div class="medium-rating rating-line"></div>
+                    <div class="britRating breedRating">
+                        <p class="breed-name">Британская</p>
+                        <div class="medium-rating rating-line eight-rating"></div>
                         <span class="rating-value">8</span>
                     </div>
-                    <div class="russRating">
-                        <p class="breed">Русская голубая</p>
-                        <div class="high-rating rating-line"></div>
+                    <div class="russRating breedRating">
+                        <p class="breed-name">Русская голубая</p>
+                        <div class="high-rating rating-line ten-rating"></div>
                         <span class="rating-value">10</span>
                     </div>
-                    <div class="siamRating">
-                        <p class="breed">Сиамская</p>
-                        <div class="low-rating rating-line"></div>
+                    <div class="siamRating breedRating">
+                        <p class="breed-name">Сиамская</p>
+                        <div class="low-rating rating-line four-rating"></div>
                         <span class="rating-value">4</span>
                     </div>
                 </div>
             </aside>
-
-            <footer class="footer">
-                <span>&copy; OOO Бабуленькины котятки, 2015</span>
-                <span>Наш адрес: улица Котовая, д.5</span>
-            </footer>
         </div>
+
+        <footer>
+            <span>&copy; OOO Бабуленькины котятки, 2015</span>
+            <address>Наш адрес: улица Котовая, д.5</address>
+        </footer>
     </body>
 </html>
