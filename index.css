@@ -39,7 +39,7 @@ nav > label
 nav > label:hover
 {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.54);
+    background-color: rgba(0, 0, 0, .54);
 }
 
 aside
