@@ -1,1 +1,235 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #c9c9c9;
+}
 
+h1
+{
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    min-height: 100vh;
+    min-width: 1200px;
+    justify-content: center;
+}
+
+.type_switcher
+{
+    display: none;
+}
+
+.type_selectors
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    background-color: #a9a9a9;
+    min-width: 120px;
+}
+
+.selector_label
+{
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    padding-top: 20px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.selector_label:hover
+{
+    background-color: #cacaca;
+}
+
+#all_types:checked ~ .type_selectors > #all_types_label,
+#abyssinian:checked ~ .type_selectors > #abyssinian_label,
+#british:checked ~ .type_selectors > #british_label,
+#russian_blue:checked ~ .type_selectors > #russian_blue_label,
+#siamese:checked ~ .type_selectors > #siamese_label
+{
+    background-color: #f9f9f9;
+}
+
+#all_types:not(:checked) ~ #abyssinian:not(:checked) ~ .cats > .abyssinian,
+#all_types:not(:checked) ~ #british:not(:checked) ~ .cats > .british,
+#all_types:not(:checked) ~ #russian_blue:not(:checked) ~ .cats > .russian_blue,
+#all_types:not(:checked) ~ #siamese:not(:checked) ~ .cats > .siamese
+{
+    opacity: .2;
+}
+
+.cats
+{
+    display: flex;
+    flex-basis: 60%;
+    flex-wrap: wrap;
+    max-width: 780px;
+    min-width: 780px;
+    margin-right: -55px;
+}
+
+.cat
+{
+    display: flex;
+    margin: 0 1% 1%;
+    height: 287px;
+    border-collapse: collapse;
+    overflow: hidden;
+    max-width: 29%;
+}
+.cat img
+{
+    width: 100%;
+    height: 100%;
+}
+.cats .cat:nth-child(4n + 2)
+{
+    max-width: 60.1%;
+}
+
+.cats .cat:nth-child(8n)
+{
+    max-width: 91.2%;
+}
+
+.description
+{
+    display: none;
+}
+
+#all_types:not(:checked) ~ #abyssinian:checked ~ .cats > .abyssinian:hover .description,
+#all_types:not(:checked) ~ #british:checked ~ .cats > .british:hover .description,
+#all_types:not(:checked) ~ #russian_blue:checked ~ .cats > .russian_blue:hover .description,
+#all_types:not(:checked) ~ #siamese:checked ~ .cats > .siamese:hover .description,
+#all_types:checked ~ .cats > .cat:hover .description
+{
+    display: inline-flex;
+    margin-top: 20px;
+    position: absolute;
+    color: #009700;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, .8);
+    padding: 10px;
+}
+
+.rating
+{
+    flex-basis: 20%;
+    display: flex;
+    background-color: #a9a9a9;
+    padding: 10px 0;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.participant
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 20px 15px 0 15px;
+}
+
+.participant span
+{
+    width: 100%;
+}
+
+.score
+{
+    display: flex;
+    height: 20px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+
+.score-10
+{
+    width: 87%;
+    background: linear-gradient(to right, #008c00, #fff);
+}
+
+.score-9
+{
+    width: 77%;
+    background: linear-gradient(to right, #00c500, #fff);
+}
+
+.score-8
+{
+    width: 66%;
+    background: linear-gradient(to right, #a4c500, #fff);
+}
+
+.score-4
+{
+    width: 33%;
+    background: linear-gradient(to right, #c50400, #fff);
+}
+
+.rating h2
+{
+    text-align: center;
+    color: #f00;
+}
+
+#rating_order_label
+{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#rating_order_label:hover
+{
+    cursor: pointer;
+    color: #0004bf;
+}
+
+#rating-order
+{
+    display: none;
+}
+
+#rating-order:checked ~ #rating_order_label
+{
+    color: #c50400;
+}
+
+#rating-order:checked ~ .participant.s4
+{
+    order: 3;
+}
+
+#rating-order:checked ~ .participant.s8
+{
+    order: 2;
+}
+
+#rating-order:checked ~ .participant.s9
+{
+    order: 1;
+}
+
+footer
+{
+    display: flex;
+    width: 100%;
+    align-self: flex-end;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-top: 2px #000 solid;
+    font-size: 20px;
+}
