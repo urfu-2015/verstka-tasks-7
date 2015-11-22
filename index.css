@@ -8,6 +8,9 @@ body
     background: #f4f4f4;
     padding: 0 15px;
     font: 400 18px 'Open Sans', sans-serif;
+    min-width: 1100px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 h1
@@ -29,7 +32,6 @@ h2
 
 .cat-shop
 {
-    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -47,11 +49,8 @@ h2
 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
     align-content: space-between;
-    flex-grow: 2;
     width: 70%;
-    order: 1;
 }
 
 .rating
@@ -64,7 +63,6 @@ h2
     max-width: 15%;
     margin-left: 10px;
     padding: 10px;
-    order: 2;
     height: 100%;
 }
 
@@ -87,7 +85,7 @@ img
 {
     display: none;
     position: relative;
-    bottom: 20%;
+    bottom: 60px;
     left: 1px;
     color: #fff;
     background: linear-gradient(to right, rgba(43, 42, 42, .9), transparent);
@@ -326,7 +324,6 @@ footer
 
 .rating-value
 {
-    order: 1;
     font-weight: 600;
 }
 
