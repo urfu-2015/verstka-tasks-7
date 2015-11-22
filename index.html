@@ -6,6 +6,129 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <header><h1>Бабуленькины котятки</h1></header>
+        <section class="cat-shop">
+            <input type="radio" name="breed-check" id="all" checked>
+            <input type="radio" name="breed-check" id="breed1">
+            <input type="radio" name="breed-check" id="breed2">
+            <input type="radio" name="breed-check" id="breed3">
+            <input type="radio" name="breed-check" id="breed4">
+            <input type="radio" name="breed-check" id="breed5">
+            <input type="radio" name="breed-check" id="breed6">
+            <input type="radio" name="breed-check" id="breed7">
+            <div class="breeds">
+                <label for="all" class="label-breed" id="label-breed-all">Все породы</label>
+                <label for="breed4" class="label-breed" id="label-breed4">
+                    Аме&shy;ри&shy;кан&shy;ский боб&shy;тейл
+                </label>
+                <label for="breed1" class="label-breed" id="label-breed1">Бри&shy;тан&shy;ская</label>
+                <label for="breed7" class="label-breed" id="label-breed7">Манчкин</label>
+                <label for="breed2" class="label-breed" id="label-breed2">Мейн кун</label>
+                <label for="breed5" class="label-breed" id="label-breed5">Сиамская</label>
+                <label for="breed3" class="label-breed" id="label-breed3">Сибирская</label>
+                <label for="breed6" class="label-breed" id="label-breed6">Тон&shy;кин&shy;ская</label>
+            </div>
+            <div class="goods">
+                <div class="cat">
+                    <img src="pics/Мейн кун2.jpg" alt="Мейн кун" class="breed2">
+                    <span class="info">Базилио, 2 года</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Британская короткошерстная.jpg" alt="Британская" class="breed1">
+                    <span class="info">Дебби, 3 года</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Сибирская2.jpg" alt="Сибирская" class="breed3">
+                    <span class="info">Вася, 5 лет</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Американский бобтейл.jpg" alt="Американский бобтейл" class="breed4">
+                    <span class="info">Байрон, 4 года</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Сибирская.jpg" alt="Сибирская" class="breed3">
+                    <span class="info">Гумберт, 4 года</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Сибирская3.jpg" alt="Сибирская" class="breed3">
+                    <span class="info">Мистер Мурч, 3 года</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Британская короткошерстная2.jpg" alt="Британская" class="breed1">
+                    <span class="info">Гарольд, 1 год</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Сиамская.jpg" alt="Сиамская" class="breed5">
+                    <span class="info">Дымка, 11 месяцев</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Тонкинская.jpg" alt="Тонкинская" class="breed6">
+                    <span class="info">Игритт, 4 года</span>
+                </div>
+                <div class="cat">
+                    <img src="pics/Манчкин.jpg" alt="Манчкин" class="breed7">
+                    <span class="info">Кэш, 2 года</span>
+                </div>
+            </div>
+            <div class="rating">
+                <header><h2>Рейтинг пород</h2></header>
+                <input type="checkbox" class="checkbox" id="sort-desc">
+                <label for="sort-desc">По убыванию</label>
+                <div class="container-column rate6">
+                    <span>Аме&shy;ри&shy;кан&shy;ский бобтейл</span>
+                    <div class="container-row">
+                        <div class="breed-rating medium"></div>
+                        <span class="rating-value">6</span>
+                    </div>
+                </div>
+                <div class="container-column rate8">
+                    <span>Бри&shy;тан&shy;ская</span>
+                    <div class="container-row">
+                        <div class="breed-rating high"></div>
+                        <span class="rating-value">8</span>
+                    </div>
+                </div>
+                <div class="container-column rate4">
+                    <span>Манчкин</span>
+                    <div class="container-row">
+                        <div class="breed-rating low"></div>
+                        <span class="rating-value">4</span>
+                    </div>
+                </div>
+                <div class="container-column rate9">
+                    <span>Мейн кун</span>
+                    <div class="container-row">
+                        <div class="breed-rating high"></div>
+                        <span class="rating-value">9</span>
+                    </div>
+                </div>
+
+                <div class="container-column rate5">
+                    <span>Сиамская</span>
+                    <div class="container-row">
+                        <div class="breed-rating medium"></div>
+                        <span class="rating-value">5</span>
+                    </div>
+                </div>
+                <div class="container-column rate10">
+                    <span>Сибирская</span>
+                    <div class="container-row">
+                        <div class="breed-rating high"></div>
+                        <span class="rating-value">10</span>
+                    </div>
+                </div>
+                <div class="container-column rate7">
+                    <span>Тон&shy;кин&shy;ская</span>
+                    <div class="container-row">
+                        <div class="breed-rating medium"></div>
+                        <span class="rating-value">7</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>© ООО "Бабуленькины котятки", 2015</p>
+            <address>Наш адрес: улица Котовая, д. 5</address>
+        </footer>
     </body>
 </html>

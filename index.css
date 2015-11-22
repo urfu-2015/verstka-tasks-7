@@ -1,1 +1,378 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
 
+body
+{
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    padding: 0 15px;
+    font: 400 18px 'Open Sans', sans-serif;
+    min-width: 1100px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h1
+{
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-size: 36px;
+}
+
+h2
+{
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    color: #b6260e;
+    text-shadow: 1px 1px 1px #fff,
+        1px 1px 1px #fff,
+        1px 1px 1px #000;
+}
+
+.cat-shop
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.breeds
+{
+    display: flex;
+    flex-direction: column;
+    background: #d1d1d1;
+    margin-right: 10px;
+    max-width: 15%;
+}
+
+.goods
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width: 70%;
+}
+
+.rating
+{
+    display: flex;
+    flex-direction: column;
+    background: #d1d1d1;
+    align-content: flex-start;
+    justify-content: space-between;
+    max-width: 15%;
+    margin-left: 10px;
+    padding: 10px;
+    height: 100%;
+}
+
+.cat
+{
+    height: 300px;
+    width: 33%;
+    margin: 0 1px 2px;
+}
+
+img
+{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 1px 2px;
+}
+
+.info
+{
+    display: none;
+    position: relative;
+    bottom: 60px;
+    left: 1px;
+    color: #fff;
+    background: linear-gradient(to right, rgba(43, 42, 42, .9), transparent);
+    text-shadow: 1px 1px 1px #000;
+    padding: 10px;
+    width: 200px;
+}
+
+.cat:hover > .info
+{
+    display: block;
+}
+
+input[name='breed-check']
+{
+    display: none;
+}
+
+.label-breed
+{
+    font-size: 24px;
+    display: flex;
+    padding: 10px;
+    border-bottom: 2px ridge #fff;
+
+}
+
+.label-breed:hover
+{
+    background: #8e8e8e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.goods .cat:nth-child(8n + 1),
+.goods .cat:nth-child(8n + 3),
+.goods .cat:nth-child(8n + 4),
+.goods .cat:nth-child(8n + 5),
+.goods .cat:nth-child(8n + 7)
+{
+    width: 33%;
+}
+
+.goods .cat:nth-child(8n + 2),
+.goods .cat:nth-child(8n + 6)
+{
+    width: 66%;
+}
+
+.goods .cat:nth-child(8n + 8)
+{
+    width: 100%;
+}
+
+footer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px ridge #fff;
+    align-items: center;
+}
+
+.checkbox + label
+{
+    cursor: pointer;
+}
+
+.checkbox:not(checked)
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox:not(checked) + label
+{
+    position: relative;
+    padding: 0 60px 0 0;
+}
+
+.checkbox:not(checked) + label:before
+{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #cdd1da;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.checkbox:not(checked) + label:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 26px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: all .2s;
+}
+
+.checkbox:checked + label:before
+{
+    background: #9fd468;
+}
+
+.checkbox:checked + label:after
+{
+    right: 2px;
+}
+
+.checkbox:focus + label:before
+{
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, .5),
+        inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+#breed1:checked ~ .goods > .cat img:not(.breed1),
+#breed2:checked ~ .goods > .cat img:not(.breed2),
+#breed3:checked ~ .goods > .cat img:not(.breed3),
+#breed4:checked ~ .goods > .cat img:not(.breed4),
+#breed5:checked ~ .goods > .cat img:not(.breed5),
+#breed6:checked ~ .goods > .cat img:not(.breed6),
+#breed7:checked ~ .goods > .cat img:not(.breed7)
+{
+    opacity: .5;
+}
+
+#breed1:checked ~ .goods > .cat img:not(.breed1) ~ .info,
+#breed2:checked ~ .goods > .cat img:not(.breed2) ~ .info,
+#breed3:checked ~ .goods > .cat img:not(.breed3) ~ .info,
+#breed4:checked ~ .goods > .cat img:not(.breed4) ~ .info,
+#breed5:checked ~ .goods > .cat img:not(.breed5) ~ .info,
+#breed6:checked ~ .goods > .cat img:not(.breed6) ~ .info,
+#breed7:checked ~ .goods > .cat img:not(.breed7) ~ .info
+{
+    display: none;
+}
+
+#all:checked ~ .breeds > #label-breed-all,
+#breed1:checked ~ .breeds > #label-breed1,
+#breed2:checked ~ .breeds > #label-breed2,
+#breed3:checked ~ .breeds > #label-breed3,
+#breed4:checked ~ .breeds > #label-breed4,
+#breed5:checked ~ .breeds > #label-breed5,
+#breed6:checked ~ .breeds > #label-breed6,
+#breed7:checked ~ .breeds > #label-breed7
+{
+    background: #686868;
+    color: #fff;
+}
+
+.container-row
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.container-column
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.breed-rating
+{
+    display: flex;
+    background: linear-gradient(to right, #e90103, transparent);
+    border: 1px solid #000;
+    height: 20px;
+    width: 10%;
+}
+
+.medium
+{
+    background: linear-gradient(to right, #fff922, transparent);
+}
+
+.high
+{
+    background: linear-gradient(to right, #39f61b, transparent);
+}
+
+.rate2 .breed-rating
+{
+    width: 20%;
+}
+
+.rate3 .breed-rating
+{
+    width: 30%;
+}
+
+.rate4 .breed-rating
+{
+    width: 40%;
+}
+
+.rate5 .breed-rating
+{
+    width: 50%;
+}
+
+.rate6 .breed-rating
+{
+    width: 60%;
+}
+
+.rate7 .breed-rating
+{
+    width: 70%;
+}
+
+.rate8 .breed-rating
+{
+    width: 80%;
+}
+
+.rate9 .breed-rating
+{
+    width: 90%;
+}
+
+.rate10 .breed-rating
+{
+    width: 100%;
+}
+
+.rating-value
+{
+    font-weight: 600;
+}
+
+#sort-desc:checked ~ .rate1
+{
+    order: 10;
+}
+
+#sort-desc:checked ~ .rate2
+{
+    order: 9;
+}
+
+#sort-desc:checked ~ .rate3
+{
+    order: 8;
+}
+
+#sort-desc:checked ~ .rate4
+{
+    order: 7;
+}
+
+#sort-desc:checked ~ .rate5
+{
+    order: 6;
+}
+
+#sort-desc:checked ~ .rate6
+{
+    order: 5;
+}
+
+#sort-desc:checked ~ .rate7
+{
+    order: 4;
+}
+
+#sort-desc:checked ~ .rate8
+{
+    order: 3;
+}
+
+#sort-desc:checked ~ .rate9
+{
+    order: 2;
+}
+
+#sort-desc:checked ~ .rate10
+{
+    order: 1;
+}
