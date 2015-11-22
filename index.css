@@ -2,7 +2,7 @@ body
 {
     background-color: rgba(234, 234, 234, .51);
     font-family: 'Arial', sans-serif;
-    min-width: 1100px;
+    min-width: 2000px;
 }
 
 main
@@ -39,7 +39,6 @@ footer
 section
 {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     width: 65%;
@@ -53,11 +52,11 @@ section article
     flex-wrap: wrap;
     overflow: hidden;
     margin: .5em;
+    height: 500px;
 }
 
 section article img
 {
-    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -75,13 +74,13 @@ section article:nth-child(8n+4),
 section article:nth-child(8n+5),
 section article:nth-child(8n+7)
 {
-    width: 31%;
+    width: 32%;
 }
 
 section article:nth-child(8n+2),
 section article:nth-child(8n+6)
 {
-    width: 64%;
+    width: 65%;
 }
 
 section article:nth-child(8n)
