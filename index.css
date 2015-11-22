@@ -65,6 +65,10 @@ body
     background: rgba(0, 0, 0, .45);
     color: #fff;
 }
+.center-text
+{
+    text-align: center;
+}
 hr
 {
     margin: 0;
@@ -98,6 +102,18 @@ hr
     opacity: .5;
 }
 .wrapper
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-one-card-1,
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-one-card-2,
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-1,
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-2,
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-two-card-3,
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-three-card-1,
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-twree-card-2,
+#unselect:checked ~ .photo-cards > .wrapper-photo-cards > .line-four-card-1
+{
+    opacity: 1;
+}
+.wrapper
 .photo-cards
 {
     flex-basis: 65%;
@@ -111,9 +127,7 @@ hr
 }
 .card
 {
-    display: flex;
     width: 100%;
-    height: 220px;
 }
 .desc
 {
