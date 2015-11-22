@@ -20,7 +20,7 @@ main
     margin-top: 50px;
     min-height: 100vh;
     min-width: 1200px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .type_switcher
@@ -72,10 +72,11 @@ main
 .cats
 {
     display: flex;
-    flex-basis: 65%;
+    flex-basis: 60%;
     flex-wrap: wrap;
     max-width: 780px;
     min-width: 780px;
+    margin-right: -55px;
 }
 
 .cat
