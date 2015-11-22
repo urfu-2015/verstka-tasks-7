@@ -101,10 +101,10 @@ section article:nth-child(8n)
     opacity: .4;
 }
 
-.breed#siam-breed:checked ~ menu .menuitem[for="siam-breed"],
-.breed#abys-breed:checked ~ menu .menuitem[for="abys-breed"],
-.breed#brit-breed:checked ~ menu .menuitem[for="brit-breed"],
-.breed#russ-breed:checked ~ menu .menuitem[for="russ-breed"]
+.breed#siam-breed:checked ~ menu .menuitem[for='siam-breed'],
+.breed#abys-breed:checked ~ menu .menuitem[for='abys-breed'],
+.breed#brit-breed:checked ~ menu .menuitem[for='brit-breed'],
+.breed#russ-breed:checked ~ menu .menuitem[for='russ-breed']
 {
     background-color: #5a5a5a;
     color: white;
@@ -115,7 +115,7 @@ section article:nth-child(8n)
     position: absolute;
     bottom: 20%;
     left: 0;
-    width: 180px;
+    width: 200px;
     height: 80px;
     background-color: transparent;
     color: transparent;
@@ -254,7 +254,6 @@ h2
     background: linear-gradient(to right, transparent 0%, white 100%);
 }
 
-
 .abys .rating
 {
     background-color: #07e871;
@@ -288,11 +287,13 @@ h2
     display: flex;
     order: 1;
 }
+
 .sort:checked ~ .abys
 {
     display: flex;
     order: 2;
 }
+
 .sort:checked ~ .brit
 {
     display: flex;
