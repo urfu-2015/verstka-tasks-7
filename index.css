@@ -1,1 +1,275 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+    background: #e7e7e7;
+}
 
+header
+{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+header h1
+{
+    text-align: center;
+    font-family: 'Scada', sans-serif;
+    font-size: 50px;
+}
+
+main
+{
+    display: flex;
+    width: 100%;
+}
+
+footer
+{
+    margin-top: 5%;
+    vertical-align: bottom;
+    height: 30px;
+    border-top: 2px ridge #fff;
+    padding: 2%;
+}
+
+footer div:first-child
+{
+    float: left;
+}
+
+footer address
+{
+    float: right;
+    color: #109;
+}
+
+input[name='breed']
+{
+    display: none;
+}
+
+img
+{
+    margin: 2%;
+    margin-top: -5px;
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.cats
+{
+    width: 105%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+    margin-top: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: stretch;
+}
+
+label[for='descending'],
+#descending
+{
+    float: right;
+}
+
+label[for='descending']
+{
+    margin-top: -4%;
+    font-size: .9em;
+}
+
+.cats .little
+{
+    width: 33%;
+}
+
+.cats .big
+{
+    flex-grow: 2;
+}
+
+.cats .large
+{
+    flex-grow: 3;
+    vertical-align: bottom;
+    height: 105%;
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+div[class='big europian cat 1']
+{
+    margin-left: -4px;
+    margin-right: 3px;
+}
+
+.large img
+{
+    margin-top: -90px;
+    margin-bottom: -90px;
+    margin-left: 1%;
+}
+
+div.cat
+{
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 1%;
+    position: relative;
+}
+
+.cat:hover::after
+{
+    content: attr(data-title);
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    background: rgba(71, 71, 71, .5);
+    padding: 20px 13px;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 3;
+}
+
+.ratingGradient
+{
+    width: 70%;
+    background: linear-gradient(to left, #fff, #008000);
+    z-index: 2;
+    height: 20px;
+    margin-right: 10%;
+}
+
+.six .ratingGradient
+{
+    background: linear-gradient(to left, #fff, #fdff00);
+    width: 50%;
+    margin-right: 30%;
+}
+
+.four .ratingGradient
+{
+    background: linear-gradient(to left, #fff, #f00);
+    width: 30%;
+    margin-right: 50%;
+}
+
+.numberRating
+{
+    margin-top: -12%;
+}
+
+aside
+{
+    padding-top: 3%;
+    line-height: 2em;
+    background: #dbdbdb;
+}
+
+aside.right
+{
+    width: 30%;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin-right: 2%;
+    align-self: flex-start;
+}
+
+aside.left
+{
+    margin-left: 2%;
+    width: 25%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+aside.left label
+{
+    padding: 10% 10% 10% 5%;
+    display: block;
+    font-size: 1.3em;
+    border-bottom: 2px ridge #fff;
+}
+
+aside.left label:hover
+{
+    background: #727272;
+    color: #fff;
+}
+
+aside.right h3
+{
+    margin-top: 4px;
+    text-transform: uppercase;
+    color: #df2200;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+aside.right .rating
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 15%;
+    line-height: 2em;
+}
+
+aside.right .rating div
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+aside.right .rating div div:first-child
+{
+    width: 100%;
+}
+
+input[name='descending']:checked ~ .rating .nine
+{
+    order: 1;
+}
+
+input[name='descending']:checked ~ .rating .six
+{
+    order: 2;
+}
+
+input[name='descending']:checked ~ .rating .four
+{
+    order: 3;
+}
+
+input[value='scotish']:checked ~ main div.cats div:not(.scotish),
+input[value='british']:checked ~ main div.cats div:not(.british),
+input[value='europian']:checked ~ main div.cats div:not(.europian)
+{
+    opacity: .4;
+}
+
+input[value='scotish']:checked ~ main div.cats div.scotish,
+input[value='british']:checked ~ main div.cats div.british,
+input[value='europian']:checked ~ main div.cats div.europian
+
+{
+    opacity: 1;
+}
