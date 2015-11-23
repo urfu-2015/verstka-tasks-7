@@ -143,7 +143,7 @@ img
 
 .breed-lable:hover
 {
-    background: #666666;
+    background: #666;
 }
 
 input[class^='breed']
@@ -271,7 +271,6 @@ input.desc-order:checked ~ [class='one-rating 4']
 {
     order:3;
 }
-
 
 input.desc-order:checked ~ .rating-lable label
 {
