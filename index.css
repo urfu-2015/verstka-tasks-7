@@ -4,6 +4,7 @@ body
 {
     background: #ddd;
     font-family: 'Bad Script', cursive;
+    min-width: 1000px;
 }
 
 header
@@ -18,16 +19,34 @@ main
     justify-content: space-around;
 }
 
+ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: -40px;
+}
+
+li
+{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
 .left-column
 {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    flex-shrink: 0;
-    margin: 3px;
     flex-basis: 12%;
     background: rgba(171, 171, 171, .5);
     padding: 0 5px 5px;
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px;
+    overflow: hidden;
 }
 
 .middle-column
@@ -38,18 +57,18 @@ main
     align-content: stretch;
     flex-basis: 67%;
     margin: 3px;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px 1fr 10px 1fr 10px;
+    grid-template-rows: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
 }
 
 .right-column
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-shrink: 0;
+    align-self: flex-start;
     flex-basis: 17%;
     background: rgba(171, 171, 171, .5);
-    align-self: flex-start;
     margin: 3px;
     padding: 0 5px 5px;
 }
@@ -71,26 +90,27 @@ main
     margin: 4px;
     height: 220px;
     overflow: hidden;
+    width: 100%;  /* если убрать правильно работает flex*/
 }
 
-.one-column
-{
-    width: 100%;
-}
-
-.two-column-one
+.size-s
 {
     width: 32%;
 }
 
-.two-column-two
+.size-l
 {
     width: 65.6%;
 }
 
-.three-column
+.size-m
 {
     width: 32.3%;
+}
+
+.size-xl
+{
+    width: 100%;
 }
 
 img
@@ -100,17 +120,13 @@ img
     max-height: 110%;
 }
 
-.one-column img
-{
-    max-height: 160%;
-}
 
 article:hover .details-about-cat
 {
     position: relative;
     top: -35%;
     left: 2%;
-    width: 45%;
+    width: 60%;
     background: rgba(58, 58, 58, .7);
     border-radius: 10px;
     padding: 3px;
@@ -122,16 +138,34 @@ article:hover .details-about-cat
     display: none;
 }
 
-.abyssinian:checked ~ .middle-column .abyssinian,
-.britain:checked ~ .middle-column .britain,
-.russian:checked ~ .middle-column .russian,
-.siamese:checked ~ .middle-column .siamese,
-.siberian:checked ~ .middle-column .siberian
-
+[id='abyssinian']:checked ~ .middle-column .abyssinian,
+[id='britain']:checked ~ .middle-column .britain,
+[id='russian']:checked ~ .middle-column .russian,
+[id='siamese']:checked ~ .middle-column .siamese,
+[id='siberian']:checked ~ .middle-column .siberian
 {
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
 }
 
+[id='all']:checked ~ .left-column .all,
+[id='abyssinian']:checked ~ .left-column .abyssinian,
+[id='britain']:checked ~ .left-column .britain,
+[id='russian']:checked ~ .left-column .russian,
+[id='siamese']:checked ~ .left-column .siamese,
+[id='siberian']:checked ~ .left-column .siberian
+{
+    text-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
+
+.all:hover,
+.abyssinian:hover,
+.britain:hover,
+.russian:hover,
+.siamese:hover,
+.siberian:hover
+{
+    color: #fff;
+}
 
 div.scale
 {
@@ -203,17 +237,96 @@ input.rating:checked ~ .rating-four
 footer
 {
     display: flex;
-    font-size: 20px;
     justify-content: space-between;
-    align-items: center;
-    height: 20px;
-    padding: 5px;
+    font-size: 20px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 250px;
 }
 
 .address
 {
-    height: 10px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+}
+
+.grandma
+{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.address
+{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.address span
+{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.address address
+{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.cat-1
+{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.cat-2
+{
+    grid-area: 1 / 4 / 2 / 7;
+
+}
+
+.cat-3
+{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.cat-4
+{
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+
+.cat-5
+{
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+.cat-5 img
+{
+    min-width: 180%;
+}
+
+.cat-6
+{
+    grid-area: 5 / 2 / 6 / 5;
+}
+
+.cat-7
+{
+    grid-area: 5 / 6 / 6 / 7;
+}
+
+.cat-8
+{
+    grid-area: 7 / 2 / 8 / 7;
+}
+
+.cat-9
+{
+    grid-area: 9 / 2 / 10 / 3;
+}
+
+.cat-10
+{
+    grid-area: 9 / 4 / 10 / 7;
 }
