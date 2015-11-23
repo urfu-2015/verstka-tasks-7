@@ -235,3 +235,20 @@ address
 {
     font-style: normal;
 }
+
+.cat > p
+{
+    display: none;
+    position: absolute;
+    margin: 290px 0 0 25px;
+    padding: 10px;
+    background: #aaa;
+    opacity: .8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cat:hover > p
+{
+    display: block;
+}
