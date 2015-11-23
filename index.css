@@ -157,11 +157,15 @@ div.cat
 .six .ratingGradient
 {
     background: linear-gradient(to left, #fff, #fdff00);
+    width: 50%;
+    margin-right: 30%;
 }
 
 .four .ratingGradient
 {
     background: linear-gradient(to left, #fff, #f00);
+    width: 30%;
+    margin-right: 50%;
 }
 
 .numberRating

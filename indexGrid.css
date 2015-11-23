@@ -77,9 +77,14 @@ label[for='scotish']
     grid-area: 3 / 1 / 4 / 2;
 }
 
+label[for='all']
+{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
 .back
 {
-    grid-area: 4 / 1 / 25 / 2;
+    grid-area: 5 / 1 / 25 / 2;
     margin-right: 15px;
     margin-bottom: -60px;
 }
@@ -159,7 +164,7 @@ label
 input[name='descending']
 {
     grid-area: 2 / 6 / 3 / 7;
-    margin-left: -1700%;
+    margin-left: -1200%;
     z-index: 100;
 }
 
@@ -200,11 +205,15 @@ div.four
 .six .ratingGradient
 {
     background: linear-gradient(to left, #fff, #fdff00);
+    width: 50%;
+    margin-right: 30%;
 }
 
 .four .ratingGradient
 {
     background: linear-gradient(to left, #fff, #f00);
+    width: 30%;
+    margin-right: 50%;
 }
 
 label[for='descending'],

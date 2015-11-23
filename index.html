@@ -4,28 +4,28 @@
         <meta charset="utf-8">
         <title>Бабуленькины котятки</title>
 
-        <link rel="stylesheet" href="index.css"><!--закомментировать для grid-->
-        <!--<link rel="stylesheet" href="indexx.css">--><!--раскомментировать для grid-->
+        <link rel="stylesheet" href="index.css">
         <link
             href="https://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic"
             rel="stylesheet"
             type="text/css">
     </head>
     <body>
-        <input id="europian" type="checkbox" name="breed" value="europian">
-        <input id="british" type="checkbox" name="breed" value="british">
-        <input id="scotish" type="checkbox" name="breed" value="scotish">
+        <input id="europian" type="radio" name="breed" value="europian">
+        <input id="british" type="radio" name="breed" value="british">
+        <input id="scotish" type="radio" name="breed" value="scotish">
+        <input id="all" type="radio" name="breed" value="all">
         <header>
             <h1>Бабуленькины котятки</h1>
         </header>
         <main>
-            <aside class="left"><!--закомментировать для grid-->
+            <aside class="left">
                 <label for="british" class="breed">Британская</label>
                 <label for="europian" class="breed">Европейская</label>
                 <label for="scotish" class="breed">Шотландская</label>
-                <div class="back"></div>
-            </aside><!--закомментировать для grid-->
-            <div class="cats"><!--закомментировать для grid-->
+                <label for="all" class="breed">Все породы</label>
+            </aside>
+            <div class="cats">
                 <div id="cat1" data-title="Гоша, 3 года" class="little europian cat">
                     <img src="http://bit.ly/1OKi0Ko">
                     <div></div>
@@ -58,12 +58,12 @@
                     <img src="http://bit.ly/1QClRbP">
                     <div></div>
                 </div>
-            </div><!--закомментировать для grid-->
-            <aside class="right"><!--закомментировать для grid-->
+            </div>
+            <aside class="right">
                 <div class="h3"><h3>Рейтинг</h3></div>
                 <input id="descending" name="descending" type="checkbox">
                 <label for="descending">по убыванию</label><br>
-                <div class="rating"><!--закомментировать для grid-->
+                <div class="rating">
                     <div class="britishCat six">
                         <div>Британская</div>
                         <div id="breed1" class="ratingGradient"></div>
@@ -79,8 +79,8 @@
                         <div id="breed3" class="ratingGradient"></div>
                         <div class="numberRating">4</div>
                     </div>
-                </div><!--закомментировать для grid-->
-            </aside><!--закомментировать для grid-->
+                </div>
+            </aside>
         </main>
         <footer>
             <div>
