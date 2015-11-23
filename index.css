@@ -39,8 +39,8 @@ li
 
 .left-column
 {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     flex-basis: 12%;
     background: rgba(171, 171, 171, .5);
     padding: 0 5px 5px;
@@ -51,10 +51,10 @@ li
 
 .middle-column
 {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: stretch;
+    align-content: stretch;*/
     flex-basis: 67%;
     margin: 3px;
     display: grid;
@@ -90,7 +90,8 @@ li
     margin: 4px;
     height: 220px;
     overflow: hidden;
-    width: 100%;  /* если убрать правильно работает flex*/
+    /* если убрать правильно работает flex*/
+    width: 100%;
 }
 
 .size-s
@@ -119,7 +120,6 @@ img
     min-height: 100%;
     max-height: 110%;
 }
-
 
 article:hover .details-about-cat
 {
@@ -190,7 +190,7 @@ div.rating
     background: linear-gradient(to right, #ff0, #fff);
     border: 1px solid #ff0;
     width: 60%;
-    margin: 1px 0px;
+    margin: 1px 0;
 }
 
 .scale-nine
@@ -236,8 +236,8 @@ input.rating:checked ~ .rating-four
 
 footer
 {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     font-size: 20px;
     height: 30px;
     display: grid;
@@ -247,9 +247,9 @@ footer
 .address
 {
     height: 30px;
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     display: grid;
     grid-template-columns: 1fr 150px;
 }
@@ -294,7 +294,6 @@ footer
 {
     grid-area: 3 / 4 / 4 / 5;
 }
-
 
 .cat-5
 {
