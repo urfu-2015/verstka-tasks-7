@@ -53,6 +53,22 @@ h1
     background: #e0e0e0;
 }
 
+.rating-lable
+{
+    position: relative;
+}
+
+.rating-lable label
+{
+    background-image: url(./notchecked.png);
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 .si2
 {
     grid-column-start: 1;
@@ -102,7 +118,6 @@ h1
 }
 
 article
-
 {
     opacity: 1;
     overflow: hidden;
@@ -261,7 +276,17 @@ input.desc-order:checked ~ [class='one-rating 4']
     order:3;
 }
 
+input.desc-order:checked ~ .rating-lable label
+{
+    background-image: url(./checked.png);
+}
+
 address
 {
     color: #008ae6;
+}
+
+.breed-lable:hover
+{
+    background: #666666;
 }
