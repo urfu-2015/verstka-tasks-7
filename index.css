@@ -23,7 +23,7 @@ input[name='kinds']
 #cat:checked ~ section :not(.cat),
 #hamster:checked ~ section :not(.hamster)
 {
-    opacity: 0.5
+    opacity: .5;
 }
 
 nav
