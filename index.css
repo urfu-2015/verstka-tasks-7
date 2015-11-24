@@ -155,7 +155,7 @@ hr
 .line-one-card-1
 .desc-1
 {
-    top: 265px;
+    top: 185px;
 }
 .wrapper-photo-cards
 .line-one-card-2
@@ -195,19 +195,19 @@ hr
 .line-two-card-1
 .desc-1
 {
-    top: 495px;
+    top: 545px;
 }
 .wrapper-photo-cards
 .line-two-card-2
 .desc-2
 {
-    top: 495px;
+    top: 385px;
 }
 .wrapper-photo-cards
 .line-two-card-3
 .desc-3
 {
-    top: 495px;
+    top: 410px;
 }
 .wrapper-photo-cards
 .line-two-card-1:hover > .desc
@@ -240,13 +240,13 @@ hr
 .line-three-card-1
 .desc-1
 {
-    top: 725px;
+    top: 785px;
 }
 .wrapper-photo-cards
 .line-three-card-2
 .desc-2
 {
-    top: 725px;
+    top: 685px;
 }
 .wrapper-photo-cards
 .line-three-card-1:hover > .desc
@@ -267,7 +267,7 @@ hr
 .line-four-card-1
 .desc-1
 {
-    top: 955px;
+    top: 1155px;
 }
 .wrapper-photo-cards
 .line-four-card-1:hover > .desc
