@@ -41,27 +41,27 @@
 
 #abyss:checked ~ section div div:not(.abyss)
 {
-    opacity: 0.2;
+    opacity: .2;
 }
 
 #british:checked ~ section div div:not(.british)
 {
-    opacity: 0.2;
+    opacity: .2;
 }
 
 #siamese:checked ~ section div div:not(.siamese)
 {
-    opacity: 0.2;
+    opacity: .2;
 }
 
 #russian:checked ~ section div div:not(.russian)
 {
-    opacity: 0.2;
+    opacity: .2;
 }
 
 #wild:checked ~ section div div:not(.wild)
 {
-    opacity: 0.2;
+    opacity: .2;
 }
 
 section
