@@ -5,6 +5,9 @@ body
     background-color: rgba(234, 234, 234, .71);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 header
@@ -25,6 +28,7 @@ main
     padding: 0;
     display: flex;
     width: 100%;
+    flex: 1;
 }
 
 nav
@@ -208,6 +212,7 @@ aside > input[name='desc']:checked ~ .rating-ten
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
+    min-width: 800px;
 }
 
 .cat
@@ -280,6 +285,16 @@ input[value='rus']:checked ~ main > .cats article:not(.rus),
 input[value='siam']:checked ~ main > .cats article:not(.siam)
 {
     opacity: .5;
+}
+
+input[value='all']:checked ~ main > nav > label[for='all'],
+input[value='abissin']:checked ~ main > nav > label[for='abissin'],
+input[value='brit']:checked ~ main > nav > label[for='brit'],
+input[value='rus']:checked ~ main > nav > label[for='rus'],
+input[value='siam']:checked ~ main > nav > label[for='siam']
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, .54);
 }
 
 input[value='abissin']:checked ~ main > .cats article:not(.abissin) > .cat-info,
