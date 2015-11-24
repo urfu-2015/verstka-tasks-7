@@ -1,1 +1,307 @@
+@import url(http://allfont.ru/allfont.css?fonts=textbook-cyrillic);
 
+header
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+header > h1
+{
+    font-size: 3em;
+    flex-shrink: 0;
+}
+
+body
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'TextBook Cyrillic', arial;
+    background: #ebebeb;
+}
+
+input
+{
+    display: none;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-height: 100%;
+}
+
+.breed
+{
+    min-width: 180px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin: 0 20px;
+    background: #d9d9d9;
+}
+
+.breed > label
+{
+    font-size: 24px;
+    padding: 20px 10px;
+    border-bottom: 1px solid;
+}
+
+.breed > label:last-child
+{
+    flex-grow: 2;
+}
+
+.breed > label:not(:last-child):hover
+{
+    background: #959595;
+}
+
+#all:checked ~ main .cat > img,
+#serval:checked ~ main .serval > img,
+#scottishfold:checked ~ main .scottishfold > img,
+#scottishstraight:checked ~ main .scottishstraight > img,
+#mainecoon:checked ~ main .mainecoon > img
+{
+    opacity: 1;
+}
+
+#serval:checked ~ main .breed .label-serval,
+#scottishfold:checked ~ main .breed .label-scottishfold,
+#scottishstraight:checked ~ main .breed .label-scottishstraight,
+#mainecoon:checked ~ main .breed .label-mainecoon
+{
+    background: #696969;
+}
+
+.cats
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 800px;
+}
+
+.cat
+{
+    display: flex;
+    margin: 0 8px 16px;
+    height: 250px;
+    position: relative;
+}
+
+img
+{
+    opacity: .5;
+    width: 100%;
+}
+
+.cat > img:hover + .features
+{
+    display: block;
+}
+
+.features
+{
+    flex-basis: 100%;
+    white-space: nowrap;
+    display: none;
+    z-index: 10;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.small
+{
+    flex-basis: 30%;
+}
+
+.medium
+{
+    flex-basis: 62%;
+}
+
+.large
+{
+    flex-basis: 94%;
+}
+
+.rating
+{
+    display: flex;
+    flex-basis: 20%;
+    align-self: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+    background: #d9d9d9;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.rating > p:first-child
+{
+    color: #db0606;
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.rating > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-content: stretch;
+    flex-direction: column;
+}
+
+.sort
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+
+.rating > div > p
+{
+    flex-basis: 100%;
+
+}
+
+.rating-line
+{
+    display: block;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.rating-green
+{
+    width: 80%;
+    background: linear-gradient(to right, #02e86e, #fff);
+}
+
+.rating-yellow
+{
+    width: 60%;
+    background: linear-gradient(to right, #fff602, #fff);
+}
+
+.rating-red
+{
+    width: 30%;
+    background: linear-gradient(to right, #e80a04, #fff);
+}
+
+.rating-item
+{
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-item > span
+{
+    font-weight: 700;
+}
+
+.sort label
+{
+    margin: 20px 2px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(img/check.png) 0 0;
+}
+
+#sort-des:checked ~ div.sort > label
+{
+    background-position: 0 -20px;
+}
+
+.label
+{
+    flex-basis: 100%;
+    font-size: 25px;
+}
+
+#sort-des:checked ~ div[data-rating='10']
+{
+    order: 1;
+}
+
+#sort-des:checked ~ div[data-rating='9']
+{
+    order: 2;
+}
+
+#sort-des:checked ~ div[data-rating='8']
+{
+    order: 3;
+}
+
+#sort-des:checked ~ div[data-rating='7']
+{
+    order: 4;
+}
+
+#sort-des:checked ~ div[data-rating='6']
+{
+    order: 5;
+}
+
+#sort-des:checked ~ div[data-rating='5']
+{
+    order: 6;
+}
+
+#sort-des:checked ~ div[data-rating='4']
+{
+    order: 7;
+}
+
+#sort-des:checked ~ div[data-rating='3']
+{
+    order: 8;
+}
+
+#sort-des:checked ~ div[data-rating='2']
+{
+    order: 9;
+}
+
+#sort-des:checked ~ div[data-rating='1']
+{
+    order: 10;
+}
+
+footer
+{
+    display: flex;
+    flex-basis: 100%;
+    height: 50px;
+    border-top: 1px solid;
+    padding: 0 50px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+address
+{
+    color: #1634a3;
+}
