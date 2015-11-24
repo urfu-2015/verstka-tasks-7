@@ -54,8 +54,8 @@ aside
     border-top: 1px solid slategray;
     border-bottom: 1px solid slategray;
     flex-basis: 250px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     cursor: pointer;
 }
 #all:checked ~ main > aside > label.all,
