@@ -1,23 +1,27 @@
-html
-{
-    margin: 0;
-}
-
+html,
 body
 {
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper
+{
+    min-height: 100%;
     font-family: Arial;
     display: flex;
-    align-items: stretch;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
     width: 1400px;
     margin: 0 auto;
+    background-color: #eee;
 }
 
 header
 {
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #eee;
 }
 
 h1
@@ -27,10 +31,10 @@ h1
 
 main
 {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #eee;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 nav
@@ -363,8 +367,9 @@ h2
 
 footer
 {
+    width: 100%;
+    align-self: flex-end;
     border-top: 1px solid #aaa;
-    background-color: #eee;
     display: flex;
     padding: 20px;
     font-size: 24px;
