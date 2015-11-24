@@ -1,1 +1,383 @@
+html,
+body
+{
+    margin: 0;
+    height: 100%;
+}
 
+.wrapper
+{
+    min-height: 100%;
+    font-family: Arial;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+main
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+}
+
+.catBreed
+{
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+    font-size: 20px;
+}
+
+.catBreed:hover
+{
+    background-color: #bbb;
+}
+
+#breed1:checked ~ main nav .breed1,
+#breed2:checked ~ main nav .breed2,
+#breed3:checked ~ main nav .breed3,
+#breed4:checked ~ main nav .breed4,
+#breed5:checked ~ main nav .breed5
+{
+    background: #555;
+    color: #fff;
+}
+
+.imagesContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 960px;
+    max-width: 960px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.catImage
+{
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: .5;
+    pointer-events: none;
+}
+
+#breed1:not(:checked) + #breed2:not(:checked) + #breed3:not(:checked) + #breed4:not(:checked) + #breed5:not(:checked) ~ main .imagesContainer .catImage,
+#breed1:checked ~ main .imagesContainer .breed1,
+#breed2:checked ~ main .imagesContainer .breed2,
+#breed3:checked ~ main .imagesContainer .breed3,
+#breed4:checked ~ main .imagesContainer .breed4,
+#breed5:checked ~ main .imagesContainer .breed5
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.catImage img
+{
+    height: 400px;
+    min-width: 100%;
+}
+
+.catInfo
+{
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    max-width: 80%;
+    padding: 10px;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+}
+
+.catImage:hover .catInfo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesContainer .catImage:nth-child(8n+1),
+.imagesContainer .catImage:nth-child(8n+3)
+{
+    flex-basis: 30.66%;
+}
+
+.imagesContainer .catImage:nth-child(8n+4),
+.imagesContainer .catImage:nth-child(8n+5),
+.imagesContainer .catImage:nth-child(8n+7)
+{
+    flex-basis: 28.67%;
+}
+
+.imagesContainer .catImage:nth-child(8n+2)
+{
+    flex-basis: 61.32%;
+}
+
+.imagesContainer .catImage:nth-child(8n+6)
+{
+    flex-basis: 63.34%;
+}
+
+.imagesContainer .catImage:nth-child(8n)
+{
+    flex-basis: 96%;
+}
+
+.imagesContainer .catImage:nth-child(8n+2),
+.imagesContainer .catImage:nth-child(8n+5),
+.imagesContainer .catImage:nth-child(8n+7),
+.imagesContainer .catImage:nth-child(8n)
+{
+    margin-right: 0;
+}
+
+.imagesContainer .catImage:last-child
+{
+    margin-bottom: 0;
+}
+
+.ratingContainer
+{
+    display: flex;
+    align-self: flex-start;
+    background-color: #ddd;
+    padding: 10px;
+    flex-direction: column;
+    min-width: 200px;
+    align-items: stretch;
+}
+
+h2
+{
+    color: #b00;
+}
+
+.filter
+{
+    align-self: flex-end;
+}
+
+.breedName
+{
+    font-size: 20px;
+}
+
+.breedRating
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratingValue
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ratingLineContainer
+{
+    width: 150px;
+    height: 24px;
+}
+
+.ratingLine
+{
+    height: 24px;
+    border: 1px solid #aaa;
+}
+
+.breedRatingContainer[value='1'] .ratingLine
+{
+    width: 10%;
+}
+
+.breedRatingContainer[value='2'] .ratingLine
+{
+    width: 20%;
+}
+
+.breedRatingContainer[value='3'] .ratingLine
+{
+    width: 30%;
+}
+
+.breedRatingContainer[value='4'] .ratingLine
+{
+    width: 40%;
+}
+
+.breedRatingContainer[value='5'] .ratingLine
+{
+    width: 50%;
+}
+
+.breedRatingContainer[value='6'] .ratingLine
+{
+    width: 60%;
+}
+
+.breedRatingContainer[value='7'] .ratingLine
+{
+    width: 70%;
+}
+
+.breedRatingContainer[value='8'] .ratingLine
+{
+    width: 80%;
+}
+
+.breedRatingContainer[value='9'] .ratingLine
+{
+    width: 90%;
+}
+
+.breedRatingContainer[value='10'] .ratingLine
+{
+    width: 100%;
+}
+
+.breedRatingContainer[value='1'] .ratingLine,
+.breedRatingContainer[value='2'] .ratingLine,
+.breedRatingContainer[value='3'] .ratingLine
+{
+    background: linear-gradient(to right, #f00, #fff);
+}
+
+.breedRatingContainer[value='4'] .ratingLine,
+.breedRatingContainer[value='5'] .ratingLine,
+.breedRatingContainer[value='6'] .ratingLine,
+.breedRatingContainer[value='7'] .ratingLine
+{
+    background: linear-gradient(to right, #ff0, #fff);
+}
+
+.breedRatingContainer[value='8'] .ratingLine,
+.breedRatingContainer[value='9'] .ratingLine,
+.breedRatingContainer[value='10'] .ratingLine
+{
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+#filter
+{
+    align-self: flex-end;
+}
+
+.filter
+{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox
+{
+    margin-left: 5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('checkbox_no.png');
+}
+
+#filter:checked ~ .filter .checkbox
+{
+    background-image: url('checkbox_yes.png');
+}
+
+#filter:checked ~ .breedRatingContainer[value='1']
+{
+    order: 10;
+}
+
+#filter:checked ~ .breedRatingContainer[value='2']
+{
+    order: 9;
+}
+
+#filter:checked ~ .breedRatingContainer[value='3']
+{
+    order: 8;
+}
+
+#filter:checked ~ .breedRatingContainer[value='4']
+{
+    order: 7;
+}
+
+#filter:checked ~ .breedRatingContainer[value='5']
+{
+    order: 6;
+}
+
+#filter:checked ~ .breedRatingContainer[value='6']
+{
+    order: 5;
+}
+
+#filter:checked ~ .breedRatingContainer[value='7']
+{
+    order: 4;
+}
+
+#filter:checked ~ .breedRatingContainer[value='8']
+{
+    order: 3;
+}
+
+#filter:checked ~ .breedRatingContainer[value='9']
+{
+    order: 2;
+}
+
+#filter:checked ~ .breedRatingContainer[value='10']
+{
+    order: 1;
+}
+
+footer
+{
+    width: 100%;
+    align-self: flex-end;
+    border-top: 1px solid #aaa;
+    display: flex;
+    padding: 20px;
+    font-size: 24px;
+    justify-content: space-between;
+}
+
+address
+{
+    color: #00c;
+    font-style: normal;
+}
