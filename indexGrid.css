@@ -8,6 +8,7 @@
     grid-template-columns: auto;
     grid-template-rows: 150px auto 100px;
     max-width: 1300px;
+    min-width: 1200px;
 }
 
 .shop2
@@ -173,7 +174,7 @@ input[class^='breed']
     display: none;
 }
 
-input:checked ~ article
+input:checked ~ div article
 {
     opacity: .3;
 }
@@ -188,13 +189,22 @@ navigation
     background-color: #333;
 }
 
-input[class='breedAll']:checked ~ [class^='cat'],
-input[class='breed1']:checked ~ [class^='cat ab'],
-input[class='breed2']:checked ~ [class^='cat br'],
-input[class='breed3']:checked ~ [class^='cat rg'],
-input[class='breed4']:checked ~ [class^='cat si']
+input[class='breedAll']:checked ~ div [class^='cat'],
+input[class='breed1']:checked ~ div [class^='cat ab'],
+input[class='breed2']:checked ~ div [class^='cat br'],
+input[class='breed3']:checked ~ div [class^='cat rg'],
+input[class='breed4']:checked ~ div [class^='cat si']
 {
     opacity: 1;
+}
+
+input[class='breedAll']:checked ~ div [for='breedAll'],
+input[class='breed1']:checked ~ div [for='breed1'],
+input[class='breed2']:checked ~ div [for='breed2'],
+input[class='breed3']:checked ~ div [for='breed3'],
+input[class='breed4']:checked ~ div [for='breed4']
+{
+    background: #666;
 }
 
 .rating
