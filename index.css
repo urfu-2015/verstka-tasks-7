@@ -1,14 +1,23 @@
+html 
+{
+    height: 100%;
+}
 
 body
 {
     background: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 main
 {
     display: flex;
     justify-content: space-between;
-    border-bottom: solid #000 1px;
+    flex-grow: 1;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h2
@@ -19,7 +28,7 @@ h2
 
 section
 {
-    margin: 5px;
+    margin: 10px;
 }
 
 header
@@ -42,6 +51,7 @@ img
 {
     height: 300px;
     width: 900px;
+    object-fit: cover;
 }
 
 .small-img
@@ -80,6 +90,7 @@ img:hover ~ .information-about-cat
     background-color: rgba(105,105,105,.9);
     color: rgb(255,255,255);
 }
+
 .img-cats
 {
     display: flex;
@@ -90,21 +101,22 @@ img:hover ~ .information-about-cat
 
 .gradient
 {
+    background: linear-gradient(to right, red , blue);
     height: 20px;
     width: 150px;
 }
 
-.gradient-6
+.rate-6
 {
     width: 60%;
 }
 
-.gradient-4
+.rate-4
 {
     width: 40%;
 }
 
-.gradient-9
+.rate-9
 {
     width: 70%;
 }
@@ -149,15 +161,13 @@ img:hover ~ .information-about-cat
 .siamsk,
 .abis
 {
-    opacity: 1;
     position: relative;
 }
 
 footer
 {
+    border-top: solid #000 2px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 [type='radio']
