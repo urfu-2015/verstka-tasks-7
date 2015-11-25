@@ -68,7 +68,7 @@ main aside label:not(:last-of-type)
     border-bottom: solid 1px #fff;
 }
 
-main aside label:not(:last-of-type):hover
+main aside label:hover
 {
     background: #aaa;
 }
@@ -152,25 +152,25 @@ main .ratio input:checked ~ .types .Сиамская
     order: 3;
 }
 
-main .ratio .types .Абиссинская .linerating .line .fillLine
+main .ratio .types div[data-rating='9'] .fillLine
 {
     width: 90%;
     background: linear-gradient(to right, #0f0, #fff);
 }
 
-main .ratio .types .Британская .linerating .line .fillLine
+main .ratio .types div[data-rating='8'] .fillLine
 {
     width: 80%;
     background: linear-gradient(to right, #ff0, #fff);
 }
 
-main .ratio .types .Русская .linerating .line .fillLine
+main .ratio .types div[data-rating='10'] .fillLine
 {
     width: 100%;
     background: linear-gradient(to right, #0f0, #fff);
 }
 
-main .ratio .types .Сиамская .linerating .line .fillLine
+main .ratio .types div[data-rating='4'] .fillLine
 {
     width: 40%;
     background: linear-gradient(to right, #f00, #fff);
@@ -280,18 +280,18 @@ main .photos img:hover ~ .description
     font-size: 30px;
 }
 
-main > input[id='Русская']:checked ~ .photos div:not([class='Русская']) img,
-main > input[id='Абиссинская']:checked ~ .photos div:not([class='Абиссинская']) img,
-main > input[id='Британская']:checked ~ .photos div:not([class='Британская']) img,
-main > input[id='Сиамская']:checked ~ .photos div:not([class='Сиамская']) img
+main > input[id='Русская']:checked ~ .photos div:not(.Russian) img,
+main > input[id='Абиссинская']:checked ~ .photos div:not(.Abyssinskaya) img,
+main > input[id='Британская']:checked ~ .photos div:not(.Brittan) img,
+main > input[id='Сиамская']:checked ~ .photos div:not(.Siamskaya) img
 {
     opacity: .5;
 }
 
-main > input[id='Русская']:checked ~ .photos div:not([class='Русская']) div,
-main > input[id='Абиссинская']:checked ~ .photos div:not([class='Абиссинская']) div,
-main > input[id='Британская']:checked ~ .photos div:not([class='Британская']) div,
-main > input[id='Сиамская']:checked ~ .photos div:not([class='Сиамская']) div
+main > input[id='Русская']:checked ~ .photos div:not(.Russian) div,
+main > input[id='Абиссинская']:checked ~ .photos div:not(.Abyssinskaya) div,
+main > input[id='Британская']:checked ~ .photos div:not(.Brittan) div,
+main > input[id='Сиамская']:checked ~ .photos div:not(.Siamskaya) div
 {
     display: none;
 }
