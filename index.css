@@ -76,6 +76,7 @@ body
     flex-basis: 400px;
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
 }
 
 .row
@@ -87,8 +88,6 @@ body
 .photos .row > div
 {
     display: flex;
-    /*flex-direction: column;*/
-    /*align-content: center;*/
     height: 300px;
     overflow: hidden;
     margin: 0 5px;
@@ -329,5 +328,5 @@ input.dec:checked ~ .rate-4
 
 .right
 {
-    color: #002EBE;
+    color: #002ebe;
 }
