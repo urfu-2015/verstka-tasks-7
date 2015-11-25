@@ -71,6 +71,7 @@ body
 
 .photos
 {
+    min-width: 620px;
     flex-grow: 6;
     flex-basis: 400px;
     display: flex;
@@ -80,23 +81,28 @@ body
 .row
 {
     display: flex;
-    /*margin-bottom: 5px;*/
+    padding: 5px 0;
 }
 
-.photos .row div
+.photos .row > div
 {
-    margin: 0 10px;
+    display: flex;
+    /*flex-direction: column;*/
+    /*align-content: center;*/
+    height: 300px;
+    overflow: hidden;
+    margin: 0 5px;
 }
 
 .photos .row img
 {
     background: #aaa;
-    height: 300px;
     width: 100%;
 }
 
 .photos .row .col-1
 {
+    min-width: 200px;
     position: relative;
     box-sizing: border-box;
     width: 1px;
@@ -105,6 +111,7 @@ body
 
 .photos .row .col-2
 {
+    min-width: 410px;
     position: relative;
     box-sizing: border-box;
     width: 1px;
@@ -113,6 +120,7 @@ body
 
 .photos .row .col-3
 {
+    min-width: 620px;
     position: relative;
     flex-basis: 100%;
 }
@@ -221,10 +229,15 @@ input.salem:checked ~ .row img:not(.salem)
     margin-right: 15px;
 }
 
+.grad
+{
+    border: 1px solid #03e86f;
+}
+
 .grad-9
 {
     background: linear-gradient(to right, #03e86f, #fff);
-    border: 1px solid #03e86f;
+
     width: 72%;
 }
 
@@ -310,22 +323,11 @@ input.dec:checked ~ .rate-4
 {
     padding: 10px 20px;
     font-size: 2em;
-}
-
-.page-footer p
-{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
-
-.left
-{
-    float: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 .right
 {
-    float: right;
-    color: #2b40ff;
+    color: #002EBE;
 }
