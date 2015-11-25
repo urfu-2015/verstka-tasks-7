@@ -1,1 +1,288 @@
+html
+{
+    height: 100%;
+}
 
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: #eee;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header
+{
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.left-column
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    min-width: 220px;
+    margin: 3px;
+    padding: 3px;
+    background-color: rgba(200, 200, 200, .5);
+}
+
+.middle-column
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 65%;
+    min-width: 750px;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 3px;
+    padding: 3px;
+}
+
+.right-column
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    min-width: 220px;
+    align-self: flex-start;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, .5);
+    margin: 3px;
+    padding: 3px;
+}
+
+.select-cat
+{
+    display: none;
+}
+
+.button
+{
+    padding: 15px;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+
+.button:hover
+{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(50, 50, 50, .5);
+}
+
+#cat-1:checked ~ .left-column > .button[for='cat-1'],
+#cat-2:checked ~ .left-column > .button[for='cat-2'],
+#cat-3:checked ~ .left-column > .button[for='cat-3'],
+#cat-4:checked ~ .left-column > .button[for='cat-4']
+{
+    color: #fff;
+    background-color: rgba(50, 50, 50, .5);
+}
+
+.photo
+{
+    opacity: .3;
+}
+
+#cat-1:not(:checked) + #cat-2:not(:checked) + #cat-3:not(:checked) + #cat-4:not(:checked) ~ .middle-column > .container > .photo,
+#cat-1:checked ~ .middle-column > .container > .cat-1,
+#cat-2:checked ~ .middle-column > .container > .cat-2,
+#cat-3:checked ~ .middle-column > .container > .cat-3,
+#cat-4:checked ~ .middle-column > .container > .cat-4
+{
+    opacity: 1;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.photo
+{
+    margin: 3px;
+}
+
+.photo > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.size-1-1
+{
+    width: 99%;
+    height: 100%;
+}
+
+.size-2-1
+{
+    width: 32.5%;
+    height: 100%;
+}
+
+.size-2-2
+{
+    width: 66%;
+    height: 100%;
+}
+
+.size-3-1
+{
+    width: 32.7%;
+    height: 100%;
+}
+
+.description
+{
+    display: none;
+}
+
+.photo:hover
+{
+    margin-bottom: -46px;
+}
+
+.photo:hover > .description
+{
+    display: block;
+    position: relative;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgba(20, 20, 20, .8);
+}
+
+.right-column > h2
+{
+    color: #f00;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.right-column > input
+{
+    display: none;
+}
+
+.right-column > label
+{
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.checkbox
+{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background-image: url('checkbox_no.png');
+}
+
+.cat-type
+{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.rating-line
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.rating-line > .value
+{
+    font-size: 25px;
+}
+
+.rating-line > .line
+{
+    height: 25px;
+    border: 1px solid black;
+}
+
+.rating-10 > .rating-line > .line
+{
+    background: linear-gradient(to right, #5f5, #fff);
+    width: 85%;
+}
+
+.rating-9 > .rating-line > .line
+{
+    background: linear-gradient(to right, #5f5, #fff);
+    width: 75%;
+}
+
+.rating-8 > .rating-line > .line
+{
+    background: linear-gradient(to right, #ff0, #fff);
+    width: 65%;
+}
+
+.rating-4 > .rating-line > .line
+{
+    background: linear-gradient(to right, #f00, #fff);
+    width: 25%;
+}
+
+#cat-rating:checked ~ .rating-10
+{
+    order: 1;
+}
+
+#cat-rating:checked ~ .rating-9
+{
+    order: 2;
+}
+
+#cat-rating:checked ~ .rating-8
+{
+    order: 3;
+}
+
+#cat-rating:checked ~ .rating-4
+{
+    order: 4;
+}
+
+#cat-rating:checked ~ label > .checkbox
+{
+    background-image: url('checkbox_yes.png');
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-top: 10px;
+    border-top: solid 1px #000;
+}
+
+.organization
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.address
+{
+    display: flex;
+    justify-content: flex-end;
+}
