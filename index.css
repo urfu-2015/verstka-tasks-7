@@ -1,13 +1,21 @@
+html 
+{
+    height: 100%;
+}
+
 body
 {
     background: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 main
 {
     display: flex;
     justify-content: space-between;
-    border-bottom: solid #000 1px;
+    flex-grow: 1;
 }
 
 h2
@@ -41,6 +49,7 @@ img
 {
     height: 300px;
     width: 900px;
+    object-fit: cover;
 }
 
 .small-img
@@ -77,6 +86,7 @@ img:hover ~ .information-about-cat
 {
     display: block;
 }
+
 .img-cats
 {
     display: flex;
@@ -87,21 +97,22 @@ img:hover ~ .information-about-cat
 
 .gradient
 {
+    background: linear-gradient(to right, red , blue);
     height: 20px;
     width: 150px;
 }
 
-.gradient-6
+.rate-6
 {
     width: 60%;
 }
 
-.gradient-4
+.rate-4
 {
     width: 40%;
 }
 
-.gradient-9
+.rate-9
 {
     width: 70%;
 }
@@ -146,15 +157,13 @@ img:hover ~ .information-about-cat
 .siamsk,
 .abis
 {
-    opacity: 1;
     position: relative;
 }
 
 footer
 {
+    border-top: solid #000 2px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 [type='radio']
