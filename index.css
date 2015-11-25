@@ -236,7 +236,6 @@ input.salem:checked ~ .row img:not(.salem)
 .grad-9
 {
     background: linear-gradient(to right, #03e86f, #fff);
-
     width: 72%;
 }
 
