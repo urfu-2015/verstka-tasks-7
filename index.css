@@ -1,7 +1,15 @@
+html
+{
+    height: 100%;
+}
+
 body
 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     background: #eee;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 header
@@ -12,7 +20,8 @@ header
 main
 {
     display: flex;
-    justify-content: space-around;
+    flex: 1;
+    justify-content: space-between;
 }
 
 .left-column
@@ -31,8 +40,9 @@ main
     display: flex;
     flex-wrap: wrap;
     flex-basis: 65%;
-    min-width: 700px;
+    min-width: 750px;
     justify-content: center;
+    align-content: flex-start;
     margin: 3px;
     padding: 3px;
 }
@@ -113,30 +123,35 @@ main
 .size-1-1
 {
     width: 99%;
-    height: 400px;
+    height: 100%;
 }
 
 .size-2-1
 {
     width: 32.5%;
-    height: 300px;
+    height: 100%;
 }
 
 .size-2-2
 {
     width: 66%;
-    height: 300px;
+    height: 100%;
 }
 
 .size-3-1
 {
     width: 32.7%;
-    height: 200px;
+    height: 100%;
 }
 
 .description
 {
     display: none;
+}
+
+.photo:hover
+{
+    margin-bottom: -46px;
 }
 
 .photo:hover > .description
@@ -159,11 +174,23 @@ main
     margin-left: 20px;
 }
 
-.right-column > label,
 .right-column > input
+{
+    display: none;
+}
+
+.right-column > label
 {
     align-self: flex-end;
     margin-right: 20px;
+}
+
+.checkbox
+{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background-image: url('checkbox_no.png');
 }
 
 .cat-type
@@ -214,24 +241,29 @@ main
     width: 25%;
 }
 
-.right-column > input:checked ~ .rating-10
+#cat-rating:checked ~ .rating-10
 {
     order: 1;
 }
 
-.right-column > input:checked ~ .rating-9
+#cat-rating:checked ~ .rating-9
 {
     order: 2;
 }
 
-.right-column > input:checked ~ .rating-8
+#cat-rating:checked ~ .rating-8
 {
     order: 3;
 }
 
-.right-column > input:checked ~ .rating-4
+#cat-rating:checked ~ .rating-4
 {
     order: 4;
+}
+
+#cat-rating:checked ~ label > .checkbox
+{
+    background-image: url('checkbox_yes.png');
 }
 
 footer
@@ -239,7 +271,8 @@ footer
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    padding: 5px;
+    padding-top: 10px;
+    border-top: solid 1px #000;
 }
 
 .organization
@@ -253,4 +286,3 @@ footer
     display: flex;
     justify-content: flex-end;
 }
-
