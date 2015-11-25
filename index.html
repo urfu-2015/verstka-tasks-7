@@ -6,6 +6,133 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
         <!-- Здесь применять гибкую магию -->
+        <main>
+            <input type="radio" name="species" id="all" class="all invisible" checked>
+            <input type="radio" name="species" id="abyssinian" class="invisible">
+            <input type="radio" name="species" id="britain" class="invisible">
+            <input type="radio" name="species" id="russian" class="invisible">
+            <input type="radio" name="species" id="siamese" class="invisible">
+            <input type="radio" name="species" id="siberian" class="invisible">
+            <div class="left-column">
+                <ul class="species">
+                    <li>
+                        <label><span class="all">Все</span></label>
+                    </li>
+                    <li>
+                        <label for="abyssinian"><span class="abyssinian">Абиссинская</span></label>
+                    </li>
+                    <li>
+                        <label for="britain"><span class="britain">Британская</span></label>
+                    </li>
+                    <li>
+                        <label for="russian"><span class="russian">Русская голубая</span></label>
+                    </li>
+                    <li>
+                        <label for="siamese"><span class="siamese">Сиамская</span></label>
+                    </li>
+                    <li>
+                        <label for="siberian"><span class="siberian">Сибирская</span></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle-column">
+                <article class="size-s britain cat-1">
+                    <img src="images/cat4.jpg" alt="cat1">
+                    <div class="details-about-cat">
+                        Парадокс, 6 годикоа
+                    </div>
+                </article>
+                <article class="size-l siamese cat-2">
+                    <img src="images/cat6.jpg" alt="cat2">
+                    <div class="details-about-cat">
+                        Мистер Блэк, 5 годиков
+                    </div>
+                </article>
+                <article class="size-m russian cat-3">
+                    <img src="images/cat7.jpg" alt="cat3">
+                    <div class="details-about-cat">
+                        Пушок, 7 годиков
+                    </div>
+                </article>
+                <article class="size-m abyssinian cat-4">
+                    <img src="images/cat8.jpg" alt="cat4">
+                    <div class="details-about-cat">
+                        Паша, 6 месяцев
+                    </div>
+                </article>
+                <article class="size-m abyssinian cat-5">
+                    <img src="images/cat3.jpg" alt="cat5">
+                    <div class="details-about-cat">
+                        Малыш, 1 годик
+                    </div>
+                </article>
+                <article class="size-l siberian cat-6">
+                    <img src="images/cat2.jpg" alt="cat6">
+                    <div class="details-about-cat">
+                        Тая, 6 годиков
+                    </div>
+                </article>
+                <article class="size-s siberian cat-7">
+                    <img src="images/cat5.jpg" alt="cat7">
+                    <div class="details-about-cat">
+                        Дори и Дорн, 7 месяцев
+                    </div>
+                </article>
+                <article class="size-xl britain cat-8">
+                    <img src="images/cat11.jpg" alt="cat8">
+                    <div class="details-about-cat">
+                        Людовик XIV, 9 лет
+                    </div>
+                </article>
+                <article class="size-s siamese cat-9">
+                    <img src="images/cat9.jpg" alt="cat9">
+                    <div class="details-about-cat">
+                        Антонио, 3 годика
+                    </div>
+                </article>
+                <article class="size-l russian cat-10">
+                    <img src="images/cat10.jpg" alt="cat2">
+                    <div class="details-about-cat">
+                        Пушок, 8 месяцев
+                    </div>
+                </article>
+            </div>
+            <div class="right-column">
+                <h2>Рейтинг</h2>
+                <input id="rating" type="checkbox" name="rating" class="rating">
+                <label for="rating">По убыванию</label>
+                <div class="rating rating-seven">
+                    <span class="breed">Абиссинская</span>
+                    <div class="scale scale-seven"></div>7
+                </div>
+                <div class=" rating rating-nine">
+                    <span class="breed">Британская</span>
+                    <div class="scale scale-nine"></div> 9
+                </div>
+                <div class=" rating rating-seven">
+                    <span class="breed">Русская голубая</span>
+                    <div class="scale scale-seven"></div> 7
+                </div>
+                <div class=" rating rating-four">
+                    <span class="breed">Сиамская</span>
+                    <div class="scale scale-four"></div> 4
+                </div>
+                <div class=" rating rating-ten">
+                    <span class="breed">Сибирская</span>
+                    <div class="scale scale-ten"></div> 10
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="grandma">&copy;Бабуленькины котятки, 2015</div>
+            <div class="address">
+                <span>Наш адрес:</span>
+                <address>улица Котовая, д.5</address>
+            </div>
+        </footer>
     </body>
 </html>
