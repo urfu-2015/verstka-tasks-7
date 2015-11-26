@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster:&subset=latin,cyrillic');
-input[type="checkbox"]
+input[type='checkbox']
 {
     display: none;
 }
@@ -147,7 +147,7 @@ section
     flex-wrap: wrap;
 }
 
-#radioOfRating:checked ~  .abyssinian
+#radioOfRating:checked ~ .abyssinian
 {
     order: 1;
 }
@@ -159,15 +159,15 @@ section
 
 #checkForAbyssinian:checked ~ .imagesOfCats .imgAbyssinian
 {
-    opacity: 0.5;
+    opacity: .5;
 }
 
 #checkForSiamese:checked ~ .imagesOfCats .imgSiamese
 {
-   opacity: 0.5;
+    opacity: .5;
 }
 
 #checkForBritish:checked ~ .imagesOfCats .imgBritish
 {
-    opacity: 0.5;
+    opacity: .5;
 }
