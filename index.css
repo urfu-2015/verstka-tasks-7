@@ -1,12 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster:&subset=latin,cyrillic');
+input[type="checkbox"]
+{
+    display: none;
+}
+
 body
 {
     background: #e4d8d8;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+img
+{
+    height: 300px;
+    width: 900px;
+    object-fit: cover;
+}
+
+.small-img
+{
+    width: 300px;
+}
+
+.mid-img
+{
+    width: 600px;
+}
+
+.aboutCat
+{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    text-align: center;
+    color: red;
+    background: rgb(32,32,32, 4);
+    opacity: .7;
+    font-size: 30px;
+    display: none;
+}
+
+img:hover ~ .aboutCat
+{
+    display: block;
+}
+
+.imagesOfCats
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    align-items: center;
 }
 
 .wrapper
 {
     display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 header
@@ -16,22 +69,22 @@ header
     font-size: 40px;
 }
 
-div
+em,
+label
+{
+
+    font-size: 25px;
+}
+
+h1
+{
+    font-size: 45px;
+    color: blue;
+}
+
+section
 {
     margin: 10px;
-}
-
-.imageOfCat
-{
-    height: 200px;
-}
-
-em,
-.kindOfCat,
-span
-{
-
-    font-size: 20px;
 }
 
 .kindOfCat,
@@ -44,11 +97,6 @@ span
 .rating
 {
     align-self: flex-start;
-}
-
-.headerOfRating
-{
-    color: #13acf9;
 }
 
 .markForAbyssinian
@@ -86,27 +134,40 @@ span
     color: blue;
 }
 
-.radioOfRating:checked ~ .abyssinian
+.imgAbyssinian,
+.imgSiamese,
+.imgBritish
+{
+    position: relative;
+}
+
+.rating
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#radioOfRating:checked ~  .abyssinian
 {
     order: 1;
 }
 
-.radioOfRating:checked ~ .siamese
+#radioOfRating:checked ~ .siamese
 {
     order: 2;
 }
 
-.checkForAbyssinian:checked ~ .imgAbyssinian
+#checkForAbyssinian:checked ~ .imagesOfCats .imgAbyssinian
 {
-    opasity: .5;
+    opacity: 0.5;
 }
 
-.checkForSiamese:checked ~ .imgSiamese
+#checkForSiamese:checked ~ .imagesOfCats .imgSiamese
 {
-    opasity: .5;
+   opacity: 0.5;
 }
 
-.checkForBritish:checked ~ .imgBritish
+#checkForBritish:checked ~ .imagesOfCats .imgBritish
 {
-    opasity: .5;
+    opacity: 0.5;
 }

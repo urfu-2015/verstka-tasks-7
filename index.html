@@ -8,45 +8,103 @@
     <body>
         <header>Бабуленькины котятки</header>
         <div class="wrapper">
-            <div class="kindOfCat">
-                <div>
-                    <input type="checkbox" class="checkForAbyssinian">
-                    <span>Абиссинская</span>
+            <input type="checkbox" id="checkForAbyssinian">
+            <input type="checkbox" id="checkForBritish">
+            <input type="checkbox" id="checkForSiamese">
+            
+
+            <section class="kindOfCat">
+                <label for="checkForAbyssinian"> Абиссинская</label><hr>
+                <label for="checkForBritish"> Британская</label><hr>
+                <label for="checkForSiamese"> Сиамская</label><hr>
+            </section>
+
+            <section class="imagesOfCats">
+                <div class="imgAbyssinian ">
+                    <img src="cat1.jpg" class="imageOfCat imgAbyssinian mid-img">
+                    <div class="aboutCat"> Гоша</div>
                 </div>
-                <hr>
-                <div>
-                    <input type="checkbox" class="checkForBritish">
-                    <span>Британская</span>
+
+                <div class="imgAbyssinian">
+                    <img src="cat2.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Мурзик</div>
                 </div>
-                <hr>
-                <div>
-                    <input type="checkbox" class="checkForSiamese">
-                    <span>Сиамская</span>
+
+                <div class="imgSiamese">                
+                    <img src="cat15.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Пушок</div>
                 </div>
-                <hr>
-            </div>
-            <div class="imagesOfCats">
-                <img src="cat1.jpg" class="imageOfCat imgAbyssinian">
-                <img src="cat2.jpg" class="imageOfCat imgAbyssinian">
-                <img src="cat15.jpg" class="imageOfCat imgSiamese">
-                <img src="cat4.jpg" class="imageOfCat imgAbyssinian">
-                <img src="cat13.jpg" class="imageOfCat imgBritish">
-                <img src="cat3.jpg" class="imageOfCat imgAbyssinian">
-                <img src="cat5.jpg" class="imageOfCat imgAbyssinian">
-                <img src="cat16.jpg" class="imageOfCat imgSiamese">
-                <img src="cat6.jpg" class="imageOfCat imgBritish">
-                <img src="cat7.jpg" class="imageOfCat imgBritish">
-                <img src="cat12.jpg" class="imageOfCat imgBritish">
-                <img src="cat10.jpg" class="imageOfCat imgSiamese">
-                <img src="cat8.jpg" class="imageOfCat imgBritish">
-                <img src="cat9.jpg" class="imageOfCat imgBritish">
-                <img src="cat11.jpg" class="imageOfCat imgSiamese">
-                <img src="cat14.jpg" class="imageOfCat imgBritish">
-            </div>
-            <div class="rating">
+
+                <div class="imgAbyssinian">
+                    <img src="cat4.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Мася</div>
+                </div>
+
+                <div class="imgAbyssinian">
+                    <img src="cat5.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Дуся</div>
+                </div>
+
+                <div class="imgAbyssinian">
+                    <img src="cat3.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Яша</div>
+                </div>
+
+                <div class="imgBritish">
+                    <img src="cat13.jpg" class="imageOfCat mid-img">
+                    <div class="aboutCat"> Цезарь</div>
+                </div>
+                
+                <div class="">
+                    <img src="cat16.jpg" class="imageOfCat imgSiamese">
+                    <div class="aboutCat"> Кексик</div>
+                </div>
+
+                <div class="imgBritish">
+                    <img src="cat6.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Розочка</div>
+                </div>
+
+                <div class="imgBritish">
+                    <img src="cat7.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Едди</div>
+                </div>
+
+                <div class="imgBritish">
+                    <img src="cat12.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Жорж</div>
+                </div>
+
+                <div class="imgBritish">
+                    <img src="cat14.jpg" class="imageOfCat ">
+                    <div class="aboutCat"> Остар</div>
+                </div>
+
+                <div class="imgSiamese">
+                    <img src="cat10.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Иво</div>
+                </div>
+
+                <div class="imgBritish">
+                    <img src="cat8.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Йор</div>
+                </div>
+
+                <div class="imgBritish">
+                    <img src="cat9.jpg" class="imageOfCat small-img">
+                    <div class="aboutCat"> Италь</div>
+                </div>
+
+                <div class="imgSiamese">
+                    <img src="cat11.jpg" class="imageOfCat ">
+                    <div class="aboutCat"> Нео</div>
+                </div>  
+            </section>
+
+            <section class="rating">
                 <h1>Рейтинг</h1>
-                <input type="checkbox" class="radioOfRating">
-                <label for="radioOfRating">По убыванию</label>
+                <input type="checkbox" id="radioOfRating">
+                <label for="radioOfRating"> По убыванию</label>
                 <div class="abyssinian">
                     <em>Абиссинская</em>
                     <img src="gradient.jpg" class="markForAbyssinian">
@@ -62,9 +120,8 @@
                     <img src="gradient.jpg" class="markForSiamese">
                     <div class="mark">4</div>
                 </div>
-            </div>
+            </section>
         </div>
-        <hr>
         <footer>
             <div class="left">&copy; ООО Бабуленькины котятки, 2015</div>
             <address class="right">Наш Адрес; улица Котовая, д.5</address>
