@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:500&subset=cyrillic);
+
 html,
 body
 {
@@ -8,9 +10,9 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 0;
     background: #ddd;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header
@@ -22,6 +24,8 @@ h1
 {
     display: flex;
     justify-content: center;
+    font-family: arial, sans-serif;
+
 }
 
 main
@@ -64,11 +68,18 @@ main > input
 
 nav div
 {
-    padding: 15px;
     border-bottom: 1px solid #fff;
     -webkit-box-shadow: 0 1px #666;
     -moz-box-shadow: 0 1px #666;
     box-shadow: 0 1px #666;
+}
+
+nav label
+{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    margin: 0 10px;
 }
 
 article
@@ -122,7 +133,7 @@ aside
     padding: 10px;
 }
 
-aside > div
+aside > div:first-child
 {
     color: #f00;
 }
@@ -140,34 +151,32 @@ aside > input
     flex-basis: 15px;
 }
 
-aside > section
+aside > div
 {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
 }
 
-section > div:first-child
+aside > div > div:first-child
 {
     flex-basis: 100%;
 }
 
-section > div:nth-child(2)
+aside > div > div:nth-child(2)
 {
     display: flex;
     flex-basis: 70%;
     margin: 3px 0;
 }
 
-section > div:nth-of-type(3)
+aside > div > div:nth-of-type(3)
 {
-    /*display: flex;*/
-    /*justify-content: flex-end;*/
     flex-basis: 20%;
     margin-left: 10px;
 }
 
-section > div > div
+div > div > div
 {
     border: 1px solid #000;
 }
@@ -183,12 +192,12 @@ div:first-child > .good
     flex-basis: 100%;
 }
 
-aside > input:checked ~ section:nth-of-type(3)
+aside > input:checked ~ div:nth-of-type(4)
 {
     order: 1;
 }
 
-#sort:checked ~ section:not(:nth-of-type(3))
+#sort:checked ~ div:not(:nth-of-type(4))
 {
     order: 2;
 }
