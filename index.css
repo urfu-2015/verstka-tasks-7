@@ -122,7 +122,8 @@ footer
 }
 .all_length
 {
-    height: 300px;
+    margin: .5%;
+    height: 400px;
 }
 .all_length > img
 {
@@ -130,11 +131,13 @@ footer
 }
 .goriz
 {
-    width: 65.5%;
+    margin: .5%;
+    width: 65.6666667%;
 }
 .vert
 {
-    width: 32.5%;
+    margin: .5%;
+    width: 32.333333%;
 }
 .abyssinian,
 .britan,
