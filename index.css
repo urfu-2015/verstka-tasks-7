@@ -75,22 +75,18 @@ input[name='chosen-img']
     -webkit-flex-flow: row;
     flex-flow: row;
     flex-wrap: wrap;
-    max-width: 60%;
     margin: 0;
 }
 
-.gallery div
+.gallery > div
 {
-    /*height: 200px;
-    max-height: 100vh;
-    max-width: 100vw;
-    min-height: 50px;
-    min-width: 50px;*/
-    height: 32vh;
-    width: 32%;
+    /*height: 32vh;*/
+    height: 15vw;
+    width: 21vw;
     position: relative;
     -webkit-flex: 1 1 32%;
     flex: 1 1 32%;
+    min-height: 90px;
 }
 
 .desc,
@@ -99,8 +95,8 @@ input[name='chosen-img']
     display: none;
 }
 
-.gallery div:nth-child(8n+2),
-.gallery div:nth-child(8n+6)
+.gallery > div:nth-child(8n+2),
+.gallery > div:nth-child(8n+6)
 {
     -webkit-flex: 2 1 64% !important;
     flex: 2 1 64% !important;
@@ -126,69 +122,122 @@ input[name='chosen-img']
     display: inline-block;
 }
 
-img
+.abyssin.first
 {
-    max-height: 95%;
-    max-width: 100%;
-    bottom: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url('images/cat1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
 }
 
-#abyssin:checked ~ .gallery :not(.abyssin) img,
-#british:checked ~ .gallery :not(.british) img,
-#russian:checked ~ .gallery :not(.russian) img,
-#siamese:checked ~ .gallery :not(.siamese) img
+.abyssin.second
+{
+    background-image: url('images/cat2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+}
+
+.british.first
+{
+    background-image: url('images/cat3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+
+.british.second
+{
+    background-image: url('images/cat8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+.russian.first
+{
+    background-image: url('images/cat4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.russian.second
+{
+    background-image: url('images/cat5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+
+.siamese.first
+{
+    background-image: url('images/cat6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 15%;
+}
+
+.siamese.second
+{
+    background-image: url('images/cat7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15%;
+}
+
+#abyssin:checked ~ .gallery > :not(.abyssin),
+#british:checked ~ .gallery > :not(.british),
+#russian:checked ~ .gallery > :not(.russian),
+#siamese:checked ~ .gallery > :not(.siamese)
 {
     opacity: .3;
 }
 
+#abyssin:checked ~ .gallery > :not(.abyssin) :not(img),
+#british:checked ~ .gallery > :not(.british) :not(img),
+#russian:checked ~ .gallery > :not(.russian) :not(img),
+#siamese:checked ~ .gallery > :not(.siamese) :not(img)
+{
+    display: none;
+}
+
 .desc
 {
-    bottom: 5px;
+    position: absolute;
+    top: 10vw;
     z-index: 1;
     color: white;
-    width: 170px !important;
-    height: 20px !important;
+    width: 50% !important;
+    height: 1% !important;
+    max-height: 20px !important;
+    max-width: 170px !important;
     text-align: center;
 }
 
 .desc-bg
 {
-    bottom: 0;
+    position: absolute;
+    top: 10vw;
     z-index: 1;
-    padding: 20px;
     background-color: black;
     opacity: .4;
-    min-height: 20px !important;
     max-height: 20px !important;
     max-width: 170px !important;
-    min-width: 50px !important;
-    width: 80% !important;
+    width: 50% !important;
+    height: 10% !important;
+    min-height: 3em;
 }
 
-.abyssin:hover .desc,
-.british:hover .desc,
-.russian:hover .desc,
-.siamese:hover .desc,
-.abyssin:hover .desc-bg,
-.british:hover .desc-bg,
-.russian:hover .desc-bg,
-.siamese:hover .desc-bg
+.abyssin:hover :not(img),
+.british:hover :not(img),
+.russian:hover :not(img),
+.siamese:hover :not(img)
 {
     position: absolute;
     display: block;
 }
 
-label[for='none']
-{
-    display: none;
-}
-
+label[for='none'],
 #abyssin:checked ~ .menu label[for='abyssin'],
 #british:checked ~ .menu label[for='british'],
 #russian:checked ~ .menu label[for='russian'],
@@ -278,7 +327,22 @@ label[for='none']
 {
     main
     {
-        -webkit-flex-flow: column;
-        flex-direction: column;
+        -webkit-flex-flow: column !important;
+        flex-flow: column !important;
+    }
+
+    .menu, .rating-block
+    {
+    	-webkit-flex: 1 1 100vw !important;
+        flex: 1 1 100vw !important;
+        order: 0;
+        -webkit-order: 0;
+    }
+
+    .gallery
+    {
+    	-webkit-flex: 1 1 100vw !important;
+        flex: 1 1 100vw !important;
+        -webkit-order: 0;
     }
 }
