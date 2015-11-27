@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <title>Бабуленькины котятки</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <div class="wrapper">
+            <input type="radio" id="all" name="button" class="one_class" checked>
+            <input type="radio" id="abs" name="button" class="one_class">
+            <input type="radio" id="brit" name="button" class="one_class">
+            <input type="radio" id="rus" name="button" class="one_class">
+            <input type="radio" id="siam" name="button" class="one_class">
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <main>
+        <aside class="breeds column">
+            <label for="abs" class="button abs">Абиссинская</label>
+            <label for="brit" class="button brit">Британская</label>
+            <label for="rus" class="button rus">Русская голубая</label>
+            <label for="siam" class="button siam">Сиамская</label>
+            <label for="all" class="button all">Все породы</label>
+        </aside>
+        <section class="column">
+            <div class="card britan">
+                <img src="http://peppercats.narod.ru/foto/IMGP4463_mini.JPG" alt="Бр2">
+                <div>Снежинка, 2.5 года</div>
+            </div>
+            <div class="card britan">
+                <img src="http://pets-u-bamchika.ucoz.ru/099/britanskaja_koshka.jpg" alt="Бр1">
+                <div>Пупс, 4 года</div>
+            </div>
+            <div class="card abyssinian">
+                <img src="http://i.imgur.com/oRnLhMV.jpg" alt="Аб2">
+                <div>Лола, 6 лет</div>
+            </div>
+            <div class="card abyssinian">
+                <img src="http://anubis-ekb.ru/assets/images/stati/kak_vibrat_idealnogo_pitomca_7(1).jpg"
+                    alt="Аб1">
+                <div>Гоша, 2 года</div>
+            </div>
+            <div class="card abyssinian">
+                <img src="http://www.animalplanethd.com/wp-content/uploads/2015/02/Abyssinian-Hi-Resolution-
+Wallpaper-animalplanethd.com_1.jpeg" alt="Аб3">
+                <div>Валентин, 3 года</div>
+            </div>
+            <div class="card britan">
+                <img src="http://images.vfl.ru/ii_save/1428594409/b42b5a6e/8374595.jpg" alt="Бр3">
+                <div>Буш, 6 лет</div>
+            </div>
+            <div class="card siamian">
+                <img src="http://vip.karelia.pro/files/mur007_640.jpg" alt="Сиам3">
+                <div>Борис, 3 года</div>
+            </div>
+            <div class="card britan">
+                <img src="http://blog.evercats.com/wp-content/uploads/2013/03/evercats_breed_britishshorthair
+_640_41.jpg" alt="Бр4">
+                <div>Царапкин, 3 года</div>
+            </div>
+            <div class="card siamian">
+                <img src="http://cs540104.vk.me/c7005/v7005345/60bc/QAUQjLe8Qm0.jpg" alt="Сиам1">
+                <div>Лапша, 7 лет</div>
+            </div>
+            <div class="card russian">
+                <img src="http://ns2.lubimets.com/images/russkaya_golubaya4.jpg" alt="Рус3">
+                <div>Васек, 2 года</div>
+            </div>
+            <div class="card russian">
+                <img src="http://muzmobila.ru/uploads/images/karen_na_guljanku_k_nam_v_erevan_vseh
+_soberjom.jpg" alt="Рус1">
+                <div>Матрешка, 4 года</div>
+            </div>
+            <div class="card russian">
+                <img src="http://www.animogen.com/wp-content/uploads/2013/11/Bleu-russe-poil-court-race-
+origine-robe-standard-comportement-caract%C3%A8re-f%C3%A9lin-chats-animal-animaux-compagnie-animogen-7.png"
+                    alt="Рус2">
+                <div>Саша, 3 года</div>
+            </div>
+            <div class="card siamian">
+                <img src="http://n-l-d.ru/files/pets/l/929.jpg" alt="Сиам2">
+                <div>Саймон, 8 лет</div>
+            </div>
+        </section>
+        <aside class="rating column">
+            <h2 class="head_raiting">Рейтинг</h2>
+            <input type="checkbox" id="sort" class="sort">
+            <label for="sort" class="sort">
+                <span class="one_string">По убыванию</span>
+                <img src="http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/checkbox_no.png"
+                    alt="checkpox" class="off one_string">
+                <img src="http://www.iconsearch.ru/uploads/icons/uidesignicons/16x16/checkbox_yes.png"
+                    alt="checkpox2" class="on one_string">
+            </label>
+            <div class="nine green raiting_line">
+                <p class="type_name">Абиссинская</p>
+                <div class="lenta elem_rating_line"></div>
+                <div class="number elem_rating_line">9</div>
+            </div>
+            <div class="eight yellow raiting_line">
+                <p class="type_name">Британская</p>
+                <div class="lenta elem_rating_line"></div>
+                <div class="number elem_rating_line">8</div>
+            </div>
+            <div class="ten green raiting_line">
+                <p class="type_name">Русская голубая</p>
+                <div class="lenta elem_rating_line"></div>
+                <div class="number elem_rating_line">10</div>
+            </div>
+
+            <div class="four red raiting_line">
+                <p class="type_name">Сиамская</p>
+                <div class="lenta elem_rating_line"></div>
+                <div class="number elem_rating_line">4</div>
+            </div>
+        </aside>
+        </main>
+        <footer>
+            <div class="left">&copy; OOO Бабуленькины котятки, 2015</div>
+            <div class="right">
+                <address>Наш адрес: улица Котовая, д.5</address>
+            </div>
+        </footer>
+        </div>
     </body>
 </html>

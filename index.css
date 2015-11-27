@@ -1,1 +1,337 @@
+html
+{
+    height: 100%;
+    font-family: Arial;
+}
+body
+{
+    background: #f5f5f5;
+    padding: 0;
+    margin: 0 auto;
+}
+.wrapper
+{
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+header
+{
+    text-align: center;
+    padding: 35px;
+    font-size: 28px;
+}
+main
+{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+}
+.column
+{
+    justify-content: space-around;
+    padding: 10px;
+}
+.rating
+{
+    align-self: flex-start;
+}
+aside
+{
+    background-color: #dcdcdc;
+    flex-basis: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.button
+{
+    display: flex;
+    background-color: #dcdcdc;
+    padding: 20px;
+    margin: -10px;
+    border-top: 1px solid slategray;
+    border-bottom: 1px solid slategray;
+    flex-basis: 250px;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+#all:checked ~ main > aside > label.all,
+#abs:checked ~ main > aside > label.abs,
+#siam:checked ~ main > aside > label.siam,
+#rus:checked ~ main > aside > label.rus,
+#brit:checked ~ main > aside > label.brit
+{
+    background-color: dimgray;
+    color: white;
+}
+#abs:checked ~ main > aside > label:not(.abs),
+#siam:checked ~ main > aside > label:not(.siam),
+#rus:checked ~ main > aside > label:not(.rus),
+#brit:checked ~ main > aside > label:not(.brit)
+{
+    background-color: #dcdcdc;
+    color: black;
+}
+section
+{
+    display: flex;
+    margin-top: -10px;
+    width: 900px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    min-height: 100%;
+}
+.card > div
+{
+    display: none;
+}
+.card
+{
+    background: white;
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    height: 400px;
+}
+.card:hover > div
+{
+    background-color: black;
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    opacity: .5;
+    padding: 10px;
+    color: white;
+}
+img
+{
+    width: 100%;
+    object-fit: cover;
+}
+footer
+{
+    border-top: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card:nth-of-type(8n+1),
+.card:nth-of-type(8n+3),
+.card:nth-of-type(8n+4),
+.card:nth-of-type(8n+5),
+.card:nth-of-type(8n+7)
+{
+    margin: 5px;
+    width: 290px;
+}
+.card:nth-of-type(8n+2),
+.card:nth-of-type(8n+6)
+{
+    margin: 5px;
+    width: 590px;
+}
+.card:nth-of-type(8n)
+{
+    margin: 5px;
+    height: 400px;
+    width: 890px;
+}
+.card:nth-of-type(8n) > img
+{
+    height: 100%;
+}
+.abyssinian,
+.britan,
+.russian,
+.siamian
+{
+    opacity: 1;
+}
+input#abs:checked ~ main > section > :not(.abyssinian),
+input#brit:checked ~ main > section > :not(.britan),
+input#rus:checked ~ main > section > :not(.russian),
+input#siam:checked ~ main > section > :not(.siamian)
+{
+    opacity: .5;
+}
+.one_class
+{
+    display: none;
+}
+address
+{
+    color: mediumblue;
+}
+#sort
+{
+    display: none;
+}
+.rating
+{
+    display: flex;
+    flex-direction: column;
+}
+.rating > label
+{
+    align-self: flex-end;
+}
+.rating > label > img
+{
+    width: 16px;
+}
+img.on
+{
+    display: none;
+}
+.sort
+{
+    display: flex;
+    align-items: flex-end;
+}
+#sort:checked ~ .sort > .off
+{
+    display: none;
+}
+#sort:checked ~ .sort > .on
+{
+    display: flex;
+}
+.head_raiting
+{
+    text-transform: uppercase;
+    color: red;
+    font-weight: 100;
+}
+.raiting_line
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.elem_rating_line
+{
+    height: 30px;
+}
+.type_name
+{
+    width: 100%;
+    font-size: 20px;
+}
+.number
+{
+    font-size: 30px;
+}
+.rating > .one. > .lenta
+{
+    width: 6%;
+}
+.rating > .two > .lenta
+{
+    width: 12%;
+}
+.three > .three > .lenta
+{
+    width: 18%;
+}
+.rating > .four > .lenta
+{
+    width: 24%;
+}
+.rating > .five > .lenta
+{
+    width: 30%;
+}
+.rating > .six > .lenta
+{
+    width: 36%;
+}
+.rating > .seven > .lenta
+{
+    width: 42%;
+}
+.rating > .eight > .lenta
+{
+    width: 48%;
+}
+.rating > .nine > .lenta
+{
+    width: 54%;
+}
+.rating > .ten > .lenta
+{
+    width: 60%;
+}
 
+.red > .lenta
+{
+    background: linear-gradient(90deg, red, white);
+    border: 1px solid red;
+}
+.yellow > .lenta
+{
+    background: linear-gradient(90deg, yellow, white);
+    border: 1px solid yellow;
+}
+.green > .lenta
+{
+    background: linear-gradient(90deg, green, white);
+    border: 1px solid green;
+}
+.sort:checked ~ div.one
+{
+    order: 10;
+}
+.sort:checked ~ div.two
+{
+    order: 9;
+}
+
+.sort:checked ~ div.three
+{
+    order: 8;
+}
+.sort:checked ~ div.four
+{
+    order: 7;
+}
+
+.sort:checked ~ div.five
+{
+    order: 6;
+}
+
+.sort:checked ~ div.six
+{
+    order: 5;
+}
+
+.sort:checked ~ div.seven
+{
+    order: 4;
+}
+
+.sort:checked ~ div.eight
+{
+    order: 3;
+}
+
+.sort:checked ~ div.nine
+{
+    order: 2;
+}
+
+.sort:checked ~ div.ten
+{
+    order: 1;
+}
+.one_string
+{
+    flex-direction: row;
+}
