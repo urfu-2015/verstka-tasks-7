@@ -331,9 +331,10 @@ label[for='none'],
         flex-flow: column !important;
     }
 
-    .menu, .rating-block
+    .menu,
+    .rating-block
     {
-    	-webkit-flex: 1 1 100vw !important;
+        -webkit-flex: 1 1 100vw !important;
         flex: 1 1 100vw !important;
         order: 0;
         -webkit-order: 0;
@@ -341,7 +342,7 @@ label[for='none'],
 
     .gallery
     {
-    	-webkit-flex: 1 1 100vw !important;
+        -webkit-flex: 1 1 100vw !important;
         flex: 1 1 100vw !important;
         -webkit-order: 0;
     }
