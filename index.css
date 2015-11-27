@@ -120,24 +120,30 @@ footer
     display: flex;
     justify-content: space-between;
 }
-.all_length
+.card:nth-of-type(8n+1),
+.card:nth-of-type(8n+3),
+.card:nth-of-type(8n+4),
+.card:nth-of-type(8n+5),
+.card:nth-of-type(8n+7)
 {
-    margin: .5%;
-    height: 400px;
+    margin: 5px;
+    width: 290px;
 }
-.all_length > img
+.card:nth-of-type(8n+2),
+.card:nth-of-type(8n+6)
+{
+    margin: 5px;
+    width: 590px;
+}
+.card:nth-of-type(8n)
+{
+    margin: 5px;
+    height: 400px;
+    width: 890px;
+}
+.card:nth-of-type(8n) > img
 {
     height: 100%;
-}
-.goriz
-{
-    margin: .5%;
-    width: 65.67%;
-}
-.vert
-{
-    margin: .5%;
-    width: 32.33%;
 }
 .abyssinian,
 .britan,
