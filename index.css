@@ -47,7 +47,6 @@ img:hover ~ .aboutCat
 {
     display: block;
 }
-
 .imagesOfCats
 {
     display: flex;
@@ -70,7 +69,7 @@ header
     font-size: 40px;
 }
 
-em,
+span,
 label
 {
 
@@ -142,10 +141,13 @@ section
     position: relative;
 }
 
-.rating
+.rating,
+.abyssinian,
+.british,
+.siamese
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #radioOfRating:checked ~ .abyssinian
