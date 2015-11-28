@@ -1,1 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster:&subset=latin,cyrillic');
+input[type='checkbox'],
+input[type='radio']
+{
+    display: none;
+}
 
+body
+{
+    background: #e4d8d8;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+img
+{
+    height: 300px;
+    width: 900px;
+    object-fit: cover;
+}
+
+.small-img
+{
+    width: 300px;
+}
+
+.mid-img
+{
+    width: 600px;
+}
+
+.aboutCat
+{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    text-align: center;
+    color: red;
+    background: rgb(32,32,32, 4);
+    opacity: .7;
+    font-size: 30px;
+    display: none;
+}
+
+img:hover ~ .aboutCat
+{
+    display: block;
+}
+.imagesOfCats
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    align-items: center;
+}
+
+.wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+header
+{
+    text-align: center;
+    font-family: Lobster;
+    font-size: 40px;
+}
+
+span,
+label
+{
+
+    font-size: 25px;
+}
+
+h1
+{
+    font-size: 45px;
+    color: blue;
+}
+
+section
+{
+    margin: 10px;
+}
+
+.kindOfCat,
+.imagesOfCats,
+.rating
+{
+    background: #d2c7c7;
+}
+
+.rating
+{
+    align-self: flex-start;
+}
+
+.markForAbyssinian
+{
+    height: 20px;
+    width: 50px;
+}
+
+.markForBritish
+{
+    height: 20px;
+    width: 70px;
+}
+
+.markForSiamese
+{
+    height: 20px;
+    width: 40px;
+}
+
+.mark
+{
+    float: right;
+    font-size: 25px;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+    color: blue;
+}
+
+.imgAbyssinian,
+.imgSiamese,
+.imgBritish
+{
+    position: relative;
+}
+
+.rating,
+.abyssinian,
+.british,
+.siamese
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#radioOfRating:checked ~ .abyssinian
+{
+    order: 1;
+}
+
+#radioOfRating:checked ~ .siamese
+{
+    order: 2;
+}
+
+#checkForAbyssinian:checked ~ .imagesOfCats > :not(.imgAbyssinian)
+{
+    opacity: .5;
+}
+
+#checkForSiamese:checked ~ .imagesOfCats > :not(.imgSiamese)
+{
+    opacity: .5;
+}
+
+#checkForBritish:checked ~ .imagesOfCats > :not(.imgBritish)
+{
+    opacity: .5;
+}
+
+#checkForAll:checked ~ .imagesOfCats 
+{
+    opacity: 1;
+}
