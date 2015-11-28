@@ -7,5 +7,103 @@
     </head>
     <body>
         <!-- Здесь применять гибкую магию -->
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <section>
+            <input class="hidden-radio" type="radio" name="breed" id="abyssinian">
+            <input class="hidden-radio" type="radio" name="breed" id="british">
+            <input class="hidden-radio" type="radio" name="breed" id="russian-blue">
+            <input class="hidden-radio" type="radio" name="breed" id="siamese">
+            <input class="hidden-radio" type="radio" name="breed" id="all">
+            <nav class="nav-breed">
+                <label for="abyssinian">Абиссинская</label>
+                <label for="british">Британская</label>
+                <label for="russian-blue">Русская голубая</label>
+                <label for="siamese">Сиамская</label>
+                <label for="all" class="all">Все</label>
+            </nav>
+            <article class="content">
+                <div class="row">
+                    <div class="img-wrapper abyssinian">
+                        <img src="cat1.jpg">
+                        <p class="img-description">Снежок, 2 года</p>
+                    </div>
+                    <div class="img-wrapper long russian-blue">
+                        <img src="cat2.jpg">
+                        <p class="img-description">Мурзик, 3 года</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img-wrapper abyssinian">
+                        <img src="cat3.jpg">
+                        <p class="img-description">Маруся, 4 года</p>
+                    </div>
+                    <div class="img-wrapper russian-blue">
+                        <img src="cat4.jpg">
+                        <p class="img-description">Арбузик, 5 лет</p>
+                    </div>
+                    <div class="img-wrapper british">
+                        <img src="cat5.jpg">
+                        <p class="img-description">Пушок, 6 лет</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img-wrapper long abyssinian">
+                        <img src="cat6.jpg">
+                        <p class="img-description">Капальди, 13 лет</p>
+                    </div>
+                    <div class="img-wrapper siamese">
+                        <img src="cat7.jpg">
+                        <p class="img-description">Снежок, 3 года</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img-wrapper big british">
+                        <img src="cat8.jpg">
+                        <p class="img-description">Плюш, 5 лет</p>
+                    </div>
+                </div>
+            </article>
+            <aside class="aside-raiting">
+                <p>РЕЙТИНГ</p>
+                <label for="raiting-sort">по убыванию</label>
+                <input type="checkbox" id="raiting-sort">
+                <div class="raiting-wrapper">
+                    <div class="raiting-abyssinian">
+                        <div class="raiting-breed-name">Абиссинская</div>
+                        <div class="raiting">
+                            <div class="raiting-nine"></div>
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="raiting-british">
+                        <div class="raiting-breed-name">Британская</div>
+                        <div class="raiting">
+                            <div class="raiting-eight"></div>
+                            <p>8</p>
+                        </div>
+                    </div>
+                    <div class="raiting-russian-blue">
+                        <div class="raiting-breed-name">Русская голубая</div>
+                        <div class="raiting">
+                            <div class="raiting-ten"></div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="raiting-siamese">
+                        <div class="raiting-breed-name">Сиамская</div>
+                        <div class="raiting">
+                            <div class="raiting-four"></div>
+                            <p>4</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <footer>
+            <p>&copy; ООО Бабуленькины котятки, 2015</p>
+            <address>Наш адрес: улица Котовая, д.5</address>
+        </footer>
     </body>
 </html>

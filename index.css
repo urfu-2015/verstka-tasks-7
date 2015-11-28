@@ -1,1 +1,235 @@
+h1
+{
+    text-align: center;
+    font-size: 60px
+}
 
+body
+{
+    background-color: #e6e6e6;
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0 4%;
+}
+
+.nav-breed,
+.aside-raiting
+{
+    flex-basis: 17%;
+}
+
+.nav-breed
+{
+    display: flex;  
+    flex-direction:column;
+    background-color: #cccccc;
+}
+
+.nav-breed label
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #696969;
+    text-align: center;
+    font-size: 34px;
+}
+
+.nav-breed label:hover
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hidden-radio
+{
+    display: none;
+}
+
+#abyssinian:checked ~ .content > .row > *,
+#british:checked ~ .content > .row > *,
+#russian-blue:checked ~ .content > .row > *,
+#siamese:checked ~ .content > .row > *
+{
+    opacity: .5;
+}
+
+#abyssinian:checked ~ .content > .row > .abyssinian,
+#british:checked ~ .content > .row > .british,
+#russian-blue:checked ~ .content > .row > .russian-blue,
+#siamese:checked ~ .content > .row > .siamese,
+#all:checked ~ .content > .row > *
+{
+    opacity: 1;
+}
+
+.content
+{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-wrapper
+{
+    flex-basis: 32%;
+    position: relative;
+}
+
+.img-description
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    display: none;
+    z-index: 2;
+}
+
+.img-wrapper:hover .img-description
+{
+    display: block;
+}
+
+.long
+{
+    flex-basis: 66%;
+}
+
+.big
+{
+    flex-basis: 100%;
+}
+
+img
+{
+    width: 100%;
+    height: 300px;
+}
+
+.aside-raiting
+{
+    background-color: #cccccc;
+    height: 550px;
+}
+
+.aside-raiting p,
+.aside-raiting label,
+.aside-raiting .raiting-breed-name
+{
+   font-size: 26px;
+}
+
+.aside-raiting label
+{
+    margin-left: 20%;
+}
+
+.aside-raiting > p
+{
+    color: #f00;
+    margin-left: 4%;
+}
+
+.raiting-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 4%;
+}
+
+.raiting
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raiting-nine
+{
+    width: 85%;
+    height: 20px;
+    background: linear-gradient(to right, #0c0, #fff);
+    border: 1px solid #0c0;
+}
+
+.raiting-ten
+{
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right, #0c0, #fff);
+    border: 1px solid #0c0;
+}
+
+.raiting-eight
+{
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(to right, #ff0, #fff);
+    border: 1px solid #ff0;
+}
+
+.raiting-four
+{
+    width: 40%;
+    height: 20px;
+    background: linear-gradient(to right, #f00, #fff);
+    border: 1px solid #f00;
+}
+
+#raiting-sort:checked ~ .raiting-wrapper .raiting-abyssinian
+{
+    order: 2;
+}
+
+#raiting-sort:checked ~ .raiting-wrapper .raiting-british
+{
+    order: 3;
+}
+
+#raiting-sort:checked ~ .raiting-wrapper .raiting-russian-blue
+{
+    order: 1;
+}
+
+#raiting-sort:checked ~ .raiting-wrapper .raiting-siamese
+{
+    order: 4;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+    margin-top: 1%;
+}
+
+footer p,
+address
+{
+   font-size: 24px;
+   margin-left: 4%;
+   margin-right: 4%;
+}
+
+address
+{
+    color: #00f;
+    font-style: normal;
+}
