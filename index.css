@@ -1,7 +1,7 @@
 h1
 {
     text-align: center;
-    font-size: 60px
+    font-size: 60px;
 }
 
 body
@@ -24,9 +24,9 @@ section
 
 .nav-breed
 {
-    display: flex;  
+    display: flex;
     flex-direction:column;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 .nav-breed label
@@ -40,7 +40,7 @@ section
 
 .nav-breed label:hover
 {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .hidden-radio
@@ -88,13 +88,13 @@ section
 
 .img-description
 {
-    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, .3);
     padding: 20px;
     font-size: 30px;
-    position: absolute;
     bottom: 10px;
     color: #fff;
-    display: none;
     z-index: 2;
 }
 
@@ -121,7 +121,7 @@ img
 
 .aside-raiting
 {
-    background-color: #cccccc;
+    background-color: #ccc;
     height: 550px;
 }
 
@@ -129,7 +129,7 @@ img
 .aside-raiting label,
 .aside-raiting .raiting-breed-name
 {
-   font-size: 26px;
+    font-size: 26px;
 }
 
 .aside-raiting label
@@ -223,9 +223,9 @@ footer
 footer p,
 address
 {
-   font-size: 24px;
-   margin-left: 4%;
-   margin-right: 4%;
+    font-size: 24px;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 address
