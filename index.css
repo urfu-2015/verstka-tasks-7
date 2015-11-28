@@ -153,24 +153,44 @@ body
     display: block;
 }
 
-input.abissian:checked ~ .row img:not(.abissian)
-{
-    opacity: .3;
-}
-
-input.britain:checked ~ .row img:not(.britain)
+input.abissian:checked ~ .photos .row img:not(.abissian)
 {
     opacity: .5;
 }
 
-input.russian:checked ~ .row img:not(.russian)
+input.abissian:checked ~ .menu > label.abi
+{
+    background-color: #0c3b65;
+}
+
+input.britain:checked ~ .photos .row img:not(.britain)
 {
     opacity: .5;
 }
 
-input.salem:checked ~ .row img:not(.salem)
+input.britain:checked ~ .menu > label.bri
+{
+    background-color: #0c3b65;
+}
+
+input.russian:checked ~ .photos .row img:not(.russian)
 {
     opacity: .5;
+}
+
+input.russian:checked ~ .menu > label.rus
+{
+    background-color: #0c3b65;
+}
+
+input.salem:checked ~ .photos .row img:not(.salem)
+{
+    opacity: .5;
+}
+
+input.salem:checked ~ .menu > label.sal
+{
+    background-color: #0c3b65;
 }
 
 .rating
