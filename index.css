@@ -213,6 +213,7 @@ aside > input[name='desc']:checked ~ .rating-ten
     justify-content: space-between;
     align-items: stretch;
     min-width: 800px;
+    max-width: 1000px;
 }
 
 .cat
