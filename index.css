@@ -37,6 +37,7 @@ nav
     display: flex;
     flex-flow: column nowrap;
     background-color: rgba(0, 0, 0, .16);
+    margin-left: 1%;
 }
 
 nav > label
@@ -54,11 +55,11 @@ nav > label:hover
 
 aside
 {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-flow: column nowrap;
     align-self: flex-start;
-    margin: 5px;
+    margin-right: 1%;
     background-color: rgba(0, 0, 0, .16);
 }
 
@@ -214,6 +215,7 @@ aside > input[name='desc']:checked ~ .rating-ten
     align-items: stretch;
     min-width: 800px;
     max-width: 1000px;
+    margin: 0 1% 0 1%;
 }
 
 .cat
