@@ -9,6 +9,7 @@ h1
     text-align: center;
     font-weight: 700;
     font-size: 1.4em;
+    font-family: sans-serif;
 }
 
 h2
@@ -52,6 +53,10 @@ footer
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #000;
+    font-size: 1.4em;
 }
 
 .left-col ul
@@ -83,7 +88,8 @@ footer
 input#abyssinian:checked ~ .left-col .abyssinian,
 input#british:checked ~ .left-col .british,
 input#russian-blue:checked ~ .left-col .russian-blue,
-input#siamese:checked ~ .left-col .siamese
+input#siamese:checked ~ .left-col .siamese,
+input#all-breed:checked ~ .left-col .all-breed
 {
     background-color: #5a5a5a;
     color: #fff;
@@ -92,7 +98,8 @@ input#siamese:checked ~ .left-col .siamese
 input#abyssinian:checked ~ .middle-col .abyssinian,
 input#british:checked ~ .middle-col .british,
 input#russian-blue:checked ~ .middle-col .russian-blue,
-input#siamese:checked ~ .middle-col .siamese
+input#siamese:checked ~ .middle-col .siamese,
+input#all-breed:checked ~ .middle-col .img-pattern div
 {
     opacity: 1;
 }
@@ -115,11 +122,6 @@ input#siamese:checked ~ .middle-col .siamese
     opacity: .5;
     position: relative;
     overflow: hidden;
-}
-
-input#abyssinian:not(:checked) + input#british:not(:checked) + input#russian-blue:not(:checked) + input#siamese:not(:checked) ~ .middle-col .img-pattern div
-{
-    opacity: 1;
 }
 
 .middle-col .img-pattern img
@@ -198,17 +200,19 @@ input#abyssinian:not(:checked) + input#british:not(:checked) + input#russian-blu
     padding: 10px;
 }
 
-.right-col input[type='checkbox']
-{
-    display: inline-block;
-}
-
 .right-col label
 {
     text-align: left;
     display: inline-block;
-    margin: 0;
-    width: 70%;
+    margin-left: 80px;
+    background: url('img/checkbox-unchecked.png') right center no-repeat;
+    background-size: contain;
+}
+
+.right-col #sort:checked ~ label
+{
+    background: url('img/chechbox-checked.png') right center no-repeat;
+    background-size: contain;
 }
 
 .right-col div

@@ -10,12 +10,16 @@
             <h1>Бабуленькины котятки</h1>
         </header>
         <main>
-            <input type="checkbox" name="breed" id="abyssinian">
-            <input type="checkbox" name="breed" id="british">
-            <input type="checkbox" name="breed" id="russian-blue">
-            <input type="checkbox" name="breed" id="siamese">
+            <input type="radio" name="breed" id="all-breed" checked>
+            <input type="radio" name="breed" id="abyssinian">
+            <input type="radio" name="breed" id="british">
+            <input type="radio" name="breed" id="russian-blue">
+            <input type="radio" name="breed" id="siamese">
             <div class="left-col">
                 <ul>
+                    <li class="all-breed">
+                        <label for="all-breed" class="all-breed">Все</label>
+                    </li>
                     <li class="abyssinian">
                         <label for="abyssinian" class="abyssinian">Абиссинская</label>
                     </li>
@@ -85,10 +89,10 @@
             </div>
             <div class="right-col">
                 <h2>РЕЙТИНГ</h2>
+                <input type="checkbox" id="sort" name="sort">
                 <label for="sort">
                     По убыванию
                 </label>
-                <input type="checkbox" id="sort" name="sort">
                 <div class="rating9">
                     <span>Абиссинская</span>
                     <div class="scale-wrapper">
