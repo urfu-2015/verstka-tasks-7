@@ -1,1 +1,370 @@
+html,
+body
+{
+    background-color: #ebebeb;
+}
 
+h1
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4em;
+    font-family: sans-serif;
+}
+
+h2
+{
+    color: #c00315;
+    font-size: 1.2em;
+}
+
+address
+{
+    display: inline;
+}
+
+input[type='radio'],
+input[type='checkbox']
+{
+    display: none;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+.left-col,
+.right-col
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    background-color: #d9d9d9;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #000;
+    font-size: 1.4em;
+}
+
+.left-col ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.left-col li
+{
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    position: relative;
+    display: block;
+    line-height: 300%;
+}
+
+.left-col li label
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+input#abyssinian:checked ~ .left-col .abyssinian,
+input#british:checked ~ .left-col .british,
+input#russian-blue:checked ~ .left-col .russian-blue,
+input#siamese:checked ~ .left-col .siamese,
+input#all-breed:checked ~ .left-col .all-breed
+{
+    background-color: #5a5a5a;
+    color: #fff;
+}
+
+input#abyssinian:checked ~ .middle-col .abyssinian,
+input#british:checked ~ .middle-col .british,
+input#russian-blue:checked ~ .middle-col .russian-blue,
+input#siamese:checked ~ .middle-col .siamese,
+input#all-breed:checked ~ .middle-col .img-pattern div
+{
+    opacity: 1;
+}
+
+.middle-col .img-pattern
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 800px;
+    width: 800px;
+    max-width: 800px;
+    align-content: space-around;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.middle-col .img-pattern div
+{
+    margin: 5px;
+    opacity: .5;
+    position: relative;
+    overflow: hidden;
+}
+
+.middle-col .img-pattern img
+{
+    height: 300px;
+    min-width: 100%;
+    vertical-align: middle;
+}
+
+.middle-col .img-description
+{
+    display: none;
+}
+
+.middle-col .img-pattern img:hover + .img-description
+{
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 10px 20px;
+    bottom: 20px;
+    margin: 0 auto;
+    background-color: rgba(114, 114, 114, .7);
+    color: #fff;
+    font-size: 1.2em;
+
+}
+
+.middle-col .img-pattern > div:nth-child(8n+1)
+{
+    width: 30%;
+}
+
+.middle-col .img-pattern > div:nth-child(8n+2)
+{
+    flex-grow: 2;
+    width: 60%;
+}
+
+.middle-col .img-pattern > div:nth-child(8n+3)
+{
+    width: 32%;
+}
+
+.middle-col .img-pattern > div:nth-child(8n+4)
+{
+    width: 32%;
+}
+
+.middle-col .img-pattern > div:nth-child(8n+5)
+{
+    width: 32%;
+}
+
+.middle-col .img-pattern > div:nth-child(8n+6)
+{
+    flex-grow: 2;
+    width: 60%;
+}
+
+.middle-col .img-pattern > div:nth-child(8n+7)
+{
+    width: 30%;
+}
+
+.middle-col .img-pattern > div:nth-child(8n+8)
+{
+    flex-grow: 3;
+    width: 90%;
+}
+
+.right-col
+{
+    display: flex;
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.right-col label
+{
+    text-align: left;
+    display: inline-block;
+    margin-left: 80px;
+    background: url('img/checkbox-unchecked.png') right center no-repeat;
+    background-size: contain;
+}
+
+.right-col #sort:checked ~ label
+{
+    background: url('img/chechbox-checked.png') right center no-repeat;
+    background-size: contain;
+}
+
+.right-col div
+{
+    margin: 10px;
+}
+
+.right-col div .scale-wrapper
+{
+    width: 140px;
+    height: 15px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.right-col div .rating
+{
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 15px;
+    margin: 5px 0;
+
+}
+
+.right-col div .scale
+{
+    height: 100%;
+    margin: 0;
+    display: inline-block;
+}
+
+.right-col .rating1 .scale
+{
+    width: 10%;
+}
+
+.right-col .rating2 .scale
+{
+    width: 20%;
+}
+
+.right-col .rating3 .scale
+{
+    width: 30%;
+}
+
+.right-col .rating4 .scale
+{
+    width: 40%;
+}
+
+.right-col .rating5 .scale
+{
+    width: 50%;
+}
+
+.right-col .rating6 .scale
+{
+    width: 60%;
+}
+
+.right-col .rating7 .scale
+{
+    width: 70%;
+}
+
+.right-col .rating8 .scale
+{
+    width: 80%;
+}
+
+.right-col .rating9 .scale
+{
+    width: 90%;
+}
+
+.right-col .rating10 .scale
+{
+    width: 100%;
+}
+
+.right-col .rating1 .scale,
+.right-col .rating2 .scale,
+.right-col .rating3 .scale,
+.right-col .rating4 .scale
+{
+    background: linear-gradient(to right, #c01e20, #fff);
+}
+
+.right-col .rating5 .scale,
+.right-col .rating6 .scale,
+.right-col .rating7 .scale,
+.right-col .rating8 .scale
+{
+    background: linear-gradient(to right, #fbfb5b, #fff);
+}
+
+.right-col .rating9 .scale,
+.right-col .rating10 .scale
+{
+    background: linear-gradient(to right,  #0bc000, #fff);
+}
+
+.right-col #sort:checked ~ .rating10
+{
+    order: 1;
+}
+
+.right-col #sort:checked ~ .rating9
+{
+    order: 2;
+}
+
+.right-col #sort:checked ~ .rating8
+{
+    order: 3;
+}
+
+.right-col #sort:checked ~ .rating7
+{
+    order: 4;
+}
+
+.right-col #sort:checked ~ .rating6
+{
+    order: 5;
+}
+
+.right-col #sort:checked ~ .rating5
+{
+    order: 6;
+}
+
+.right-col #sort:checked ~ .rating4
+{
+    order: 7;
+}
+
+.right-col #sort:checked ~ .rating3
+{
+    order: 8;
+}
+
+.right-col #sort:checked ~ .rating2
+{
+    order: 9;
+}
+
+.right-col #sort:checked ~ .rating1
+{
+    order: 10;
+}
