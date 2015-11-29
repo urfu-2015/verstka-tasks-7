@@ -5,7 +5,9 @@
 }
 body
 {
-    background-color: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    background: #d6d6d6;
 }
 header
 {
@@ -15,65 +17,19 @@ header
 {
     display: block;
     border-bottom: solid;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    padding-top: 15px;
+    padding: 15px 0 15px;
+    cursor: pointer;
 }
 .left-text-all:hover
 {
     background-color: black;
     color: white;
 }
-.cats-containter
-{
-    display: flex;
-    flex-wrap: wrap;
-}
 .cat-block-default
 {
     margin: 5px;
     height: 300px;
     position: relative;
-}
-.cat-block1
-{
-    background:url(http://www.zooclub.ru/attach/10000/10990.jpg) no-repeat center;
-    flex-grow: 1;
-}
-.cat-block2
-{
-    background:url(http://starsky.com.ua/_files/usr/img_0082_w.jpg) no-repeat center;
-    flex-grow: 2;
-}
-.cat-block3
-{
-    background:url(http://goo.gl/AGWyhT) no-repeat center;
-    flex-grow: 1;
-}
-.cat-block4
-{
-    background:url(http://goo.gl/684jMF) no-repeat center;
-    flex-grow: 1;
-}
-.cat-block5
-{
-    background:url(http://goo.gl/pP8YCO) no-repeat center;
-    flex-grow: 1;
-}
-.cat-block6
-{
-    background:url(http://goo.gl/2IpNPP) no-repeat center;
-    flex-grow: 2;
-}
-.cat-block7
-{
-    background:url(http://goo.gl/3l3zI2) no-repeat center;
-    flex-grow: 1;
-}
-.cat-block8
-{
-    background:url(http://goo.gl/nM1uPq) no-repeat center;
-    flex-grow: 3;
 }
 .left-container
 {
@@ -84,16 +40,16 @@ header
 }
 .right-container
 {
+    display: flex;
+    align-self: flex-start;
+    padding: 10px;
+    flex-direction: column;
+    min-width: 200px;
+    align-items: stretch;
     width: 20%;
     margin: 5px;
     background-color: #bdbdbd;
     flex-grow: 1;
-}
-.mid-containter
-{
-    width: 60%;
-    margin: 5px;
-    flex-grow: 3;
 }
 .raiting-title
 {
@@ -108,12 +64,22 @@ header
     min-height: 100vh;
     flex-direction: column;
 }
-
+.wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: stretch;
+}
 .content
 {
-    border-top: solid;
+    width: 100%;
+    align-self: flex-end;
+    border-top: 1px solid #aaa;
+    display: flex;
     padding: 20px;
-    flex: 1;
+    font-size: 24px;
+    justify-content: space-between;
 }
 .left
 {
@@ -126,10 +92,6 @@ header
 .center
 {
     text-align: center;
-}
-.text1:hover ~ .cat-block1
-{
-    opacity: .1;
 }
 .ten-gradient
 {
@@ -175,12 +137,64 @@ header
 {
     display: none;
 }
-#abyssinian-name:checked ~ .mid-containter .cat-block1,
-#british-name:checked ~ .mid-containter .cat-block2,
-#russian-name:checked ~ .mid-containter .cat-block3,
-#siam-name:checked ~ .mid-containter .cat-block4
+.mid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 960px;
+    max-width: 960px;
+}
+.cats-container {
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 10px;
+    position: relative;
+    pointer-events: none;
+}
+.cats-container img
+ {
+     height: 400px;
+     min-width: 100%;
+ }
+.mid-container .cats-container:nth-child(8n+1),
+.mid-container .cats-container:nth-child(8n+3)
 {
-    opacity: .3;
+    flex-basis: 30.66%;
+}
+
+.mid-container .cats-container:nth-child(8n+4),
+.mid-container .cats-container:nth-child(8n+5),
+.mid-container .cats-container:nth-child(8n+7)
+{
+    flex-basis: 28.67%;
+}
+
+.mid-container .cats-container:nth-child(8n+2)
+{
+    flex-basis: 61.32%;
+}
+
+.mid-container .cats-container:nth-child(8n+6)
+{
+    flex-basis: 63.34%;
+}
+
+.mid-container .cats-container:nth-child(8n)
+{
+    flex-basis: 96%;
+}
+
+.mid-container .cats-container:nth-child(8n+2),
+.mid-container .cats-container:nth-child(8n+5),
+.mid-container .cats-container:nth-child(8n+7),
+.mid-container .cats-container:nth-child(8n)
+{
+    margin-right: 0;
+}
+
+.mid-container .cats-container:last-child
+{
+    margin-bottom: 0;
 }
 .cat-description
 {
@@ -193,7 +207,7 @@ header
     padding: 10px;
     display: none;
 }
-.cat-block-default:hover .cat-description
+.cats-container:hover .cat-description
 {
     display: block;
 }
@@ -209,8 +223,8 @@ header
     order: 1;
 }
 
-#rating:checked ~ .center #abyssinian-label,
-#rating:checked ~ .center #abyssinian-progress,
+#rating:checked ~ #abyssinian-label,
+#rating:checked ~ #abyssinian-progress,
 {
     order: 2;
 }
@@ -225,4 +239,12 @@ header
 #rating:checked ~ .center #siam-progress,
 {
     order: 4;
+}
+
+#abyssinian-name:checked ~ .mid-container .cat-block1,
+#british-name:checked ~ .mid-container .cat-block2,
+#russian-name:checked ~ .mid-container .cat-block3,
+#siam-name:checked ~ .mid-container .cat-block4
+{
+    opacity: .3;
 }
