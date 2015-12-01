@@ -129,9 +129,8 @@ footer
 
 img
 {
-    min-width: 100%;
-    max-width: 120%;
-    min-height: 90%;
+    min-width: 120%;
+    margin-left: -20%;
 }
 
 .breed-lable
