@@ -14,8 +14,7 @@ body
 
 body > header
 {
-    font-size: 2em;
-    font-weight: bold;
+    font: bold 2em sans-serif;
     padding: 20px 0;
 }
 
@@ -23,29 +22,31 @@ body > header
 {
     width: 95%;
     margin: 0 auto;
-    display: table;
+    display: flex;
+    justify-content: space-between;
 }
 
 .three-columns-container .left-menu
 {
-    display: table-cell;
-    width: 230px;
+    flex-basis: 20%;
+    width: 200px;
     background: #a9a9a9;
     overflow: hidden;
     vertical-align: top;
+    margin-top: 10px;
 }
 
 .three-columns-container .main-content
 {
-    display: table-cell;
     vertical-align: top;
+    flex-basis: 60%;
 }
 
 .three-columns-container .right-menu-container
 {
-    display: table-cell;
-    width: 230px;
+    flex-basis: 20%;
     vertical-align: top;
+    margin-top: 10px;
 }
 
 .three-columns-container .right-menu
@@ -72,36 +73,29 @@ footer
 
 footer p
 {
-    top: 10px;
-    position: absolute;
-    left: 30px;
+    float: left;
     margin: 0;
-    padding: 0;
+    padding: 7px 0 0 7px;
 }
 
 footer address 
 {
-    top: 10px;
+    float: right;
     color: blue;
     font-style: normal;
-    position: absolute;
-    right: 30px;
     margin: 0;
-    padding: 0;
+    padding: 7px 7px 0 0;
 }
 
 address
 {
     display: inline;
-    
 }
 
 .cat-type-option
 {
     display: block;
-    height: 40px;
     width: 100%;
-    white-space: nowrap;
     font-size: 1.3em;
     text-align: left;
     padding: 15px;
@@ -120,18 +114,21 @@ input[name=siam]:checked ~ .left-menu #siam-option
 
 .cats-container
 {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
-    width: 700px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .cat-item
 {
+    position: relative;
     height: 200px;
     padding: 10px;
+    width: 100%;
     box-sizing: border-box;
-    position: relative;
 }
 
 .cat-img-container
@@ -143,44 +140,75 @@ input[name=siam]:checked ~ .left-menu #siam-option
 
 .cat-img-container img
 {
-    transform: translate3d(-30%, -30%, 0);
+    transform: translate3d(-17%, -17%, 0);
 }
 
-.cat-item:nth-child(8n+1),
-.cat-item:nth-child(8n+3),
-.cat-item:nth-child(8n+4),
-.cat-item:nth-child(8n+5),
-.cat-item:nth-child(8n+7)
+.cat-item:nth-child(8n+1)
 {
-    flex-basis: 33%;
+    grid-column: 1 / 2;
 }
 
-.cat-item:nth-child(8n+2),
+.cat-item:nth-child(8n+2)
+{
+    grid-column: 2 / 4;
+}
+
+.cat-item:nth-child(8n+3)
+{
+    grid-column: 1 / 2;
+}
+
+.cat-item:nth-child(8n+4)
+{
+    grid-column: 2 / 3;
+}
+
+.cat-item:nth-child(8n+5)
+{
+    grid-column: 3 / 4;
+}
+
 .cat-item:nth-child(8n+6)
 {
-    flex-basis: 66%;
+    grid-column: 1 / 3;
+}
+
+.cat-item:nth-child(8n+7)
+{
+    grid-column: 3 / 4;
 }
 
 .cat-item:nth-child(8n+8)
 {
-    flex-basis: 99%;
+    grid-column: 1 / 4;
+}
+
+.cat-description-container
+{
+    position: absolute;
+    bottom: 10px;
+    top: 10px;
+    left: 30px;
+    right: 10px;
+    text-align: left;
+    overflow: hidden;
 }
 
 .cat-description
 {
     position: absolute;
-    bottom: 10px;
-    left: 30px;
+    bottom: 0;
+    max-width: 100%;
     background: rgba(0, 0, 0, .3);
     color: white;
     font-size: 1.1em;
-    padding: 10px;
     display: none;
+    padding: 10px;
 }
 
 .cat-item:hover .cat-description
 {
-    display: block;
+    display: inline-block;
 }
 
 .cat-select
@@ -219,8 +247,7 @@ input[name=siam]:checked ~ .left-menu #siam-option
     font-size: 1.4em;
     flex-basis: 97%;
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 3px;
+    padding: 10px 0 3px;
 }
 
 .progress
@@ -236,32 +263,79 @@ input[name=siam]:checked ~ .left-menu #siam-option
     box-sizing: border-box;
 }
 
-#abyssinian-progressbar
-{
-    background: linear-gradient(to right, green, white);
-    border: 1px solid green;
-    width: 88%;
-}
-
-#british-progressbar
-{
-    background: linear-gradient(to right, yellow, white);
-    border: 1px solid yellow;
-    width: 60%;
-}
-
-#russianblue-progressbar
-{
-    background: linear-gradient(to right, green, white);
-    border: 1px solid green;
-    width: 93%;
-}
-
-#siam-progressbar
+.one-progress .progress-bar,
+.two-progress .progress-bar,
+.three-progress .progress-bar,
+.four-progress .progress-bar
 {
     background: linear-gradient(to right, red, white);
     border: 1px solid red;
-    width: 34%;
+}
+
+.five-progress .progress-bar,
+.six-progress .progress-bar,
+.seven-progress .progress-bar,
+.eight-progress .progress-bar
+{
+    background: linear-gradient(to right, yellow, white);
+    border: 1px solid yellow;
+}
+
+.nine-progress .progress-bar,
+.ten-progress .progress-bar
+{
+    background: linear-gradient(to right, green, white);
+    border: 1px solid green;
+}
+
+.one-progress  .progress-bar
+{
+    width: 10%;
+}
+
+.two-progress .progress-bar
+{
+    width: 20%;
+}
+
+.three-progress .progress-bar
+{
+    width: 30%;
+}
+
+.four-progress .progress-bar
+{
+    width: 40%;
+}
+
+.five-progress .progress-bar
+{
+    width: 50%;
+}
+
+.six-progress .progress-bar
+{
+    width: 60%;
+}
+
+.seven-progress .progress-bar
+{
+    width: 70%;
+}
+
+.eight-progress .progress-bar
+{
+    width: 80%;
+}
+
+.nine-progress .progress-bar
+{
+    width: 90%;
+}
+
+.ten-progress .progress-bar
+{
+    width: 100%;
 }
 
 .number
@@ -283,30 +357,72 @@ input[name=siam]:checked ~ .left-menu #siam-option
     flex-basis: 33%;
 }
 
-#desc-checkbox:checked ~ #russianblue-name,
-#desc-checkbox:checked ~ #russianblue-progress,
-#desc-checkbox:checked ~ #russianblue-number
+#desc-checkbox:checked ~ .ten-name,
+#desc-checkbox:checked ~ .ten-progress,
+#desc-checkbox:checked ~ .ten-number
 {
     order: 1;
 }
 
-#desc-checkbox:checked ~ #abyssinian-name,
-#desc-checkbox:checked ~ #abyssinian-progress,
-#desc-checkbox:checked ~ #abyssinian-number
+#desc-checkbox:checked ~ .nine-name,
+#desc-checkbox:checked ~ .nine-progress,
+#desc-checkbox:checked ~ .nine-number
 {
     order: 2;
 }
 
-#desc-checkbox:checked ~ #british-name,
-#desc-checkbox:checked ~ #british-progress,
-#desc-checkbox:checked ~ #british-number
+#desc-checkbox:checked ~ .eight-name,
+#desc-checkbox:checked ~ .eight-progress,
+#desc-checkbox:checked ~ .eight-number
 {
     order: 3;
 }
 
-#desc-checkbox:checked ~ #siam-name,
-#desc-checkbox:checked ~ #siam-progress,
-#desc-checkbox:checked ~ #siam-number
+#desc-checkbox:checked ~ .seven-name,
+#desc-checkbox:checked ~ .seven-progress,
+#desc-checkbox:checked ~ .seven-number
 {
     order: 4;
+}
+
+#desc-checkbox:checked ~ .six-name,
+#desc-checkbox:checked ~ .six-progress,
+#desc-checkbox:checked ~ .six-number
+{
+    order: 5;
+}
+
+#desc-checkbox:checked ~ .five-name,
+#desc-checkbox:checked ~ .five-progress,
+#desc-checkbox:checked ~ .five-number
+{
+    order: 6;
+}
+
+#desc-checkbox:checked ~ .four-name,
+#desc-checkbox:checked ~ .four-progress,
+#desc-checkbox:checked ~ .four-number
+{
+    order: 7;
+}
+
+#desc-checkbox:checked ~ .three-name,
+#desc-checkbox:checked ~ .three-progress,
+#desc-checkbox:checked ~ .three-number
+{
+    order: 8;
+}
+
+#desc-checkbox:checked ~ .two-name,
+#desc-checkbox:checked ~ .two-progress,
+#desc-checkbox:checked ~ .two-number
+{
+    order: 9;
+}
+
+#desc-checkbox:checked ~ .one-name,
+#desc-checkbox:checked ~ .one-progress,
+#desc-checkbox:checked ~ .one-number
+{
+    order: 10;
 }
