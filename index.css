@@ -151,7 +151,6 @@ header
     height: 400px;
     margin-bottom: 10px;
     position: relative;
-    pointer-events: none;
 }
 .cats-container img
 {
@@ -231,14 +230,14 @@ header
     order: 2;
 }
 
-#rating:checked ~ .center #british-label,
-#rating:checked ~ .center #british-progress,
+#rating:checked ~ #british-label,
+#rating:checked ~ #british-progress,
 {
     order: 3;
 }
 
-#rating:checked ~ .center #siam-label,
-#rating:checked ~ .center #siam-progress,
+#rating:checked ~ #siam-label,
+#rating:checked ~ #siam-progress,
 {
     order: 4;
 }
