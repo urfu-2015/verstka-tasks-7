@@ -1,14 +1,12 @@
 body
 {
     background-color: rgba(234, 234, 234, .51);
-    font-family: 'Arial', sans-serif;
-    min-width: 2000px;
+    font-family: Arial, sans-serif;
 }
 
 main
 {
     display: flex;
-    justify-content: space-around;
     width: 100%;
 }
 
@@ -18,8 +16,6 @@ header
     justify-content: space-around;
     height: 100px;
     width: 100%;
-    left: 0;
-    top: 0;
 }
 
 h1
@@ -39,9 +35,9 @@ footer
 section
 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 65%;
+    min-width: 1200px;
     padding: 0 5px;
 }
 
@@ -52,7 +48,7 @@ section article
     flex-wrap: wrap;
     overflow: hidden;
     margin: .5em;
-    height: 500px;
+    max-height: 500px;
 }
 
 section article img
@@ -137,6 +133,7 @@ section article:hover > .name
     display: flex;
     flex-flow: column;
     width: 15%;
+    min-width: 200px;
     margin: .5em;
     background-color: rgba(216, 216, 216, .51);
 }
