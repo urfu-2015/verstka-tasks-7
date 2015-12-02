@@ -1,1 +1,225 @@
+html 
+{
+    height: 100%;
+    width: 100%;
+}
 
+body
+{
+    background: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2
+{
+    text-transform: uppercase;
+    color: red;
+}
+
+section
+{
+    margin: 10px;
+}
+
+header
+{
+    text-align: center;
+}
+
+.breed-cats
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #b0b0b0;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-basis: 15%;
+}
+
+img
+{
+    height: 300px;
+    width: 900px;
+    object-fit: cover;
+}
+
+.small-img
+{
+    width: 300px;
+}
+
+.mid-img
+{
+    width: 600px;
+}
+
+.one-breed
+{
+    text-align: left;
+    border-bottom: 1px solid #383838;
+    font-size: 17px;
+    padding: 12px 1px;
+}
+
+.information-about-cat
+{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    text-align: center;
+    background: rgb(32,32,32, 4);
+    opacity: .7;
+    font-size: 30px;
+    display: none;
+}
+
+img:hover ~ .information-about-cat
+{
+    display: block;
+    background-color: rgba(105,105,105,.9);
+    color: rgb(255,255,255);
+}
+
+.img-cats
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    align-items: center;
+}
+
+label
+{
+    margin: 10px;
+}
+
+.gradient-first
+{
+    background: linear-gradient(to right, #00cd66 , #fff);
+    height: 15px;
+    width: 150px;
+}
+.gradient-second
+{
+    background: linear-gradient(to right, #ee0 , #fff);
+    height: 15px;
+    width: 150px;
+}
+
+.gradient-third
+{
+    background: linear-gradient(to right, #e00 , #fff);
+    height: 15px;
+    width: 150px;
+}
+
+.rate-eight
+{
+    width: 65%;
+}
+
+.rate-four
+{
+    width: 45%;
+}
+
+.rate-nine
+{
+    width: 75%;
+}
+
+.rate-ten
+{
+    width: 85%;
+}
+
+.sort-cat
+{
+    text-align: right;
+}
+
+[id='sort']:checked ~ .rate-ten
+{
+    order: 1;
+}
+
+[id='sort']:checked ~ .rate-nine
+{
+    order: 2;
+}
+
+[id='sort']:checked ~ .rate-eight
+{
+    order: 3;
+}
+
+[id='sort']:checked ~ .rate-four
+{
+    order: 4;
+}
+
+.raiting
+{
+    background: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.rus,
+.british,
+.siamsk,
+.abis
+{
+    position: relative;
+}
+
+footer
+{
+    border-top: solid #000 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+[type='radio']
+{
+    display: none;
+}
+
+[type='checkbox']
+{
+    display: none;
+}
+
+[id='rus96']:checked ~ .img-cats > :not(.rus),
+[id='abissyn']:checked ~ .img-cats > :not(.abis),
+[id='british']:checked ~ .img-cats > :not(.british),
+[id='siamsk']:checked ~ .img-cats > :not(.siamsk)
+{
+    opacity: .3;
+}
+
+[id='abissyn']:checked ~ section > .backlight-abissyn,
+[id='british']:checked ~ section > .backlight-british,
+[id='siamsk']:checked ~ section > .backlight-siamsk,
+[id='rus96']:checked ~ section > .backlight-rus
+{
+    background-color: #828282;
+    color: #fff;
+}
