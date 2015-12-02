@@ -52,7 +52,11 @@ label.breed
     padding: 15px;
 }
 
-.breed:hover
+label.breed:hover,
+input#abyss:checked ~ aside label[for='abyss'],
+input#brit:checked ~ aside label[for='brit'],
+input#rus:checked ~ aside label[for='rus'],
+input#siam:checked ~ aside label[for='siam']
 {
     background-color: #8e8e8e;
 }
@@ -73,6 +77,7 @@ input#siam:checked ~ article img:not(.siam)
 article
 {
     width: 55%;
+    max-width: 870px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -93,6 +98,7 @@ article
 .photo-card
 {
     height: 100%;
+    margin: 0;
     position: relative;
 }
 
@@ -110,7 +116,6 @@ article
     left: 0;
     bottom: 50px;
     width: 100px;
-    height: 40px;
     padding: 3px;
     background-color: #6a5b5b;
     color: #fff;
@@ -118,9 +123,9 @@ article
     z-index: 2;
 }
 
-.photo img:hover + .info
+.photo-card:hover .info
 {
-    display: block;
+    display: inline-block;
 }
 
 .bottom
@@ -142,15 +147,34 @@ aside.rating
     text-align: right;
 }
 
-input[name='type']:checked ~ div
+input[name='type']:checked ~ .rating-container .rating-block[data-value='4']
 {
-    flex-direction: column-reverse;
+    order: 6;
 }
 
-.rating h3
+input[name='type']:checked ~ .rating-container .rating-block[data-value='8']
+{
+    order: 2;
+}
+
+input[name='type']:checked ~ .rating-container .rating-block[data-value='9']
+{
+    order: 1;
+}
+
+input[name='type']:checked ~ .rating-container .rating-block[data-value='10']
+{
+    order: 0;
+}
+
+.rating h2
 {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    color: #db0606;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-left: 25px;
 }
 
 .rating-container
@@ -167,9 +191,10 @@ input[name='type']:checked ~ div
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.rating-block p
+.rating-block .breed
 {
     width: 100%;
 }
@@ -180,40 +205,49 @@ div.rating
     border: 1px solid #959595;
 }
 
-div.rating-container .rating-block:first-child .rating
+div.rating-container .rating-block[data-value='4'] .rating
 {
     width: 80px;
 }
 
-div.rating-container .rating-block:nth-child(2) .rating
+div.rating-container .rating-block[data-value='8'] .rating
 {
     width: 160px;
 }
 
-div.rating-container .rating-block:nth-child(3) .rating
+div.rating-container .rating-block[data-value='9'] .rating
 {
     width: 180px;
 }
 
-div.rating-container .rating-block:last-child .rating
+div.rating-container .rating-block[data-value='10'] .rating
+{
+    width: 200px;
+}
+
+div.rating-container .rating-block:last-child
 {
     margin-bottom: 15px;
-    width: 200px;
+}
+
+div.rating
+{
+    background: linear-gradient(to right, transparent, #fefcea);
 }
 
 .rating .high
 {
-    background: linear-gradient(to right, #3bf159, #fefcea);
+    background-color:  #3bf159;
 }
 
 .rating .normal
 {
-    background: linear-gradient(to right, #f1ef15, #fefcea);
+    background-color: #f1ef15;
 }
 
 .rating .low
 {
-    background: linear-gradient(to right, #f14818, #fefcea);
+    background-color: #f14818;
 }
 
 .rating-block span
@@ -240,7 +274,9 @@ footer p
     padding: 10px;
 }
 
-footer p:last-child
+footer address
 {
     color: #166571;
+    padding: 10px;
+    margin: 1em 0;
 }

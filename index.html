@@ -20,56 +20,72 @@
         </aside>
         <article>
             <div class="photo top">
-                <div class="photo-card"><img class="siam" src="img/siam-vert-02.jpg" alt="Сиамская">
-                <div class="info">Валентин, 4 месяца</div></div>
-                <div class="photo-card"><img class="brit" src="img/brit-horiz-01.jpg" alt="Британская">
-                <div class="info">Лолита, 3 месяца</div></div>
+                <figure class="photo-card">
+                    <img class="siam" src="img/siam-vert-02.jpg" alt="Сиамская">
+                    <figcaption class="info">Валентин, 4 месяца</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="brit" src="img/brit-horiz-01.jpg" alt="Британская">
+                    <div class="info">Лолита, 3 месяца</div>
+                </figure>
             </div>
             <div class="photo center-1">
-                <div class="photo-card"><img class="rus" src="img/russ-vert-01.png" alt="Русская">
-                <div class="info">Кондратий, 5 месяцев</div></div>
-                <div class="photo-card"><img class="siam" src="img/siam-vert-01.png" alt="Сиамская">
-                <div class="info">Александрия, 2 года</div></div>
-                <div class="photo-card"><img class="abyss" src="img/abyss-vert-01.jpg" alt="Абиссинская">
-                <div class="info">Тутанхамон, 1 год</div></div>
+                <figure class="photo-card">
+                    <img class="rus" src="img/russ-vert-01.png" alt="Русская">
+                    <figcaption class="info">Кондратий, 5 месяцев</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="siam" src="img/siam-vert-01.png" alt="Сиамская">
+                    <figcaption class="info">Александрия, 2 года</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="abyss" src="img/abyss-vert-01.jpg" alt="Абиссинская">
+                    <figcaption class="info">Тутанхамон, 1 год</figcaption>
+                </figure>
             </div>
             <div class="photo center-2">
-                <div class="photo-card"><img class="brit" src="img/brit-horiz-02.png" alt="Британская">
-                <div class="info">Алёшенька, 3 месяца</div></div>
-                <div class="photo-card"><img class="siam" src="img/siam-vert-03.jpg" alt="Сиамская">
-                <div class="info">Клара, 5 месяцев</div></div>
+                <figure class="photo-card">
+                    <img class="brit" src="img/brit-horiz-02.png" alt="Британская">
+                    <figcaption class="info">Алёшенька, 3 месяца</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="siam" src="img/siam-vert-03.jpg" alt="Сиамская">
+                    <figcaption class="info">Клара, 5 месяцев</figcaption>
+                </figure>
             </div>
             <div class="photo bottom">
-                <div class="photo-card"><img class="abyss" src="img/abyss-horiz-01.jpg" alt="Абиссинская">
-                <div class="info">Аристарх, 5 лет</div></div>
+                <figure class="photo-card">
+                    <img class="abyss" src="img/abyss-horiz-01.jpg" alt="Абиссинская">
+                    <figcaption class="info">Аристарх, 5 лет</figcaption>
+                </figure>
             </div>
         </article>
         <aside class="rating">
-            <h3>Рейтинг</h3>
+            <h2>Рейтинг</h2>
             <label for="type">По убыванию</label>
             <input id="type" name="type" type="checkbox">
             <div class="rating-container">
-                <div class="rating-block">
-                    <p>Сиамская</p>
-                    <div class="rating low"></div><span>4</span>
-                </div>
-                <div class="rating-block">
-                    <p>Британская</p>
-                    <div class="rating normal"></div><span>8</span>
-                </div>
-                <div class="rating-block">
-                    <p>Абиссинская</p>
+                <div class="rating-block" data-value="9">
+                    <p class="breed">Абиссинская</p>
                     <div class="rating high"></div><span>9</span>
                 </div>
-                <div class="rating-block">
-                    <p>Русская голубая</p>
+                <div class="rating-block" data-value="8">
+                    <p class="breed">Британская</p>
+                    <div class="rating normal"></div><span>8</span>
+                </div>
+                <div class="rating-block" data-value="10">
+                    <p class="breed">Русская голубая</p>
                     <div class="rating high"></div><span>10</span>
+                </div>
+                <div class="rating-block" data-value="4">
+                    <p class="breed">Сиамская</p>
+                    <div class="rating low"></div><span>4</span>
                 </div>
             </div>
         </aside>
     <footer>
-        <p>&#169; OOO "Бабуленькины котятки"</p>
-        <p>Наш адрес: улица Котовая, д. 8</p>
+        <p>&copy; OOO «Бабуленькины котятки»</p>
+        <address>Наш адрес: улица Котовая, д. 8</address>
     </footer>
     </body>
 </html>
