@@ -70,18 +70,18 @@ section article:nth-child(8n+4),
 section article:nth-child(8n+5),
 section article:nth-child(8n+7)
 {
-    width: 31%;
+    width: 32%;
 }
 
 section article:nth-child(8n+2),
 section article:nth-child(8n+6)
 {
-    width: 64%;
+    width: 65%;
 }
 
 section article:nth-child(8n)
 {
-    width: 99%;
+    width: 98%;
 }
 
 .breed
@@ -134,7 +134,7 @@ section article:hover > .name
     flex-flow: column;
     width: 15%;
     min-width: 100px;
-    margin: .5em;
+    margin: .3em;
     background-color: rgba(216, 216, 216, .51);
 }
 
