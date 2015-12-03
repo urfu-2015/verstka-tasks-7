@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:500&subset=cyrillic);
+
+html,
+body
+{
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: #ddd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header
+{
+    flex: 0 0 100%;
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+    font-family: arial, sans-serif;
+
+}
+
+main
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-width: 1250px;
+}
+
+aside,
+nav
+{
+    background: #ccc;
+    margin: 0 10px;
+    flex-basis: 150px;
+    font-size: 20px;
+}
+
+main > input
+{
+    display: none;
+}
+
+#abyssinian:checked ~ article > div > div[data-type='abyssinian'],
+#british:checked ~ article > div > div[data-type='british'],
+#russianBlue:checked ~ article > div > div[data-type='russian blue'],
+#siamese:checked ~ article > div > div[data-type='siamese']
+{
+    opacity: .5;
+}
+
+#abyssinian:checked ~ nav > .abyssinian,
+#british:checked ~ nav > .british,
+#russianBlue:checked ~ nav > .russianBlue,
+#siamese:checked ~ nav > .siamese
+{
+    background: #444;
+}
+
+nav div
+{
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px #666;
+    -moz-box-shadow: 0 1px #666;
+    box-shadow: 0 1px #666;
+}
+
+nav label
+{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    margin: 0 10px;
+}
+
+article
+{
+    width: 100%;
+    max-width: 1500px;
+    flex: 1;
+}
+
+.row
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row:last-of-type
+{
+    margin-bottom: 0;
+}
+
+.cat
+{
+    flex: 1 1 calc(33.33% - 10px);
+    height: 350px;
+    margin: 0 5px;
+    overflow: hidden;
+}
+
+.row:nth-of-type(4n+1) > .cat:nth-of-type(2),
+.row:nth-of-type(4n+3) > .cat:nth-of-type(1)
+{
+    flex: 1 1 calc(66.66% - 10px);
+}
+
+.row:nth-of-type(4n) > .cat
+{
+    flex: 1 1 100%;
+}
+
+img
+{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+aside
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding: 10px;
+}
+
+aside > div:first-child
+{
+    color: #f00;
+}
+
+aside > label
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: calc(100% - 25px);
+}
+
+aside > input
+{
+    align-self: flex-end;
+    flex-basis: 15px;
+}
+
+aside > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+aside > div > div:first-child
+{
+    flex-basis: 100%;
+}
+
+aside > div > div:nth-child(2)
+{
+    display: flex;
+    flex-basis: 70%;
+    margin: 3px 0;
+}
+
+aside > div > div:nth-of-type(3)
+{
+    flex-basis: 20%;
+    margin-left: 10px;
+}
+
+div > div > div
+{
+    border: 1px solid #000;
+}
+
+.good
+{
+    flex-basis: 90%;
+    background: linear-gradient(90deg, #0f0, #fff);
+}
+
+div:first-child > .good
+{
+    flex-basis: 100%;
+}
+
+aside > input:checked ~ div:nth-of-type(4)
+{
+    order: 1;
+}
+
+#sort:checked ~ div:not(:nth-of-type(4))
+{
+    order: 2;
+}
+
+.middle
+{
+    flex-basis: 80%;
+    background: linear-gradient(90deg, #ff0, #fff);
+}
+
+.bad
+{
+    flex-basis: 40%;
+    background: linear-gradient(90deg, #f00, #fff);
+}
+
+body > div
+{
+    flex-basis: 100%;
+}
+
+footer
+{
+    display: flex;
+    flex-basis: 0;
+    margin-top: 20px;
+    border-top: 1px solid #666;
+}
+
+footer > div
+{
+    display: flex;
+    flex-grow: 2;
+    margin: 20px;
+}
+
+footer > div:last-child
+{
+    justify-content: flex-end;
+    color: #00f;
+}
+
+address
+{
+    font-style: normal;
+}
+
+.cat > p
+{
+    display: none;
+    position: absolute;
+    margin: 290px 0 0 25px;
+    padding: 10px;
+    background: #aaa;
+    opacity: .8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cat:hover > p
+{
+    display: block;
+}

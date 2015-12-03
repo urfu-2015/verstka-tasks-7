@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Бабуленькины котятки</title>
+    <link rel="stylesheet" href="index-flex.css">
+</head>
+<body>
+<main>
+    <header><h1>Бабуленькины котятки</h1></header>
+    <input id="abyssinian" name="cat" type="checkbox">
+    <input id="british" name="cat" type="checkbox">
+    <input id="russianBlue" name="cat" type="checkbox">
+    <input id="siamese" name="cat" type="checkbox">
+    <nav>
+        <div class="abyssinian"><label for="abyssinian">Абиссинская</label></div>
+        <div class="british"><label for="british">Британская</label></div>
+        <div class="russianBlue"><label for="russianBlue">Русская голубая</label></div>
+        <div class="siamese"><label for="siamese">Сиамская</label></div>
+    </nav>
+    <article>
+        <div class="row">
+            <div class="cat" data-type="abyssinian">
+                <p>Гоша, 4 года</p>
+                <img src="http://irecommend.ru/sites/default/files/product-images/1/Abissinskaya.jpg"
+                     alt="Абиссинская"/>
+            </div>
+            <div class="cat" data-type="abyssinian">
+                <p>Маша, 5 лет</p>
+                <img
+                    src="https://farm4.staticflickr.com/3822/12833908543_bbc6bf0e6f_b.jpg"
+                    alt="Абиссинская"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cat"  data-type="british">
+                <p>Саша, 2.5 года</p>
+                <img
+                    src="http://animal.ru/i/upload/129767920512.jpg" alt="Британская"/>
+            </div>
+            <div class="cat" data-type="british">
+                <p>Алина, 8 лет</p>
+                <img
+                    src="http://s00.yaplakal.com/pics/pics_original/1/8/1/5425181.jpg"
+                    alt="Британская"/>
+            </div>
+            <div class="cat"  data-type="russian blue">
+                <p>Гриша, 6 лет</p>
+                <img
+                    src="http://russkayagolubaya.ru/wp-content/uploads/2011/04/a41.jpg"
+                    alt="Русская голубая"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cat" data-type="russian blue">
+                <p>Маруся, 4 года</p>
+                <img src="http://catvtomske.ru/assets/templates/site/img/breeds/russian_blue4.jpg"
+                     alt="Русская голубая"/>
+            </div>
+            <div class="cat" data-type="siamese">
+                <p>Олеся, 6 лет</p>
+                <img
+                    src="http://goo.gl/YGAXsg"
+                    alt="Сиамская"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cat" data-type="siamese">
+                <p>Ибрагим, 1 год</p>
+                <img
+                    src="http://zverivdom.com/files/node_articles/big/siamskaja-koshka--.jpg"
+                    alt="Сиамская"/>
+            </div>
+        </div>
+    </article>
+    <aside>
+        <div>РЕЙТИНГ</div>
+        <label for="sort">по убыванию</label><input id="sort" type="checkbox">
+        <div>
+            <div>Абиссинская</div>
+            <div><div class="good"></div></div>
+            <div>9</div>
+        </div>
+        <div>
+            <div>Британская</div>
+            <div><div class="middle"></div></div>
+            <div>8</div>
+        </div>
+        <div>
+            <div>Русская голубая</div>
+            <div><div class="good"></div></div>
+            <div>10</div>
+        </div>
+        <div>
+            <div>Сиамская</div>
+            <div><div class="bad"></div></div>
+            <div>4</div>
+        </div>
+    </aside>
+</main>
+<div></div>
+<footer>
+    <div>&copy;ООО Бабуленькины котятки, 2015</div>
+    <div>
+        Наш адрес:
+        <address>Улица Котовая, д.5</address>
+    </div>
+</footer>
+</body>
+</html>

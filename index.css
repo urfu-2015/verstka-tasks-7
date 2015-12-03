@@ -1,1 +1,286 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:500&subset=cyrillic);
 
+#abyssinian:checked ~ div[data-type='abyssinian'],
+#british:checked ~ div[data-type='british'],
+#russianBlue:checked ~ div[data-type='russian blue'],
+#siamese:checked ~ div[data-type='siamese']
+{
+    opacity: .5;
+}
+
+#abyssinian:checked ~ nav > .abyssinian,
+#british:checked ~ nav > .british,
+#russianBlue:checked ~ nav > .russianBlue,
+#siamese:checked ~ nav > .siamese
+{
+    background: #444;
+}
+
+nav div
+{
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px #666;
+    -moz-box-shadow: 0 1px #666;
+    box-shadow: 0 1px #666;
+}
+
+nav label
+{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding: 0 10px;
+}
+
+body > input
+{
+    display: none;
+}
+
+img
+{
+    min-height: 100%;
+    min-width: 100%;
+}
+body
+{
+    display: grid;
+    grid-template-columns: 170px 10px 300px 10px 300px 10px 300px 10px auto;
+    grid-template-rows: auto 0 350px 10px 350px 10px 350px 10px 350px 10px auto;
+    width: 1310px;
+    margin: auto;
+    background: #ddd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header
+{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row: 1;
+    text-align: center;
+}
+
+nav
+{
+    grid-column: 1;
+    grid-row-start: 3;
+    grid-row-end: 10;
+}
+
+aside
+{
+    grid-column: 9;
+    grid-row-start: 3;
+    grid-row-end: auto;
+}
+
+body > div
+{
+    height: 350px;
+    width: auto;
+    overflow: hidden;
+    grid-row: 7;
+}
+
+body > div:nth-of-type(8n+1)
+{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+body > div:nth-of-type(8n+2)
+{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row: 3;
+}
+
+body > div:nth-of-type(8n+3)
+{
+    grid-column: 3;
+    grid-row: 5;
+}
+
+body > div:nth-of-type(8n+4)
+{
+    grid-column: 5;
+    grid-row: 5;
+}
+
+body > div:nth-of-type(8n+5)
+{
+    grid-column: 7;
+    grid-row: 5;
+}
+
+body > div:nth-of-type(8n+6)
+{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row: 7;
+}
+
+body > div:nth-of-type(8n+7)
+{
+    grid-column: 7;
+    grid-row: 7;
+}
+
+body > div:nth-of-type(8n)
+{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row: 9;
+}
+
+footer
+{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row: 12;
+    padding: 15px;
+    border-top: 1px solid #666;
+}
+
+footer > div,
+address
+{
+    display: inline-block;
+}
+
+footer > div:last-child
+{
+    float: right;
+    color: #00f;
+}
+
+h1
+{
+    font-family: arial, sans-serif;
+}
+
+nav,
+aside
+{
+    background: #ccc;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.cat > p
+{
+    display: none;
+    position: absolute;
+    margin: 290px 0 0 25px;
+    padding: 10px;
+    background: #aaa;
+    opacity: .8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cat:hover > p
+{
+    display: block;
+}
+
+aside
+{
+    background: none;
+}
+
+.wrap
+{
+    display: grid;
+    grid-template-columns: auto 10px 15px 15px;
+    grid-template-rows: repeat(10, auto);
+    padding: 10px;
+    background: #ccc;
+}
+
+.wrap > div
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.wrap > div:first-child
+{
+    grid-row: 1;
+    color: #f00;
+}
+
+.wrap > label
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
+.wrap > input
+{
+    grid-column: 4;
+    grid-row: 2;
+    width: 15px;
+    margin-top: 7px;
+}
+
+.wrap > div:nth-of-type(3n+3)
+{
+    grid-column-end: 1;
+}
+
+.wrap > div:nth-of-type(3n+4)
+{
+    grid-column: 3;
+}
+
+.wrap > div:nth-of-type(7)
+{
+    grid-column-start: 3;
+}
+
+.wrap > div > div
+{
+    height: 15px;
+    width: 70%;
+    margin: 3px 0;
+    border: 1px solid #000;
+}
+
+.good
+{
+    width: 90%;
+    background: linear-gradient(90deg, #0f0, #fff);
+}
+
+div:nth-of-type(9) > .good
+{
+    width: 100%;
+}
+
+.wrap > input:checked ~ div:nth-of-type(8)
+{
+    grid-row: 3;
+}
+
+.wrap > input:checked ~ div:nth-of-type(9),
+.wrap > input:checked ~ div:nth-of-type(10)
+{
+    grid-row: 4;
+}
+
+.middle
+{
+    background: linear-gradient(90deg, #ff0, #fff);
+}
+
+.bad
+{
+    background: linear-gradient(90deg, #f00, #fff);
+}
+
+address
+{
+    font-style: normal;
+}
