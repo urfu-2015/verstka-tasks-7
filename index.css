@@ -45,9 +45,9 @@ img
 body
 {
     display: grid;
-    grid-template-columns: 150px 10px 300px 10px 300px 10px 300px 10px auto;
+    grid-template-columns: 170px 10px 300px 10px 300px 10px 300px 10px auto;
     grid-template-rows: auto 0 350px 10px 350px 10px 350px 10px 350px 10px auto;
-    width: 1290px;
+    width: 1310px;
     margin: auto;
     background: #ddd;
     font-family: 'Open Sans', sans-serif;
