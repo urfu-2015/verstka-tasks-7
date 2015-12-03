@@ -37,7 +37,7 @@ section
     display: flex;
     flex-wrap: wrap;
     width: 65%;
-    min-width: 1200px;
+    min-width: 500px;
     padding: 0 5px;
 }
 
@@ -47,7 +47,7 @@ section article
     position: relative;
     flex-wrap: wrap;
     overflow: hidden;
-    margin: .5em;
+    margin: .3em;
     max-height: 500px;
 }
 
@@ -70,13 +70,13 @@ section article:nth-child(8n+4),
 section article:nth-child(8n+5),
 section article:nth-child(8n+7)
 {
-    width: 32%;
+    width: 31%;
 }
 
 section article:nth-child(8n+2),
 section article:nth-child(8n+6)
 {
-    width: 65%;
+    width: 64%;
 }
 
 section article:nth-child(8n)
@@ -133,7 +133,7 @@ section article:hover > .name
     display: flex;
     flex-flow: column;
     width: 15%;
-    min-width: 200px;
+    min-width: 100px;
     margin: .5em;
     background-color: rgba(216, 216, 216, .51);
 }
