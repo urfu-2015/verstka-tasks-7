@@ -130,28 +130,28 @@ aside > .rating > span
     height: 10px;
 }
 
-.grad-ten
+.grad-70
 {
     background: linear-gradient(to left, #fff, #a6ff36);
     border: 1px solid #a6ff36;
     width: 70%;
 }
 
-.grad-nine
+.grad-60
 {
     background: linear-gradient(to left, #fff, #a6ff36);
     border: 1px solid #a6ff36;
     width: 60%;
 }
 
-.grad-eight
+.grad-50
 {
     background: linear-gradient(to left, #fff, #fff20f);
     border: 1px solid #fff20f;
     width: 50%;
 }
 
-.grad-four
+.grad-20
 {
     background: linear-gradient(to left, #fff, #ff521c);
     border: 1px solid #ff521c;
