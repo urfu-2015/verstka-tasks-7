@@ -1,1 +1,330 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,cyrillic);
 
+body
+{
+    background-color: rgba(234, 234, 234, .71);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header
+{
+    display: flex;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.sub-header
+{
+    margin: 0 auto;
+}
+
+main
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+nav
+{
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(0, 0, 0, .16);
+    margin-left: 5px;
+}
+
+nav > label
+{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px ridge #fff;
+}
+
+nav > label:hover
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, .54);
+}
+
+aside
+{
+    width: 35%;
+    min-width: 155px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    margin-right: 3px;
+    background-color: rgba(0, 0, 0, .16);
+}
+
+aside > h3
+{
+    font-weight: 300;
+    font-size: 25px;
+    color: #f00;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+}
+
+.rating-label
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.rating-label > p
+{
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.rating-label > label:nth-child(2)
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAEJGlDQ1BJQ0MgUHJvZmlsZQAAOBGFVd9v21QUPolvUqQWPyBYR4eKxa9VU1u5GxqtxgZJk6XtShal6dgqJOQ6N4mpGwfb6baqT3uBNwb8AUDZAw9IPCENBmJ72fbAtElThyqqSUh76MQPISbtBVXhu3ZiJ1PEXPX6yznfOec7517bRD1fabWaGVWIlquunc8klZOnFpSeTYrSs9RLA9Sr6U4tkcvNEi7BFffO6+EdigjL7ZHu/k72I796i9zRiSJPwG4VHX0Z+AxRzNRrtksUvwf7+Gm3BtzzHPDTNgQCqwKXfZwSeNHHJz1OIT8JjtAq6xWtCLwGPLzYZi+3YV8DGMiT4VVuG7oiZpGzrZJhcs/hL49xtzH/Dy6bdfTsXYNY+5yluWO4D4neK/ZUvok/17X0HPBLsF+vuUlhfwX4j/rSfAJ4H1H0qZJ9dN7nR19frRTeBt4Fe9FwpwtN+2p1MXscGLHR9SXrmMgjONd1ZxKzpBeA71b4tNhj6JGoyFNp4GHgwUp9qplfmnFW5oTdy7NamcwCI49kv6fN5IAHgD+0rbyoBc3SOjczohbyS1drbq6pQdqumllRC/0ymTtej8gpbbuVwpQfyw66dqEZyxZKxtHpJn+tZnpnEdrYBbueF9qQn93S7HQGGHnYP7w6L+YGHNtd1FJitqPAR+hERCNOFi1i1alKO6RQnjKUxL1GNjwlMsiEhcPLYTEiT9ISbN15OY/jx4SMshe9LaJRpTvHr3C/ybFYP1PZAfwfYrPsMBtnE6SwN9ib7AhLwTrBDgUKcm06FSrTfSj187xPdVQWOk5Q8vxAfSiIUc7Z7xr6zY/+hpqwSyv0I0/QMTRb7RMgBxNodTfSPqdraz/sDjzKBrv4zu2+a2t0/HHzjd2Lbcc2sG7GtsL42K+xLfxtUgI7YHqKlqHK8HbCCXgjHT1cAdMlDetv4FnQ2lLasaOl6vmB0CMmwT/IPszSueHQqv6i/qluqF+oF9TfO2qEGTumJH0qfSv9KH0nfS/9TIp0Wboi/SRdlb6RLgU5u++9nyXYe69fYRPdil1o1WufNSdTTsp75BfllPy8/LI8G7AUuV8ek6fkvfDsCfbNDP0dvRh0CrNqTbV7LfEEGDQPJQadBtfGVMWEq3QWWdufk6ZSNsjG2PQjp3ZcnOWWing6noonSInvi0/Ex+IzAreevPhe+CawpgP1/pMTMDo64G0sTCXIM+KdOnFWRfQKdJvQzV1+Bt8OokmrdtY2yhVX2a+qrykJfMq4Ml3VR4cVzTQVz+UoNne4vcKLoyS+gyKO6EHe+75Fdt0Mbe5bRIf/wjvrVmhbqBN97RD1vxrahvBOfOYzoosH9bq94uejSOQGkVM6sN/7HelL4t10t9F4gPdVzydEOx83Gv+uNxo7XyL/FtFl8z9ZAHF4bBsrEwAAASpJREFUOBGlkz9ugzAUxm1UCaSUZAMxcoPsXbpViEP0CDlEl14lAwsnQJkipEw9BIxQVWLgX9+HhPNMQCKJJcDmvffzZ/uz7PtePNteOCBN0w/btg+GYWyX4FJKUVXVKcuy7yAIflGvIEmS7H3fP3qet2uahrPn+m9t224ocEBQQSzL2juOsyvLcq5I+0e5wjTNd1IlSXGvIMiCgq7rtIK5AXIoF5tp0NPiNbS6rsfu3V9NCTZzjRLaD8E3/gbCg0uSpjkPQzhIg0DmmuUAwG2gQSCfz7C0nOlECjKezhoI4GQRdbIKQlb+yfP8z3XdVy51qga2p2shyJRnig2mUpAwDC9xHH8WRQErb6fFfAxAFEVfpHq4vbAtj48yFVwLXge4XGDMQ65563v/HjuaxUG9zK8AAAAASUVORK5CYII=);
+    height: 16px;
+    width: 17px;
+    display: inline-block;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+#desc:checked ~ .rating-label > label:nth-child(2)
+{
+    background-image: url(data:image/png;base64,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);
+    height: 16px;
+    width: 17px;
+    display: inline-block;
+}
+
+.rating
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 6px;
+    margin-left: 5px;
+    margin-right: 7px;
+    align-items: baseline;
+}
+
+aside > .rating > span:first-child
+{
+    width: 100%;
+}
+
+aside > .rating > span
+{
+    padding-right: 5px;
+}
+
+.grad
+{
+    height: 10px;
+}
+
+.grad-70
+{
+    background: linear-gradient(to left, #fff, #a6ff36);
+    border: 1px solid #a6ff36;
+    width: 70%;
+}
+
+.grad-60
+{
+    background: linear-gradient(to left, #fff, #a6ff36);
+    border: 1px solid #a6ff36;
+    width: 60%;
+}
+
+.grad-50
+{
+    background: linear-gradient(to left, #fff, #fff20f);
+    border: 1px solid #fff20f;
+    width: 50%;
+}
+
+.grad-20
+{
+    background: linear-gradient(to left, #fff, #ff521c);
+    border: 1px solid #ff521c;
+    width: 20%;
+}
+
+/*Grad sorting*/
+aside > h3,
+aside > input,
+aside > label,
+aside > .rating-label
+{
+    order: 1;
+}
+
+.rating-nine
+{
+    order: 1;
+}
+
+.rating-eight
+{
+    order: 2;
+}
+
+.rating-ten
+{
+    order: 3;
+}
+
+.rating-four
+{
+    order: 4;
+}
+
+aside > input[name='desc']:checked ~ .rating-four
+{
+    order: 1;
+}
+
+aside > input[name='desc']:checked ~ .rating-eight
+{
+    order: 2;
+}
+
+aside > input[name='desc']:checked ~ .rating-nine
+{
+    order: 3;
+}
+
+aside > input[name='desc']:checked ~ .rating-ten
+{
+    order: 4;
+}
+
+.cats
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    min-width: 800px;
+    max-width: 1000px;
+    margin: 0 10px;
+}
+
+.row
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cat1,
+.cat3,
+.cat6,
+.cat8
+{
+    margin-right: auto;
+}
+
+/*Хотелось так, но при удалении первый становится не правильным*/
+/*.row > article:nth-child(1)*/
+/*{*/
+/*margin-right: auto;*/
+/*}*/
+
+.cat
+{
+    height: 250px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.cat:hover > .cat-info
+{
+    position: relative;
+    top: -50%;
+    left: 10px;
+    width: 80%;
+    height: 30%;
+    background: rgba(58, 58, 58, .7);
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+img
+{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    margin: 10px;
+}
+
+.one-third-cat
+{
+    flex-grow: 1;
+    max-width: 33%;
+}
+
+.two-third-cat
+{
+    flex-grow: 2;
+    max-width: 66%;
+}
+
+.three-third-cat
+{
+    flex-grow: 3;
+    max-width: 100%;
+}
+
+footer
+{
+    margin-top: 5%;
+    vertical-align: bottom;
+    height: 50px;
+    border-top: 1px solid #000;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Checkers */
+
+input[value='abissin']:checked ~ main > .cats article:not(.abissin),
+input[value='brit']:checked ~ main > .cats article:not(.brit),
+input[value='rus']:checked ~ main > .cats article:not(.rus),
+input[value='siam']:checked ~ main > .cats article:not(.siam)
+{
+    opacity: .5;
+}
+
+input[value='all']:checked ~ main > nav > label[for='all'],
+input[value='abissin']:checked ~ main > nav > label[for='abissin'],
+input[value='brit']:checked ~ main > nav > label[for='brit'],
+input[value='rus']:checked ~ main > nav > label[for='rus'],
+input[value='siam']:checked ~ main > nav > label[for='siam']
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, .54);
+}
+
+input[type=radio],
+input[type=checkbox],
+input[value='abissin']:checked ~ main > .cats article:not(.abissin) > .cat-info,
+input[value='brit']:checked ~ main > .cats article:not(.brit) > .cat-info,
+input[value='rus']:checked ~ main > .cats article:not(.rus) > .cat-info,
+input[value='siam']:checked ~ main > .cats article:not(.siam) > .cat-info
+{
+    display: none;
+}

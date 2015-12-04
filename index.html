@@ -6,6 +6,102 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <input id="all" type="radio" name="cat-race" value="all" checked>
+        <input id="abissin" type="radio" name="cat-race" value="abissin">
+        <input id="brit" type="radio" name="cat-race" value="brit">
+        <input id="rus" type="radio" name="cat-race" value="rus">
+        <input id="siam" type="radio" name="cat-race" value="siam">
+        <header>
+            <div class="sub-header">
+                <h1>Бабуленькины котятки</h1>
+            </div>
+        </header>
+        <main>
+            <nav>
+                <label for="all" class="cat-race">Все</label>
+                <label for="abissin" class="cat-race">Абиссинская</label>
+                <label for="brit" class="cat-race">Британская</label>
+                <label for="rus" class="cat-race">Русская голубая</label>
+                <label for="siam" class="cat-race">Сиамская</label>
+            </nav>
+            <div class="cats">
+                <div class="row">
+                    <article class="one-third-cat cat cat1 abissin">
+                        <img src="img/cat1.png" alt="cat1">
+                        <div class="cat-info">Гоша, 4 года</div>
+                    </article>
+                    <article class="two-third-cat cat cat2 brit">
+                        <img src="img/cat2.png" alt="cat2">
+                        <div class="cat-info">Барсик, 4 года</div>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="one-third-cat cat cat3 brit">
+                        <img src="img/cat3.png" alt="cat3">
+                        <div class="cat-info">Барсик, 4 года</div>
+                    </article>
+                    <article class="one-third-cat cat cat4 brit">
+                        <img src="img/cat4.png" alt="cat4">
+                        <div class="cat-info">Барсик, 4 года</div>
+                    </article>
+                    <article class="one-third-cat cat cat5 abissin">
+                        <img src="img/cat5.png" alt="cat5">
+                        <div class="cat-info">Барсик, 4 года</div>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="two-third-cat cat cat6 abissin">
+                        <img src="img/cat6.png" alt="cat6">
+                        <div class="cat-info">Барсик, 4 года</div>
+                    </article>
+                    <article class="one-third-cat cat cat7 rus">
+                        <img src="img/cat7.png" alt="cat7">
+                        <div class="cat-info">Барсик, 4 года</div>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="three-third-cat cat cat8 siam">
+                        <img src="img/cat8.png" alt="cat8">
+                        <div class="cat-info">Барсик, 4 года</div>
+                    </article>
+                </div>
+            </div>
+            <aside>
+                <h3>Рейтинг</h3>
+                <input type="checkbox" id="desc" name="desc">
+                <div class="rating-label">
+                    <label for="desc">по убыванию</label>
+                    <label for="desc"></label>
+                </div>
+                <div class="rating rating-nine">
+                    <span>Абиссинская</span>
+                    <div class="grad grad-60"></div>
+                    <span>9</span>
+                </div>
+                <div class="rating rating-eight">
+                    <span>Британская</span>
+                    <div class="grad grad-50"></div>
+                    <span>8</span>
+                </div>
+                <div class="rating rating-ten">
+                    <span>Русская голубая</span>
+                    <div class="grad grad-70"></div>
+                    <span>10</span>
+                </div>
+                <div class="rating rating-four">
+                    <span>Сиамская</span>
+                    <div class="grad grad-20"></div>
+                    <span>4</span>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <p>
+                © ООО Бабуленькины котятки, 2015
+            </p>
+            <address>
+                Наш адрес: улица Котовая, д.5
+            </address>
+        </footer>
     </body>
 </html>
