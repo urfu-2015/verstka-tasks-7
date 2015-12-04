@@ -212,8 +212,8 @@ aside > input[name='desc']:checked ~ .rating-ten
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+    /*justify-content: space-between;*/
+    /*align-items: stretch;*/
     min-width: 800px;
     max-width: 1000px;
     margin: 0 10px;
@@ -252,16 +252,19 @@ img
 .one-third-cat
 {
     flex-grow: 1;
+    max-width: 33%;
 }
 
 .two-third-cat
 {
     flex-grow: 2;
+    max-width: 66%;
 }
 
 .three-third-cat
 {
     flex-grow: 3;
+    max-width: 100%;
 }
 
 footer
