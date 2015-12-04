@@ -56,6 +56,7 @@ nav > label:hover
 aside
 {
     width: 35%;
+    min-width: 155px;
     display: flex;
     flex-flow: column nowrap;
     align-self: flex-start;
@@ -215,7 +216,7 @@ aside > input[name='desc']:checked ~ .rating-ten
     align-items: stretch;
     min-width: 800px;
     max-width: 1000px;
-    margin: 0 1% 0 1%;
+    margin: 0 1%;
 }
 
 .cat
@@ -276,11 +277,6 @@ footer
 }
 
 /* Checkers */
-input[type=radio],
-input[type=checkbox]
-{
-    display: none;
-}
 
 input[value='abissin']:checked ~ main > .cats article:not(.abissin),
 input[value='brit']:checked ~ main > .cats article:not(.brit),
@@ -300,6 +296,8 @@ input[value='siam']:checked ~ main > nav > label[for='siam']
     background-color: rgba(0, 0, 0, .54);
 }
 
+input[type=radio],
+input[type=checkbox],
 input[value='abissin']:checked ~ main > .cats article:not(.abissin) > .cat-info,
 input[value='brit']:checked ~ main > .cats article:not(.brit) > .cat-info,
 input[value='rus']:checked ~ main > .cats article:not(.rus) > .cat-info,
