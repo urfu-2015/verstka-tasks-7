@@ -211,13 +211,33 @@ aside > input[name='desc']:checked ~ .rating-ten
 {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
     /*justify-content: space-between;*/
-    /*align-items: stretch;*/
     min-width: 800px;
     max-width: 1000px;
     margin: 0 10px;
 }
+
+.row
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cat1,
+.cat3,
+.cat6,
+.cat8
+{
+    margin-right: auto;
+}
+
+/*Хотелось так, но при удалении первый становится не правильным*/
+/*.row > article:nth-child(1)*/
+/*{*/
+/*margin-right: auto;*/
+/*}*/
 
 .cat
 {
