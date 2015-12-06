@@ -1,1 +1,281 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
 
+html
+{
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    font: 16px Arial, sans-serif;
+    background-color: #f1ebe0;
+    min-height: 100%;
+}
+
+h1
+{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+aside,
+article
+{
+    display: flex;
+}
+
+aside
+{
+    background-color: #c1c1c1;
+    width: 20%;
+}
+
+aside.filter
+{
+    flex-direction: column;
+    text-align: center;
+}
+
+label.breed
+{
+    border-bottom: 1px solid #000;
+    padding: 15px;
+}
+
+label.breed:hover,
+input#abyss:checked ~ aside label[for='abyss'],
+input#brit:checked ~ aside label[for='brit'],
+input#rus:checked ~ aside label[for='rus'],
+input#siam:checked ~ aside label[for='siam']
+{
+    background-color: #8e8e8e;
+}
+
+input[name='breed']
+{
+    display: none;
+}
+
+input#abyss:checked ~ article img:not(.abyss),
+input#brit:checked ~ article img:not(.brit),
+input#rus:checked ~ article img:not(.rus),
+input#siam:checked ~ article img:not(.siam)
+{
+    opacity: .5;
+}
+
+article
+{
+    width: 55%;
+    max-width: 870px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.photo
+{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.photo-card
+{
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.photo img
+{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info
+{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 100px;
+    padding: 3px;
+    background-color: #6a5b5b;
+    color: #fff;
+    opacity: .7;
+    z-index: 2;
+}
+
+.photo-card:hover .info
+{
+    display: inline-block;
+}
+
+.bottom
+{
+    justify-content: center;
+}
+
+aside.rating
+{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rating label
+{
+    width: 90%;
+    text-align: right;
+}
+
+input[name='type']:checked ~ .rating-container .rating-block[data-value='4']
+{
+    order: 6;
+}
+
+input[name='type']:checked ~ .rating-container .rating-block[data-value='8']
+{
+    order: 2;
+}
+
+input[name='type']:checked ~ .rating-container .rating-block[data-value='9']
+{
+    order: 1;
+}
+
+input[name='type']:checked ~ .rating-container .rating-block[data-value='10']
+{
+    order: 0;
+}
+
+.rating h2
+{
+    width: 100%;
+    text-align: left;
+    color: #db0606;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.rating-container
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.rating-block
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rating-block .breed
+{
+    width: 100%;
+}
+
+div.rating
+{
+    height: 20px;
+    border: 1px solid #959595;
+}
+
+div.rating-container .rating-block[data-value='4'] .rating
+{
+    width: 80px;
+}
+
+div.rating-container .rating-block[data-value='8'] .rating
+{
+    width: 160px;
+}
+
+div.rating-container .rating-block[data-value='9'] .rating
+{
+    width: 180px;
+}
+
+div.rating-container .rating-block[data-value='10'] .rating
+{
+    width: 200px;
+}
+
+div.rating-container .rating-block:last-child
+{
+    margin-bottom: 15px;
+}
+
+div.rating
+{
+    background: linear-gradient(to right, transparent, #fefcea);
+}
+
+.rating .high
+{
+    background-color:  #3bf159;
+}
+
+.rating .normal
+{
+    background-color: #f1ef15;
+}
+
+.rating .low
+{
+    background-color: #f14818;
+}
+
+.rating-block .score
+{
+    margin-right: 20px;
+    right: 0;
+    position: absolute;
+    font-weight: bold;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+}
+
+footer .copyright
+{
+    padding: 10px;
+}
+
+footer address
+{
+    color: #166571;
+    padding: 10px;
+    margin: 1em 0;
+}

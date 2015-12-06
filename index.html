@@ -6,6 +6,86 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <h1>Бабуленькины котятки</h1>
         <!-- Здесь применять гибкую магию -->
+        <input id="abyss" name="breed" type="checkbox">
+        <input id="brit" name="breed" type="checkbox">
+        <input id="rus" name="breed" type="checkbox">
+        <input id="siam" name="breed" type="checkbox">
+        <aside class="filter">
+            <label for="abyss" class="breed">Абиссинская</label>
+            <label for="brit" class="breed">Британская</label>
+            <label for="rus" class="breed">Русская голубая</label>
+            <label for="siam" class="breed">Сиамская</label>
+        </aside>
+        <article>
+            <div class="photo top">
+                <figure class="photo-card">
+                    <img class="siam" src="img/siam-vert-02.jpg" alt="Сиамская">
+                    <figcaption class="info">Валентин, 4 месяца</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="brit" src="img/brit-horiz-01.jpg" alt="Британская">
+                    <div class="info">Лолита, 3 месяца</div>
+                </figure>
+            </div>
+            <div class="photo center-1">
+                <figure class="photo-card">
+                    <img class="rus" src="img/russ-vert-01.png" alt="Русская">
+                    <figcaption class="info">Кондратий, 5 месяцев</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="siam" src="img/siam-vert-01.png" alt="Сиамская">
+                    <figcaption class="info">Александрия, 2 года</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="abyss" src="img/abyss-vert-01.jpg" alt="Абиссинская">
+                    <figcaption class="info">Тутанхамон, 1 год</figcaption>
+                </figure>
+            </div>
+            <div class="photo center-2">
+                <figure class="photo-card">
+                    <img class="brit" src="img/brit-horiz-02.png" alt="Британская">
+                    <figcaption class="info">Алёшенька, 3 месяца</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img class="siam" src="img/siam-vert-03.jpg" alt="Сиамская">
+                    <figcaption class="info">Клара, 5 месяцев</figcaption>
+                </figure>
+            </div>
+            <div class="photo bottom">
+                <figure class="photo-card">
+                    <img class="abyss" src="img/abyss-horiz-01.jpg" alt="Абиссинская">
+                    <figcaption class="info">Аристарх, 5 лет</figcaption>
+                </figure>
+            </div>
+        </article>
+        <aside class="rating">
+            <h2>Рейтинг</h2>
+            <label for="type">По убыванию</label>
+            <input id="type" name="type" type="checkbox">
+            <div class="rating-container">
+                <div class="rating-block" data-value="9">
+                    <p class="breed">Абиссинская</p>
+                    <div class="rating high"></div><span class="score">9</span>
+                </div>
+                <div class="rating-block" data-value="8">
+                    <p class="breed">Британская</p>
+                    <div class="rating normal"></div><span class="score">8</span>
+                </div>
+                <div class="rating-block" data-value="10">
+                    <p class="breed">Русская голубая</p>
+                    <div class="rating high"></div><span class="score">10</span>
+                </div>
+                <div class="rating-block" data-value="4">
+                    <p class="breed">Сиамская</p>
+                    <div class="rating low"></div><span class="score">4</span>
+                </div>
+            </div>
+        </aside>
+    <footer>
+        <p class="copyright">&copy; OOO «Бабуленькины котятки»</p>
+        <address>Наш адрес: улица Котовая, д. 8</address>
+    </footer>
     </body>
 </html>
