@@ -16,7 +16,7 @@
             class="cat-select" name="russianblue">
             <input type="checkbox" id="siam-select"
             class="cat-select" name="siam">
-            <div class="left-menu">
+            <aside class="left-filter">
                 <label for="abyssinian-select" id="abyssinian-option" class="cat-type-option">
                     Абиссинская
                 </label>
@@ -29,8 +29,8 @@
                 <label for="siam-select" id="siam-option" class="cat-type-option">
                     Сиамская
                 </label>
-            </div>
-            <div class="main-content">
+            </aside>
+            <section class="main-content">
                 <div class="cats-container">
                     <div class="cat-item abyssinian">
                         <div class="cat-img-container">
@@ -133,54 +133,54 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="right-menu-container">
-                <div class="right-menu">
-                    <header>РЕЙТИНГ</header>
+            </section>
+            <aside class="right-aside-container">
+                <div class="right-aside">
+                    <header>Рейтинг</header>
                     <div class="score-container">
                         <div class="desc-sign">
                             по убыванию
                         </div>
                         <input type="checkbox" name="desc" id="desc-checkbox">
-                        <div class="name nine-name">
+                        <div class="name" data-score="9">
                             Абиссинская
                         </div>
-                        <div id="abyssinian-progress" class="progress nine-progress">
-                            <div class="progress-bar"></div>
+                        <div id="abyssinian-score" class="score" data-score="9">
+                            <div class="score-bar"></div>
                         </div>
-                        <div class="number nine-number">
+                        <div class="number" data-score="9">
                             9
                         </div>
-                        <div class="name eight-name">
+                        <div class="name" data-score="8">
                             Британская
                         </div>
-                        <div id="british-progress" class="progress eight-progress">
-                            <div class="progress-bar"></div>
+                        <div id="british-score" class="score" data-score="8">
+                            <div class="score-bar"></div>
                         </div>
-                        <div class="number eight-number">
+                        <div class="number" data-score="8">
                             8
                         </div>
-                        <div class="name ten-name">
+                        <div class="name" data-score="10">
                             Русская голубая
                         </div>
-                        <div id="russianblue-progress" class="progress ten-progress">
-                            <div class="progress-bar"></div>
+                        <div id="russianblue-score" class="score" data-score="10">
+                            <div class="score-bar"></div>
                         </div>
-                        <div class="number ten-number">
+                        <div class="number" data-score="10">
                             10
                         </div>
-                        <div class="name four-name">
+                        <div class="name" data-score="4">
                             Сиамская
                         </div>
-                        <div id="siam-progress" class="progress four-progress">
-                            <div class="progress-bar"></div>
+                        <div id="siam-score" class="score" data-score="4">
+                            <div class="score-bar"></div>
                         </div>
-                        <div class="number four-number">
+                        <div class="number" data-score="4">
                             4
                         </div>
                     </div>
                 </div>
-            </div>
+            </aside>
         </section>
         <div class="footer-stub"></div>
         <footer>

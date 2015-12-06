@@ -26,7 +26,7 @@ body > header
     justify-content: space-between;
 }
 
-.three-columns-container .left-menu
+.three-columns-container .left-filter
 {
     flex-basis: 20%;
     width: 200px;
@@ -42,14 +42,14 @@ body > header
     flex-basis: 60%;
 }
 
-.three-columns-container .right-menu-container
+.three-columns-container .right-aside-container
 {
     flex-basis: 20%;
     vertical-align: top;
     margin-top: 10px;
 }
 
-.three-columns-container .right-menu
+.three-columns-container .right-aside
 {
     background: #a9a9a9;
     padding: 20px;
@@ -103,10 +103,10 @@ address
     cursor: pointer;
 }
 
-input[name=abyssinian]:checked ~ .left-menu #abyssinian-option,
-input[name=british]:checked ~ .left-menu #british-option,
-input[name=russianblue]:checked ~ .left-menu #russianblue-option,
-input[name=siam]:checked ~ .left-menu #siam-option
+input[name=abyssinian]:checked ~ .left-filter #abyssinian-option,
+input[name=british]:checked ~ .left-filter #british-option,
+input[name=russianblue]:checked ~ .left-filter #russianblue-option,
+input[name=siam]:checked ~ .left-filter #siam-option
 {
     background: black;
     color: white;
@@ -224,11 +224,12 @@ input[name=siam]:checked ~ .left-menu #siam-option
     opacity: .4;
 }
 
-.right-menu header
+.right-aside header
 {
     text-align: left;
     color: red;
     font-size: 1.4em;
+    text-transform: uppercase;
 }
 
 .score-container
@@ -250,90 +251,90 @@ input[name=siam]:checked ~ .left-menu #siam-option
     padding: 10px 0 3px;
 }
 
-.progress
+.score
 {
     height: 30px;
     overflow: hidden;
     position: relative;
 }
 
-.progress-bar
+.score-bar
 {
     height: 99%;
     box-sizing: border-box;
 }
 
-.one-progress .progress-bar,
-.two-progress .progress-bar,
-.three-progress .progress-bar,
-.four-progress .progress-bar
+.score[data-score="1"] .score-bar,
+.score[data-score="2"] .score-bar,
+.score[data-score="3"] .score-bar,
+.score[data-score="4"] .score-bar
 {
     background: linear-gradient(to right, red, white);
     border: 1px solid red;
 }
 
-.five-progress .progress-bar,
-.six-progress .progress-bar,
-.seven-progress .progress-bar,
-.eight-progress .progress-bar
+.score[data-score="5"] .score-bar,
+.score[data-score="6"] .score-bar,
+.score[data-score="7"] .score-bar,
+.score[data-score="8"] .score-bar
 {
     background: linear-gradient(to right, yellow, white);
     border: 1px solid yellow;
 }
 
-.nine-progress .progress-bar,
-.ten-progress .progress-bar
+.score[data-score="9"] .score-bar,
+.score[data-score="10"] .score-bar
 {
     background: linear-gradient(to right, green, white);
     border: 1px solid green;
 }
 
-.one-progress  .progress-bar
+.score[data-score="1"] .score-bar
 {
     width: 10%;
 }
 
-.two-progress .progress-bar
+.score[data-score="2"] .score-bar
 {
     width: 20%;
 }
 
-.three-progress .progress-bar
+.score[data-score="3"] .score-bar
 {
     width: 30%;
 }
 
-.four-progress .progress-bar
+.score[data-score="4"] .score-bar
 {
     width: 40%;
 }
 
-.five-progress .progress-bar
+.score[data-score="5"] .score-bar
 {
     width: 50%;
 }
 
-.six-progress .progress-bar
+.score[data-score="6"] .score-bar
 {
     width: 60%;
 }
 
-.seven-progress .progress-bar
+.score[data-score="7"] .score-bar
 {
     width: 70%;
 }
 
-.eight-progress .progress-bar
+.score[data-score="8"] .score-bar
 {
     width: 80%;
 }
 
-.nine-progress .progress-bar
+.score[data-score="9"] .score-bar
 {
     width: 90%;
 }
 
-.ten-progress .progress-bar
+.score[data-score="10"] .score-bar
 {
     width: 100%;
 }
@@ -346,7 +347,7 @@ input[name=siam]:checked ~ .left-menu #siam-option
 }
 
 .desc-sign,
-.progress
+.score
 {
     flex-basis: 63%;
 }
@@ -357,72 +358,72 @@ input[name=siam]:checked ~ .left-menu #siam-option
     flex-basis: 33%;
 }
 
-#desc-checkbox:checked ~ .ten-name,
-#desc-checkbox:checked ~ .ten-progress,
-#desc-checkbox:checked ~ .ten-number
+#desc-checkbox:checked ~ .name[data-score="10"],
+#desc-checkbox:checked ~ .score[data-score="10"],
+#desc-checkbox:checked ~ .number[data-score="10"]
 {
     order: 1;
 }
 
-#desc-checkbox:checked ~ .nine-name,
-#desc-checkbox:checked ~ .nine-progress,
-#desc-checkbox:checked ~ .nine-number
+#desc-checkbox:checked ~ .name[data-score="9"],
+#desc-checkbox:checked ~ .score[data-score="9"],
+#desc-checkbox:checked ~ .number[data-score="9"]
 {
     order: 2;
 }
 
-#desc-checkbox:checked ~ .eight-name,
-#desc-checkbox:checked ~ .eight-progress,
-#desc-checkbox:checked ~ .eight-number
+#desc-checkbox:checked ~ .name[data-score="8"],
+#desc-checkbox:checked ~ .score[data-score="8"],
+#desc-checkbox:checked ~ .number[data-score="8"]
 {
     order: 3;
 }
 
-#desc-checkbox:checked ~ .seven-name,
-#desc-checkbox:checked ~ .seven-progress,
-#desc-checkbox:checked ~ .seven-number
+#desc-checkbox:checked ~ .name[data-score="7"],
+#desc-checkbox:checked ~ .score[data-score="7"],
+#desc-checkbox:checked ~ .number[data-score="7"]
 {
     order: 4;
 }
 
-#desc-checkbox:checked ~ .six-name,
-#desc-checkbox:checked ~ .six-progress,
-#desc-checkbox:checked ~ .six-number
+#desc-checkbox:checked ~ .name[data-score="6"],
+#desc-checkbox:checked ~ .score[data-score="6"],
+#desc-checkbox:checked ~ .number[data-score="6"]
 {
     order: 5;
 }
 
-#desc-checkbox:checked ~ .five-name,
-#desc-checkbox:checked ~ .five-progress,
-#desc-checkbox:checked ~ .five-number
+#desc-checkbox:checked ~ .name[data-score="5"],
+#desc-checkbox:checked ~ .score[data-score="5"],
+#desc-checkbox:checked ~ .number[data-score="5"]
 {
     order: 6;
 }
 
-#desc-checkbox:checked ~ .four-name,
-#desc-checkbox:checked ~ .four-progress,
-#desc-checkbox:checked ~ .four-number
+#desc-checkbox:checked ~ .name[data-score="4"],
+#desc-checkbox:checked ~ .score[data-score="4"],
+#desc-checkbox:checked ~ .number[data-score="4"]
 {
     order: 7;
 }
 
-#desc-checkbox:checked ~ .three-name,
-#desc-checkbox:checked ~ .three-progress,
-#desc-checkbox:checked ~ .three-number
+#desc-checkbox:checked ~ .name[data-score="3"],
+#desc-checkbox:checked ~ .score[data-score="3"],
+#desc-checkbox:checked ~ .number[data-score="3"]
 {
     order: 8;
 }
 
-#desc-checkbox:checked ~ .two-name,
-#desc-checkbox:checked ~ .two-progress,
-#desc-checkbox:checked ~ .two-number
+#desc-checkbox:checked ~ .name[data-score="2"],
+#desc-checkbox:checked ~ .score[data-score="2"],
+#desc-checkbox:checked ~ .number[data-score="2"]
 {
     order: 9;
 }
 
-#desc-checkbox:checked ~ .one-name,
-#desc-checkbox:checked ~ .one-progress,
-#desc-checkbox:checked ~ .one-number
+#desc-checkbox:checked ~ .name[data-score="1"],
+#desc-checkbox:checked ~ .score[data-score="1"],
+#desc-checkbox:checked ~ .number[data-score="1"]
 {
     order: 10;
 }
