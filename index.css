@@ -264,77 +264,77 @@ input[name=siam]:checked ~ .left-filter #siam-option
     box-sizing: border-box;
 }
 
-.score[data-score="1"] .score-bar,
-.score[data-score="2"] .score-bar,
-.score[data-score="3"] .score-bar,
-.score[data-score="4"] .score-bar
+.score[data-score='1'] .score-bar,
+.score[data-score='2'] .score-bar,
+.score[data-score='3'] .score-bar,
+.score[data-score='4'] .score-bar
 {
     background: linear-gradient(to right, red, white);
     border: 1px solid red;
 }
 
-.score[data-score="5"] .score-bar,
-.score[data-score="6"] .score-bar,
-.score[data-score="7"] .score-bar,
-.score[data-score="8"] .score-bar
+.score[data-score='5'] .score-bar,
+.score[data-score='6'] .score-bar,
+.score[data-score='7'] .score-bar,
+.score[data-score='8'] .score-bar
 {
     background: linear-gradient(to right, yellow, white);
     border: 1px solid yellow;
 }
 
-.score[data-score="9"] .score-bar,
-.score[data-score="10"] .score-bar
+.score[data-score='9'] .score-bar,
+.score[data-score='10'] .score-bar
 {
     background: linear-gradient(to right, green, white);
     border: 1px solid green;
 }
 
-.score[data-score="1"] .score-bar
+.score[data-score='1'] .score-bar
 {
     width: 10%;
 }
 
-.score[data-score="2"] .score-bar
+.score[data-score='2'] .score-bar
 {
     width: 20%;
 }
 
-.score[data-score="3"] .score-bar
+.score[data-score='3'] .score-bar
 {
     width: 30%;
 }
 
-.score[data-score="4"] .score-bar
+.score[data-score='4'] .score-bar
 {
     width: 40%;
 }
 
-.score[data-score="5"] .score-bar
+.score[data-score='5'] .score-bar
 {
     width: 50%;
 }
 
-.score[data-score="6"] .score-bar
+.score[data-score='6'] .score-bar
 {
     width: 60%;
 }
 
-.score[data-score="7"] .score-bar
+.score[data-score='7'] .score-bar
 {
     width: 70%;
 }
 
-.score[data-score="8"] .score-bar
+.score[data-score='8'] .score-bar
 {
     width: 80%;
 }
 
-.score[data-score="9"] .score-bar
+.score[data-score='9'] .score-bar
 {
     width: 90%;
 }
 
-.score[data-score="10"] .score-bar
+.score[data-score='10'] .score-bar
 {
     width: 100%;
 }
@@ -358,72 +358,72 @@ input[name=siam]:checked ~ .left-filter #siam-option
     flex-basis: 33%;
 }
 
-#desc-checkbox:checked ~ .name[data-score="10"],
-#desc-checkbox:checked ~ .score[data-score="10"],
-#desc-checkbox:checked ~ .number[data-score="10"]
+#desc-checkbox:checked ~ .name[data-score='10'],
+#desc-checkbox:checked ~ .score[data-score='10'],
+#desc-checkbox:checked ~ .number[data-score='10']
 {
     order: 1;
 }
 
-#desc-checkbox:checked ~ .name[data-score="9"],
-#desc-checkbox:checked ~ .score[data-score="9"],
-#desc-checkbox:checked ~ .number[data-score="9"]
+#desc-checkbox:checked ~ .name[data-score='9'],
+#desc-checkbox:checked ~ .score[data-score='9'],
+#desc-checkbox:checked ~ .number[data-score='9']
 {
     order: 2;
 }
 
-#desc-checkbox:checked ~ .name[data-score="8"],
-#desc-checkbox:checked ~ .score[data-score="8"],
-#desc-checkbox:checked ~ .number[data-score="8"]
+#desc-checkbox:checked ~ .name[data-score='8'],
+#desc-checkbox:checked ~ .score[data-score='8'],
+#desc-checkbox:checked ~ .number[data-score='8']
 {
     order: 3;
 }
 
-#desc-checkbox:checked ~ .name[data-score="7"],
-#desc-checkbox:checked ~ .score[data-score="7"],
-#desc-checkbox:checked ~ .number[data-score="7"]
+#desc-checkbox:checked ~ .name[data-score='7'],
+#desc-checkbox:checked ~ .score[data-score='7'],
+#desc-checkbox:checked ~ .number[data-score='7']
 {
     order: 4;
 }
 
-#desc-checkbox:checked ~ .name[data-score="6"],
-#desc-checkbox:checked ~ .score[data-score="6"],
-#desc-checkbox:checked ~ .number[data-score="6"]
+#desc-checkbox:checked ~ .name[data-score='6'],
+#desc-checkbox:checked ~ .score[data-score='6'],
+#desc-checkbox:checked ~ .number[data-score='6']
 {
     order: 5;
 }
 
-#desc-checkbox:checked ~ .name[data-score="5"],
-#desc-checkbox:checked ~ .score[data-score="5"],
-#desc-checkbox:checked ~ .number[data-score="5"]
+#desc-checkbox:checked ~ .name[data-score='5'],
+#desc-checkbox:checked ~ .score[data-score='5'],
+#desc-checkbox:checked ~ .number[data-score='5']
 {
     order: 6;
 }
 
-#desc-checkbox:checked ~ .name[data-score="4"],
-#desc-checkbox:checked ~ .score[data-score="4"],
-#desc-checkbox:checked ~ .number[data-score="4"]
+#desc-checkbox:checked ~ .name[data-score='4'],
+#desc-checkbox:checked ~ .score[data-score='4'],
+#desc-checkbox:checked ~ .number[data-score='4']
 {
     order: 7;
 }
 
-#desc-checkbox:checked ~ .name[data-score="3"],
-#desc-checkbox:checked ~ .score[data-score="3"],
-#desc-checkbox:checked ~ .number[data-score="3"]
+#desc-checkbox:checked ~ .name[data-score='3'],
+#desc-checkbox:checked ~ .score[data-score='3'],
+#desc-checkbox:checked ~ .number[data-score='3']
 {
     order: 8;
 }
 
-#desc-checkbox:checked ~ .name[data-score="2"],
-#desc-checkbox:checked ~ .score[data-score="2"],
-#desc-checkbox:checked ~ .number[data-score="2"]
+#desc-checkbox:checked ~ .name[data-score='2'],
+#desc-checkbox:checked ~ .score[data-score='2'],
+#desc-checkbox:checked ~ .number[data-score='2']
 {
     order: 9;
 }
 
-#desc-checkbox:checked ~ .name[data-score="1"],
-#desc-checkbox:checked ~ .score[data-score="1"],
-#desc-checkbox:checked ~ .number[data-score="1"]
+#desc-checkbox:checked ~ .name[data-score='1'],
+#desc-checkbox:checked ~ .score[data-score='1'],
+#desc-checkbox:checked ~ .number[data-score='1']
 {
     order: 10;
 }
