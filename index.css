@@ -250,7 +250,7 @@ div.rating
     background-color: #f14818;
 }
 
-.rating-block span
+.rating-block .score
 {
     margin-right: 20px;
     right: 0;
@@ -261,7 +261,6 @@ div.rating
 footer
 {
     display: flex;
-    align-self: flex-end;
     flex-direction: row;
     flex-basis: 100%;
     flex-wrap: wrap;
@@ -269,7 +268,7 @@ footer
     border-top: 1px solid #000;
 }
 
-footer p
+footer .copyright
 {
     padding: 10px;
 }
