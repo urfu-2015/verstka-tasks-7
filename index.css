@@ -6,36 +6,38 @@ h1
 
 body
 {
-    background-color: #e6e6e6;
+    background-color: #eee;
 }
 
 section
 {
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     margin: 0 4%;
 }
 
-.nav-breed,
+.nav-wrapper,
 .aside-raiting
 {
     flex-basis: 17%;
+    background-color: #e1e1e1;
+    min-width: 200px;
 }
 
 .nav-breed
 {
     display: flex;
     flex-direction:column;
-    background-color: #ccc;
+    justify-content: space-between;
+    height: 300px;
 }
 
 .nav-breed label
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #696969;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
     text-align: center;
-    font-size: 34px;
+    font-size: 26px;
 }
 
 .nav-breed label:hover
@@ -48,18 +50,18 @@ section
     display: none;
 }
 
-#abyssinian:checked ~ .content > .row > *,
-#british:checked ~ .content > .row > *,
-#russian-blue:checked ~ .content > .row > *,
-#siamese:checked ~ .content > .row > *
+#abyssinian:checked ~ .content .row > *,
+#british:checked ~ .content .row > *,
+#russian-blue:checked ~ .content .row > *,
+#siamese:checked ~ .content .row > *
 {
     opacity: .5;
 }
 
-#abyssinian:checked ~ .content > .row > .abyssinian,
-#british:checked ~ .content > .row > .british,
-#russian-blue:checked ~ .content > .row > .russian-blue,
-#siamese:checked ~ .content > .row > .siamese,
+#abyssinian:checked ~ .content .abyssinian,
+#british:checked ~ .content .british,
+#russian-blue:checked ~ .content .russian-blue,
+#siamese:checked ~ .content .siamese,
 #all:checked ~ .content > .row > *
 {
     opacity: 1;
@@ -71,12 +73,12 @@ section
     display: flex;
     flex-direction: column;
     margin: 0 20px;
+    min-width: 450px;
 }
 
 .row
 {
-    display: flex;
-    flex-direction: row;
+    display: flex;   
     justify-content: space-between;
 }
 
@@ -121,15 +123,14 @@ img
 
 .aside-raiting
 {
-    background-color: #ccc;
-    height: 550px;
+    height: 100%;
 }
 
 .aside-raiting p,
 .aside-raiting label,
 .aside-raiting .raiting-breed-name
 {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .aside-raiting label
@@ -152,8 +153,7 @@ img
 
 .raiting
 {
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     justify-content: space-between;
     align-items: center;
 }
@@ -213,7 +213,7 @@ img
 footer
 {
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #000;
