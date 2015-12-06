@@ -6,6 +6,188 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <header>Бабуленькины котятки</header>
+        <section class="three-columns-container">
+            <input type="checkbox" id="abyssinian-select"
+            class="cat-select" name="abyssinian">
+            <input type="checkbox" id="british-select"
+            class="cat-select" name="british">
+            <input type="checkbox" id="russianblue-select"
+            class="cat-select" name="russianblue">
+            <input type="checkbox" id="siam-select"
+            class="cat-select" name="siam">
+            <aside class="left-filter">
+                <label for="abyssinian-select" id="abyssinian-option" class="cat-type-option">
+                    Абиссинская
+                </label>
+                <label for="british-select" id="british-option" class="cat-type-option">
+                    Британская
+                </label>
+                <label for="russianblue-select" id="russianblue-option" class="cat-type-option">
+                    Русская голубая
+                </label>
+                <label for="siam-select" id="siam-option" class="cat-type-option">
+                    Сиамская
+                </label>
+            </aside>
+            <section class="main-content">
+                <div class="cats-container">
+                    <div class="cat-item abyssinian">
+                        <div class="cat-img-container">
+                            <img src="images/cat1.jpg" alt="cat1">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item russianblue">
+                        <div class="cat-img-container">
+                            <img src="images/cat2.jpg" alt="cat2">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item siam">
+                        <div class="cat-img-container">
+                            <img src="images/cat3.jpg" alt="cat3">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item russianblue">
+                        <div class="cat-img-container">
+                            <img src="images/cat4.jpg" alt="cat4">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item abyssinian">
+                        <div class="cat-img-container">
+                            <img src="images/cat5.jpg" alt="cat5">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item siam">
+                        <div class="cat-img-container">
+                            <img src="images/cat6.jpg" alt="cat6">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item british">
+                        <div class="cat-img-container">
+                            <img src="images/cat7.jpg" alt="cat7">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item british">
+                        <div class="cat-img-container">
+                            <img src="images/cat8.jpg" alt="cat8">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item abyssinian">
+                        <div class="cat-img-container">
+                            <img src="images/cat9.jpg" alt="cat9">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-item siam">
+                        <div class="cat-img-container">
+                            <img src="images/cat10.jpg" alt="cat10">
+                        </div>
+                        <div class="cat-description-container">
+                            <div class="cat-description">
+                                Кот, N лет
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="right-aside-container">
+                <div class="right-aside">
+                    <header>Рейтинг</header>
+                    <div class="score-container">
+                        <div class="desc-sign">
+                            по убыванию
+                        </div>
+                        <input type="checkbox" name="desc" id="desc-checkbox">
+                        <div class="name" data-score="9">
+                            Абиссинская
+                        </div>
+                        <div id="abyssinian-score" class="score" data-score="9">
+                            <div class="score-bar"></div>
+                        </div>
+                        <div class="number" data-score="9">
+                            9
+                        </div>
+                        <div class="name" data-score="8">
+                            Британская
+                        </div>
+                        <div id="british-score" class="score" data-score="8">
+                            <div class="score-bar"></div>
+                        </div>
+                        <div class="number" data-score="8">
+                            8
+                        </div>
+                        <div class="name" data-score="10">
+                            Русская голубая
+                        </div>
+                        <div id="russianblue-score" class="score" data-score="10">
+                            <div class="score-bar"></div>
+                        </div>
+                        <div class="number" data-score="10">
+                            10
+                        </div>
+                        <div class="name" data-score="4">
+                            Сиамская
+                        </div>
+                        <div id="siam-score" class="score" data-score="4">
+                            <div class="score-bar"></div>
+                        </div>
+                        <div class="number" data-score="4">
+                            4
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <div class="footer-stub"></div>
+        <footer>
+            <p>© ООО Бабуленькины котятки, 2015</p>
+            <address>
+                Наш адрес: улица Котовая, 5
+            </address>
+        </footer>
     </body>
 </html>
