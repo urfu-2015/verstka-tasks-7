@@ -1,14 +1,21 @@
+body
+{
+    font-family: 'Scada', sans-serif;
+    min-width: 810px;
+}
+
 main
 {
     display: flex;
     flex-direction: row;
     width: 100%;
+    font: 20px 'PT Sans', sans-serif;
 }
 
 header
 {
+    width: 100%;
     text-align: center;
-    font-family: 'Scada', sans-serif;
 }
 
 footer
@@ -17,7 +24,6 @@ footer
     padding: 1%;
     display: flex;
     justify-content: space-between;
-    font-family: 'Scada', sans-serif;
 }
 
 main > input
@@ -32,6 +38,7 @@ main > input
     flex-direction: row;
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 500px;
 }
 
 .center > div
@@ -43,8 +50,6 @@ main > input
     text-align: center;
     vertical-align: middle;
     position: relative;
-    min-height: 100%;
-    max-height: 100%;
 }
 
 .center > div:nth-child(4),
@@ -101,21 +106,21 @@ address
 {
     align-self: flex-start;
     width: 18%;
-    padding-left: 1%;
-    margin-right: 1%;
-    font: 20px 'PT Sans', sans-serif;
+    padding-left: 8px;
+    margin-right: 8px;
+    min-width: 150px;
 }
 
 .left
 {
     width: 17%;
+    min-width: 157px;
 }
 
 .left div
 {
-    padding: 5%;
+    padding: 10px;
     width: 90%;
-    font: 20px 'PT Sans', sans-serif;
     border-bottom: 1px solid #000;
 }
 
@@ -176,7 +181,7 @@ address
 {
     display: inline-block;
     float: right;
-    padding-right: 5%;
+    padding-right: 7px;
     font-weight: bold;
 }
 
@@ -229,22 +234,21 @@ address
 .shift
 {
     float: right;
-    margin-right: 3%;
+    margin-right: 3px;
     font-size: 80%;
 }
 
 .shiftinp
 {
     float: right;
-    margin-right: 2%;
+    margin-right: 2px;
 }
 
 .center > div:hover > div
 {
     display: block;
-    font-size: 140%;
-    max-height: 10%;
-    min-height: 10%;
+    max-height: 30px;
+    min-height: 30px;
 }
 
 img + div
