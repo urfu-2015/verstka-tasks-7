@@ -6,6 +6,135 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <div class="page-wrapper">
+            <header class="page-header">
+                <h1 class="page-header__title">Бабуленькины котятки</h1>
+            </header>
+            <main class="page-main">
+                <input id="bambino" name="cat-breed" type="radio">
+                <input id="reks" name="cat-breed" type="radio">
+                <input id="scotish" name="cat-breed" type="radio">
+                <input id="kjorl" name="cat-breed" type="radio">
+                <input id="savanna" name="cat-breed" type="radio">
+                <nav class="navigation">
+                    <label class="navigation__item" for="bambino">Бамбино</label>
+                    <label class="navigation__item" for="reks">Уральский рекс</label>
+                    <label class="navigation__item" for="scotish">Скоттиш-фолд</label>
+                    <label class="navigation__item" for="kjorl">Американский кёрл</label>
+                    <label class="navigation__item" for="savanna">Саванна</label>
+                </nav>
+                <section class="photos">
+                    <div class="photo-card bambino">
+                        <img class="photo-card__image" src="img/bambino-1.jpg" alt="Бамбино">
+                        <p class="photo-card__info">Гоша, 4 года</p>
+                    </div>
+                    <div class="photo-card reks">
+                        <img class="photo-card__image" src="img/reks-1.jpg" alt="Уральский рекс">
+                        <p class="photo-card__info">Ярополк, 13 лет</p>
+                    </div>
+                    <div class="photo-card scotish">
+                        <img class="photo-card__image" src="img/scotish-fold-1.jpg" alt="Скоттиш-фолд">
+                        <p class="photo-card__info">Огнеслав, 11 лет</p>
+                    </div>
+                    <div class="photo-card bambino">
+                        <img class="photo-card__image" src="img/bambino-2.jpg" alt="Бамбино">
+                        <p class="photo-card__info">Серафим, 1 месяц</p>
+                    </div>
+                    <div class="photo-card savanna">
+                        <img class="photo-card__image" src="img/savanna-1.jpg" alt="Саванна">
+                        <p class="photo-card__info">Марсикан, 5 лет</p>
+                    </div>
+                    <div class="photo-card kjorl">
+                        <img class="photo-card__image" src="img/kjorl-1.jpg" alt="Американский кёрл">
+                        <p class="photo-card__info">Стенли, 4 года</p>
+                    </div>
+                    <div class="photo-card reks">
+                        <img class="photo-card__image" src="img/reks-2.jpg" alt="Уральский рекс">
+                        <p class="photo-card__info">Кузя, 7 лет</p>
+                    </div>
+                    <div class="photo-card bambino">
+                        <img class="photo-card__image" src="img/bambino-3.jpg" alt="Бамбино">
+                        <p class="photo-card__info">Лунатик, 3 года</p>
+                    </div>
+                    <div class="photo-card reks">
+                        <img class="photo-card__image" src="img/reks-3.jpg" alt="Уральский рекс">
+                        <p class="photo-card__info">Ярик, 3 месяца</p>
+                    </div>
+                    <div class="photo-card scotish">
+                        <img class="photo-card__image" src="img/scotish-fold-2.jpg" alt="Скоттиш-фолд">
+                        <p class="photo-card__info">Лютик, 7 месяцев</p>
+                    </div>
+                    <div class="photo-card scotish">
+                        <img class="photo-card__image" src="img/scotish-fold-3.jpg" alt="Скоттиш-фолд">
+                        <p class="photo-card__info">Гриша, 9 месяцев</p>
+                    </div>
+                    <div class="photo-card kjorl">
+                        <img class="photo-card__image" src="img/kjorl-2.jpg" alt="Американский кёрл">
+                        <p class="photo-card__info">Питер, 4 месяца</p>
+                    </div>
+                    <div class="photo-card savanna">
+                        <img class="photo-card__image" src="img/savanna-2.jpg" alt="Саванна">
+                        <p class="photo-card__info">Арка, 3 года</p>
+                    </div>
+                    <div class="photo-card savanna">
+                        <img class="photo-card__image" src="img/savanna-3.jpg" alt="Саванна">
+                        <p class="photo-card__info">Тупак, 1 год</p>
+                    </div>
+                    <div class="photo-card kjorl">
+                        <img class="photo-card__image" src="img/kjorl-3.jpg" alt="Американский кёрл">
+                        <p class="photo-card__info">Кристоф, 2 года</p>
+                    </div>
+                </section>
+                <section class="rating">
+                    <h2 class="rating__heading">Рейтинг</h2>
+                    <input id="desc" name="rate" type="checkbox">
+                    <label for="desc">по убыванию</label>
+                    <input type="text" name="breed-rating" value="3">
+                    <div class="breed">
+                        <p class="breed__name">Бамбино</p>
+                        <div class="breed__rate">
+                            <div class="breed__rate-scale"></div>
+                            <span class="breed__rate-val">3</span>
+                        </div>
+                    </div>
+                    <input type="text" name="breed-rating" value="5">
+                    <div class="breed">
+                        <p class="breed__name">Уральский рекс</p>
+                        <div class="breed__rate">
+                            <div class="breed__rate-scale"></div>
+                            <span class="breed__rate-val">5</span>
+                        </div>
+                    </div>
+                    <input type="text" name="breed-rating" value="10">
+                    <div class="breed">
+                        <p class="breed__name">Саванна</p>
+                        <div class="breed__rate">
+                            <div class="breed__rate-scale"></div>
+                            <span class="breed__rate-val">10</span>
+                        </div>
+                    </div>
+                    <input type="text" name="breed-rating" value="8">
+                    <div class="breed">
+                        <p class="breed__name">Американский кёрл</p>
+                        <div class="breed__rate">
+                            <div class="breed__rate-scale"></div>
+                            <span class="breed__rate-val">8</span>
+                        </div>
+                    </div>
+                    <input type="text" name="breed-rating" value="4">
+                    <div class="breed">
+                        <p class="breed__name">Скоттиш-фолд</p>
+                        <div class="breed__rate">
+                            <div class="breed__rate-scale"></div>
+                            <span class="breed__rate-val">4</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="page-footer">
+                <p class="copyrights">&copy; ООО Бабуленькины котятки, 2015</p>
+                <address><a href="#">Наш адрес: улица Котовая, д.5</a></address>
+            </footer>
+        </div>
     </body>
 </html>
