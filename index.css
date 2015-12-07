@@ -65,7 +65,8 @@ header
     min-height: 100vh;
     flex-direction: column;
 }
-main {
+main
+{
     flex: 1;
 }
 .content
@@ -110,7 +111,8 @@ main {
     width: 30%;
     background: linear-gradient(to right, red, white);
 }
-.base-gradient {
+.base-gradient
+{
     display: inline-block;
     border: 1px solid black;
     height: 20px;
