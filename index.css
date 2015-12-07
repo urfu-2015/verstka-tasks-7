@@ -83,6 +83,7 @@ body
     background-color: #888;
 }
 
+input[id='all-cats']:checked ~ .navigation > .navigation__item[for='all-cats'],
 input[id='bambino']:checked ~ .navigation > .navigation__item[for='bambino'],
 input[id='reks']:checked ~ .navigation > .navigation__item[for='reks'],
 input[id='scotish']:checked ~ .navigation > .navigation__item[for='scotish'],
