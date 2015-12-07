@@ -1,1 +1,241 @@
+.section-wrapper
+{
+    display: flex;
+    justify-content: space-around;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #d6d6d6;
+}
+header
+{
+    text-align: center;
+}
+.left-text-all
+{
+    display: block;
+    border-bottom: solid;
+    padding: 15px 0 15px;
+    cursor: pointer;
+}
+.left-text-all:hover
+{
+    background-color: black;
+    color: white;
+}
+.cat-block-default
+{
+    margin: 5px;
+    height: 300px;
+    position: relative;
+}
+.left-container
+{
+    width: 20%;
+    margin: 5px;
+    background-color: #bdbdbd;
+    flex-grow: 1;
+}
+.right-container
+{
+    display: flex;
+    align-self: flex-start;
+    padding: 10px;
+    flex-direction: column;
+    min-width: 200px;
+    align-items: stretch;
+    width: 20%;
+    margin: 5px;
+    background-color: #bdbdbd;
+    flex-grow: 1;
+}
+.raiting-title
+{
+    font-size: 2em;
+    margin: 10px;
+    text-align: center;
+    color: #cd0000;
+}
+.wrapper
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main
+{
+    flex: 1;
+}
+.content
+{
+    width: 100%;
+    align-self: flex-end;
+    border-top: 1px solid #aaa;
+    display: flex;
+    padding: 20px;
+    font-size: 24px;
+    justify-content: space-between;
+}
+.left-text
+{
+    text-align: left;
+}
+.right
+{
+    float: right;
+}
+.center
+{
+    text-align: center;
+}
+.ten-gradient
+{
+    width: 90%;
+    background: linear-gradient(to right, green, white);
+}
+.nine-gradient
+{
+    width: 80%;
+    background: linear-gradient(to right, green, white);
+}
+.eight-gradient
+{
+    width: 70%;
+    background: linear-gradient(to right, yellow, white);
+}
+.four-gradient
+{
+    width: 30%;
+    background: linear-gradient(to right, red, white);
+}
+.base-gradient
+{
+    display: inline-block;
+    border: 1px solid black;
+    height: 20px;
+}
+.right-text
+{
+    display: inline-block;
+    align-self: left;
+    padding: 15px 0 15px 5px;
+}
+.cat-select
+{
+    display: none;
+}
+.mid-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 960px;
+    max-width: 960px;
+}
+.cats-container
+{
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.cats-container img
+{
+    height: 400px;
+    min-width: 100%;
+}
+.mid-container .cats-container:nth-child(8n+1),
+.mid-container .cats-container:nth-child(8n+3)
+{
+    flex-basis: 30.66%;
+}
 
+.mid-container .cats-container:nth-child(8n+4),
+.mid-container .cats-container:nth-child(8n+5),
+.mid-container .cats-container:nth-child(8n+7)
+{
+    flex-basis: 28.67%;
+}
+
+.mid-container .cats-container:nth-child(8n+2)
+{
+    flex-basis: 61.32%;
+}
+
+.mid-container .cats-container:nth-child(8n+6)
+{
+    flex-basis: 63.34%;
+}
+
+.mid-container .cats-container:nth-child(8n)
+{
+    flex-basis: 96%;
+}
+
+.mid-container .cats-container:nth-child(8n+2),
+.mid-container .cats-container:nth-child(8n+5),
+.mid-container .cats-container:nth-child(8n+7),
+.mid-container .cats-container:nth-child(8n)
+{
+    margin-right: 0;
+}
+
+.mid-container .cats-container:last-child
+{
+    margin-bottom: 0;
+}
+.cat-description
+{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    background: rgba(0, 0, 0, .3);
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    display: none;
+}
+.cats-container:hover .cat-description
+{
+    display: block;
+}
+.ordered
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#rating:checked ~ #russian-label,
+#rating:checked ~ #russian-progress
+{
+    order: 2;
+}
+
+#rating:checked ~ #abyssinian-label,
+#rating:checked ~ #abyssinian-progress
+{
+    order: 4;
+}
+
+#rating:checked ~ #british-label,
+#rating:checked ~ #british-progress
+{
+    order: 3;
+}
+
+#rating:checked ~ #siam-label,
+#rating:checked ~ #siam-progress
+{
+    order: 1;
+}
+
+#abyssinian-name:checked ~ .mid-container .cat-block1,
+#british-name:checked ~ .mid-container .cat-block2,
+#russian-name:checked ~ .mid-container .cat-block3,
+#siam-name:checked ~ .mid-container .cat-block4
+{
+    opacity: .3;
+}
