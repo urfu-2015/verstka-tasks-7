@@ -478,15 +478,19 @@ input[name='breed-rating'][value='1'] + .breed > .breed__rate > .breed__rate-sca
 .page-footer
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 28px [copy] 1fr 15px [rside] 230px 28px;
     grid-template-rows: auto;
     align-items: center;
     margin-top: 15px;
     border-top: 1px solid #000;
-    padding: 0 28px;
+}
+
+.copyrights
+{
+    grid-column: copy;
 }
 
 .page-footer > address
 {
-    justify-self: end;
+    grid-column: rside;
 }
