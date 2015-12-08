@@ -21,7 +21,7 @@ header
 footer
 {
     border-top: 1px solid #000;
-    padding: 1%;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -41,29 +41,27 @@ main > input
     min-width: 500px;
 }
 
-.center > div
+figure
 {
     overflow: hidden;
     margin: 1%;
     margin-bottom: 0;
     background-color: #fff;
-    text-align: center;
-    vertical-align: middle;
     position: relative;
 }
 
-.center > div:nth-child(4),
-.center > div:nth-child(odd)
+figure:nth-child(4),
+figure:nth-child(odd)
 {
     width: 31.3%;
 }
 
-.center > div:nth-child(4n+2)
+figure:nth-child(4n+2)
 {
     width: 64.6%;
 }
 
-.center > div:nth-child(8)
+figure:nth-child(8)
 {
     width: 100%;
 }
@@ -76,7 +74,6 @@ aside
 body
 {
     background-color: #d0d0d0;
-    min-height: 97%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,10 +81,7 @@ body
 
 .center img
 {
-    min-height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    width: 100%;
 }
 
 .head
@@ -124,10 +118,9 @@ address
     border-bottom: 1px solid #000;
 }
 
-.left div label
+label:not(.shift)
 {
     display: block;
-    width: 100%;
 }
 
 .rating
@@ -200,15 +193,15 @@ address
     order: 3;
 }
 
-#all:checked ~ .center div
+#all:checked ~ .center figure
 {
     opacity: 1;
 }
 
-#ab:checked ~ .center div:not(.abyssinian),
-#si:checked ~ .center div:not(.siamese),
-#go:checked ~ .center div:not(.lightblue),
-#br:checked ~ .center div:not(.british)
+#ab:checked ~ .center figure:not(.abyssinian),
+#si:checked ~ .center figure:not(.siamese),
+#go:checked ~ .center figure:not(.lightblue),
+#br:checked ~ .center figure:not(.british)
 {
     opacity: .5;
 }
@@ -244,35 +237,32 @@ address
     margin-right: 2px;
 }
 
-.center > div:hover > div
+figure:hover > figcaption
 {
     display: block;
-    max-height: 30px;
-    min-height: 30px;
+    height: 30px;
 }
 
-img + div
+figcaption
 {
     color: #fff;
-    background-color: #000;
+    background: rgba(0, 0, 0, .5);
     position: absolute;
     left: 0;
-    bottom: 0;
-    opacity: .6;
+    bottom: 20px;
     z-index: 5;
     display: none;
-    padding: 2%;
+    padding: 10px;
 }
 
 .down img
 {
-    margin-top: 20%;
+    margin-top: 40px;
 }
 
-.center .lightblue img
+.offset img
 {
-    margin-top: 20%;
-    margin-left: -31%;
-    max-width: 140%;
-    min-width: 140%;
+    margin-top: 45px;
+    margin-left: -80px;
+    width: 140%;
 }
