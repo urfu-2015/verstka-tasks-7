@@ -105,6 +105,12 @@ section
     display: block;
 }
 
+img
+{
+    width: 100%;
+    height: 300px;
+}
+
 .long
 {
     flex-basis: 66%;
@@ -115,10 +121,9 @@ section
     flex-basis: 100%;
 }
 
-img
+.big img
 {
-    width: 100%;
-    height: 300px;
+    height: 100%;
 }
 
 .aside-raiting
