@@ -4,8 +4,101 @@
         <meta charset="utf-8">
         <title>Бабуленькины котятки</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans|Scada&subset=latin,cyrillic" 
+        rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <main>
+            <input type="radio" name="species" id="all" checked>
+            <input type="radio" name="species" id="ab">
+            <input type="radio" name="species" id="br">
+            <input type="radio" name="species" id="go">
+            <input type="radio" name="species" id="si">
+            <aside class="left">
+                <div class="all">
+                    <label for="all">Все породы</label>
+                </div>
+                <div class="ab">
+                    <label for="ab">Абиссинская</label>
+                </div>
+                <div class="br">
+                    <label for="br">Британская</label>
+                </div>
+                <div class="go">
+                    <label for="go">Русская голубая</label>
+                </div>
+                <div class="si">
+                    <label for="si">Сиамская</label>
+                </div>
+            </aside>
+            <article class="center">
+                <figure class="abyssinian down">
+                    <img src="images\1.jpg">
+                    <figcaption>Анфиса, 2 года</figcaption>
+                </figure>
+                <figure class="siamese">
+                    <img src="images\siam.jpg">
+                    <figcaption>Пуся, 3 года</figcaption>
+                </figure>
+                <figure class="abyssinian down">
+                    <img src="images\2.jpg">
+                    <figcaption>Рамзес, 1 год</figcaption>
+                </figure>
+                <figure class="british down">
+                    <img src="images\5.jpg">
+                    <figcaption>Пушок, 2 года</figcaption>
+                </figure>
+                <figure class="siamese">
+                    <img src="images\3.jpg">
+                    <figcaption>Люк, 5 лет</figcaption>
+                </figure>
+                <figure class="british">
+                    <img src="images\4.jpg">
+                    <figcaption>Феликс, полгода</figcaption>
+                </figure>
+                <figure class="lightblue offset">
+                    <img src="images\blue.jpg">
+                    <figcaption>Ушастик, 4 года</figcaption>
+                </figure>
+                <figure class="abyssinian">
+                    <img src="images\8.jpg">
+                    <figcaption>Смурф, полгода</figcaption>
+                </figure>
+            </article>
+            <aside class="right">
+                <div class="head">РЕЙТИНГ</div>
+                <input type="checkbox" id="sorting" class="shiftinp">
+                <label for="sorting" class="shift">по убыванию</label>
+                <div class="rating">
+                    <div class="block1">
+                        <div>Абиссинская</div>
+                        <div class="abys"></div>
+                        <div class="num">9</div>
+                    </div>
+                    <div class="block2">
+                        <div>Британская</div>
+                        <div class="brit"></div>
+                        <div class="num">8</div>
+                    </div>
+                    <div class="block3">
+                        <div>Русская голубая</div>
+                        <div class="blue"></div>
+                        <div class="num">10</div>
+                    </div>
+                    <div class="block4">
+                        <div>Сиамская</div>
+                        <div class="siam"></div>
+                        <div class="num">4</div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <div>&copy; OOO Бабуленькины котятки, 2015</div>
+            <address>Наш адрес: улица Котовая, д.5</address>
+        </footer>
     </body>
 </html>

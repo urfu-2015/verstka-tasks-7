@@ -1,1 +1,268 @@
+body
+{
+    font-family: 'Scada', sans-serif;
+    min-width: 810px;
+}
 
+main
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font: 20px 'PT Sans', sans-serif;
+}
+
+header
+{
+    width: 100%;
+    text-align: center;
+}
+
+footer
+{
+    border-top: 1px solid #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > input
+{
+    display: none;
+}
+
+.center
+{
+    width: 63%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 500px;
+}
+
+figure
+{
+    overflow: hidden;
+    margin: 1%;
+    margin-bottom: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+figure:nth-child(4),
+figure:nth-child(odd)
+{
+    width: 31.3%;
+}
+
+figure:nth-child(4n+2)
+{
+    width: 64.6%;
+}
+
+figure:nth-child(8)
+{
+    width: 100%;
+}
+
+aside
+{
+    background-color: #c0c0c0;
+}
+
+body
+{
+    background-color: #d0d0d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.center img
+{
+    width: 100%;
+}
+
+.head
+{
+    color: #f00;
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+address
+{
+    color: #1531ba;
+}
+
+.right
+{
+    align-self: flex-start;
+    width: 18%;
+    padding-left: 8px;
+    margin-right: 8px;
+    min-width: 150px;
+}
+
+.left
+{
+    width: 17%;
+    min-width: 157px;
+}
+
+.left div
+{
+    padding: 10px;
+    width: 90%;
+    border-bottom: 1px solid #000;
+}
+
+label:not(.shift)
+{
+    display: block;
+}
+
+.rating
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.rating div
+{
+    margin: 5px 0;
+}
+
+.brit,
+.blue,
+.abys,
+.siam
+{
+    height: 20px;
+    display: inline-block;
+}
+
+.brit
+{
+    width: 64%;
+    background: linear-gradient(to right, #f7fa2d, #fff);
+}
+
+.blue
+{
+    width: 80%;
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+.abys
+{
+    width: 72%;
+    background: linear-gradient(to right, #0f0, #fff);
+}
+
+.siam
+{
+    width: 32%;
+    background: linear-gradient(to right, #f00, #fff);
+}
+
+.num
+{
+    display: inline-block;
+    float: right;
+    padding-right: 7px;
+    font-weight: bold;
+}
+
+#sorting:checked ~ .rating .block1
+{
+    order: 1;
+}
+
+#sorting:checked ~ .rating .block2
+{
+    order: 2;
+}
+
+#sorting:checked ~ .rating .block4
+{
+    order: 3;
+}
+
+#all:checked ~ .center figure
+{
+    opacity: 1;
+}
+
+#ab:checked ~ .center figure:not(.abyssinian),
+#si:checked ~ .center figure:not(.siamese),
+#go:checked ~ .center figure:not(.lightblue),
+#br:checked ~ .center figure:not(.british)
+{
+    opacity: .5;
+}
+
+#ab:checked ~ .left .ab,
+#si:checked ~ .left .si,
+#go:checked ~ .left .go,
+#br:checked ~ .left .br,
+#all:checked ~ .left .all
+{
+    background-color: #545454;
+}
+
+#ab:checked ~ .left .ab label,
+#si:checked ~ .left .si label,
+#go:checked ~ .left .go label,
+#br:checked ~ .left .br label,
+#all:checked ~ .left .all label
+{
+    color: white;
+}
+
+.shift
+{
+    float: right;
+    margin-right: 3px;
+    font-size: 80%;
+}
+
+.shiftinp
+{
+    float: right;
+    margin-right: 2px;
+}
+
+figure:hover > figcaption
+{
+    display: block;
+    height: 30px;
+}
+
+figcaption
+{
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    z-index: 5;
+    display: none;
+    padding: 10px;
+}
+
+.down img
+{
+    margin-top: 40px;
+}
+
+.offset img
+{
+    margin-top: 45px;
+    margin-left: -80px;
+    width: 140%;
+}
