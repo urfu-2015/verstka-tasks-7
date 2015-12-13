@@ -1,1 +1,354 @@
+html,
+body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+body
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background: #ebebeb;
+    font-size: 12px;
+}
+
+.market-name
+{
+    text-align: center;
+}
+
+.market-name h1
+{
+    font-size: 4em;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* html .wrapper
+{
+    height: 100%;
+}
+
+.page-buffer
+{
+    height: 50px;
+}
+
+.wrapper > div
+{
+    margin: 10px;
+}
+
+.menu
+{
+    flex-grow: 1;
+    background: #d9d9d9;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+.menu .types
+{
+    display: block;
+    margin: 0;
+    padding: 30px 10px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 1px #aaa;
+}
+
+.menu .types:hover
+{
+    background: #777;
+}
+
+.photos
+{
+    min-width: 620px;
+    flex-grow: 6;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.row
+{
+    display: flex;
+    padding: 5px 0;
+}
+
+.photos .row > div
+{
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.photos .row img
+{
+    background: #aaa;
+    width: 100%;
+}
+
+.photos .row .col-1
+{
+    min-width: 200px;
+    position: relative;
+    box-sizing: border-box;
+    width: 1px;
+    flex-grow: 1;
+}
+
+.photos .row .col-2
+{
+    min-width: 410px;
+    position: relative;
+    box-sizing: border-box;
+    width: 1px;
+    flex-grow: 2;
+}
+
+.photos .row .col-3
+{
+    min-width: 620px;
+    position: relative;
+    flex-basis: 100%;
+}
+
+.info
+{
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    background: #888;
+    bottom: 40px;
+    left: -10px;
+}
+
+.photos .row .col-1:hover > .info
+{
+    display: block;
+}
+
+.photos .row .col-2:hover > .info
+{
+    display: block;
+}
+
+.photos .row .col-3:hover > .info
+{
+    display: block;
+}
+
+input.abissian:checked ~ .photos .row img:not(.abissian)
+{
+    opacity: .5;
+}
+
+input.abissian:checked ~ .menu > label.abi
+{
+    background-color: #0c3b65;
+}
+
+input.britain:checked ~ .photos .row img:not(.britain)
+{
+    opacity: .5;
+}
+
+input.britain:checked ~ .menu > label.bri
+{
+    background-color: #0c3b65;
+}
+
+input.russian:checked ~ .photos .row img:not(.russian)
+{
+    opacity: .5;
+}
+
+input.russian:checked ~ .menu > label.rus
+{
+    background-color: #0c3b65;
+}
+
+input.salem:checked ~ .photos .row img:not(.salem)
+{
+    opacity: .5;
+}
+
+input.salem:checked ~ .menu > label.sal
+{
+    background-color: #0c3b65;
+}
+
+.rating
+{
+    text-align: right;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #d9d9d9;
+    flex-basis: 200px;
+    font-size: 1.5em;
+    align-self: flex-start;
+}
+
+.rating .row
+{
+    padding: 5px 10px;
+}
+
+.rating h1
+{
+    padding: 0 10px;
+    margin: 5px 0;
+    text-align: left;
+    font-size: 2em;
+    color: red;
+    text-transform: uppercase;
+}
+
+.linear-gradient
+{
+    height: 15px;
+}
+
+.rate
+{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.rate h2
+{
+    margin: 5px 0;
+    font-size: 1em;
+    font-weight: 400;
+    width: 100%;
+}
+
+.rate > div
+{
+    margin-right: 15px;
+}
+
+.grad
+{
+    border: 1px solid #03e86f;
+}
+
+.grad-9
+{
+    background: linear-gradient(to right, #03e86f, #fff);
+    width: 72%;
+}
+
+.grad-8
+{
+    background: linear-gradient(to right, #fff602, #fff);
+    border: 1px solid #fff602;
+    width: 64%;
+}
+
+.grad-10
+{
+    background: linear-gradient(to right, #03e86f, #fff);
+    border: 1px solid #03e86f;
+    width: 80%;
+}
+
+.grad-4
+{
+    background: linear-gradient(to right, #e90c07, #fff);
+    border: 1px solid #e90c07;
+    width: 28%;
+}
+
+.option
+{
+    padding: 0 10px;
+}
+
+.option > label
+{
+    width: 100%;
+}
+
+.option > label > img
+{
+    width: 15px;
+    background: #fff;
+    height: 15px;
+}
+
+input
+{
+    display: none;
+}
+
+.option > label > .checked
+{
+    display: none;
+}
+
+input.dec:checked ~ .option > label > .empty
+{
+    display: none;
+}
+
+input.dec:checked ~ .option > label > .checked
+{
+    display: inherit;
+}
+
+input.dec:checked ~ .rate-10
+{
+    order: 1;
+}
+
+input.dec:checked ~ .rate-9
+{
+    order: 2;
+}
+
+input.dec:checked ~ .rate-8
+{
+    order: 3;
+}
+
+input.dec:checked ~ .rate-4
+{
+    order: 4;
+}
+
+.page-footer
+{
+    justify-self: flex-end;
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right
+{
+    color: #002ebe;
+}
