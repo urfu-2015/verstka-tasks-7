@@ -8,6 +8,9 @@ body
 
 body
 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     background: #ebebeb;
     font-size: 12px;
 }
@@ -24,8 +27,6 @@ body
 
 .wrapper
 {
-    min-height: 100%;
-    margin-bottom: -50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -339,6 +340,8 @@ input.dec:checked ~ .rate-4
 
 .page-footer
 {
+    justify-self: flex-end;
+    margin-top: auto;
     padding: 10px 20px;
     font-size: 2em;
     display: flex;
