@@ -6,6 +6,91 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять гибкую магию -->
+        <input type="radio" name="cats" value="abyssinian" id="abyssinian">
+        <input type="radio" name="cats" value="russian" id="russian">
+        <input type="radio" name="cats" value="british" id="british">
+        <input type="radio" name="cats" value="siamese" id="siamese">
+        <input type="radio" name="cats" value="all" id="all">
+        <header>
+            <h1>Бабуленькины котятки</h1>
+        </header>
+        <main>
+            <div class="breed">
+                <label for="abyssinian">Абиссинская</label>
+                <label for="russian">Британская</label>
+                <label for="british">Русская голубая</label>
+                <label for="siamese">Сиамская</label>
+                <label for="all">Сбросить все</label>
+            </div>
+            <div class="cards">
+                <div class="small abyssinian" data-title="Гоша, 4 года">
+                    <img src="cats/abis2.jpg">
+                </div>
+                <div class="middle russian" data-title="Инна, 3 года">
+                    <img src="cats/rus2.jpg">
+                </div>
+                <div class="small british" data-title="Стивен, 2 года">
+                    <img src="cats/brit.jpg">
+                </div>
+                <div class="small abyssinian" data-title="Марк, 1 год">
+                    <img src="cats/abis.jpg">
+                </div>
+                <div class="small russian" data-title="Рудольф, 3 года">
+                    <img src="cats/rus.jpg">
+                </div>
+                <div class="middle siamese" data-title="Машка, 4 года">
+                    <img src="cats/siam.jpg">
+                </div>
+                <div class="small british" data-title="Кошка 7 лет">
+                    <img src="cats/brit2.jpg">
+                </div>
+                <div class="large siamese" data-title="Ваня, 5 лет">
+                    <img src="cats/siam2.jpg">
+                </div>
+            </div>
+            <div class="rating">
+                <div>рейтинг</div>
+                <label for="order-checkbox">по убыванию</label>
+                <input type="checkbox" name="order" id="order-checkbox">
+                <div class="chart">
+                    <div class="a-rating">
+                        Абиссинская
+                        <div class="number">
+                            <div class="a"></div>
+                            <div>9</div>
+                        </div>
+                    </div>
+                    <div class="b-rating">
+                        Британская
+                        <div class="number">
+                            <div class="b"></div>
+                            <div>8</div>
+                        </div>
+                    </div>
+                    <div class="r-rating">
+                        Русская голубая
+                        <div class="number">
+                            <div class="r"></div>
+                            <div>10</div>
+                        </div>
+                    </div>
+                    <div class="s-rating">
+                        Сиамская
+                        <div class="number">
+                            <div class="s"></div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                &copy; ООО Бабуленькины котятки, 2015
+            </div>
+            <div>
+                Наш адрес: улица Котовая, д.5
+            </div>
+        </footer>
     </body>
 </html>
