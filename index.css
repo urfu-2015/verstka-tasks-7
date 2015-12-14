@@ -253,12 +253,12 @@ input[type='radio']
     opacity: .5;
 }
 
-#abyssinian:checked ~ main > .breed > label[for="abyssinian"],
-#russian:checked ~ main > .breed > label[for="russian"],
-#british:checked ~ main > .breed > label[for="british"],
-#siamese:checked ~ main > .breed > label[for="siamese"]
+#abyssinian:checked ~ main > .breed > label[for='abyssinian'],
+#russian:checked ~ main > .breed > label[for='russian'],
+#british:checked ~ main > .breed > label[for='british'],
+#siamese:checked ~ main > .breed > label[for='siamese']
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 footer
