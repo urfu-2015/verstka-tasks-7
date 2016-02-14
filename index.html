@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Бабуленькины котятки</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Здесь применять гибкую магию -->
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Бабуленькины котятки</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <h1>Бабуленькины котятки</h1>
+</header>
+    <main>
+        <input type="radio" class="breed" name="breed" id="all-breeds" checked>
+        <input type="radio" class="breed" name="breed" id="brit-breed">
+        <input type="radio" class="breed" name="breed" id="abys-breed">
+        <input type="radio" class="breed" name="breed" id="bengal-breed">
+        <input type="radio" class="breed" name="breed" id="savan-breed">
+        <input type="radio" class="breed" name="breed" id="shart-breed">
+        <input type="radio" class="breed" name="breed" id="egeisk-breed">
+        <menu class="menubox left">
+            <label class="menuitem" for="all-breeds"><span>Все породы</span></label>
+            <label class="menuitem" for="brit-breed"><span>Британская</span></label>
+            <label class="menuitem" for="abys-breed"><span>Абиссинская</span></label>
+            <label class="menuitem" for="bengal-breed"><span>Бенгальская</span></label>
+            <label class="menuitem" for="savan-breed"><span>Саванна</span></label>
+            <label class="menuitem" for="shart-breed"><span>Шартрез</span></label>
+            <label class="menuitem" for="egeisk-breed"><span>Эгейская</span></label>
+        </menu>
+        <section>
+            <article class="brit">
+                <img src="http://www.delas.in.ua/wp-content/uploads/2014/06/британский-мальчик.jpg" alt="cat">
+                <span class="name">Мира</span>
+            </article>
+            <article class="abys">
+                <img src="http://4.bp.blogspot.com/-nRY5jTEvd5Q/TXz6tWAAsNI/AAAAAAAABWA/Ue8TX8_SZ5Q/s1600/aby-m3.jpg"
+                     alt="cat">
+                <span class="name">Максим</span>
+            </article>
+            <article class="bengal">
+                <img src="http://nben.ru/images/Kit_05_02_2015/Kot_3_Kr/11.JPG">
+                <span class="name">Леня</span>
+            </article>
+            <article class="savan">
+                <img src="http://cs10172.vk.me/u49783647/124999569/y_b8145d7a.jpg">
+                <span class="name">Кларк</span>
+            </article>
+            <article class="shart">
+                <img src="http://moskva.freeadsin.ru/content/root/users/2012/20120313/visitor/images/201203/f20120313112915-dscn1307.jpg"
+                     alt="cat">
+                <span class="name">Аля и Мисси</span>
+            </article>
+            <article class="egeisk">
+                <img src="http://www.reginele.ro/wp-content/uploads/2014/04/Cum-sa-i-prepari-pisicutei-tale-sampon-impotriva-puricilor.jpg"
+                     alt="cat">
+                <span class="name">Сэмми</span>
+            </article>
+            <article class="brit">
+                <img src="http://www.sunny-cat.ru/datas/users/1-filadelfia006.jpg"
+                     alt="cat">
+                <span class="name">Максимиллиан</span>
+            </article>
+            <article class="savan">
+                <img src="http://s017.radikal.ru/i429/1111/f5/50cc1a85e708.jpg"
+                     alt="cat">
+                <span class="name">Герти</span>
+            </article>
+        </section>
+        <menu class="menubox right">
+            <h2>Рейтинг</h2>
+            <input type="checkbox" class="sort" id="sort">
+            <label for="sort"><span>По убыванию</span></label>
+            <div class="brit block">
+                <div class="firstline">
+                    <span class="breedlist">Британская</span>
+                    <span>9</span>
+                </div>
+                <div class="rating"></div>
+            </div>
+            <div class="abys block">
+                <div class="firstline">
+                    <span class="breedlist">Абиссинская</span>
+                    <span>2</span>
+                </div>
+                <div class="rating"></div>
+            </div>
+            <div class="bengal block">
+                <div class="firstline">
+                    <span class="breedlist">Бенгальская</span>
+                    <span>4</span>
+                </div>
+                <div class="rating"></div>
+            </div>
+            <div class="savan block">
+                <div class="firstline">
+                    <span class="breedlist">Саванна</span>
+                    <span>6</span>
+                </div>
+                <div class="rating"></div>
+            </div>
+            <div class="shart block">
+                <div class="firstline">
+                    <span class="breedlist">Шартрез</span>
+                    <span>10</span>
+                </div>
+                <div class="rating"></div>
+            </div>
+            <div class="egeisk block">
+                <div class="firstline">
+                    <span class="breedlist">Эгейская</span>
+                    <span>5</span>
+                </div>
+                <div class="rating"></div>
+            </div>
+        </menu>
+    </main>
+    <footer>
+        <cite>&copy; ООО Бабуленькины котятки, <time>2015</time></cite>
+        <address>Наш адрес: улица Котовая, д.5</address>
+    </footer>
+</body>
 </html>
