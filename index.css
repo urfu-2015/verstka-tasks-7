@@ -2,6 +2,7 @@ body
 {
     background-color: rgba(234, 234, 234, .51);
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 main
 {
@@ -212,6 +213,12 @@ h2
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     transition: all .2s;
 }
+div.sort
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .sort:checked + label:before
 {
     background: #22aa22;
@@ -243,68 +250,68 @@ h2
     border: 1px solid #3c3f41;
     background: linear-gradient(to right, transparent 0%, white 100%);
 }
-.brit .rating
-{
-    background-color: #07e871;
-    border-color: #00b053;
-    width: 90%;
-}
-.abys .rating
-{
-    background-color: #ff2c2d;
-    border-color: #ff0000;
-    width: 20%;
-}
-.bengal .rating
-{
-    background-color: #ff2c2d;
-    border-color: #ff0000;
-    width: 40%;
-}
-.savan .rating
-{
-    background-color: #ffff00;
-    border-color: #ffcc00;
-    width: 60%;
-}
-.shart .rating
+.rating-ten
 {
     background-color: #07e871;
     border-color: #00b053;
     width: 100%;
 }
-.egeisk .rating
+.rating-nine
+{
+    background-color: #07e871;
+    border-color: #00b053;
+    width: 90%;
+}
+.rating-six
+{
+    background-color: #ffff00;
+    border-color: #ffcc00;
+    width: 60%;
+}
+.rating-five
 {
     background-color: #ffff00;
     border-color: #ffcc00;
     width: 50%;
 }
-.sort:checked ~ .shart
+.rating-four
+{
+    background-color: #ff2c2d;
+    border-color: #ff0000;
+    width: 40%;
+}
+.rating-two
+{
+    background-color: #ff2c2d;
+    border-color: #ff0000;
+    width: 20%;
+}
+.sort:checked ~ .ten
 {
     display: flex;
     order: 1;
 }
-.sort:checked ~ .brit
+.sort:checked ~ .nine
 {
     display: flex;
     order: 2;
 }
-.sort:checked ~ .savan
+.sort:checked ~ .six
 {
     display: flex;
     order: 3;
 }
-.sort:checked ~ .egeisk
+.sort:checked ~ .five
 {
     display: flex;
     order: 4;
 }
-.sort:checked ~ .bengal
+.sort:checked ~ .four
 {
     display: flex;
     order: 5;
 }
-.sort:checked ~ .abys
+.sort:checked ~ .two
 {
     display: flex;
     order: 6;
