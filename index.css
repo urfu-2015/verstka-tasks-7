@@ -1,1 +1,318 @@
+body
+{
+    background-color: rgba(234, 234, 234, .51);
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+main
+{
+    display: flex;
+    width: 100%;
+}
+header
+{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+}
+h1
+{
+    font-size: 40px;
+}
+footer
+{
+    margin-top: 5%;
+    vertical-align: bottom;
+    height: 30px;
+    border-top: 2px ridge #fff;
+    padding: 2%;
+}
+footer div:first-child
+{
+    float: left;
+}
+footer address
+{
+    float: right;
+    color: #109;
+}
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    min-width: 500px;
+    padding: 0 5px;
+}
+section article
+{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: .3em;
+    max-height: 500px;
+}
+section article img
+{
+    width: 100%;
+    object-fit: cover;
+}
+span
+{
+    font-size: 20px;
+    font-weight: lighter;
+    display: block;
+}
+section article:nth-child(8n+1),
+section article:nth-child(8n+3),
+section article:nth-child(8n+4),
+section article:nth-child(8n+5),
+section article:nth-child(8n+7)
+{
+    width: 32%;
+}
+section article:nth-child(8n+2),
+section article:nth-child(8n+6)
+{
+    width: 65%;
+}
+section article:nth-child(8n)
+{
+    width: 98%;
+}
+.breed
+{
+    display: none;
+}
+.breed#brit-breed:checked ~ section article:not(.brit),
+.breed#abys-breed:checked ~ section article:not(.abys),
+.breed#bengal-breed:checked ~ section article:not(.bengal),
+.breed#savan-breed:checked ~ section article:not(.savan),
+.breed#shart-breed:checked ~ section article:not(.shart),
+.breed#egeisk-breed:checked ~ section article:not(.egeisk)
+{
+    opacity: .4;
+}
+.menuitem:hover
+{
+    background-color: #aaa;
+    color: #fff;
+}
+.breed#all-breeds:checked ~ menu .menuitem[for='all-breeds'],
+.breed#brit-breed:checked ~ menu .menuitem[for='brit-breed'],
+.breed#abys-breed:checked ~ menu .menuitem[for='abys-breed'],
+.breed#bengal-breed:checked ~ menu .menuitem[for='bengal-breed'],
+.breed#savan-breed:checked ~ menu .menuitem[for='savan-breed'],
+.breed#shart-breed:checked ~ menu .menuitem[for='shart-breed'],
+.breed#egeisk-breed:checked ~ menu .menuitem[for='egeisk-breed']
+{
+    background-color: #5a5a5a;
+    color: white;
+}
+.name
+{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    text-align: center;
+}
+section article:hover > .name
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+}
+.menubox
+{
+    display: flex;
+    flex-flow: column;
+    width: 15%;
+    min-width: 100px;
+    margin: .3em;
+    background-color: rgba(216, 216, 216, .51);
+}
+.menubox.left > label
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px ridge #fff;
+    height: 80px;
+}
 
+.menubox.left > label > span
+{
+    margin-left: 10px;
+}
+menu
+{
+    padding: 0;
+}
+.menubox.right
+{
+    height: 100%;
+    padding: 10px;
+}
+h2
+{
+    color: #ff0000;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.sort + label
+{
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin: 20px 0 30px 0;
+}
+.sort:not(checked)
+{
+    position: absolute;
+    opacity: 0;
+}
+.sort:not(checked) + label
+{
+    position: relative;
+    padding: 0 60px 0 0;
+}
+.sort:not(checked) + label:before
+{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #cdd1da;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+.sort:not(checked) + label:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 26px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: all .2s;
+}
+div.sort
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sort:checked + label:before
+{
+    background: #22aa22;
+}
+.sort:checked + label:after
+{
+    right: 2px;
+}
+.sort:focus + label:before
+{
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, .5),
+    inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+.menubox.right .block
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 10px 0;
+}
+.firstline
+{
+    display: flex;
+    justify-content: space-between;
+}
+.rating
+{
+    height: 15px;
+    border: 1px solid #3c3f41;
+    background: linear-gradient(to right, transparent 0%, white 100%);
+}
+.rating-ten
+{
+    background-color: #07e871;
+    border-color: #00b053;
+    width: 100%;
+}
+.rating-nine
+{
+    background-color: #07e871;
+    border-color: #00b053;
+    width: 90%;
+}
+.rating-six
+{
+    background-color: #ffff00;
+    border-color: #ffcc00;
+    width: 60%;
+}
+.rating-five
+{
+    background-color: #ffff00;
+    border-color: #ffcc00;
+    width: 50%;
+}
+.rating-four
+{
+    background-color: #ff2c2d;
+    border-color: #ff0000;
+    width: 40%;
+}
+.rating-two
+{
+    background-color: #ff2c2d;
+    border-color: #ff0000;
+    width: 20%;
+}
+.sort:checked ~ .ten
+{
+    display: flex;
+    order: 1;
+}
+.sort:checked ~ .nine
+{
+    display: flex;
+    order: 2;
+}
+.sort:checked ~ .six
+{
+    display: flex;
+    order: 3;
+}
+.sort:checked ~ .five
+{
+    display: flex;
+    order: 4;
+}
+.sort:checked ~ .four
+{
+    display: flex;
+    order: 5;
+}
+.sort:checked ~ .two
+{
+    display: flex;
+    order: 6;
+}
